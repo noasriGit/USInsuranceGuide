@@ -26,11 +26,9 @@ npm start
 - **Data:** `content/data/*.json` (categories, states, partners, etc.)
 - **Phases:** See [CONTENT_PHASES.md](./CONTENT_PHASES.md) for structure vs editorial workflow
 
-## Adding content
+## Phase 3 (editorial) — see [CONTENT_PHASES.md](./CONTENT_PHASES.md)
 
-1. Copy an existing article in `content/articles/`
-2. Update frontmatter (title, slug via filename, category, states, etc.)
-3. Run `npm run dev` to preview
+Phase 3 includes a **full rewrite** of all Phase 1 seed articles plus new shells, drafts, and hub copy. Phase 1 text was infrastructure seed content, not final editorial.
 
 ## Deployment
 
