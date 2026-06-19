@@ -1,4 +1,5 @@
 import type { Source } from "@/lib/schemas";
+import { newTabAriaLabel } from "@/lib/a11y/external-link";
 import { cn } from "@/lib/utils";
 
 interface SourcesListProps {
@@ -21,13 +22,14 @@ export function SourcesList({ sources, className }: SourcesListProps) {
               href={source.url}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={newTabAriaLabel(source.title)}
               className="font-medium text-navy-700 underline hover:text-navy-900"
             >
               {source.title}
             </a>
-            <span className="text-slate-500"> — {source.publisher}</span>
+            <span className="text-slate-600"> — {source.publisher}</span>
             {source.accessedAt && (
-              <span className="text-slate-400"> (accessed {source.accessedAt})</span>
+              <span className="text-slate-500"> (accessed {source.accessedAt})</span>
             )}
           </li>
         ))}

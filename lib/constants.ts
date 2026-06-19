@@ -32,11 +32,12 @@ export const RESERVED_SLUGS = new Set([
   "terms",
   "states",
   "insurance-agencies",
+  "accessibility",
   "api",
 ]);
 
 /** Set true when directory has partner listings worth promoting in nav. */
 export const SHOW_INSURANCE_DIRECTORY_NAV = false;
 
-/** Set true in Phase 3 when state+category guide copy is approved for indexing. */
-export const INDEX_STATE_CATEGORY_SHELLS = false;
+/** Set true when all 33 state+category guide pages are approved for indexing. */
+export const INDEX_STATE_CATEGORY_SHELLS = true;

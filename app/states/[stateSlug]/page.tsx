@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleCard } from "@/components/content/ArticleCard";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
+import { newTabAriaLabel } from "@/lib/a11y/external-link";
 import { SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo/metadata";
 import {
@@ -124,7 +125,7 @@ export default async function StateHubPage({ params }: PageProps) {
           <ContextualCTA partners={partners} />
         </div>
 
-        <aside>
+        <aside aria-label="Official resources">
           {state.externalSources && state.externalSources.length > 0 && (
             <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
               <h3 className="text-sm font-semibold text-slate-900">Official Resources</h3>
@@ -135,6 +136,7 @@ export default async function StateHubPage({ params }: PageProps) {
                       href={source.url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={newTabAriaLabel(source.title)}
                       className="text-sm text-navy-700 underline hover:text-navy-900"
                     >
                       {source.title}

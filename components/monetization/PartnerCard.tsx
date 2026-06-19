@@ -1,4 +1,5 @@
 import type { Partner } from "@/lib/schemas";
+import { newTabAriaLabel } from "@/lib/a11y/external-link";
 import { SponsoredDisclosure } from "@/components/compliance/SponsoredDisclosure";
 import { SponsoredLabel } from "./SponsoredLabel";
 import { cn } from "@/lib/utils";
@@ -32,6 +33,7 @@ export function PartnerCard({ partner, className }: PartnerCardProps) {
         href={href}
         target="_blank"
         rel={partner.sponsored ? "sponsored noopener noreferrer" : "noopener noreferrer"}
+        aria-label={newTabAriaLabel(`${partner.ctaText} — ${partner.name}`)}
         className="mt-4 inline-flex items-center rounded-md bg-navy-800 px-4 py-2 text-sm font-medium text-white hover:bg-navy-900 transition-colors"
       >
         {partner.ctaText}

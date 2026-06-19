@@ -11,6 +11,7 @@ const companyLinks = [
 
 const policyLinks = [
   { label: "Editorial Policy", href: "/editorial-policy/" },
+  { label: "Accessibility", href: "/accessibility/" },
   { label: "Advertising Disclosure", href: "/advertising-disclosure/" },
   { label: "Insurance Disclaimer", href: "/insurance-disclaimer/" },
   { label: "Privacy Policy", href: "/privacy-policy/" },
@@ -33,11 +34,11 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-slate-900">Company</p>
+            <h2 className="text-sm font-semibold text-slate-900">Company</h2>
             <ul className="mt-3 space-y-2">
               {companyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-slate-600 hover:text-navy-800">
+                  <Link href={link.href} className="text-sm text-slate-600 underline-offset-2 hover:text-navy-800 hover:underline">
                     {link.label}
                   </Link>
                 </li>
@@ -46,11 +47,11 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-slate-900">Policies</p>
+            <h2 className="text-sm font-semibold text-slate-900">Policies</h2>
             <ul className="mt-3 space-y-2">
               {policyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-slate-600 hover:text-navy-800">
+                  <Link href={link.href} className="text-sm text-slate-600 underline-offset-2 hover:text-navy-800 hover:underline">
                     {link.label}
                   </Link>
                 </li>
@@ -59,15 +60,15 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-slate-900">Explore</p>
+            <h2 className="text-sm font-semibold text-slate-900">Explore</h2>
             <ul className="mt-3 space-y-2">
               <li>
-                <Link href="/states/" className="text-sm text-slate-600 hover:text-navy-800">
+                <Link href="/states/" className="text-sm text-slate-600 underline-offset-2 hover:text-navy-800 hover:underline">
                   State Guides
                 </Link>
               </li>
               <li>
-                <Link href="/blog/" className="text-sm text-slate-600 hover:text-navy-800">
+                <Link href="/blog/" className="text-sm text-slate-600 underline-offset-2 hover:text-navy-800 hover:underline">
                   Blog
                 </Link>
               </li>
@@ -75,7 +76,7 @@ export function SiteFooter() {
                 <li key={cat.slug}>
                   <Link
                     href={`/${cat.slug}/`}
-                    className="text-sm text-slate-600 hover:text-navy-800"
+                    className="text-sm text-slate-600 underline-offset-2 hover:text-navy-800 hover:underline"
                   >
                     {cat.name}
                   </Link>
@@ -92,7 +93,7 @@ export function SiteFooter() {
               Read full disclaimer
             </Link>
           </p>
-          <p className="mt-4 text-xs text-slate-400">
+          <p className="mt-4 text-xs text-slate-500">
             © {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
           </p>
         </div>

@@ -9,7 +9,6 @@ import {
   GuideSectionShell,
   STATE_CATEGORY_BODY_SECTIONS,
   STATE_CATEGORY_GUIDE_SECTIONS,
-  LOCAL_GUIDE_SECTIONS,
 } from "@/components/content/GuideSectionShell";
 import { Prose } from "@/components/content/Prose";
 import { FAQSection } from "@/components/content/FAQSection";
@@ -114,10 +113,6 @@ export default async function StateSegmentPage({ params }: PageProps) {
         />
         <div className="py-10 max-w-3xl space-y-8">
           <ContentPendingNotice topic={`${city.name} local guide`} />
-
-          {LOCAL_GUIDE_SECTIONS.map((section) => (
-            <GuideSectionShell key={section} title={section} />
-          ))}
 
           <section>
             <h2 className="text-xl font-bold text-slate-900">Related Category Guides</h2>

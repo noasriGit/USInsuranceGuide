@@ -33,12 +33,15 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
               {item.href && !isLast ? (
                 <Link
                   href={item.href}
-                  className="hover:text-navy-700 transition-colors"
+                  className="underline-offset-2 hover:text-navy-700 hover:underline transition-colors"
                 >
                   {item.label}
                 </Link>
               ) : (
-                <span className={isLast ? "text-slate-900 font-medium" : ""}>
+                <span
+                  className={isLast ? "text-slate-900 font-medium" : ""}
+                  {...(isLast ? { "aria-current": "page" as const } : {})}
+                >
                   {item.label}
                 </span>
               )}

@@ -114,6 +114,71 @@ Always speak with a licensed insurance professional in your state before making 
 
 Insurance professional directory listings are provided for informational purposes only. US Insurance Guide does not endorse any specific provider. Verify licensing and credentials directly.`,
   },
+  accessibility: {
+    title: "Accessibility Statement",
+    description:
+      "US Insurance Guide commitment to digital accessibility and how to request accommodation or report barriers.",
+    content: `US Insurance Guide is committed to making our website accessible to the widest possible audience, including people with disabilities. We aim to conform to the **Web Content Accessibility Guidelines (WCAG) 2.2 Level AA** standards.
+
+## Our Approach
+
+We treat accessibility as an ongoing operational priority — not a one-time checklist. Our team performs periodic reviews using a combination of automated scanning tools and manual keyboard and screen-reader testing.
+
+**Last reviewed:** June 19, 2025
+
+## Measures We Support
+
+We work to ensure that visitors can:
+
+- Navigate the site using a keyboard (Tab, Shift+Tab, Enter, Escape, and arrow keys where applicable)
+- See a visible focus indicator on interactive elements
+- Use the site with common assistive technologies, including screen readers
+- Perceive text with sufficient color contrast on primary content
+- Skip repeated navigation to reach main content quickly
+
+## Compatibility
+
+This site is designed to work with current versions of major browsers (Chrome, Firefox, Safari, Edge) and common assistive technologies. Older browsers may not support all accessibility features.
+
+## Known Limitations
+
+We are aware of the following limitations and are working to address them:
+
+- **Third-party partner websites:** Links to insurance partners and government resources open in a new browser tab and are outside our direct control.
+- **Display advertising:** When enabled, third-party ad units may not meet the same accessibility standards as our editorial content.
+- **City-level guides:** Some local guide pages are placeholders while content is in development.
+- **PDF sources:** Some linked government publications are PDF files; accessibility of those documents depends on the publishing agency.
+
+## Feedback and Accommodation Requests
+
+If you encounter a barrier on our site, or need content in an alternative format, please contact us:
+
+- **Email:** contact@usinsuranceguide.com
+- **Subject line:** Accessibility Request
+
+Please include the page URL, a description of the issue, and the assistive technology you use (if applicable). We aim to acknowledge requests within **3 business days** and resolve or propose an alternative within **10 business days** where feasible.
+
+You may also use our general [Contact page](/contact/) or [Corrections page](/corrections/) for content-related issues.
+
+## Formal Complaints
+
+If you are not satisfied with our response, you may email contact@usinsuranceguide.com again with "Accessibility Escalation" in the subject line. We will review escalated requests with priority.
+
+## Technical Standards
+
+This statement applies to content published at usinsuranceguide.com. Our internal accessibility policy governs how our content, design, and engineering teams maintain compliance as the site grows.
+
+## Assessment Methods
+
+Our reviews include:
+
+- Automated scans (axe-core / Lighthouse accessibility audits)
+- Manual keyboard-only navigation testing
+- Code review for semantic HTML, ARIA attributes, form labels, and focus management
+- Periodic content review for plain language and heading structure
+
+A baseline audit report is maintained internally and updated after significant site changes.`,
+  },
   privacyPolicy: {
     title: "Privacy Policy",
     description: "How US Insurance Guide collects, uses, and protects your information.",
@@ -121,7 +186,7 @@ Insurance professional directory listings are provided for informational purpose
 
 ## Information We Collect
 
-We may collect information you voluntarily provide through contact forms or correction request forms, including your name, email address, and message content.
+We may collect information you voluntarily provide when you contact us by email or submit a correction request, including your name, email address, and message content.
 
 We may automatically collect certain technical information when you visit our site, such as browser type, device type, pages viewed, and referring URL, through analytics tools.
 
@@ -156,7 +221,7 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 
 ## Contact
 
-For privacy-related questions, please [contact us](/contact/).`,
+For privacy-related questions, please [contact us](/contact/). For accessibility accommodation requests, see our [Accessibility Statement](/accessibility/).`,
   },
   terms: {
     title: "Terms of Use",
@@ -208,6 +273,8 @@ Questions about these Terms? [Contact us](/contact/).`,
 ## General Inquiries
 
 For general questions about US Insurance Guide, email us at **contact@usinsuranceguide.com**.
+
+For website accessibility barriers or accommodation requests, email **contact@usinsuranceguide.com** with "Accessibility Request" in the subject line. See our [Accessibility Statement](/accessibility/) for details.
 
 We aim to respond within 3–5 business days.
 
