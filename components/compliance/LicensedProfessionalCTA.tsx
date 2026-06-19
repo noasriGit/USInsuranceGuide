@@ -8,7 +8,8 @@ interface LicensedProfessionalCTAProps {
 export function LicensedProfessionalCTA({ className }: LicensedProfessionalCTAProps) {
   const disclaimers = getDisclaimers();
   return (
-    <div
+    <aside
+      aria-label="Licensed professional reminder"
       className={cn(
         "rounded-lg border border-navy-200 bg-navy-50 p-5",
         className,
@@ -18,6 +19,6 @@ export function LicensedProfessionalCTA({ className }: LicensedProfessionalCTAPr
       <p className="mt-2 text-sm leading-relaxed text-navy-800">
         {disclaimers.licensedProfessionalCta}
       </p>
-    </div>
+    </aside>
   );
 }

@@ -26,11 +26,16 @@ export default function BlogIndexPage() {
         {articles.length === 0 ? (
           <p className="text-slate-600">No articles published yet. Check back soon.</p>
         ) : (
-          <div className="grid gap-4 sm:grid-cols-2">
-            {articles.map((article) => (
-              <ArticleCard key={article.slug} article={article} />
-            ))}
-          </div>
+          <section aria-labelledby="blog-articles-heading">
+            <h2 id="blog-articles-heading" className="sr-only">
+              All articles
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {articles.map((article) => (
+                <ArticleCard key={article.slug} article={article} />
+              ))}
+            </div>
+          </section>
         )}
       </div>
     </Container>

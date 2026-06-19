@@ -9,7 +9,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, description, className, children }: PageHeroProps) {
   return (
-    <div className={cn("border-b border-slate-200 bg-slate-50 py-10 sm:py-14", className)}>
+    <header className={cn("border-b border-slate-200 bg-slate-50 py-10 sm:py-14", className)}>
       <div className="max-w-3xl">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           {title}
@@ -21,6 +21,6 @@ export function PageHero({ title, description, className, children }: PageHeroPr
         )}
         {children}
       </div>
-    </div>
+    </header>
   );
 }

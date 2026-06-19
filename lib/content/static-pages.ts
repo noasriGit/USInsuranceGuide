@@ -118,13 +118,15 @@ Insurance professional directory listings are provided for informational purpose
     title: "Accessibility Statement",
     description:
       "US Insurance Guide commitment to digital accessibility and how to request accommodation or report barriers.",
-    content: `US Insurance Guide is committed to making our website accessible to the widest possible audience, including people with disabilities. We aim to conform to the **Web Content Accessibility Guidelines (WCAG) 2.2 Level AA** standards.
+    content: `US Insurance Guide is committed to making our website accessible and usable for as many people as possible. We aim to follow generally recognized accessibility standards, including WCAG 2.1 AA and WCAG 2.2 AA where practical.
+
+This statement describes our ongoing accessibility efforts. It is not a guarantee of full compliance with any specific law or standard.
 
 ## Our Approach
 
 We treat accessibility as an ongoing operational priority — not a one-time checklist. Our team performs periodic reviews using a combination of automated scanning tools and manual keyboard and screen-reader testing.
 
-**Last reviewed:** June 19, 2025
+**Last reviewed:** June 19, 2026
 
 ## Measures We Support
 
@@ -144,7 +146,7 @@ This site is designed to work with current versions of major browsers (Chrome, F
 
 We are aware of the following limitations and are working to address them:
 
-- **Third-party partner websites:** Links to insurance partners and government resources open in a new browser tab and are outside our direct control.
+- **Third-party partner websites:** Links to insurance partners and government resources may open in a new browser tab and are outside our direct control.
 - **Display advertising:** When enabled, third-party ad units may not meet the same accessibility standards as our editorial content.
 - **City-level guides:** Some local guide pages are placeholders while content is in development.
 - **PDF sources:** Some linked government publications are PDF files; accessibility of those documents depends on the publishing agency.
@@ -166,7 +168,7 @@ If you are not satisfied with our response, you may email contact@usinsurancegui
 
 ## Technical Standards
 
-This statement applies to content published at usinsuranceguide.com. Our internal accessibility policy governs how our content, design, and engineering teams maintain compliance as the site grows.
+This statement applies to content published at usinsuranceguide.com. We continue to improve accessibility as the site grows and content is updated.
 
 ## Assessment Methods
 

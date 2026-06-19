@@ -147,3 +147,7 @@ body {
   font-weight: 600;
   color: #0f172a;
 }
+
+.prose table {
+  width: 100%;
+}

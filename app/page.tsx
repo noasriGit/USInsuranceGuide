@@ -57,20 +57,26 @@ export default function HomePage() {
       </section>
 
       <Container className="py-14">
-        <h2 className="text-2xl font-bold text-slate-900">Insurance Categories</h2>
-        <p className="mt-2 text-slate-600">
-          Educational guides on coverage options to consider.
-        </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((category) => (
-            <CategoryCard key={category.slug} category={category} />
-          ))}
-        </div>
+        <section aria-labelledby="categories-heading">
+          <h2 id="categories-heading" className="text-2xl font-bold text-slate-900">
+            Insurance Categories
+          </h2>
+          <p className="mt-2 text-slate-600">
+            Educational guides on coverage options to consider.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {categories.map((category) => (
+              <CategoryCard key={category.slug} category={category} />
+            ))}
+          </div>
+        </section>
       </Container>
 
-      <section className="border-y border-slate-200 bg-slate-50">
+      <section className="border-y border-slate-200 bg-slate-50" aria-labelledby="state-guides-heading">
         <Container className="py-14">
-          <h2 className="text-2xl font-bold text-slate-900">State Guides</h2>
+          <h2 id="state-guides-heading" className="text-2xl font-bold text-slate-900">
+            State Guides
+          </h2>
           <p className="mt-2 text-slate-600">
             State-specific insurance resources for Virginia, Maryland, and Washington, D.C.
           </p>
@@ -83,20 +89,27 @@ export default function HomePage() {
       </section>
 
       <Container className="py-14">
-        <div className="flex items-end justify-between">
-          <div>
-            <h2 className="text-2xl font-bold text-slate-900">Latest Guides</h2>
-            <p className="mt-2 text-slate-600">Practical insurance education for everyday decisions.</p>
+        <section aria-labelledby="latest-guides-heading">
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <h2 id="latest-guides-heading" className="text-2xl font-bold text-slate-900">
+                Latest Guides
+              </h2>
+              <p className="mt-2 text-slate-600">Practical insurance education for everyday decisions.</p>
+            </div>
+            <Link
+              href="/blog/"
+              className="shrink-0 text-sm font-medium text-navy-700 hover:text-navy-900"
+            >
+              View all guides
+            </Link>
           </div>
-          <Link href="/blog/" className="hidden text-sm font-medium text-navy-700 hover:text-navy-900 sm:block">
-            View all →
-          </Link>
-        </div>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {articles.map((article) => (
-            <ArticleCard key={article.slug} article={article} />
-          ))}
-        </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {articles.map((article) => (
+              <ArticleCard key={article.slug} article={article} />
+            ))}
+          </div>
+        </section>
       </Container>
 
       <Container className="pb-14">

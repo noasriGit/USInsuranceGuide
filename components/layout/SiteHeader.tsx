@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { SITE_NAME, SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
@@ -24,18 +24,34 @@ export function SiteHeader() {
   const states = getStates();
   const statesMenuId = useId();
   const statesDropdownRef = useRef<HTMLDivElement>(null);
+  const mobileNavRef = useRef<HTMLElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  const closeMobileMenu = useCallback(() => {
+    setMobileOpen(false);
+    menuButtonRef.current?.focus();
+  }, []);
+
+  const closeStatesMenu = useCallback(() => {
+    setStatesOpen(false);
+  }, []);
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setStatesOpen(false);
-        setMobileOpen(false);
+        if (statesOpen) {
+          closeStatesMenu();
+          document.getElementById(`${statesMenuId}-button`)?.focus();
+        }
+        if (mobileOpen) {
+          closeMobileMenu();
+        }
       }
     }
 
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [statesOpen, mobileOpen, closeMobileMenu, closeStatesMenu, statesMenuId]);
 
   useEffect(() => {
     if (!statesOpen) return;
@@ -45,13 +61,25 @@ export function SiteHeader() {
         statesDropdownRef.current &&
         !statesDropdownRef.current.contains(event.target as Node)
       ) {
-        setStatesOpen(false);
+        closeStatesMenu();
       }
     }
 
     document.addEventListener("mousedown", handlePointerDown);
     return () => document.removeEventListener("mousedown", handlePointerDown);
-  }, [statesOpen]);
+  }, [statesOpen, closeStatesMenu]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const firstLink = mobileNavRef.current?.querySelector<HTMLElement>("a, button");
+    firstLink?.focus();
+
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
@@ -72,41 +100,42 @@ export function SiteHeader() {
               type="button"
               id={`${statesMenuId}-button`}
               className={`flex items-center gap-1 ${navLinkClassName}`}
-              onClick={() => setStatesOpen(!statesOpen)}
+              onClick={() => setStatesOpen((open) => !open)}
               aria-expanded={statesOpen}
-              aria-haspopup="true"
               aria-controls={statesMenuId}
             >
               State Guides
               <ChevronDown className="h-4 w-4" aria-hidden="true" />
             </button>
             {statesOpen && (
-              <div
+              <nav
                 id={statesMenuId}
-                role="menu"
                 aria-labelledby={`${statesMenuId}-button`}
                 className="absolute right-0 top-full mt-1 w-48 rounded-lg border border-slate-200 bg-white py-1 shadow-lg"
               >
-                <Link
-                  href="/states/"
-                  role="menuitem"
-                  className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:underline"
-                  onClick={() => setStatesOpen(false)}
-                >
-                  All States
-                </Link>
-                {states.map((state) => (
-                  <Link
-                    key={state.slug}
-                    href={`/states/${state.slug}/`}
-                    role="menuitem"
-                    className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:underline"
-                    onClick={() => setStatesOpen(false)}
-                  >
-                    {state.name}
-                  </Link>
-                ))}
-              </div>
+                <ul className="list-none">
+                  <li>
+                    <Link
+                      href="/states/"
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:underline"
+                      onClick={closeStatesMenu}
+                    >
+                      All States
+                    </Link>
+                  </li>
+                  {states.map((state) => (
+                    <li key={state.slug}>
+                      <Link
+                        href={`/states/${state.slug}/`}
+                        className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:underline"
+                        onClick={closeStatesMenu}
+                      >
+                        {state.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             )}
           </div>
 
@@ -121,9 +150,10 @@ export function SiteHeader() {
         </nav>
 
         <button
+          ref={menuButtonRef}
           type="button"
           className="rounded-md p-2 text-slate-700 lg:hidden"
-          onClick={() => setMobileOpen(!mobileOpen)}
+          onClick={() => (mobileOpen ? closeMobileMenu() : setMobileOpen(true))}
           aria-expanded={mobileOpen}
           aria-controls="mobile-navigation"
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
@@ -138,6 +168,7 @@ export function SiteHeader() {
 
       {mobileOpen && (
         <nav
+          ref={mobileNavRef}
           id="mobile-navigation"
           className="border-t border-slate-200 bg-white px-4 py-4 lg:hidden"
           aria-label="Mobile navigation"
@@ -148,7 +179,7 @@ export function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 className="rounded-md px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:underline"
-                onClick={() => setMobileOpen(false)}
+                onClick={closeMobileMenu}
               >
                 {link.label}
               </Link>
@@ -156,12 +187,19 @@ export function SiteHeader() {
             <p className="mt-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-600">
               State Guides
             </p>
+            <Link
+              href="/states/"
+              className="rounded-md px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:underline"
+              onClick={closeMobileMenu}
+            >
+              All States
+            </Link>
             {states.map((state) => (
               <Link
                 key={state.slug}
                 href={`/states/${state.slug}/`}
                 className="rounded-md px-3 py-2.5 text-sm text-slate-700 hover:bg-slate-100 hover:underline"
-                onClick={() => setMobileOpen(false)}
+                onClick={closeMobileMenu}
               >
                 {state.name}
               </Link>
@@ -170,7 +208,7 @@ export function SiteHeader() {
               <Link
                 href="/insurance-agencies/"
                 className="mt-2 rounded-md bg-navy-800 px-3 py-2.5 text-center text-sm font-medium text-white"
-                onClick={() => setMobileOpen(false)}
+                onClick={closeMobileMenu}
               >
                 Find an Insurance Professional
               </Link>

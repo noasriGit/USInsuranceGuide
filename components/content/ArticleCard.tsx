@@ -16,7 +16,10 @@ export function ArticleCard({ article, className }: ArticleCardProps) {
         className,
       )}
     >
-      <Link href={`/blog/${article.slug}/`}>
+      <Link
+        href={`/blog/${article.slug}/`}
+        className="block rounded-md focus-visible:outline-offset-4"
+      >
         <h3 className="text-lg font-semibold text-slate-900 group-hover:text-navy-800">
           {article.title}
         </h3>
@@ -24,7 +27,9 @@ export function ArticleCard({ article, className }: ArticleCardProps) {
           {article.excerpt}
         </p>
         <p className="mt-3 text-xs text-slate-500">
-          {formatDate(article.updatedAt)} · {article.readingTime} min read
+          <time dateTime={article.updatedAt}>{formatDate(article.updatedAt)}</time>
+          {" · "}
+          {article.readingTime} min read
         </p>
       </Link>
     </article>

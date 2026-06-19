@@ -93,7 +93,7 @@ export default async function ArticlePage({ params }: PageProps) {
           </div>
           <div className="mt-3 flex items-center gap-3 text-sm text-slate-500">
             <LastUpdated date={article.updatedAt} />
-            <span>·</span>
+            <span aria-hidden="true">·</span>
             <span>{article.readingTime} min read</span>
           </div>
         </header>

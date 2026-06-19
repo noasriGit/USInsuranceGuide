@@ -19,10 +19,12 @@ export function StaticPageLayout({
   return (
     <Container className="py-8">
       <Breadcrumbs items={breadcrumbs} />
-      <PageHero title={title} description={description} />
-      <div className="py-10">
-        <Prose content={content} />
-      </div>
+      <article>
+        <PageHero title={title} description={description} />
+        <div className="py-10">
+          <Prose content={content} />
+        </div>
+      </article>
     </Container>
   );
 }

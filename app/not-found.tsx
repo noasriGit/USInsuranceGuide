@@ -1,6 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { getCategories, getStates } from "@/lib/content/data";
+import { buildMetadata } from "@/lib/seo/metadata";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Page Not Found",
+  description: "The page you requested could not be found on US Insurance Guide.",
+  path: "/404/",
+  noindex: true,
+});
 
 export default function NotFound() {
   const categories = getCategories(true).slice(0, 5);
