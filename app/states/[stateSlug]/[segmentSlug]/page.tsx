@@ -7,9 +7,13 @@ import { ArticleCard } from "@/components/content/ArticleCard";
 import { ContentPendingNotice } from "@/components/content/ContentPendingNotice";
 import {
   GuideSectionShell,
+  STATE_CATEGORY_BODY_SECTIONS,
   STATE_CATEGORY_GUIDE_SECTIONS,
   LOCAL_GUIDE_SECTIONS,
 } from "@/components/content/GuideSectionShell";
+import { Prose } from "@/components/content/Prose";
+import { FAQSection } from "@/components/content/FAQSection";
+import { SourcesList } from "@/components/content/SourcesList";
 import { ArticleDisclaimer } from "@/components/compliance/ArticleDisclaimer";
 import { LicensedProfessionalCTA } from "@/components/compliance/LicensedProfessionalCTA";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
@@ -27,6 +31,7 @@ import {
   resolveSegmentSlug,
   getArticlesByCategory,
   getArticlesByState,
+  getStateCategoryGuide,
 } from "@/lib/content";
 import { resolvePlacements } from "@/lib/monetization/placements";
 
@@ -58,9 +63,12 @@ export async function generateMetadata({ params }: PageProps) {
   if (!state || !resolved) return {};
 
   if (resolved.type === "category") {
+    const guide = getStateCategoryGuide(stateSlug, segmentSlug);
     return buildMetadata({
-      title: `${state.name} ${resolved.data.name} Guide`,
-      description: `Educational ${resolved.data.name.toLowerCase()} guide for ${state.name}. General information on coverage options and state considerations.`,
+      title: guide?.metaTitle ?? `${state.name} ${resolved.data.name} Guide`,
+      description:
+        guide?.metaDescription ??
+        `Educational ${resolved.data.name.toLowerCase()} guide for ${state.name}. General information on coverage options and state considerations.`,
       path: `/states/${stateSlug}/${segmentSlug}/`,
       noindex: !shouldIndexStateCategoryPage(),
     });
@@ -134,6 +142,7 @@ export default async function StateSegmentPage({ params }: PageProps) {
   }
 
   const category = resolved.data;
+  const guide = getStateCategoryGuide(stateSlug, category.slug);
   const stateArticles = getArticlesByState(stateSlug).filter(
     (a) => a.category === category.slug,
   );
@@ -152,17 +161,36 @@ export default async function StateSegmentPage({ params }: PageProps) {
       />
       <PageHero
         title={`${state.name} ${category.name}`}
-        description={`Educational guide to ${category.name.toLowerCase()} in ${state.name}. General information on coverage options and factors to consider.`}
+        description={
+          guide?.metaDescription ??
+          `Educational guide to ${category.name.toLowerCase()} in ${state.name}. General information on coverage options and factors to consider.`
+        }
       />
 
       <div className="py-10 max-w-3xl space-y-8">
-        <ContentPendingNotice
-          topic={`${state.name} ${category.name.toLowerCase()} guide`}
-        />
+        {!guide && (
+          <ContentPendingNotice
+            topic={`${state.name} ${category.name.toLowerCase()} guide`}
+          />
+        )}
 
-        {STATE_CATEGORY_GUIDE_SECTIONS.map((section) => (
-          <GuideSectionShell key={section} title={section} />
-        ))}
+        {guide
+          ? STATE_CATEGORY_BODY_SECTIONS.map((section) => (
+              <GuideSectionShell key={section} title={section} pending={false}>
+                <Prose content={guide.sections[section]} />
+              </GuideSectionShell>
+            ))
+          : STATE_CATEGORY_GUIDE_SECTIONS.map((section) => (
+              <GuideSectionShell key={section} title={section} />
+            ))}
+
+        {guide?.faq && guide.faq.length > 0 && (
+          <FAQSection faqs={guide.faq} className="mt-0" />
+        )}
+
+        {guide?.sources && guide.sources.length > 0 && (
+          <SourcesList sources={guide.sources} className="mt-0" />
+        )}
 
         {(stateArticles.length > 0 || categoryArticles.length > 0) && (
           <section>

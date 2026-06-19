@@ -21,15 +21,23 @@ export function GuideSectionShell({
   );
 }
 
-/** Standard section headings for state+category guide pages (Phase 3 fills copy). */
-export const STATE_CATEGORY_GUIDE_SECTIONS = [
+/** Body copy sections for state+category guide pages (Phase 3 fills copy). */
+export const STATE_CATEGORY_BODY_SECTIONS = [
   "Overview",
   "Coverage Options to Consider",
   "State Requirements & Regulations",
   "Factors That May Affect Your Premium",
+] as const;
+
+/** All section headings including FAQ and sources (editorial checklist). */
+export const STATE_CATEGORY_GUIDE_SECTIONS = [
+  ...STATE_CATEGORY_BODY_SECTIONS,
   "Frequently Asked Questions",
   "Sources & References",
 ] as const;
+
+export type StateCategoryBodySection =
+  (typeof STATE_CATEGORY_BODY_SECTIONS)[number];
 
 /** Standard section headings for local city guide pages (Phase 3 fills copy). */
 export const LOCAL_GUIDE_SECTIONS = [

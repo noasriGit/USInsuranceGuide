@@ -145,6 +145,41 @@ export type FAQItem = z.infer<typeof FAQItemSchema>;
 export type Source = z.infer<typeof SourceSchema>;
 export type PlacementSlot = z.infer<typeof PlacementSlotSchema>;
 
+const stateCategorySectionTitles = [
+  "Overview",
+  "Coverage Options to Consider",
+  "State Requirements & Regulations",
+  "Factors That May Affect Your Premium",
+] as const;
+
+export const StateCategoryGuideFrontmatterSchema = z.object({
+  stateSlug: z.string(),
+  categorySlug: z.string(),
+  metaTitle: z.string(),
+  metaDescription: z.string(),
+  updatedAt: z.string(),
+  reviewer: z.string().optional(),
+  sections: z
+    .object({
+      Overview: z.string(),
+      "Coverage Options to Consider": z.string(),
+      "State Requirements & Regulations": z.string(),
+      "Factors That May Affect Your Premium": z.string(),
+    })
+    .strict(),
+  faq: z.array(FAQItemSchema).min(1),
+  sources: z.array(SourceSchema).min(1),
+  draft: z.boolean().optional(),
+});
+
+export type StateCategoryGuideFrontmatter = z.infer<
+  typeof StateCategoryGuideFrontmatterSchema
+>;
+
+export interface StateCategoryGuide extends StateCategoryGuideFrontmatter {
+  slug: string;
+}
+
 export interface Article extends ArticleFrontmatter {
   slug: string;
   content: string;
