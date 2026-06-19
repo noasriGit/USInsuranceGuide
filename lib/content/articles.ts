@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
-import { ArticleFrontmatterSchema, type Article } from "@/lib/schemas";
+import { ArticleFrontmatterSchema, type Article, type Category } from "@/lib/schemas";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content/articles");
 
@@ -41,6 +41,22 @@ export function getArticleBySlug(slug: string): Article | undefined {
 
 export function getArticlesByCategory(categorySlug: string): Article[] {
   return getArticles().filter((a) => a.category === categorySlug);
+}
+
+/** Featured explainers plus category-tagged articles for interim shell hubs. */
+export function getArticlesForCategoryHub(category: Category): Article[] {
+  const featured = (category.featuredArticleSlugs ?? [])
+    .map((slug) => getArticleBySlug(slug))
+    .filter((a): a is Article => a !== undefined);
+  const byCategory = getArticlesByCategory(category.slug);
+  const seen = new Set<string>();
+  const merged: Article[] = [];
+  for (const article of [...featured, ...byCategory]) {
+    if (seen.has(article.slug)) continue;
+    seen.add(article.slug);
+    merged.push(article);
+  }
+  return merged;
 }
 
 export function getArticlesByState(stateSlug: string): Article[] {

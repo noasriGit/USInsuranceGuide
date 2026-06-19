@@ -63,7 +63,8 @@
     "relatedCategories": ["business-insurance", "auto-insurance"],
     "launchPriority": 6,
     "active": true,
-    "contentReady": false
+    "contentReady": false,
+    "featuredArticleSlugs": ["commercial-auto-insurance-explained"]
   },
   {
     "slug": "general-liability-insurance",
@@ -74,7 +75,8 @@
     "relatedCategories": ["business-insurance"],
     "launchPriority": 7,
     "active": true,
-    "contentReady": false
+    "contentReady": false,
+    "featuredArticleSlugs": ["general-liability-insurance-explained"]
   },
   {
     "slug": "workers-compensation-insurance",
@@ -85,7 +87,8 @@
     "relatedCategories": ["business-insurance"],
     "launchPriority": 8,
     "active": true,
-    "contentReady": false
+    "contentReady": false,
+    "featuredArticleSlugs": ["workers-compensation-insurance-explained"]
   },
   {
     "slug": "landlord-insurance",
@@ -96,7 +99,8 @@
     "relatedCategories": ["home-insurance", "business-insurance"],
     "launchPriority": 9,
     "active": true,
-    "contentReady": false
+    "contentReady": false,
+    "interimNote": "A full landlord insurance hub guide is in development. Start with the state overviews below — each links to official resources and related renters coverage for tenants."
   },
   {
     "slug": "umbrella-insurance",
@@ -107,7 +111,8 @@
     "relatedCategories": ["auto-insurance", "home-insurance"],
     "launchPriority": 10,
     "active": true,
-    "contentReady": false
+    "contentReady": false,
+    "featuredArticleSlugs": ["umbrella-insurance-explained"]
   },
   {
     "slug": "flood-insurance",
@@ -118,6 +123,7 @@
     "relatedCategories": ["home-insurance"],
     "launchPriority": 11,
     "active": true,
-    "contentReady": false
+    "contentReady": false,
+    "featuredArticleSlugs": ["home-insurance-vs-flood-insurance"]
   }
 ]

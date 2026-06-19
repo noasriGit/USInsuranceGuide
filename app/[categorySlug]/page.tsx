@@ -5,11 +5,6 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleCard } from "@/components/content/ArticleCard";
 import { StateCard } from "@/components/content/StateCard";
-import { ContentPendingNotice } from "@/components/content/ContentPendingNotice";
-import {
-  GuideSectionShell,
-  CATEGORY_HUB_SECTIONS,
-} from "@/components/content/GuideSectionShell";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
 import { AdSlot } from "@/components/monetization/AdSlot";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -17,7 +12,7 @@ import { shouldIndexCategory } from "@/lib/content/indexing";
 import {
   getCategories,
   getCategoryBySlug,
-  getArticlesByCategory,
+  getArticlesForCategoryHub,
   getStates,
   isCategorySlug,
 } from "@/lib/content";
@@ -55,13 +50,16 @@ export default async function CategoryHubPage({ params }: PageProps) {
   const category = getCategoryBySlug(categorySlug);
   if (!category?.active) notFound();
 
-  const articles = getArticlesByCategory(categorySlug);
+  const articles = getArticlesForCategoryHub(category);
   const states = getStates();
   const partners = resolvePlacements({
     slot: "category-mid",
     categorySlug,
   });
   const isShell = !category.contentReady;
+  const hasFeatured = (category.featuredArticleSlugs?.length ?? 0) > 0;
+  const guidesHeading =
+    isShell && hasFeatured ? "Featured Guide" : "Related Guides";
 
   return (
     <Container className="py-8">
@@ -76,43 +74,19 @@ export default async function CategoryHubPage({ params }: PageProps) {
         description={category.shortDescription}
       />
 
-      {isShell && (
-        <div className="mt-6">
-          <ContentPendingNotice topic={`${category.name} hub`} />
-        </div>
+      {isShell && category.interimNote && (
+        <p className="mt-6 max-w-3xl text-sm leading-relaxed text-slate-600">
+          {category.interimNote}
+        </p>
       )}
 
       <div className="grid gap-10 py-10 lg:grid-cols-3">
         <div className="lg:col-span-2 space-y-10">
-          {isShell ? (
-            CATEGORY_HUB_SECTIONS.filter((s) => s !== "Explore by State").map(
-              (section) => (
-                <GuideSectionShell key={section} title={section} />
-              ),
-            )
-          ) : null}
-
-          <section>
-            <h2 className="text-xl font-bold text-slate-900">Explore by State</h2>
-            <p className="mt-2 text-sm text-slate-600">
-              State-specific {category.name.toLowerCase()} guides and resources.
-            </p>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {states.map((state) => (
-                <Link
-                  key={state.slug}
-                  href={`/states/${state.slug}/${categorySlug}/`}
-                  className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 hover:border-navy-200 hover:text-navy-800 transition-colors"
-                >
-                  {state.name} {category.name}
-                </Link>
-              ))}
-            </div>
-          </section>
-
           {articles.length > 0 && (
-            <section>
-              <h2 className="text-xl font-bold text-slate-900">Related Guides</h2>
+            <section aria-labelledby="category-guides-heading">
+              <h2 id="category-guides-heading" className="text-xl font-bold text-slate-900">
+                {guidesHeading}
+              </h2>
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 {articles.map((article) => (
                   <ArticleCard key={article.slug} article={article} />
@@ -121,10 +95,30 @@ export default async function CategoryHubPage({ params }: PageProps) {
             </section>
           )}
 
+          <section aria-labelledby="explore-by-state-heading">
+            <h2 id="explore-by-state-heading" className="text-xl font-bold text-slate-900">
+              Explore by State
+            </h2>
+            <p className="mt-2 text-sm text-slate-600">
+              State-specific {category.name.toLowerCase()} guides and resources.
+            </p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {states.map((state) => (
+                <Link
+                  key={state.slug}
+                  href={`/states/${state.slug}/${categorySlug}/`}
+                  className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 underline-offset-2 hover:border-navy-200 hover:text-navy-800 hover:underline transition-colors"
+                >
+                  {state.name} {category.name}
+                </Link>
+              ))}
+            </div>
+          </section>
+
           <ContextualCTA partners={partners} />
         </div>
 
-        <aside className="space-y-6">
+        <aside className="space-y-6" aria-label="Category sidebar">
           <AdSlot slot="category-sidebar" />
           <div>
             <h3 className="text-sm font-semibold text-slate-900">State Guides</h3>

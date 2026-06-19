@@ -22,6 +22,10 @@ export const CategorySchema = z.object({
   launchPriority: z.number(),
   active: z.boolean().default(true),
   contentReady: z.boolean().default(false),
+  /** Interim explainer links until Batch F full hub copy ships. */
+  featuredArticleSlugs: z.array(z.string()).optional(),
+  /** Short note for shell hubs without a featured explainer (e.g. landlord). */
+  interimNote: z.string().optional(),
 });
 
 export const StateSchema = z.object({
