@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "auto-insurance",
+    "name": "Auto Insurance",
+    "shortDescription": "Educational guides on auto insurance coverage, state requirements, and factors that may affect your premium.",
+    "metaTitle": "Auto Insurance Guides | US Insurance Guide",
+    "metaDescription": "Learn about auto insurance coverage options, state requirements, and factors that may affect your premium. Educational guides for consumers.",
+    "relatedCategories": ["renters-insurance", "umbrella-insurance"],
+    "launchPriority": 1,
+    "active": true
+  },
+  {
+    "slug": "home-insurance",
+    "name": "Home Insurance",
+    "shortDescription": "Educational guides on homeowners insurance, coverage types, and protection for your property.",
+    "metaTitle": "Home Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational guides on homeowners insurance coverage options, policy types, and factors to consider when protecting your home.",
+    "relatedCategories": ["renters-insurance", "flood-insurance", "umbrella-insurance"],
+    "launchPriority": 2,
+    "active": true
+  },
+  {
+    "slug": "renters-insurance",
+    "name": "Renters Insurance",
+    "shortDescription": "Practical information on renters insurance coverage for personal belongings and liability protection.",
+    "metaTitle": "Renters Insurance Guides | US Insurance Guide",
+    "metaDescription": "Learn about renters insurance coverage options, what policies may cover, and questions to ask a licensed insurance professional.",
+    "relatedCategories": ["auto-insurance", "home-insurance"],
+    "launchPriority": 3,
+    "active": true
+  },
+  {
+    "slug": "business-insurance",
+    "name": "Business Insurance",
+    "shortDescription": "Educational resources on business insurance types, including general liability, workers' compensation, and commercial auto.",
+    "metaTitle": "Business Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational guides on business insurance coverage options for small businesses and commercial operations.",
+    "relatedCategories": ["general-liability-insurance", "workers-compensation-insurance", "commercial-auto-insurance"],
+    "launchPriority": 4,
+    "active": true
+  },
+  {
+    "slug": "life-insurance",
+    "name": "Life Insurance",
+    "shortDescription": "Educational information on life insurance types and coverage considerations for individuals and families.",
+    "metaTitle": "Life Insurance Guides | US Insurance Guide",
+    "metaDescription": "Learn about life insurance coverage options and factors to consider. Educational guides — not financial or insurance advice.",
+    "relatedCategories": ["business-insurance"],
+    "launchPriority": 5,
+    "active": true
+  },
+  {
+    "slug": "commercial-auto-insurance",
+    "name": "Commercial Auto Insurance",
+    "shortDescription": "Coverage information for business-owned vehicles and commercial driving operations.",
+    "metaTitle": "Commercial Auto Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational guides on commercial auto insurance for business vehicles and fleets.",
+    "relatedCategories": ["business-insurance", "auto-insurance"],
+    "launchPriority": 6,
+    "active": false
+  },
+  {
+    "slug": "general-liability-insurance",
+    "name": "General Liability Insurance",
+    "shortDescription": "Educational guides on general liability coverage for businesses.",
+    "metaTitle": "General Liability Insurance Guides | US Insurance Guide",
+    "metaDescription": "Learn about general liability insurance coverage options for businesses.",
+    "relatedCategories": ["business-insurance"],
+    "launchPriority": 7,
+    "active": false
+  },
+  {
+    "slug": "workers-compensation-insurance",
+    "name": "Workers' Compensation Insurance",
+    "shortDescription": "State-specific information on workers' compensation requirements and coverage.",
+    "metaTitle": "Workers' Compensation Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational guides on workers' compensation insurance requirements and coverage options.",
+    "relatedCategories": ["business-insurance"],
+    "launchPriority": 8,
+    "active": false
+  },
+  {
+    "slug": "landlord-insurance",
+    "name": "Landlord Insurance",
+    "shortDescription": "Coverage information for rental property owners.",
+    "metaTitle": "Landlord Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational guides on landlord insurance for rental property owners.",
+    "relatedCategories": ["home-insurance", "business-insurance"],
+    "launchPriority": 9,
+    "active": false
+  },
+  {
+    "slug": "umbrella-insurance",
+    "name": "Umbrella Insurance",
+    "shortDescription": "Extra liability coverage beyond standard auto and home policies.",
+    "metaTitle": "Umbrella Insurance Guides | US Insurance Guide",
+    "metaDescription": "Learn about umbrella insurance as supplemental liability coverage.",
+    "relatedCategories": ["auto-insurance", "home-insurance"],
+    "launchPriority": 10,
+    "active": false
+  },
+  {
+    "slug": "flood-insurance",
+    "name": "Flood Insurance",
+    "shortDescription": "Separate flood coverage beyond standard homeowners policies.",
+    "metaTitle": "Flood Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational guides on flood insurance coverage separate from standard home insurance.",
+    "relatedCategories": ["home-insurance"],
+    "launchPriority": 11,
+    "active": false
+  }
+]

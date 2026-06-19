@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "virginia",
+    "name": "Virginia",
+    "abbreviation": "VA",
+    "metaTitle": "Virginia Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational insurance guides for Virginia residents and businesses. Auto, home, renters, business, and life insurance resources.",
+    "featuredCategories": ["auto-insurance", "home-insurance", "renters-insurance", "business-insurance", "life-insurance"],
+    "overview": "Virginia has specific insurance requirements and regulations that may affect coverage options for residents and businesses. Our educational guides cover auto insurance minimums, homeowners considerations, and business coverage topics relevant to the Commonwealth.",
+    "externalSources": [
+      {
+        "title": "Virginia Bureau of Insurance",
+        "url": "https://www.scc.virginia.gov/pages/Insurance",
+        "publisher": "Virginia SCC"
+      }
+    ]
+  },
+  {
+    "slug": "maryland",
+    "name": "Maryland",
+    "abbreviation": "MD",
+    "metaTitle": "Maryland Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational insurance guides for Maryland residents and businesses. Coverage information and state-specific resources.",
+    "featuredCategories": ["auto-insurance", "home-insurance", "renters-insurance", "business-insurance", "life-insurance"],
+    "overview": "Maryland maintains its own insurance requirements and regulatory framework. Our guides provide general educational information on auto insurance mandates, homeowners coverage, and business insurance topics for Maryland residents.",
+    "externalSources": [
+      {
+        "title": "Maryland Insurance Administration",
+        "url": "https://insurance.maryland.gov/",
+        "publisher": "Maryland Insurance Administration"
+      }
+    ]
+  },
+  {
+    "slug": "washington-dc",
+    "name": "Washington, D.C.",
+    "abbreviation": "DC",
+    "metaTitle": "Washington, D.C. Insurance Guides | US Insurance Guide",
+    "metaDescription": "Educational insurance guides for Washington, D.C. residents and businesses. Coverage information and local resources.",
+    "featuredCategories": ["auto-insurance", "home-insurance", "renters-insurance", "business-insurance", "life-insurance"],
+    "overview": "Washington, D.C. has distinct insurance requirements that differ from surrounding states. Our educational guides cover auto insurance mandates, renters coverage considerations, and business insurance topics for D.C. residents.",
+    "externalSources": [
+      {
+        "title": "DC Department of Insurance, Securities and Banking",
+        "url": "https://disb.dc.gov/",
+        "publisher": "DC DISB"
+      }
+    ]
+  }
+]

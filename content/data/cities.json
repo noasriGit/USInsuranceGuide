@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "fairfax",
+    "name": "Fairfax",
+    "stateSlug": "virginia",
+    "county": "Fairfax County",
+    "type": "city",
+    "metaTitle": "Fairfax, VA Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance considerations for Fairfax, Virginia residents and businesses.",
+    "coverageConsiderations": ["Suburban auto usage patterns", "Home values and replacement cost", "Flood zone considerations"],
+    "relatedCategories": ["auto-insurance", "home-insurance", "business-insurance"]
+  },
+  {
+    "slug": "arlington",
+    "name": "Arlington",
+    "stateSlug": "virginia",
+    "county": "Arlington County",
+    "type": "county",
+    "metaTitle": "Arlington, VA Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance considerations for Arlington, Virginia residents and businesses.",
+    "coverageConsiderations": ["Urban driving conditions", "Condo and rental coverage", "Business liability for local enterprises"],
+    "relatedCategories": ["auto-insurance", "renters-insurance", "business-insurance"]
+  }
+]
