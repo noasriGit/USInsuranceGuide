@@ -5,9 +5,15 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleCard } from "@/components/content/ArticleCard";
 import { StateCard } from "@/components/content/StateCard";
+import { ContentPendingNotice } from "@/components/content/ContentPendingNotice";
+import {
+  GuideSectionShell,
+  CATEGORY_HUB_SECTIONS,
+} from "@/components/content/GuideSectionShell";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
 import { AdSlot } from "@/components/monetization/AdSlot";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { shouldIndexCategory } from "@/lib/content/indexing";
 import {
   getCategories,
   getCategoryBySlug,
@@ -35,6 +41,7 @@ export async function generateMetadata({ params }: PageProps) {
     title: category.metaTitle,
     description: category.metaDescription,
     path: `/${categorySlug}/`,
+    noindex: !shouldIndexCategory(category),
   });
 }
 
@@ -54,6 +61,7 @@ export default async function CategoryHubPage({ params }: PageProps) {
     slot: "category-mid",
     categorySlug,
   });
+  const isShell = !category.contentReady;
 
   return (
     <Container className="py-8">
@@ -68,8 +76,22 @@ export default async function CategoryHubPage({ params }: PageProps) {
         description={category.shortDescription}
       />
 
+      {isShell && (
+        <div className="mt-6">
+          <ContentPendingNotice topic={`${category.name} hub`} />
+        </div>
+      )}
+
       <div className="grid gap-10 py-10 lg:grid-cols-3">
         <div className="lg:col-span-2 space-y-10">
+          {isShell ? (
+            CATEGORY_HUB_SECTIONS.filter((s) => s !== "Explore by State").map(
+              (section) => (
+                <GuideSectionShell key={section} title={section} />
+              ),
+            )
+          ) : null}
+
           <section>
             <h2 className="text-xl font-bold text-slate-900">Explore by State</h2>
             <p className="mt-2 text-sm text-slate-600">

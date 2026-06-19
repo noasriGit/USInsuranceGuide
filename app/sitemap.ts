@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
+import { getArticles, getCategories, getStates, getCities } from "@/lib/content";
 import {
-  getArticles,
-  getCategories,
-  getStates,
-} from "@/lib/content";
+  shouldIndexCategory,
+  shouldIndexCity,
+  shouldIndexStateCategoryPage,
+} from "@/lib/content/indexing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -12,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/blog/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/states/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE_URL}/insurance-agencies/`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/about/`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/editorial-policy/`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/advertising-disclosure/`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
@@ -23,7 +23,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/corrections/`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
 
+  if (SHOW_INSURANCE_DIRECTORY_NAV) {
+    entries.push({
+      url: `${SITE_URL}/insurance-agencies/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  }
+
   for (const category of getCategories(true)) {
+    if (!shouldIndexCategory(category)) continue;
     entries.push({
       url: `${SITE_URL}/${category.slug}/`,
       lastModified: now,
@@ -39,18 +49,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     });
-    entries.push({
-      url: `${SITE_URL}/insurance-agencies/${state.slug}/`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    });
-    for (const categorySlug of state.featuredCategories) {
+
+    if (SHOW_INSURANCE_DIRECTORY_NAV) {
       entries.push({
-        url: `${SITE_URL}/states/${state.slug}/${categorySlug}/`,
+        url: `${SITE_URL}/insurance-agencies/${state.slug}/`,
         lastModified: now,
         changeFrequency: "monthly",
-        priority: 0.8,
+        priority: 0.6,
+      });
+    }
+
+    if (shouldIndexStateCategoryPage()) {
+      for (const categorySlug of state.featuredCategories) {
+        entries.push({
+          url: `${SITE_URL}/states/${state.slug}/${categorySlug}/`,
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.8,
+        });
+      }
+    }
+
+    for (const city of getCities(state.slug)) {
+      if (!shouldIndexCity(city)) continue;
+      entries.push({
+        url: `${SITE_URL}/states/${state.slug}/${city.slug}/`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.7,
       });
     }
   }

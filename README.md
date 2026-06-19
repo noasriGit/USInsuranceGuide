@@ -24,6 +24,7 @@ npm start
 
 - **Articles:** `content/articles/*.md` (gray-matter frontmatter)
 - **Data:** `content/data/*.json` (categories, states, partners, etc.)
+- **Phases:** See [CONTENT_PHASES.md](./CONTENT_PHASES.md) for structure vs editorial workflow
 
 ## Adding content
 

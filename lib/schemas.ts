@@ -21,6 +21,7 @@ export const CategorySchema = z.object({
   relatedCategories: z.array(z.string()),
   launchPriority: z.number(),
   active: z.boolean().default(true),
+  contentReady: z.boolean().default(false),
 });
 
 export const StateSchema = z.object({
@@ -44,6 +45,7 @@ export const CitySchema = z.object({
   metaDescription: z.string(),
   coverageConsiderations: z.array(z.string()),
   relatedCategories: z.array(z.string()),
+  contentReady: z.boolean().default(false),
 });
 
 export const AuthorSchema = z.object({

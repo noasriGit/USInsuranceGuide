@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleCard } from "@/components/content/ArticleCard";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
+import { SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo/metadata";
 import {
   getStates,
@@ -109,14 +110,16 @@ export default async function StateHubPage({ params }: PageProps) {
             </section>
           )}
 
-          <section>
-            <Link
-              href={`/insurance-agencies/${stateSlug}/`}
-              className="inline-flex items-center text-sm font-medium text-navy-700 hover:text-navy-900"
-            >
-              Find insurance professionals in {state.name} →
-            </Link>
-          </section>
+          {SHOW_INSURANCE_DIRECTORY_NAV && (
+            <section>
+              <Link
+                href={`/insurance-agencies/${stateSlug}/`}
+                className="inline-flex items-center text-sm font-medium text-navy-700 hover:text-navy-900"
+              >
+                Find insurance professionals in {state.name} →
+              </Link>
+            </section>
+          )}
 
           <ContextualCTA partners={partners} />
         </div>

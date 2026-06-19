@@ -3,11 +3,25 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
+import { ArticleCard } from "@/components/content/ArticleCard";
+import { ContentPendingNotice } from "@/components/content/ContentPendingNotice";
+import {
+  GuideSectionShell,
+  STATE_CATEGORY_GUIDE_SECTIONS,
+  LOCAL_GUIDE_SECTIONS,
+} from "@/components/content/GuideSectionShell";
 import { ArticleDisclaimer } from "@/components/compliance/ArticleDisclaimer";
 import { LicensedProfessionalCTA } from "@/components/compliance/LicensedProfessionalCTA";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
+import { SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo/metadata";
 import {
+  shouldIndexCity,
+  shouldIndexStateCategoryPage,
+} from "@/lib/content/indexing";
+import {
+  getCategories,
+  getCities,
   getStates,
   getStateBySlug,
   resolveSegmentSlug,
@@ -22,11 +36,15 @@ interface PageProps {
 
 export async function generateStaticParams() {
   const states = getStates();
+  const categories = getCategories(true);
   const params: { stateSlug: string; segmentSlug: string }[] = [];
 
   for (const state of states) {
-    for (const categorySlug of state.featuredCategories) {
-      params.push({ stateSlug: state.slug, segmentSlug: categorySlug });
+    for (const category of categories) {
+      params.push({ stateSlug: state.slug, segmentSlug: category.slug });
+    }
+    for (const city of getCities(state.slug)) {
+      params.push({ stateSlug: state.slug, segmentSlug: city.slug });
     }
   }
 
@@ -44,6 +62,7 @@ export async function generateMetadata({ params }: PageProps) {
       title: `${state.name} ${resolved.data.name} Guide`,
       description: `Educational ${resolved.data.name.toLowerCase()} guide for ${state.name}. General information on coverage options and state considerations.`,
       path: `/states/${stateSlug}/${segmentSlug}/`,
+      noindex: !shouldIndexStateCategoryPage(),
     });
   }
 
@@ -51,6 +70,7 @@ export async function generateMetadata({ params }: PageProps) {
     title: resolved.data.metaTitle,
     description: resolved.data.metaDescription,
     path: `/states/${stateSlug}/${segmentSlug}/`,
+    noindex: !shouldIndexCity(resolved.data),
   });
 }
 
@@ -85,16 +105,14 @@ export default async function StateSegmentPage({ params }: PageProps) {
           description={city.metaDescription}
         />
         <div className="py-10 max-w-3xl space-y-8">
+          <ContentPendingNotice topic={`${city.name} local guide`} />
+
+          {LOCAL_GUIDE_SECTIONS.map((section) => (
+            <GuideSectionShell key={section} title={section} />
+          ))}
+
           <section>
-            <h2 className="text-xl font-bold text-slate-900">Coverage Considerations</h2>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-600">
-              {city.coverageConsiderations.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </section>
-          <section>
-            <h2 className="text-xl font-bold text-slate-900">Related Guides</h2>
+            <h2 className="text-xl font-bold text-slate-900">Related Category Guides</h2>
             <div className="mt-4 flex flex-wrap gap-2">
               {city.relatedCategories.map((catSlug) => (
                 <Link
@@ -107,6 +125,7 @@ export default async function StateSegmentPage({ params }: PageProps) {
               ))}
             </div>
           </section>
+
           <LicensedProfessionalCTA />
           <ArticleDisclaimer />
         </div>
@@ -137,15 +156,17 @@ export default async function StateSegmentPage({ params }: PageProps) {
       />
 
       <div className="py-10 max-w-3xl space-y-8">
-        <p className="text-slate-600 leading-relaxed">
-          {category.name} requirements and options in {state.name} may differ from other states.
-          This page provides general educational information. Speak with a licensed insurance
-          professional in {state.name} for guidance specific to your situation.
-        </p>
+        <ContentPendingNotice
+          topic={`${state.name} ${category.name.toLowerCase()} guide`}
+        />
+
+        {STATE_CATEGORY_GUIDE_SECTIONS.map((section) => (
+          <GuideSectionShell key={section} title={section} />
+        ))}
 
         {(stateArticles.length > 0 || categoryArticles.length > 0) && (
           <section>
-            <h2 className="text-xl font-bold text-slate-900">Related Guides</h2>
+            <h2 className="text-xl font-bold text-slate-900">Related Published Guides</h2>
             <ul className="mt-4 space-y-2">
               {[...stateArticles, ...categoryArticles]
                 .filter(
@@ -166,12 +187,14 @@ export default async function StateSegmentPage({ params }: PageProps) {
           </section>
         )}
 
-        <Link
-          href={`/insurance-agencies/${stateSlug}/`}
-          className="inline-flex text-sm font-medium text-navy-700 hover:text-navy-900"
-        >
-          Local insurance resources in {state.name} →
-        </Link>
+        {SHOW_INSURANCE_DIRECTORY_NAV && (
+          <Link
+            href={`/insurance-agencies/${stateSlug}/`}
+            className="inline-flex text-sm font-medium text-navy-700 hover:text-navy-900"
+          >
+            Local insurance resources in {state.name} →
+          </Link>
+        )}
 
         <ContextualCTA partners={partners} />
         <LicensedProfessionalCTA />

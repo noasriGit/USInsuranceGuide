@@ -5,6 +5,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { DirectoryListing } from "@/components/monetization/DirectoryListing";
 import { LicensedProfessionalCTA } from "@/components/compliance/LicensedProfessionalCTA";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
 import { getStates, getStateBySlug, getPartnersByState } from "@/lib/content";
 
 interface PageProps {
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: PageProps) {
     title: `${state.name} Insurance Professionals Directory`,
     description: `Find insurance professionals serving ${state.name}. Educational directory — sponsored listings are clearly labeled.`,
     path: `/insurance-agencies/${stateSlug}/`,
+    noindex: !SHOW_INSURANCE_DIRECTORY_NAV,
   });
 }
 

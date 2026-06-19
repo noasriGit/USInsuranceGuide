@@ -6,9 +6,10 @@
     "county": "Fairfax County",
     "type": "city",
     "metaTitle": "Fairfax, VA Insurance Guide | US Insurance Guide",
-    "metaDescription": "Local insurance considerations for Fairfax, Virginia residents and businesses.",
-    "coverageConsiderations": ["Suburban auto usage patterns", "Home values and replacement cost", "Flood zone considerations"],
-    "relatedCategories": ["auto-insurance", "home-insurance", "business-insurance"]
+    "metaDescription": "Local insurance guide for Fairfax, Virginia — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "home-insurance", "business-insurance"],
+    "contentReady": false
   },
   {
     "slug": "arlington",
@@ -17,8 +18,92 @@
     "county": "Arlington County",
     "type": "county",
     "metaTitle": "Arlington, VA Insurance Guide | US Insurance Guide",
-    "metaDescription": "Local insurance considerations for Arlington, Virginia residents and businesses.",
-    "coverageConsiderations": ["Urban driving conditions", "Condo and rental coverage", "Business liability for local enterprises"],
-    "relatedCategories": ["auto-insurance", "renters-insurance", "business-insurance"]
+    "metaDescription": "Local insurance guide for Arlington, Virginia — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "renters-insurance", "business-insurance"],
+    "contentReady": false
+  },
+  {
+    "slug": "alexandria",
+    "name": "Alexandria",
+    "stateSlug": "virginia",
+    "county": "Alexandria City",
+    "type": "city",
+    "metaTitle": "Alexandria, VA Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance guide for Alexandria, Virginia — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "home-insurance", "renters-insurance"],
+    "contentReady": false
+  },
+  {
+    "slug": "loudoun-county",
+    "name": "Loudoun County",
+    "stateSlug": "virginia",
+    "county": "Loudoun County",
+    "type": "county",
+    "metaTitle": "Loudoun County, VA Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance guide for Loudoun County, Virginia — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "home-insurance", "business-insurance"],
+    "contentReady": false
+  },
+  {
+    "slug": "prince-william-county",
+    "name": "Prince William County",
+    "stateSlug": "virginia",
+    "county": "Prince William County",
+    "type": "county",
+    "metaTitle": "Prince William County, VA Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance guide for Prince William County, Virginia — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "home-insurance", "business-insurance"],
+    "contentReady": false
+  },
+  {
+    "slug": "bethesda",
+    "name": "Bethesda",
+    "stateSlug": "maryland",
+    "county": "Montgomery County",
+    "type": "city",
+    "metaTitle": "Bethesda, MD Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance guide for Bethesda, Maryland — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "home-insurance", "renters-insurance"],
+    "contentReady": false
+  },
+  {
+    "slug": "rockville",
+    "name": "Rockville",
+    "stateSlug": "maryland",
+    "county": "Montgomery County",
+    "type": "city",
+    "metaTitle": "Rockville, MD Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance guide for Rockville, Maryland — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "home-insurance", "business-insurance"],
+    "contentReady": false
+  },
+  {
+    "slug": "silver-spring",
+    "name": "Silver Spring",
+    "stateSlug": "maryland",
+    "county": "Montgomery County",
+    "type": "city",
+    "metaTitle": "Silver Spring, MD Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance guide for Silver Spring, Maryland — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "renters-insurance", "business-insurance"],
+    "contentReady": false
+  },
+  {
+    "slug": "washington-dc",
+    "name": "Washington, D.C.",
+    "stateSlug": "washington-dc",
+    "type": "district",
+    "metaTitle": "Washington, D.C. Local Insurance Guide | US Insurance Guide",
+    "metaDescription": "Local insurance guide for Washington, D.C. — educational resources for residents and businesses.",
+    "coverageConsiderations": [],
+    "relatedCategories": ["auto-insurance", "renters-insurance", "business-insurance"],
+    "contentReady": false
   }
 ]

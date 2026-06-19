@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { SITE_NAME } from "@/lib/constants";
+import { SITE_NAME, SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
 import { getStates } from "@/lib/content/data";
 
 const headerLinks = [
@@ -71,12 +71,14 @@ export function SiteHeader() {
             )}
           </div>
 
-          <Link
-            href="/insurance-agencies/"
-            className="ml-2 rounded-md bg-navy-800 px-4 py-2 text-sm font-medium text-white hover:bg-navy-900 transition-colors"
-          >
-            Find an Insurance Professional
-          </Link>
+          {SHOW_INSURANCE_DIRECTORY_NAV && (
+            <Link
+              href="/insurance-agencies/"
+              className="ml-2 rounded-md bg-navy-800 px-4 py-2 text-sm font-medium text-white hover:bg-navy-900 transition-colors"
+            >
+              Find an Insurance Professional
+            </Link>
+          )}
         </nav>
 
         <button
@@ -115,13 +117,15 @@ export function SiteHeader() {
                 {state.name}
               </Link>
             ))}
-            <Link
-              href="/insurance-agencies/"
-              className="mt-2 rounded-md bg-navy-800 px-3 py-2.5 text-center text-sm font-medium text-white"
-              onClick={() => setMobileOpen(false)}
-            >
-              Find an Insurance Professional
-            </Link>
+            {SHOW_INSURANCE_DIRECTORY_NAV && (
+              <Link
+                href="/insurance-agencies/"
+                className="mt-2 rounded-md bg-navy-800 px-3 py-2.5 text-center text-sm font-medium text-white"
+                onClick={() => setMobileOpen(false)}
+              >
+                Find an Insurance Professional
+              </Link>
+            )}
           </div>
         </nav>
       )}

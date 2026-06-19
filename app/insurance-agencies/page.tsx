@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { LicensedProfessionalCTA } from "@/components/compliance/LicensedProfessionalCTA";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
 import { getStates } from "@/lib/content";
 
 export const metadata = buildMetadata({
@@ -11,6 +12,7 @@ export const metadata = buildMetadata({
   description:
     "Directory of insurance professionals by state. Educational resource — not an endorsement. Sponsored listings are clearly labeled.",
   path: "/insurance-agencies/",
+  noindex: !SHOW_INSURANCE_DIRECTORY_NAV,
 });
 
 export default function DirectoryIndexPage() {

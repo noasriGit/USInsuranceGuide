@@ -8,6 +8,7 @@ interface MetadataOptions {
   type?: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
+  noindex?: boolean;
 }
 
 export function buildMetadata({
@@ -17,6 +18,7 @@ export function buildMetadata({
   type = "website",
   publishedTime,
   modifiedTime,
+  noindex = false,
 }: MetadataOptions): Metadata {
   const url = `${SITE_URL}${path}`;
   const fullTitle = title.includes(SITE_NAME)
@@ -27,6 +29,7 @@ export function buildMetadata({
     title: fullTitle,
     description,
     alternates: { canonical: url },
+    robots: noindex ? { index: false, follow: true } : undefined,
     openGraph: {
       title: fullTitle,
       description,

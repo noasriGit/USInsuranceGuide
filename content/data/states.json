@@ -5,7 +5,19 @@
     "abbreviation": "VA",
     "metaTitle": "Virginia Insurance Guides | US Insurance Guide",
     "metaDescription": "Educational insurance guides for Virginia residents and businesses. Auto, home, renters, business, and life insurance resources.",
-    "featuredCategories": ["auto-insurance", "home-insurance", "renters-insurance", "business-insurance", "life-insurance"],
+    "featuredCategories": [
+      "auto-insurance",
+      "home-insurance",
+      "renters-insurance",
+      "business-insurance",
+      "life-insurance",
+      "commercial-auto-insurance",
+      "general-liability-insurance",
+      "workers-compensation-insurance",
+      "landlord-insurance",
+      "umbrella-insurance",
+      "flood-insurance"
+    ],
     "overview": "Virginia has specific insurance requirements and regulations that may affect coverage options for residents and businesses. Our educational guides cover auto insurance minimums, homeowners considerations, and business coverage topics relevant to the Commonwealth.",
     "externalSources": [
       {
@@ -21,7 +33,19 @@
     "abbreviation": "MD",
     "metaTitle": "Maryland Insurance Guides | US Insurance Guide",
     "metaDescription": "Educational insurance guides for Maryland residents and businesses. Coverage information and state-specific resources.",
-    "featuredCategories": ["auto-insurance", "home-insurance", "renters-insurance", "business-insurance", "life-insurance"],
+    "featuredCategories": [
+      "auto-insurance",
+      "home-insurance",
+      "renters-insurance",
+      "business-insurance",
+      "life-insurance",
+      "commercial-auto-insurance",
+      "general-liability-insurance",
+      "workers-compensation-insurance",
+      "landlord-insurance",
+      "umbrella-insurance",
+      "flood-insurance"
+    ],
     "overview": "Maryland maintains its own insurance requirements and regulatory framework. Our guides provide general educational information on auto insurance mandates, homeowners coverage, and business insurance topics for Maryland residents.",
     "externalSources": [
       {
@@ -37,7 +61,19 @@
     "abbreviation": "DC",
     "metaTitle": "Washington, D.C. Insurance Guides | US Insurance Guide",
     "metaDescription": "Educational insurance guides for Washington, D.C. residents and businesses. Coverage information and local resources.",
-    "featuredCategories": ["auto-insurance", "home-insurance", "renters-insurance", "business-insurance", "life-insurance"],
+    "featuredCategories": [
+      "auto-insurance",
+      "home-insurance",
+      "renters-insurance",
+      "business-insurance",
+      "life-insurance",
+      "commercial-auto-insurance",
+      "general-liability-insurance",
+      "workers-compensation-insurance",
+      "landlord-insurance",
+      "umbrella-insurance",
+      "flood-insurance"
+    ],
     "overview": "Washington, D.C. has distinct insurance requirements that differ from surrounding states. Our educational guides cover auto insurance mandates, renters coverage considerations, and business insurance topics for D.C. residents.",
     "externalSources": [
       {
