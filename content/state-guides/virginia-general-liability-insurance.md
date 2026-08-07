@@ -1,8 +1,8 @@
 ---
 stateSlug: virginia
 categorySlug: general-liability-insurance
-metaTitle: "Virginia General Liability Insurance | State Guide"
-metaDescription: "Brief overview of general liability insurance for Virginia businesses — what it covers and when it may be required."
+metaTitle: "Virginia General Liability Guide"
+metaDescription: "Overview of general liability insurance for Virginia businesses — what it may cover and when contracts or landlords require it."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -24,7 +24,7 @@ sections:
     - Government procurement
     - Professional licensing boards
 
-    Insurers are regulated by the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/pages/Insurance).
+    Insurers are regulated by the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/).
   Factors That May Affect Your Premium: |
     Industry type, revenue, payroll, claims history, coverage limits, location, and operations (subcontractors, public access) may affect GL premium.
 faq:
@@ -38,7 +38,7 @@ faq:
     answer: "See our general liability explainer and business insurance in Virginia guide, or consult the Virginia Bureau of Insurance."
 sources:
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "General Liability Insurance Explained"
     url: "https://usinsuranceguide.com/blog/general-liability-insurance-explained/"

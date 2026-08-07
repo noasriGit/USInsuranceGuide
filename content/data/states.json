@@ -3,7 +3,7 @@
     "slug": "virginia",
     "name": "Virginia",
     "abbreviation": "VA",
-    "metaTitle": "Virginia Insurance Guides | US Insurance Guide",
+    "metaTitle": "Virginia Insurance Guides",
     "metaDescription": "Educational insurance guides for Virginia residents and businesses. Auto, home, renters, business, and life insurance resources.",
     "featuredCategories": [
       "auto-insurance",
@@ -22,7 +22,7 @@
     "externalSources": [
       {
         "title": "Virginia Bureau of Insurance",
-        "url": "https://www.scc.virginia.gov/pages/Insurance",
+        "url": "https://www.scc.virginia.gov/consumers/insurance/",
         "publisher": "Virginia SCC"
       }
     ]
@@ -31,8 +31,8 @@
     "slug": "maryland",
     "name": "Maryland",
     "abbreviation": "MD",
-    "metaTitle": "Maryland Insurance Guides | US Insurance Guide",
-    "metaDescription": "Educational insurance guides for Maryland residents and businesses. Coverage information and state-specific resources.",
+    "metaTitle": "Maryland Insurance Guides",
+    "metaDescription": "Educational insurance guides for Maryland residents and businesses covering auto, home, renters, business, and life insurance resources.",
     "featuredCategories": [
       "auto-insurance",
       "home-insurance",
@@ -50,7 +50,7 @@
     "externalSources": [
       {
         "title": "Maryland Insurance Administration",
-        "url": "https://insurance.maryland.gov/",
+        "url": "https://insurance.maryland.gov/Pages/default.aspx",
         "publisher": "Maryland Insurance Administration"
       }
     ]
@@ -59,8 +59,8 @@
     "slug": "washington-dc",
     "name": "Washington, D.C.",
     "abbreviation": "DC",
-    "metaTitle": "Washington, D.C. Insurance Guides | US Insurance Guide",
-    "metaDescription": "Educational insurance guides for Washington, D.C. residents and businesses. Coverage information and local resources.",
+    "metaTitle": "Washington, D.C. Insurance Guides",
+    "metaDescription": "Educational insurance guides for Washington, D.C. residents and businesses covering auto, home, renters, business, and life insurance resources.",
     "featuredCategories": [
       "auto-insurance",
       "home-insurance",

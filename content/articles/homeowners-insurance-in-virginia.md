@@ -1,7 +1,7 @@
 ---
 title: "Homeowners Insurance in Virginia"
-metaTitle: "Homeowners Insurance in Virginia (2025) | Coverage Basics & What to Know"
-metaDescription: "Virginia homeowners insurance covers dwelling, personal property, and liability. Learn standard coverages, regional risks, flood gaps, and what to ask a licensed agent."
+metaTitle: "Homeowners Insurance in Virginia"
+metaDescription: "Virginia homeowners insurance covers dwelling, personal property, and liability. Learn coverages, regional risks, flood gaps, and agent questions."
 excerpt: "Virginia homeowners insurance typically covers your dwelling, personal belongings, and liability — but not flood damage. This guide explains standard coverages, regional risks, and what to discuss with a licensed professional."
 type: guide
 category: home-insurance
@@ -33,7 +33,7 @@ sources:
     url: "https://www.scc.virginia.gov/consumers/insurance/property-casualty-consumer/p-c-shopping-tips/"
     publisher: "Virginia State Corporation Commission"
   - title: "FEMA — Flood Insurance"
-    url: "https://www.fema.gov/flood-insurance"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
   - title: "Home Insurance vs Flood Insurance"
     url: "https://usinsuranceguide.com/blog/home-insurance-vs-flood-insurance/"
@@ -45,7 +45,7 @@ sources:
 
 Homeowners insurance is one of the most important financial protections for Virginia property owners — yet many people do not think about it until they need to file a claim. A standard policy can help you recover from fire, theft, wind damage, and liability claims, but it does not cover every type of loss.
 
-This guide summarizes homeowners insurance considerations for Virginia residents based on official resources from the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/pages/Insurance). It is educational information, not a coverage recommendation. Policy language varies by carrier. A licensed insurance professional can help you evaluate limits, endorsements, and gaps specific to your home.
+This guide summarizes homeowners insurance considerations for Virginia residents based on official resources from the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/). It is educational information, not a coverage recommendation. Policy language varies by carrier. A licensed insurance professional can help you evaluate limits, endorsements, and gaps specific to your home.
 
 For broader context, see our [Virginia insurance guides](/states/virginia/) and [home insurance category hub](/home-insurance/). For the important distinction between homeowners and flood coverage, see our [home insurance vs flood insurance guide](/blog/home-insurance-vs-flood-insurance/).
 

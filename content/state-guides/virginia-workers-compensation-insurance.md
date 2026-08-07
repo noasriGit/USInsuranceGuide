@@ -1,8 +1,8 @@
 ---
 stateSlug: virginia
 categorySlug: workers-compensation-insurance
-metaTitle: "Virginia Workers' Compensation | State Guide"
-metaDescription: "Brief overview of Virginia workers' compensation — 3+ employee threshold, employer duties, and official resources."
+metaTitle: "Virginia Workers Comp Guide"
+metaDescription: "Overview of Virginia workers' compensation — the three-or-more employee threshold, employer duties, and official resources."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

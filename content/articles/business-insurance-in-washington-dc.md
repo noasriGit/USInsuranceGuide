@@ -1,7 +1,7 @@
 ---
 title: "Business Insurance in Washington, D.C."
-metaTitle: "Business Insurance in Washington, D.C. (2025) | Coverage & Requirements"
-metaDescription: "D.C. businesses may need general liability, workers' comp, commercial auto, and property coverage. Learn District-specific requirements and coverage options."
+metaTitle: "Business Insurance in Washington, D.C."
+metaDescription: "D.C. businesses may need general liability, workers comp, commercial auto, and property coverage. Learn District requirements and options."
 excerpt: "Washington, D.C. employers with one or more employees must carry workers' compensation insurance. This guide covers required and optional business coverage types for District operations."
 type: guide
 category: business-insurance

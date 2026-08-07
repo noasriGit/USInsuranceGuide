@@ -1,7 +1,7 @@
 ---
 stateSlug: virginia
 categorySlug: auto-insurance
-metaTitle: "Virginia Auto Insurance (2025) | State Guide"
+metaTitle: "Virginia Auto Insurance Guide"
 metaDescription: "Virginia requires 50/100/25 liability and matching UM/UIM coverage. Summary of mandatory limits and where to learn more."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
@@ -35,7 +35,7 @@ faq:
     answer: "DMV may suspend your license and registration. Reinstatement typically requires fees, proof of insurance, and often an SR-22 filing for three years."
 sources:
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Auto Insurance Requirements (full guide)"
     url: "https://usinsuranceguide.com/blog/virginia-auto-insurance-requirements/"

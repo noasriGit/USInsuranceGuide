@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: commercial-auto-insurance
-metaTitle: "Washington, D.C. Commercial Auto Insurance | State Guide"
-metaDescription: "Brief overview of commercial auto insurance in D.C. — when it's needed and District minimum liability limits."
+metaTitle: "D.C. Commercial Auto Guide"
+metaDescription: "Overview of commercial auto insurance in D.C. — when businesses may need it and how District minimum liability limits apply."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

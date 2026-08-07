@@ -1,8 +1,8 @@
 ---
 stateSlug: virginia
 categorySlug: landlord-insurance
-metaTitle: "Virginia Landlord Insurance | State Guide"
-metaDescription: "Brief overview of landlord insurance in Virginia — how it differs from homeowners coverage and what rental property owners may consider."
+metaTitle: "Virginia Landlord Insurance"
+metaDescription: "Overview of landlord insurance in Virginia — how it differs from homeowners coverage and what rental property owners may consider."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -23,7 +23,7 @@ sections:
   State Requirements & Regulations: |
     Virginia does not mandate landlord insurance by statute. Mortgage lenders on rental properties typically require property coverage.
 
-    Landlord-tenant insurance obligations may also appear in lease agreements. Insurers are regulated by the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/pages/Insurance).
+    Landlord-tenant insurance obligations may also appear in lease agreements. Insurers are regulated by the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/).
   Factors That May Affect Your Premium: |
     Property location, age, construction, number of units, occupancy type, claims history, coverage limits, and whether the property is short-term vs long-term rental may affect premium.
 faq:
@@ -37,7 +37,7 @@ faq:
     answer: "Standard property policies typically exclude flood. Separate flood insurance may be needed for flood-prone rental properties."
 sources:
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Homeowners Insurance Guide"
     url: "https://www.scc.virginia.gov/consumers/insurance/property-casualty-consumer/virginia-homeowners-insurance-guide/"

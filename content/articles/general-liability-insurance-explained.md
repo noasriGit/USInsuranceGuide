@@ -1,7 +1,7 @@
 ---
 title: "General Liability Insurance Explained"
-metaTitle: "General Liability Insurance Explained | What It Covers & Who Needs It"
-metaDescription: "General liability insurance may cover third-party bodily injury, property damage, and advertising injury. Learn what GL covers, excludes, and who may need it."
+metaTitle: "General Liability Insurance Explained"
+metaDescription: "General liability may cover third-party bodily injury, property damage, and advertising injury. Learn what GL covers, excludes, and who may need it."
 excerpt: "General liability insurance is one of the most common business policies. This explainer covers what GL may protect against, typical exclusions, and how limits work."
 type: explainer
 category: business-insurance
@@ -25,10 +25,10 @@ faq:
     answer: "There is no universal answer. Contractual requirements, industry norms, business size, and risk exposure all play a role. Common limits include $1 million per occurrence / $2 million aggregate, but your needs may differ. A licensed insurance professional can help you evaluate appropriate limits."
 sources:
   - title: "Virginia Bureau of Insurance — Commercial Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "DC DISB — Introduction to Liability Insurance"
     url: "https://disb.dc.gov/page/introduction-liability-insurance"

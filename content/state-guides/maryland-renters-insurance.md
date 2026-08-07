@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: renters-insurance
-metaTitle: "Maryland Renters Insurance | State Guide"
-metaDescription: "Brief overview of Maryland renters insurance — what it covers, landlord vs tenant protection, and official resources."
+metaTitle: "Maryland Renters Insurance"
+metaDescription: "Overview of Maryland renters insurance — what it covers, how it differs from landlord coverage, and official consumer resources."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -38,7 +38,7 @@ sources:
     url: "https://insurance.maryland.gov/Consumer/pages/homeownersandrentersinsurance.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Why You Should Consider Renters Insurance (PDF)"
-    url: "https://insurance.maryland.gov/consumer/documents/publications/rentersinsurance.pdf"
+    url: "https://insurance.maryland.gov/Consumer/pages/homeownersandrentersinsurance.aspx"
     publisher: "Maryland Insurance Administration"
 ---
 

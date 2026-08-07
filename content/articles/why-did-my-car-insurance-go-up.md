@@ -1,7 +1,7 @@
 ---
 title: "Why Did My Car Insurance Go Up?"
-metaTitle: "Why Did My Car Insurance Go Up? | Common Premium Factors"
-metaDescription: "Car insurance premiums can rise without an accident. Learn common factors — claims history, location, vehicle changes, and regional trends — and what you can do."
+metaTitle: "Why Did My Car Insurance Go Up?"
+metaDescription: "Car insurance premiums can rise without an accident. Learn common factors like claims history, location, vehicle changes, and regional trends."
 excerpt: "A rate increase at renewal doesn't always mean you did something wrong. This guide explains common factors that may raise your auto insurance premium and practical steps to take."
 type: article
 category: auto-insurance
@@ -25,7 +25,7 @@ faq:
     answer: "It depends on what caused the increase. Some factors — like a violation falling off your record after three to five years — may reduce premiums over time. Base rate increases driven by industry trends may persist until insurers adjust rates downward."
 sources:
   - title: "Virginia Bureau of Insurance — Automobile Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Maryland Insurance Administration — Auto Insurance Guide"
     url: "https://insurance.maryland.gov/consumer/documents/publications/autoinsuranceguide.pdf"

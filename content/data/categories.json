@@ -3,9 +3,12 @@
     "slug": "auto-insurance",
     "name": "Auto Insurance",
     "shortDescription": "Educational guides on auto insurance coverage, state requirements, and factors that may affect your premium.",
-    "metaTitle": "Auto Insurance Guides | US Insurance Guide",
-    "metaDescription": "Learn about auto insurance coverage options, state requirements, and factors that may affect your premium. Educational guides for consumers.",
-    "relatedCategories": ["renters-insurance", "umbrella-insurance"],
+    "metaTitle": "Auto Insurance Guides",
+    "metaDescription": "Learn about auto insurance coverage options, state requirements, and premium factors. Educational guides for consumers in Virginia, Maryland, and D.C.",
+    "relatedCategories": [
+      "renters-insurance",
+      "umbrella-insurance"
+    ],
     "launchPriority": 1,
     "active": true,
     "contentReady": true
@@ -14,9 +17,13 @@
     "slug": "home-insurance",
     "name": "Home Insurance",
     "shortDescription": "Educational guides on homeowners insurance, coverage types, and protection for your property.",
-    "metaTitle": "Home Insurance Guides | US Insurance Guide",
-    "metaDescription": "Educational guides on homeowners insurance coverage options, policy types, and factors to consider when protecting your home.",
-    "relatedCategories": ["renters-insurance", "flood-insurance", "umbrella-insurance"],
+    "metaTitle": "Home Insurance Guides",
+    "metaDescription": "Educational guides on homeowners insurance coverage options, policy types, and factors to consider when protecting a home in VA, MD, and D.C.",
+    "relatedCategories": [
+      "renters-insurance",
+      "flood-insurance",
+      "umbrella-insurance"
+    ],
     "launchPriority": 2,
     "active": true,
     "contentReady": true
@@ -25,9 +32,12 @@
     "slug": "renters-insurance",
     "name": "Renters Insurance",
     "shortDescription": "Practical information on renters insurance coverage for personal belongings and liability protection.",
-    "metaTitle": "Renters Insurance Guides | US Insurance Guide",
-    "metaDescription": "Learn about renters insurance coverage options, what policies may cover, and questions to ask a licensed insurance professional.",
-    "relatedCategories": ["auto-insurance", "home-insurance"],
+    "metaTitle": "Renters Insurance Guides",
+    "metaDescription": "Learn about renters insurance coverage options, what policies may cover, and questions to ask a licensed professional in VA, MD, and D.C.",
+    "relatedCategories": [
+      "auto-insurance",
+      "home-insurance"
+    ],
     "launchPriority": 3,
     "active": true,
     "contentReady": true
@@ -36,9 +46,13 @@
     "slug": "business-insurance",
     "name": "Business Insurance",
     "shortDescription": "Educational resources on business insurance types, including general liability, workers' compensation, and commercial auto.",
-    "metaTitle": "Business Insurance Guides | US Insurance Guide",
-    "metaDescription": "Educational guides on business insurance coverage options for small businesses and commercial operations.",
-    "relatedCategories": ["general-liability-insurance", "workers-compensation-insurance", "commercial-auto-insurance"],
+    "metaTitle": "Business Insurance Guides",
+    "metaDescription": "Educational guides on business insurance coverage options for small businesses and commercial operations in Virginia, Maryland, and Washington, D.C.",
+    "relatedCategories": [
+      "general-liability-insurance",
+      "workers-compensation-insurance",
+      "commercial-auto-insurance"
+    ],
     "launchPriority": 4,
     "active": true,
     "contentReady": true
@@ -47,9 +61,11 @@
     "slug": "life-insurance",
     "name": "Life Insurance",
     "shortDescription": "Educational information on life insurance types and coverage considerations for individuals and families.",
-    "metaTitle": "Life Insurance Guides | US Insurance Guide",
-    "metaDescription": "Learn about life insurance coverage options and factors to consider. Educational guides — not financial or insurance advice.",
-    "relatedCategories": ["business-insurance"],
+    "metaTitle": "Life Insurance Guides",
+    "metaDescription": "Learn about life insurance coverage options and factors to consider for families. Educational guides only — not financial advice for VA, MD, or D.C.",
+    "relatedCategories": [
+      "business-insurance"
+    ],
     "launchPriority": 5,
     "active": true,
     "contentReady": true
@@ -58,72 +74,97 @@
     "slug": "commercial-auto-insurance",
     "name": "Commercial Auto Insurance",
     "shortDescription": "Coverage information for business-owned vehicles and commercial driving operations.",
-    "metaTitle": "Commercial Auto Insurance Guides | US Insurance Guide",
-    "metaDescription": "Educational guides on commercial auto insurance for business vehicles and fleets.",
-    "relatedCategories": ["business-insurance", "auto-insurance"],
+    "metaTitle": "Commercial Auto Insurance",
+    "metaDescription": "Educational guides on commercial auto insurance for business vehicles and fleets, including when coverage may be required versus personal auto.",
+    "relatedCategories": [
+      "business-insurance",
+      "auto-insurance"
+    ],
     "launchPriority": 6,
     "active": true,
-    "contentReady": false,
-    "featuredArticleSlugs": ["commercial-auto-insurance-explained"]
+    "contentReady": true,
+    "featuredArticleSlugs": [
+      "commercial-auto-insurance-explained"
+    ]
   },
   {
     "slug": "general-liability-insurance",
     "name": "General Liability Insurance",
     "shortDescription": "Educational guides on general liability coverage for businesses.",
-    "metaTitle": "General Liability Insurance Guides | US Insurance Guide",
-    "metaDescription": "Learn about general liability insurance coverage options for businesses.",
-    "relatedCategories": ["business-insurance"],
+    "metaTitle": "General Liability Insurance",
+    "metaDescription": "Learn about general liability insurance for businesses, including third-party injury and property damage coverage and who typically needs it.",
+    "relatedCategories": [
+      "business-insurance"
+    ],
     "launchPriority": 7,
     "active": true,
-    "contentReady": false,
-    "featuredArticleSlugs": ["general-liability-insurance-explained"]
+    "contentReady": true,
+    "featuredArticleSlugs": [
+      "general-liability-insurance-explained"
+    ]
   },
   {
     "slug": "workers-compensation-insurance",
     "name": "Workers' Compensation Insurance",
     "shortDescription": "State-specific information on workers' compensation requirements and coverage.",
-    "metaTitle": "Workers' Compensation Insurance Guides | US Insurance Guide",
-    "metaDescription": "Educational guides on workers' compensation insurance requirements and coverage options.",
-    "relatedCategories": ["business-insurance"],
+    "metaTitle": "Workers' Comp Insurance Guides",
+    "metaDescription": "Educational guides on workers' compensation insurance requirements and coverage options for employers in Virginia, Maryland, and Washington, D.C.",
+    "relatedCategories": [
+      "business-insurance"
+    ],
     "launchPriority": 8,
     "active": true,
-    "contentReady": false,
-    "featuredArticleSlugs": ["workers-compensation-insurance-explained"]
+    "contentReady": true,
+    "featuredArticleSlugs": [
+      "workers-compensation-insurance-explained"
+    ]
   },
   {
     "slug": "landlord-insurance",
     "name": "Landlord Insurance",
     "shortDescription": "Coverage information for rental property owners.",
-    "metaTitle": "Landlord Insurance Guides | US Insurance Guide",
-    "metaDescription": "Educational guides on landlord insurance for rental property owners.",
-    "relatedCategories": ["home-insurance", "business-insurance"],
+    "metaTitle": "Landlord Insurance Guides",
+    "metaDescription": "Educational guides on landlord insurance for rental property owners, including how coverage differs from homeowners policies and tenant renters insurance.",
+    "relatedCategories": [
+      "home-insurance",
+      "business-insurance"
+    ],
     "launchPriority": 9,
     "active": true,
-    "contentReady": false,
+    "contentReady": true,
     "interimNote": "A full landlord insurance hub guide is in development. Start with the state overviews below — each links to official resources and related renters coverage for tenants."
   },
   {
     "slug": "umbrella-insurance",
     "name": "Umbrella Insurance",
     "shortDescription": "Extra liability coverage beyond standard auto and home policies.",
-    "metaTitle": "Umbrella Insurance Guides | US Insurance Guide",
-    "metaDescription": "Learn about umbrella insurance as supplemental liability coverage.",
-    "relatedCategories": ["auto-insurance", "home-insurance"],
+    "metaTitle": "Umbrella Insurance Guides",
+    "metaDescription": "Learn about umbrella insurance as supplemental liability coverage above auto and home policies, including when extra limits may make sense for households.",
+    "relatedCategories": [
+      "auto-insurance",
+      "home-insurance"
+    ],
     "launchPriority": 10,
     "active": true,
-    "contentReady": false,
-    "featuredArticleSlugs": ["umbrella-insurance-explained"]
+    "contentReady": true,
+    "featuredArticleSlugs": [
+      "umbrella-insurance-explained"
+    ]
   },
   {
     "slug": "flood-insurance",
     "name": "Flood Insurance",
     "shortDescription": "Separate flood coverage beyond standard homeowners policies.",
-    "metaTitle": "Flood Insurance Guides | US Insurance Guide",
-    "metaDescription": "Educational guides on flood insurance coverage separate from standard home insurance.",
-    "relatedCategories": ["home-insurance"],
+    "metaTitle": "Flood Insurance Guides",
+    "metaDescription": "Educational guides on flood insurance coverage separate from standard home insurance, including NFIP basics and why flood damage is typically excluded.",
+    "relatedCategories": [
+      "home-insurance"
+    ],
     "launchPriority": 11,
     "active": true,
-    "contentReady": false,
-    "featuredArticleSlugs": ["home-insurance-vs-flood-insurance"]
+    "contentReady": true,
+    "featuredArticleSlugs": [
+      "home-insurance-vs-flood-insurance"
+    ]
   }
 ]

@@ -4,7 +4,7 @@ export const SITE_URL =
 export const SITE_TAGLINE =
   "Clear insurance guides, state-by-state resources, and practical coverage information for consumers and businesses.";
 export const SITE_DESCRIPTION =
-  "Educational insurance guides covering auto, home, renters, business, and life insurance. State-specific resources for Virginia, Maryland, and Washington, D.C.";
+  "Educational insurance guides covering auto, home, renters, business, and life insurance with state resources for Virginia, Maryland, and Washington, D.C.";
 
 export const LAUNCH_CATEGORY_SLUGS = [
   "auto-insurance",

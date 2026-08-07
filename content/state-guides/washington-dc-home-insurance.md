@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: home-insurance
-metaTitle: "Washington, D.C. Home Insurance | State Guide"
-metaDescription: "Brief overview of D.C. homeowners insurance — standard coverages, flood gap, and official resources."
+metaTitle: "D.C. Home Insurance Guide"
+metaDescription: "Overview of D.C. homeowners insurance — standard coverages, the flood coverage gap, and official consumer resources to review."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

@@ -1,7 +1,7 @@
 ---
 title: "Renters Insurance in Washington, D.C."
-metaTitle: "Renters Insurance in Washington, D.C. (2025) | Coverage for Tenants"
-metaDescription: "D.C. renters insurance covers personal belongings and liability — not your landlord's building. Learn what tenants need, what landlords may require, and what to ask an agent."
+metaTitle: "Renters Insurance in Washington, D.C."
+metaDescription: "D.C. renters insurance covers personal belongings and liability, not the building. Learn tenant needs, landlord requirements, and agent questions."
 excerpt: "Your landlord's insurance does not cover your belongings. D.C. renters insurance may protect personal property and liability — this guide explains what tenants should know."
 type: guide
 category: renters-insurance
@@ -36,7 +36,7 @@ sources:
     url: "https://disb.dc.gov/node/1547251"
     publisher: "DC Department of Insurance, Securities and Banking"
   - title: "FEMA — Flood Insurance"
-    url: "https://www.fema.gov/flood-insurance"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
   - title: "Home Insurance vs Flood Insurance"
     url: "https://usinsuranceguide.com/blog/home-insurance-vs-flood-insurance/"

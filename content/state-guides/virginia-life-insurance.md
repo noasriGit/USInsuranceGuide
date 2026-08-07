@@ -1,8 +1,8 @@
 ---
 stateSlug: virginia
 categorySlug: life-insurance
-metaTitle: "Virginia Life Insurance | State Guide"
-metaDescription: "Brief overview of life insurance in Virginia — common policy types and consumer resources from the Bureau of Insurance."
+metaTitle: "Virginia Life Insurance Guide"
+metaDescription: "Overview of life insurance in Virginia — common policy types and consumer resources from the Virginia Bureau of Insurance."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -19,7 +19,7 @@ sections:
 
     Needs depend on dependents, debts, income replacement goals, and estate planning — not one-size-fits-all.
   State Requirements & Regulations: |
-    Virginia does not require individuals to carry life insurance. The [Virginia Bureau of Insurance](https://www.scc.virginia.gov/pages/Insurance) regulates insurers, agents, and policy forms sold in the Commonwealth and handles consumer complaints.
+    Virginia does not require individuals to carry life insurance. The [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/) regulates insurers, agents, and policy forms sold in the Commonwealth and handles consumer complaints.
 
     Verify any company or agent is licensed before purchasing.
   Factors That May Affect Your Premium: |
@@ -35,10 +35,10 @@ faq:
     answer: "Contact the Virginia Bureau of Insurance or use its consumer resources to confirm licensing before buying a policy."
 sources:
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Life Insurance Consumer Information"
-    url: "https://www.scc.virginia.gov/consumers/insurance/life-health-consumer"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
 ---
 

@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: auto-insurance
-metaTitle: "Washington, D.C. Auto Insurance (2025) | State Guide"
-metaDescription: "D.C. requires 25/50/10 liability and uninsured motorist coverage. Summary of mandatory limits and where to learn more."
+metaTitle: "D.C. Auto Insurance Guide"
+metaDescription: "D.C. requires 25/50/10 liability and uninsured motorist coverage. Summary of mandatory limits plus links to full District guides."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

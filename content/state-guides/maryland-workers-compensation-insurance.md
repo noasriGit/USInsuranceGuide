@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: workers-compensation-insurance
-metaTitle: "Maryland Workers' Compensation | State Guide"
-metaDescription: "Brief overview of Maryland workers' compensation — 1+ employee threshold, employer duties, and official resources."
+metaTitle: "Maryland Workers Comp Guide"
+metaDescription: "Overview of Maryland workers' compensation — employer thresholds, duties, and official resources for businesses with employees."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

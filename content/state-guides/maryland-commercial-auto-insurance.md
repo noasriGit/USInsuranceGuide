@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: commercial-auto-insurance
-metaTitle: "Maryland Commercial Auto Insurance | State Guide"
-metaDescription: "Brief overview of commercial auto insurance in Maryland — when it's needed and state minimum liability limits."
+metaTitle: "Maryland Commercial Auto Guide"
+metaDescription: "Overview of commercial auto insurance in Maryland — when businesses may need it and how state minimum liability limits apply."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -37,7 +37,7 @@ faq:
     answer: "Maryland Insurance Administration and MVA set insurance requirements; Maryland Transportation Code defines minimum liability limits."
 sources:
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Commercial Auto Insurance Explained"
     url: "https://usinsuranceguide.com/blog/commercial-auto-insurance-explained/"

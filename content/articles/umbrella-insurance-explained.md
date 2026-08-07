@@ -1,7 +1,7 @@
 ---
 title: "Umbrella Insurance Explained"
-metaTitle: "Umbrella Insurance Explained | Excess Liability Coverage Guide"
-metaDescription: "Umbrella insurance provides extra liability limits above your auto, home, and other policies. Learn how it works, when it may make sense, and what it typically covers."
+metaTitle: "Umbrella Insurance Explained"
+metaDescription: "Umbrella insurance adds liability limits above auto and home policies. Learn how it works, when it may make sense, and what it typically covers."
 excerpt: "Umbrella insurance adds liability coverage above your auto, homeowners, and other underlying policies. This explainer covers how it works and when extra limits may be worth discussing."
 type: explainer
 category: umbrella-insurance
@@ -25,10 +25,10 @@ faq:
     answer: "Insurers typically require minimum underlying liability limits on your auto and homeowners or renters policies before issuing an umbrella policy. Common requirements are $250,000/$500,000 bodily injury and $100,000 property damage on auto, and $300,000 on homeowners or renters liability — though requirements vary by carrier."
 sources:
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "DC DISB — Introduction to Liability Insurance"
     url: "https://disb.dc.gov/page/introduction-liability-insurance"

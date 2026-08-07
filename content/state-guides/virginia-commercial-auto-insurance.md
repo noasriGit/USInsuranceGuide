@@ -1,8 +1,8 @@
 ---
 stateSlug: virginia
 categorySlug: commercial-auto-insurance
-metaTitle: "Virginia Commercial Auto Insurance | State Guide"
-metaDescription: "Brief overview of commercial auto insurance in Virginia — when it's needed and state minimum liability limits."
+metaTitle: "Virginia Commercial Auto Guide"
+metaDescription: "Overview of commercial auto insurance in Virginia — when businesses may need it and how state minimum liability limits apply."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -37,7 +37,7 @@ faq:
     answer: "Virginia Bureau of Insurance and DMV set insurance requirements; the Code of Virginia defines minimum liability limits."
 sources:
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Commercial Auto Insurance Explained"
     url: "https://usinsuranceguide.com/blog/commercial-auto-insurance-explained/"

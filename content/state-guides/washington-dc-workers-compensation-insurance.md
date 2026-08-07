@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: workers-compensation-insurance
-metaTitle: "Washington, D.C. Workers' Compensation | State Guide"
-metaDescription: "Brief overview of D.C. workers' compensation — 1+ employee threshold, employer duties, and official resources."
+metaTitle: "D.C. Workers Comp Guide"
+metaDescription: "Overview of D.C. workers' compensation — employer thresholds, duties, and official resources for businesses with employees."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

@@ -1,7 +1,7 @@
 ---
 title: "Business Insurance in Maryland"
-metaTitle: "Business Insurance in Maryland (2025) | Coverage Types & Requirements"
-metaDescription: "Maryland businesses may need general liability, workers' comp, commercial auto, and property coverage. Learn state-specific requirements and coverage options."
+metaTitle: "Business Insurance in Maryland"
+metaDescription: "Maryland businesses may need general liability, workers comp, commercial auto, and property coverage. Learn state-specific requirements and options."
 excerpt: "Maryland employers with one or more employees must carry workers' compensation insurance. This guide covers required and optional business coverage types for Maryland operations."
 type: guide
 category: business-insurance
@@ -33,7 +33,7 @@ sources:
     url: "https://www.wcc.state.md.us/Gen_Info/FAQ_Employees.html"
     publisher: "Maryland Workers' Compensation Commission"
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Maryland Auto Insurance Requirements"
     url: "https://usinsuranceguide.com/blog/maryland-auto-insurance-requirements/"

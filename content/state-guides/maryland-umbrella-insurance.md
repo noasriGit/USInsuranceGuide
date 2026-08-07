@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: umbrella-insurance
-metaTitle: "Maryland Umbrella Insurance | State Guide"
-metaDescription: "Brief overview of personal umbrella insurance in Maryland — extra liability above auto and home policies."
+metaTitle: "Maryland Umbrella Insurance"
+metaDescription: "Overview of personal umbrella insurance in Maryland — extra liability protection above auto and homeowners policy limits."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -19,7 +19,7 @@ sections:
   State Requirements & Regulations: |
     Maryland does not require umbrella insurance. Insurers usually require minimum underlying liability limits on auto and home policies before issuing an umbrella.
 
-    Products are regulated by the [Maryland Insurance Administration](https://insurance.maryland.gov/).
+    Products are regulated by the [Maryland Insurance Administration](https://insurance.maryland.gov/Pages/default.aspx).
   Factors That May Affect Your Premium: |
     Umbrella limit selected, number of vehicles and properties, household drivers, pools or other liability exposures, and underlying policy limits may affect cost. Umbrella coverage is often relatively affordable per million of limit.
 faq:
@@ -33,7 +33,7 @@ faq:
     answer: "Policies are commonly sold starting at $1 million, with many carriers offering higher limits. Appropriate amounts depend on assets and exposure."
 sources:
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Umbrella Insurance Explained"
     url: "https://usinsuranceguide.com/blog/umbrella-insurance-explained/"

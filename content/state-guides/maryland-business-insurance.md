@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: business-insurance
-metaTitle: "Maryland Business Insurance | State Guide"
-metaDescription: "Brief overview of Maryland business insurance — workers' comp at 1+ employee, common coverage types, and official resources."
+metaTitle: "Maryland Business Insurance"
+metaDescription: "Overview of Maryland business insurance, including workers' comp at one or more employees, common coverage types, and official resources."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -44,7 +44,7 @@ sources:
     url: "https://www.wcc.state.md.us/Gen_Info/FAQ%20Employers.html"
     publisher: "Maryland Workers' Compensation Commission"
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Business Insurance in Maryland (full guide)"
     url: "https://usinsuranceguide.com/blog/business-insurance-in-maryland/"

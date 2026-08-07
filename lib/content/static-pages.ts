@@ -2,7 +2,7 @@ export const staticPages = {
   about: {
     title: "About US Insurance Guide",
     description:
-      "Learn about US Insurance Guide — an educational insurance resource for consumers and businesses.",
+      "Learn about US Insurance Guide — an educational insurance resource publishing clear coverage guides for consumers and businesses in VA, MD, and D.C.",
     content: `US Insurance Guide is an educational publication dedicated to helping consumers and businesses understand insurance coverage options, state requirements, and practical considerations.
 
 ## Our Mission
@@ -31,7 +31,8 @@ Have a question or suggestion? Visit our [Contact page](/contact/) or submit a [
   },
   editorialPolicy: {
     title: "Editorial Policy",
-    description: "How US Insurance Guide creates, reviews, and updates educational insurance content.",
+    description:
+      "How US Insurance Guide creates, reviews, and updates educational insurance content, including source standards, independence, and correction practices.",
     content: `This editorial policy describes how US Insurance Guide creates and maintains its educational content.
 
 ## Purpose
@@ -64,7 +65,8 @@ We take accuracy seriously. If you believe any content contains an error, please
   },
   advertisingDisclosure: {
     title: "Advertising Disclosure",
-    description: "How US Insurance Guide handles advertising and sponsored partner placements.",
+    description:
+      "How US Insurance Guide handles advertising and sponsored partner placements, including labeling rules and separation from educational editorial content.",
     content: `US Insurance Guide may display advertising and sponsored partner placements to support the operation of this educational resource.
 
 ## Sponsored Partners
@@ -91,7 +93,8 @@ For questions about our advertising practices, please [contact us](/contact/).`,
   },
   insuranceDisclaimer: {
     title: "Insurance Disclaimer",
-    description: "Important disclaimer about the educational nature of US Insurance Guide content.",
+    description:
+      "Important disclaimer about the educational nature of US Insurance Guide content. We do not sell insurance or provide personalized coverage advice.",
     content: `**US Insurance Guide provides general educational information only and does not provide insurance, legal, financial, or tax advice. We are not an insurance carrier, agency, or broker. Coverage requirements, availability, pricing, and eligibility vary by state, insurer, and individual circumstances. Speak with a licensed insurance professional before purchasing, changing, or canceling coverage.**
 
 ## General Information Only
@@ -117,7 +120,7 @@ Insurance professional directory listings are provided for informational purpose
   accessibility: {
     title: "Accessibility Statement",
     description:
-      "US Insurance Guide commitment to digital accessibility and how to request accommodation or report barriers.",
+      "US Insurance Guide commitment to digital accessibility, WCAG-oriented practices, and how to request an accommodation or report a barrier on the site.",
     content: `US Insurance Guide is committed to making our website accessible and usable for as many people as possible. We aim to follow generally recognized accessibility standards, including WCAG 2.1 AA and WCAG 2.2 AA where practical.
 
 This statement describes our ongoing accessibility efforts. It is not a guarantee of full compliance with any specific law or standard.
@@ -183,7 +186,8 @@ A baseline audit report is maintained internally and updated after significant s
   },
   privacyPolicy: {
     title: "Privacy Policy",
-    description: "How US Insurance Guide collects, uses, and protects your information.",
+    description:
+      "How US Insurance Guide collects, uses, and protects your information when you visit the site, contact us, or submit a correction request.",
     content: `This Privacy Policy describes how US Insurance Guide ("we," "us," or "our") handles information when you visit usinsuranceguide.com.
 
 ## Information We Collect
@@ -227,7 +231,8 @@ For privacy-related questions, please [contact us](/contact/). For accessibility
   },
   terms: {
     title: "Terms of Use",
-    description: "Terms governing your use of the US Insurance Guide website.",
+    description:
+      "Terms governing your use of the US Insurance Guide website, including acceptable use, intellectual property, and limitation of liability.",
     content: `By accessing and using usinsuranceguide.com, you agree to these Terms of Use.
 
 ## Educational Purpose
@@ -269,7 +274,8 @@ Questions about these Terms? [Contact us](/contact/).`,
   },
   contact: {
     title: "Contact Us",
-    description: "Get in touch with the US Insurance Guide editorial team.",
+    description:
+      "Get in touch with the US Insurance Guide editorial team for questions, feedback, media inquiries, partnerships, or accessibility requests.",
     content: `We welcome questions, feedback, and suggestions about our educational insurance content.
 
 ## General Inquiries
@@ -293,8 +299,9 @@ We cannot provide personalized insurance, legal, or financial advice. For covera
 If you've found an error in our content, please use our dedicated [Corrections page](/corrections/) so we can review and address it promptly.`,
   },
   corrections: {
-    title: "Corrections & Content Updates",
-    description: "Request a correction or update to US Insurance Guide content.",
+    title: "Corrections & Updates",
+    description:
+      "Request a correction or update to US Insurance Guide content. Tell us the page URL, the issue, and any supporting source for review.",
     content: `We strive to keep our educational content accurate and up to date. If you've found an error or outdated information, please let us know.
 
 ## How to Submit a Correction

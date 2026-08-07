@@ -1,7 +1,7 @@
 ---
 title: "Washington, D.C. Auto Insurance Requirements"
-metaTitle: "Washington, D.C. Auto Insurance Requirements (2025) | Minimum Coverage"
-metaDescription: "D.C. requires 25/50/10 liability and uninsured motorist coverage. Learn mandatory limits, optional PIP elections, proof of insurance rules, and lapse penalties."
+metaTitle: "D.C. Auto Insurance Requirements"
+metaDescription: "D.C. requires 25/50/10 liability and uninsured motorist coverage. Learn mandatory limits, optional PIP elections, proof rules, and lapse penalties."
 excerpt: "Washington, D.C. drivers must carry liability and uninsured motorist insurance with 25/50/10 minimum limits. PIP is optional but involves important election choices. This guide explains what District law requires."
 type: guide
 category: auto-insurance
@@ -35,11 +35,11 @@ sources:
   - title: "D.C. Code § 31-2404 — Personal Injury Protection"
     url: "https://code.dccouncil.gov/us/dc/council/code/sections/31-2404"
     publisher: "Council of the District of Columbia"
-  - title: "D.C. Code § 35-2105 — PIP Election and Lawsuit Restrictions"
-    url: "https://code.dccouncil.gov/us/dc/council/code/sections/35-2105"
+  - title: "D.C. Code § 31-2405 — PIP Election and Lawsuit Restrictions"
+    url: "https://code.dccouncil.gov/us/dc/council/code/sections/31-2405"
     publisher: "Council of the District of Columbia"
   - title: "Compulsory/No-Fault Motor Vehicle Insurance Act"
-    url: "https://code.dccouncil.gov/us/dc/council/code/titles/31/subtitles/IV/chapters/24"
+    url: "https://code.dccouncil.gov/us/dc/council/code/titles/31/chapters/24"
     publisher: "Council of the District of Columbia"
 ---
 
@@ -110,7 +110,7 @@ You may purchase higher PIP limits. PIP covers the insured and passengers in you
 
 D.C.'s system is sometimes called "choice no-fault" because you decide how to handle injury claims after an accident:
 
-1. **Elect PIP benefits** — If you carry PIP and choose to receive benefits within **60 days** of the accident, you generally receive no-fault payments for covered medical expenses and lost wages. However, this election typically **restricts your right to sue** the at-fault driver unless your injuries meet specific severity thresholds under [D.C. Code § 35-2105](https://code.dccouncil.gov/us/dc/council/code/sections/35-2105).
+1. **Elect PIP benefits** — If you carry PIP and choose to receive benefits within **60 days** of the accident, you generally receive no-fault payments for covered medical expenses and lost wages. However, this election typically **restricts your right to sue** the at-fault driver unless your injuries meet specific severity thresholds under [D.C. Code § 31-2405](https://code.dccouncil.gov/us/dc/council/code/sections/31-2405).
 
 2. **Pursue a fault-based claim** — If you do not carry PIP, do not elect PIP within 60 days, or your injuries exceed severity thresholds, you may file a liability claim against the at-fault driver's insurance.
 

@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: life-insurance
-metaTitle: "Maryland Life Insurance | State Guide"
-metaDescription: "Brief overview of life insurance in Maryland — common policy types and consumer resources from the Maryland Insurance Administration."
+metaTitle: "Maryland Life Insurance Guide"
+metaDescription: "Overview of life insurance in Maryland — common policy types and consumer resources from the Maryland Insurance Administration."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -19,7 +19,7 @@ sections:
 
     Needs depend on dependents, debts, income replacement goals, and estate planning — not one-size-fits-all.
   State Requirements & Regulations: |
-    Maryland does not require individuals to carry life insurance. The [Maryland Insurance Administration](https://insurance.maryland.gov/) regulates insurers, agents, and policy forms sold in the state and handles consumer complaints.
+    Maryland does not require individuals to carry life insurance. The [Maryland Insurance Administration](https://insurance.maryland.gov/Pages/default.aspx) regulates insurers, agents, and policy forms sold in the state and handles consumer complaints.
 
     Verify any company or agent is licensed before purchasing. The MIA publishes a [consumer guide to life insurance](https://insurance.maryland.gov/consumer/documents/publications/lifeinsurance.pdf).
   Factors That May Affect Your Premium: |
@@ -35,7 +35,7 @@ faq:
     answer: "Contact the Maryland Insurance Administration or use its consumer resources to confirm licensing before buying a policy."
 sources:
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "A Consumer Guide to Life Insurance (PDF)"
     url: "https://insurance.maryland.gov/consumer/documents/publications/lifeinsurance.pdf"

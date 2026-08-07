@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: flood-insurance
-metaTitle: "Washington, D.C. Flood Insurance | State Guide"
-metaDescription: "Brief overview of flood insurance in D.C. — why it's separate from homeowners coverage and NFIP basics."
+metaTitle: "D.C. Flood Insurance Guide"
+metaDescription: "Overview of flood insurance in Washington, D.C. — why it is separate from homeowners coverage and NFIP basics for owners."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -35,7 +35,7 @@ faq:
     answer: "Yes. NFIP and private flood coverage may be available in participating communities regardless of zone designation."
 sources:
   - title: "FEMA — Flood Insurance"
-    url: "https://www.fema.gov/flood-insurance"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
   - title: "DISB Consumer Guide — Flood Insurance"
     url: "https://disb.dc.gov/flood"

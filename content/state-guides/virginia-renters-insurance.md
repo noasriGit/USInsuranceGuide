@@ -1,8 +1,8 @@
 ---
 stateSlug: virginia
 categorySlug: renters-insurance
-metaTitle: "Virginia Renters Insurance | State Guide"
-metaDescription: "Brief overview of Virginia renters insurance — what it covers, landlord vs tenant protection, and official resources."
+metaTitle: "Virginia Renters Insurance"
+metaDescription: "Overview of Virginia renters insurance — what it covers, how it differs from landlord coverage, and official consumer resources."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -38,7 +38,7 @@ sources:
     url: "https://www.scc.virginia.gov/consumers/insurance/property-casualty-consumer/renters-insurance-guide/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
 ---
 

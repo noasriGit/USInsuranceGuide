@@ -1,8 +1,8 @@
 ---
 stateSlug: virginia
 categorySlug: flood-insurance
-metaTitle: "Virginia Flood Insurance | State Guide"
-metaDescription: "Brief overview of flood insurance in Virginia — why it's separate from homeowners coverage and NFIP basics."
+metaTitle: "Virginia Flood Insurance Guide"
+metaDescription: "Overview of flood insurance in Virginia — why it is separate from homeowners coverage and NFIP basics for property owners."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -21,7 +21,7 @@ sections:
 
     NFIP policies typically have a **30-day waiting period** before coverage takes effect (exceptions may apply for closings).
 
-    Virginia participates in the NFIP through local community floodplain management programs. FEMA and the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/pages/Insurance) provide consumer resources.
+    Virginia participates in the NFIP through local community floodplain management programs. FEMA and the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/) provide consumer resources.
   Factors That May Affect Your Premium: |
     Flood zone designation, elevation, building characteristics, coverage limits (building vs contents), and deductible selected affect NFIP and private flood premiums. Risk exists outside mapped high-risk zones.
 faq:
@@ -35,10 +35,10 @@ faq:
     answer: "Yes. NFIP and private flood coverage may be available in participating communities regardless of zone designation."
 sources:
   - title: "FEMA — Flood Insurance"
-    url: "https://www.fema.gov/flood-insurance"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Home Insurance vs Flood Insurance"
     url: "https://usinsuranceguide.com/blog/home-insurance-vs-flood-insurance/"

@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: renters-insurance
-metaTitle: "Washington, D.C. Renters Insurance | State Guide"
-metaDescription: "Brief overview of D.C. renters insurance — what it covers, landlord vs tenant protection, and official resources."
+metaTitle: "D.C. Renters Insurance Guide"
+metaDescription: "Overview of D.C. renters insurance — what it covers, how it differs from landlord coverage, and official consumer resources."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

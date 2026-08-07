@@ -1,7 +1,7 @@
 ---
 title: "Business Insurance in Virginia"
-metaTitle: "Business Insurance in Virginia (2025) | Coverage Types & Requirements"
-metaDescription: "Virginia businesses may need general liability, workers' comp, commercial auto, and property coverage. Learn state-specific requirements and coverage options."
+metaTitle: "Business Insurance in Virginia"
+metaDescription: "Virginia businesses may need general liability, workers comp, commercial auto, and property coverage. Learn state-specific requirements and options."
 excerpt: "Virginia employers with three or more employees must carry workers' compensation insurance. This guide covers required and optional business coverage types for Virginia operations."
 type: guide
 category: business-insurance
@@ -33,7 +33,7 @@ sources:
     url: "https://workcomp.virginia.gov/workers-compensation-insurance-information-employers"
     publisher: "Virginia Workers' Compensation Commission"
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Auto Insurance Requirements"
     url: "https://usinsuranceguide.com/blog/virginia-auto-insurance-requirements/"

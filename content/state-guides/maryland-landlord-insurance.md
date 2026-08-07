@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: landlord-insurance
-metaTitle: "Maryland Landlord Insurance | State Guide"
-metaDescription: "Brief overview of landlord insurance in Maryland — how it differs from homeowners coverage and what rental property owners may consider."
+metaTitle: "Maryland Landlord Insurance"
+metaDescription: "Overview of landlord insurance in Maryland — how it differs from homeowners coverage and what rental property owners may consider."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -23,7 +23,7 @@ sections:
   State Requirements & Regulations: |
     Maryland does not mandate landlord insurance by statute. Mortgage lenders on rental properties typically require property coverage.
 
-    Landlord-tenant insurance obligations may also appear in lease agreements. Insurers are regulated by the [Maryland Insurance Administration](https://insurance.maryland.gov/).
+    Landlord-tenant insurance obligations may also appear in lease agreements. Insurers are regulated by the [Maryland Insurance Administration](https://insurance.maryland.gov/Pages/default.aspx).
   Factors That May Affect Your Premium: |
     Property location, age, construction, number of units, occupancy type, claims history, coverage limits, and whether the property is short-term vs long-term rental may affect premium.
 faq:
@@ -37,7 +37,7 @@ faq:
     answer: "Standard property policies typically exclude flood. Separate flood insurance may be needed for flood-prone rental properties along the Chesapeake Bay or Eastern Shore."
 sources:
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Maryland Insurance Administration — Homeowners Insurance"
     url: "https://insurance.maryland.gov/Consumer/Pages/homeownersinsurance.aspx"

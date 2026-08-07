@@ -1,7 +1,7 @@
 ---
 title: "Home Insurance vs Flood Insurance"
-metaTitle: "Home Insurance vs Flood Insurance | What's Covered & What's Not"
-metaDescription: "Homeowners insurance typically excludes flood damage. Learn what each policy covers, when flood insurance is required, and NFIP basics for homeowners."
+metaTitle: "Home Insurance vs Flood Insurance"
+metaDescription: "Homeowners insurance typically excludes flood damage. Learn what each policy covers, when flood insurance is required, and NFIP basics."
 excerpt: "Standard homeowners insurance usually excludes flood damage. This guide explains what each policy type covers, when separate flood insurance may be needed, and key NFIP rules."
 type: article
 category: home-insurance
@@ -25,16 +25,16 @@ faq:
     answer: "Yes. NFIP and private flood insurance are available in participating communities regardless of flood zone designation. FEMA notes that floods can happen anywhere, and a significant share of flood claims occur outside high-risk mapped areas."
 sources:
   - title: "FEMA — Flood Insurance"
-    url: "https://www.fema.gov/flood-insurance"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
   - title: "FEMA FAQ — Waiting Period for Flood Policy"
-    url: "https://www.fema.gov/faq/waiting-period-activating-flood-policy"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
-  - title: "NFIP Flood Insurance Manual"
-    url: "https://www.fema.gov/sites/default/files/documents/fema_rsl_national-flood-insurance-manual_06032025.pdf"
+  - title: "FloodSmart — National Flood Insurance Program"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
   - title: "Virginia Bureau of Insurance — Homeowners Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Flood Insurance Guides"
     url: "https://usinsuranceguide.com/flood-insurance/"
@@ -84,7 +84,7 @@ The insurance industry defines **flood** specifically — generally as a general
 
 ## What Flood Insurance Covers
 
-[Flood insurance](https://www.fema.gov/flood-insurance) is a separate policy, most commonly purchased through the **National Flood Insurance Program (NFIP)** or a private flood insurer. NFIP policies are available in communities that participate in the NFIP and adopt floodplain management standards.
+[Flood insurance](https://www.floodsmart.gov/) is a separate policy, most commonly purchased through the **National Flood Insurance Program (NFIP)** or a private flood insurer. NFIP policies are available in communities that participate in the NFIP and adopt floodplain management standards.
 
 ### NFIP building coverage
 
@@ -108,7 +108,7 @@ May cover personal belongings including:
 
 ### NFIP coverage limits
 
-NFIP policies have maximum coverage limits (building and contents limits are set by FEMA and may change — verify current maximums with your agent or [FEMA's flood insurance resources](https://www.fema.gov/flood-insurance)). Private flood insurers may offer higher limits or additional features.
+NFIP policies have maximum coverage limits (building and contents limits are set by FEMA and may change — verify current maximums with your agent or [FEMA's flood insurance resources](https://www.floodsmart.gov/)). Private flood insurers may offer higher limits or additional features.
 
 ### What flood insurance typically excludes
 
@@ -128,14 +128,14 @@ Under federal law, properties in **Special Flood Hazard Areas (SFHAs)** — FEMA
 
 Even outside mapped flood zones, flood insurance may be worth considering:
 
-- [FEMA notes](https://www.fema.gov/flood-insurance) that floods can happen anywhere, not just in designated high-risk zones
+- [FEMA notes](https://www.floodsmart.gov/) that floods can happen anywhere, not just in designated high-risk zones
 - Properties near rivers, coastlines, or in low-lying areas face elevated risk
 - Heavy rainfall events can overwhelm drainage systems in urban and suburban areas — including in Virginia, Maryland, and D.C.
 - A significant share of NFIP claims historically come from properties outside high-risk zones
 
 ## The NFIP 30-Day Waiting Period
 
-A critical planning consideration: NFIP policies typically have a **30-day waiting period** before coverage takes effect. [FEMA confirms](https://www.fema.gov/faq/waiting-period-activating-flood-policy) this rule exists to prevent purchasing coverage only when a storm is imminent.
+A critical planning consideration: NFIP policies typically have a **30-day waiting period** before coverage takes effect. [FEMA confirms](https://www.floodsmart.gov/) this rule exists to prevent purchasing coverage only when a storm is imminent.
 
 Exceptions to the 30-day waiting period may include:
 
@@ -175,7 +175,7 @@ The Virginia, Maryland, and Washington, D.C. area faces multiple flood risks:
 - **Urban flash flooding** — Heavy rainfall overwhelming storm drainage in developed areas
 - **Hurricane and tropical storm remnants** — Wind-driven rain and storm surge
 
-FEMA flood maps designate risk zones across all three jurisdictions. You can look up your property's flood zone at [FEMA's Flood Map Service Center](https://msc.fema.gov/portal/home).
+FEMA flood maps designate risk zones across all three jurisdictions. You can look up your property's flood zone at [FEMA's Flood Map Service Center](https://www.floodsmart.gov/).
 
 For state-specific homeowners context, see our guides for [Virginia](/states/virginia/), [Maryland](/states/maryland/), and [Washington, D.C.](/states/washington-dc/).
 

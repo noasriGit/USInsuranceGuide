@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: life-insurance
-metaTitle: "Washington, D.C. Life Insurance | State Guide"
-metaDescription: "Brief overview of life insurance in Washington, D.C. — common policy types and consumer resources from DISB."
+metaTitle: "D.C. Life Insurance Guide"
+metaDescription: "Overview of life insurance in Washington, D.C. — common policy types and consumer resources from DISB for District residents."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

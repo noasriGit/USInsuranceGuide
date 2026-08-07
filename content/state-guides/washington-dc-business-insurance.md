@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: business-insurance
-metaTitle: "Washington, D.C. Business Insurance | State Guide"
-metaDescription: "Brief overview of D.C. business insurance — workers' comp at 1+ employee, common coverage types, and official resources."
+metaTitle: "D.C. Business Insurance Guide"
+metaDescription: "Overview of D.C. business insurance — workers' comp at one or more employees, common coverage types, and official DISB resources."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

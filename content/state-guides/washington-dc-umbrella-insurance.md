@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: umbrella-insurance
-metaTitle: "Washington, D.C. Umbrella Insurance | State Guide"
-metaDescription: "Brief overview of personal umbrella insurance in D.C. — extra liability above auto and home policies."
+metaTitle: "D.C. Umbrella Insurance Guide"
+metaDescription: "Overview of personal umbrella insurance in D.C. — extra liability protection above auto and homeowners policy limits for households."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: flood-insurance
-metaTitle: "Maryland Flood Insurance | State Guide"
-metaDescription: "Brief overview of flood insurance in Maryland — why it's separate from homeowners coverage and NFIP basics."
+metaTitle: "Maryland Flood Insurance Guide"
+metaDescription: "Overview of flood insurance in Maryland — why it is separate from homeowners coverage and NFIP basics for property owners."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -21,7 +21,7 @@ sections:
 
     NFIP policies typically have a **30-day waiting period** before coverage takes effect (exceptions may apply for closings).
 
-    Maryland participates in the NFIP through local community floodplain management programs. FEMA and the [Maryland Insurance Administration](https://insurance.maryland.gov/) provide consumer resources.
+    Maryland participates in the NFIP through local community floodplain management programs. FEMA and the [Maryland Insurance Administration](https://insurance.maryland.gov/Pages/default.aspx) provide consumer resources.
   Factors That May Affect Your Premium: |
     Flood zone designation, elevation, building characteristics, coverage limits (building vs contents), and deductible selected affect NFIP and private flood premiums. Risk exists outside mapped high-risk zones — relevant for coastal and bay-adjacent properties.
 faq:
@@ -35,10 +35,10 @@ faq:
     answer: "Yes. NFIP and private flood coverage may be available in participating communities regardless of zone designation."
 sources:
   - title: "FEMA — Flood Insurance"
-    url: "https://www.fema.gov/flood-insurance"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Home Insurance vs Flood Insurance"
     url: "https://usinsuranceguide.com/blog/home-insurance-vs-flood-insurance/"

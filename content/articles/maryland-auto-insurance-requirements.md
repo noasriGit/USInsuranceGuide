@@ -1,7 +1,7 @@
 ---
 title: "Maryland Auto Insurance Requirements"
-metaTitle: "Maryland Auto Insurance Requirements (2025) | Minimum Coverage Explained"
-metaDescription: "Maryland requires 30/60/15 liability, matching uninsured motorist coverage, and $2,500 PIP. Learn mandatory limits, waiver options, and lapse penalties."
+metaTitle: "Maryland Auto Insurance Requirements"
+metaDescription: "Maryland requires 30/60/15 liability, matching uninsured motorist coverage, and a PIP offer. Learn mandatory limits, waivers, and lapse penalties."
 excerpt: "Maryland drivers must carry liability insurance with 30/60/15 minimum limits, uninsured motorist coverage, and personal injury protection. This guide explains what the law requires and what to discuss with a licensed professional."
 type: guide
 category: auto-insurance
@@ -27,13 +27,13 @@ faq:
     answer: "Minimum limits satisfy legal requirements but may not cover the full cost of a serious accident. Medical bills, vehicle repairs, and lawsuits can exceed 30/60/15 limits quickly. A licensed insurance professional can help you evaluate whether higher limits or additional coverages such as collision and comprehensive fit your needs."
 sources:
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Maryland Auto Insurance Guide (PDF)"
     url: "https://insurance.maryland.gov/consumer/documents/publications/autoinsuranceguide.pdf"
     publisher: "Maryland Insurance Administration"
   - title: "Insurance Requirements for Maryland Vehicles (PDF)"
-    url: "https://mva.maryland.gov/documents/icd-004.pdf"
+    url: "https://mva.maryland.gov/title-registration/auto-insurance-requirements"
     publisher: "Maryland Motor Vehicle Administration"
   - title: "Maryland Insurance Code § 19-506 — PIP Coverage Waivers"
     url: "https://law.justia.com/codes/maryland/insurance/title-19/subtitle-5/section-19-506/"
@@ -45,7 +45,7 @@ sources:
 
 Maryland requires every registered vehicle to carry auto insurance that meets state minimum standards. Unlike some neighboring jurisdictions, Maryland mandates not only liability and uninsured motorist coverage but also requires insurers to offer personal injury protection (PIP) — though you may be able to waive or limit that coverage in writing.
 
-This guide summarizes Maryland's auto insurance requirements based on state law and official publications from the [Maryland Insurance Administration](https://insurance.maryland.gov/) and [Motor Vehicle Administration](https://mva.maryland.gov/). Requirements can change, so verify current limits with official sources or a licensed insurance professional before you buy or renew a policy.
+This guide summarizes Maryland's auto insurance requirements based on state law and official publications from the [Maryland Insurance Administration](https://insurance.maryland.gov/Pages/default.aspx) and [Motor Vehicle Administration](https://mva.maryland.gov/). Requirements can change, so verify current limits with official sources or a licensed insurance professional before you buy or renew a policy.
 
 For broader context, see our [Maryland insurance guides](/states/maryland/) and [auto insurance category hub](/auto-insurance/).
 

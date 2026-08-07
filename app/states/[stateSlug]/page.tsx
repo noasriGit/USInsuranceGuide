@@ -46,7 +46,7 @@ export default async function StateHubPage({ params }: PageProps) {
   const categories = getCategories(true).filter((c) =>
     state.featuredCategories.includes(c.slug),
   );
-  const cities = getCities(stateSlug);
+  const cities = getCities(stateSlug).filter((city) => city.contentReady);
   const partners = resolvePlacements({
     slot: "state-hub-card",
     stateSlug,

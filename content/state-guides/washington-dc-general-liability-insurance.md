@@ -1,8 +1,8 @@
 ---
 stateSlug: washington-dc
 categorySlug: general-liability-insurance
-metaTitle: "Washington, D.C. General Liability Insurance | State Guide"
-metaDescription: "Brief overview of general liability insurance for D.C. businesses — what it covers and when it may be required."
+metaTitle: "D.C. General Liability Guide"
+metaDescription: "Overview of general liability insurance for D.C. businesses — what it may cover and when contracts or landlords require it."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

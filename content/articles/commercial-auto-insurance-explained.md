@@ -1,7 +1,7 @@
 ---
 title: "Commercial Auto Insurance Explained"
-metaTitle: "Commercial Auto Insurance Explained | Coverage for Business Vehicles"
-metaDescription: "Commercial auto insurance covers business-owned and business-used vehicles. Learn when you need it, what it includes, and how it differs from personal auto."
+metaTitle: "Commercial Auto Insurance Explained"
+metaDescription: "Commercial auto insurance covers business-owned and business-used vehicles. Learn when you need it, what it includes, and personal auto differences."
 excerpt: "If your business owns vehicles or employees drive for work, personal auto insurance may not be enough. This explainer covers commercial auto coverage components and common scenarios."
 type: explainer
 category: business-insurance
@@ -33,11 +33,11 @@ sources:
   - title: "Washington, D.C. Auto Insurance Requirements"
     url: "https://usinsuranceguide.com/blog/washington-dc-auto-insurance-requirements/"
     publisher: "US Insurance Guide"
-  - title: "Federal Motor Carrier Safety Administration — Insurance Requirements"
-    url: "https://www.fmcsa.dot.gov/registration/insurance-filings"
-    publisher: "U.S. Department of Transportation"
+  - title: "Federal Motor Carrier Minimum Financial Responsibility (49 CFR 387.9)"
+    url: "https://www.law.cornell.edu/cfr/text/49/387.9"
+    publisher: "Legal Information Institute"
   - title: "Virginia Bureau of Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
 ---
 
@@ -121,7 +121,7 @@ Premium calculations consider the number and type of vehicles, driver records, r
 
 Businesses that transport goods or passengers across state lines — or operate vehicles above certain weight thresholds — may face **federal insurance filing requirements** in addition to state minimums.
 
-The [Federal Motor Carrier Safety Administration (FMCSA)](https://www.fmcsa.dot.gov/registration/insurance-filings) requires interstate motor carriers to file proof of insurance (Form MCS-90) at federally mandated minimum levels, which may exceed state minimums depending on vehicle type and cargo.
+The [federal minimum financial responsibility rules for motor carriers (49 CFR 387.9)](https://www.law.cornell.edu/cfr/text/49/387.9) require interstate motor carriers to maintain insurance at federally mandated minimum levels, which may exceed state minimums depending on vehicle type and cargo.
 
 Examples of businesses that may need federal filings:
 

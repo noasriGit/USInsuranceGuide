@@ -1,7 +1,7 @@
 ---
 title: "Workers' Compensation Insurance Explained"
-metaTitle: "Workers' Compensation Insurance Explained | Employer Guide"
-metaDescription: "Workers' compensation may cover employee work injuries and illnesses. Learn what it covers, how state requirements differ, and employer responsibilities."
+metaTitle: "Workers Compensation Insurance Guide"
+metaDescription: "Workers compensation may cover employee work injuries and illnesses. Learn what it covers, how state requirements differ, and employer duties."
 excerpt: "Workers' compensation insurance provides benefits for work-related injuries and illnesses. State rules on who must carry it vary — this explainer covers the basics every employer should know."
 type: explainer
 category: business-insurance

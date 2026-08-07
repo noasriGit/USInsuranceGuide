@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: home-insurance
-metaTitle: "Maryland Home Insurance | State Guide"
-metaDescription: "Brief overview of Maryland homeowners insurance — standard coverages, coastal and flood risks, and official resources."
+metaTitle: "Maryland Home Insurance Guide"
+metaDescription: "Overview of Maryland homeowners insurance — standard coverages, coastal and flood risks, and official consumer resources."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:

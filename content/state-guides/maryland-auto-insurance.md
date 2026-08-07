@@ -1,7 +1,7 @@
 ---
 stateSlug: maryland
 categorySlug: auto-insurance
-metaTitle: "Maryland Auto Insurance (2025) | State Guide"
+metaTitle: "Maryland Auto Insurance Guide"
 metaDescription: "Maryland requires 30/60/15 liability, matching UM/UIM, and a PIP offer. Summary of mandatory limits and where to learn more."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
@@ -37,7 +37,7 @@ faq:
     answer: "MVA may charge penalty fees, suspend registration, and require an FR-19 certificate showing continuous coverage before reinstatement."
 sources:
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Maryland Auto Insurance Requirements (full guide)"
     url: "https://usinsuranceguide.com/blog/maryland-auto-insurance-requirements/"

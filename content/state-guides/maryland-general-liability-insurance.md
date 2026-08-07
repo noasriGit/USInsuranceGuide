@@ -1,8 +1,8 @@
 ---
 stateSlug: maryland
 categorySlug: general-liability-insurance
-metaTitle: "Maryland General Liability Insurance | State Guide"
-metaDescription: "Brief overview of general liability insurance for Maryland businesses — what it covers and when it may be required."
+metaTitle: "Maryland General Liability Guide"
+metaDescription: "Overview of general liability insurance for Maryland businesses — what it may cover and when contracts or landlords require it."
 updatedAt: "2025-06-19"
 reviewer: content-review-team
 sections:
@@ -24,7 +24,7 @@ sections:
     - Government procurement
     - Professional licensing boards
 
-    Insurers are regulated by the [Maryland Insurance Administration](https://insurance.maryland.gov/). See also [business insurance in Maryland](/blog/business-insurance-in-maryland/) for state-mandated coverage like workers' comp.
+    Insurers are regulated by the [Maryland Insurance Administration](https://insurance.maryland.gov/Pages/default.aspx). See also [business insurance in Maryland](/blog/business-insurance-in-maryland/) for state-mandated coverage like workers' comp.
   Factors That May Affect Your Premium: |
     Industry type, revenue, payroll, claims history, coverage limits, location, and operations (subcontractors, public access) may affect GL premium.
 faq:
@@ -38,7 +38,7 @@ faq:
     answer: "See our general liability explainer and business insurance in Maryland guide, or consult the Maryland Insurance Administration."
 sources:
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "General Liability Insurance Explained"
     url: "https://usinsuranceguide.com/blog/general-liability-insurance-explained/"

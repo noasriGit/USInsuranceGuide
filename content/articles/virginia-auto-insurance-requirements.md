@@ -1,7 +1,7 @@
 ---
 title: "Virginia Auto Insurance Requirements"
-metaTitle: "Virginia Auto Insurance Requirements (2025) | Minimum Coverage Explained"
-metaDescription: "Virginia requires 50/100/25 liability and matching uninsured motorist coverage. Learn mandatory limits, proof of insurance rules, and penalties for lapses."
+metaTitle: "Virginia Auto Insurance Requirements"
+metaDescription: "Virginia requires 50/100/25 liability and matching uninsured motorist coverage. Learn mandatory limits, proof of insurance rules, and lapse penalties."
 excerpt: "Virginia drivers must carry liability insurance with 50/100/25 minimum limits and uninsured/underinsured motorist coverage. This guide explains what the law requires and what to verify before you buy or renew a policy."
 type: guide
 category: auto-insurance
@@ -27,7 +27,7 @@ faq:
     answer: "State minimums satisfy legal requirements, but they may not cover the full cost of a serious accident. Medical bills, vehicle repairs, and legal judgments can exceed minimum limits quickly. A licensed insurance professional can help you evaluate whether higher liability limits or optional coverages such as collision and comprehensive fit your situation."
 sources:
   - title: "Virginia Bureau of Insurance — Automobile Insurance"
-    url: "https://www.scc.virginia.gov/pages/Insurance"
+    url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Auto Insurance Consumer Guide (PDF)"
     url: "https://www.scc.virginia.gov/media/sccvirginiagov-home/consumer-home/insurance/property-amp-casualty/automobile-insurance/autoguide.pdf"
@@ -45,7 +45,7 @@ sources:
 
 If you own or register a vehicle in Virginia, state law requires you to meet specific financial responsibility standards before you can legally drive. For most drivers, that means carrying an auto insurance policy with minimum liability limits and uninsured/underinsured motorist coverage.
 
-This guide summarizes Virginia's current auto insurance requirements based on state law and official consumer publications from the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/pages/Insurance). Requirements can change, so verify current limits and rules with official sources or a licensed insurance professional before you buy or renew a policy.
+This guide summarizes Virginia's current auto insurance requirements based on state law and official consumer publications from the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/). Requirements can change, so verify current limits and rules with official sources or a licensed insurance professional before you buy or renew a policy.
 
 For broader context, see our [Virginia insurance guides](/states/virginia/) and [auto insurance category hub](/auto-insurance/).
 

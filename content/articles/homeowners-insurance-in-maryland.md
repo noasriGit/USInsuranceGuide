@@ -1,7 +1,7 @@
 ---
 title: "Homeowners Insurance in Maryland"
-metaTitle: "Homeowners Insurance in Maryland (2025) | Coverage Basics & What to Know"
-metaDescription: "Maryland homeowners insurance covers dwelling, personal property, and liability. Learn standard coverages, coastal and flood risks, and what to ask a licensed agent."
+metaTitle: "Homeowners Insurance in Maryland"
+metaDescription: "Maryland homeowners insurance covers dwelling, personal property, and liability. Learn coverages, coastal and flood risks, and agent questions."
 excerpt: "Maryland homeowners insurance typically covers your dwelling, personal belongings, and liability — but not flood damage. This guide explains standard coverages, regional risks, and what to discuss with a licensed professional."
 type: guide
 category: home-insurance
@@ -33,7 +33,7 @@ sources:
     url: "https://insurance.maryland.gov/consumer/documents/publications/homeownersinsguide.pdf"
     publisher: "Maryland Insurance Administration"
   - title: "FEMA — Flood Insurance"
-    url: "https://www.fema.gov/flood-insurance"
+    url: "https://www.floodsmart.gov/"
     publisher: "Federal Emergency Management Agency"
   - title: "Home Insurance vs Flood Insurance"
     url: "https://usinsuranceguide.com/blog/home-insurance-vs-flood-insurance/"
@@ -45,7 +45,7 @@ sources:
 
 Homeowners insurance is a critical financial protection for Maryland property owners — yet many people do not think about it until they need to file a claim. A standard policy can help you recover from fire, theft, wind damage, and liability claims, but it does not cover every type of loss.
 
-This guide summarizes homeowners insurance considerations for Maryland residents based on official resources from the [Maryland Insurance Administration (MIA)](https://insurance.maryland.gov/). It is educational information, not a coverage recommendation. Policy language varies by carrier. A licensed insurance professional can help you evaluate limits, endorsements, and gaps specific to your home.
+This guide summarizes homeowners insurance considerations for Maryland residents based on official resources from the [Maryland Insurance Administration (MIA)](https://insurance.maryland.gov/Pages/default.aspx). It is educational information, not a coverage recommendation. Policy language varies by carrier. A licensed insurance professional can help you evaluate limits, endorsements, and gaps specific to your home.
 
 For broader context, see our [Maryland insurance guides](/states/maryland/) and [home insurance category hub](/home-insurance/). For the important distinction between homeowners and flood coverage, see our [home insurance vs flood insurance guide](/blog/home-insurance-vs-flood-insurance/).
 

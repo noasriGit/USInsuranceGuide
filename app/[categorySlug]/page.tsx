@@ -56,10 +56,10 @@ export default async function CategoryHubPage({ params }: PageProps) {
     slot: "category-mid",
     categorySlug,
   });
-  const isShell = !category.contentReady;
   const hasFeatured = (category.featuredArticleSlugs?.length ?? 0) > 0;
-  const guidesHeading =
-    isShell && hasFeatured ? "Featured Guide" : "Related Guides";
+  const guidesHeading = hasFeatured && articles.length <= (category.featuredArticleSlugs?.length ?? 0)
+    ? "Featured Guide"
+    : "Related Guides";
 
   return (
     <Container className="py-8">
@@ -74,7 +74,7 @@ export default async function CategoryHubPage({ params }: PageProps) {
         description={category.shortDescription}
       />
 
-      {isShell && category.interimNote && (
+      {category.interimNote && (
         <p className="mt-6 max-w-3xl text-sm leading-relaxed text-slate-600">
           {category.interimNote}
         </p>

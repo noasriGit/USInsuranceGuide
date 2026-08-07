@@ -1,7 +1,7 @@
 ---
 title: "What Insurance Does a Small Business Need?"
-metaTitle: "What Insurance Does a Small Business Need? | Coverage Overview"
-metaDescription: "Small businesses may need general liability, workers' comp, commercial auto, and property coverage. Learn common policy types and how to assess your needs."
+metaTitle: "Insurance a Small Business May Need"
+metaDescription: "Small businesses may need general liability, workers comp, commercial auto, and property coverage. Learn common policy types and how to assess needs."
 excerpt: "There is no one-size-fits-all business insurance package. This overview maps common coverage types to typical business needs and links to detailed explainers for each."
 type: article
 category: business-insurance
@@ -34,7 +34,7 @@ sources:
     url: "https://disb.dc.gov/page/introduction-liability-insurance"
     publisher: "DC Department of Insurance, Securities and Banking"
   - title: "Maryland Insurance Administration"
-    url: "https://insurance.maryland.gov/"
+    url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
 ---
 
