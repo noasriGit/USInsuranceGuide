@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { Prose } from "@/components/content/Prose";
@@ -14,11 +14,13 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { articleSchema } from "@/lib/seo/schema";
 import {
-  getArticles,
+  getBlogArticles,
   getArticleBySlug,
   getRelatedArticles,
   getAuthorBySlug,
   getCategoryBySlug,
+  getHrefForArticleSlug,
+  isMigratedArticleSlug,
 } from "@/lib/content";
 import { resolvePlacements } from "@/lib/monetization/placements";
 import Link from "next/link";
@@ -28,11 +30,12 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return getArticles().map((article) => ({ slug: article.slug }));
+  return getBlogArticles().map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
+  if (isMigratedArticleSlug(slug)) return {};
   const article = getArticleBySlug(slug);
   if (!article) return {};
 
@@ -48,6 +51,9 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function ArticlePage({ params }: PageProps) {
   const { slug } = await params;
+  if (isMigratedArticleSlug(slug)) {
+    redirect(getHrefForArticleSlug(slug));
+  }
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 
@@ -75,7 +81,7 @@ export default async function ArticlePage({ params }: PageProps) {
         <header className="border-b border-slate-200 pb-8">
           {category && (
             <Link
-              href={`/${category.slug}/`}
+              href={category.canonicalPath ?? `/${category.slug}/`}
               className="text-sm font-medium text-navy-700 hover:text-navy-900"
             >
               {category.name}

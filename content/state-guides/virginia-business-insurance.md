@@ -9,7 +9,7 @@ sections:
   Overview: |
     Virginia businesses face a mix of state mandates, contract requirements, and optional coverage. No single policy covers every exposure.
 
-    See our [business insurance in Virginia guide](/blog/business-insurance-in-virginia/) for workers' comp rules, coverage types, and industry considerations.
+    See our [business insurance in Virginia guide](/states/virginia/business-insurance/) for workers' comp rules, coverage types, and industry considerations.
   Coverage Options to Consider: |
     | Coverage | Often required? |
     |---|---|
@@ -23,7 +23,7 @@ sections:
   State Requirements & Regulations: |
     **Workers' compensation:** Employers with more than two employees (3+) must carry coverage. Subcontractor employees performing the same trade may count. No waivers for qualifying employers. Administered by the [Virginia Workers' Compensation Commission](https://www.workcomp.virginia.gov/content/employers).
 
-    **Commercial auto:** Business vehicles must meet Virginia [auto minimums](/blog/virginia-auto-insurance-requirements/) (50/100/25).
+    **Commercial auto:** Business vehicles must meet Virginia [auto minimums](/states/virginia/auto-insurance/requirements/) (50/100/25).
 
     **General liability:** Not mandated for all businesses, but common in leases and contracts.
   Factors That May Affect Your Premium: |
@@ -45,7 +45,7 @@ sources:
     url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Business Insurance in Virginia (full guide)"
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-virginia/"
+    url: "https://usinsuranceguide.com/states/virginia/business-insurance/"
     publisher: "US Insurance Guide"
 ---
 

@@ -25,7 +25,7 @@ faq:
     answer: "Costs vary widely by industry, revenue, location, number of employees, claims history, and coverage selections. A low-risk home-based consultant may pay a few hundred dollars annually for general liability, while a construction company with employees and vehicles will pay significantly more."
 sources:
   - title: "Business Insurance in Virginia"
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-virginia/"
+    url: "https://usinsuranceguide.com/states/virginia/business-insurance/"
     publisher: "US Insurance Guide"
   - title: "Virginia Workers' Compensation Commission — Employers"
     url: "https://www.workcomp.virginia.gov/content/employers"
@@ -42,7 +42,7 @@ Every small business faces a different combination of risks. A freelance graphic
 
 This overview maps the most common business insurance types to the needs they address. It is a starting point — not a substitute for a coverage review with a licensed insurance professional. For detailed explanations of individual coverage types, follow the links to our dedicated explainers.
 
-For state-specific requirements, see our guides for [Virginia](/blog/business-insurance-in-virginia/), [Maryland](/states/maryland/), and [Washington, D.C.](/states/washington-dc/).
+For state-specific requirements, see our guides for [Virginia](/states/virginia/business-insurance/), [Maryland](/states/maryland/), and [Washington, D.C.](/states/washington-dc/).
 
 ## Start With Your Risk Inventory
 
@@ -102,7 +102,7 @@ Your answers determine which coverage types are legally required, contractually 
 | Maryland | 1 or more employees |
 | Washington, D.C. | 1 or more employees |
 
-**Deep dive:** [Workers' compensation explained](/blog/workers-compensation-insurance-explained/) · [Virginia specifics](/blog/business-insurance-in-virginia/)
+**Deep dive:** [Workers' compensation explained](/blog/workers-compensation-insurance-explained/) · [Virginia specifics](/states/virginia/business-insurance/)
 
 ### Commercial auto insurance
 

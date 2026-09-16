@@ -42,6 +42,16 @@ export function getCategories(activeOnly = false): Category[] {
   return activeOnly ? categories.filter((c) => c.active) : categories;
 }
 
+export function getPrimaryCategories(): Category[] {
+  return getCategories(true).filter((category) => category.hubGroup === "primary");
+}
+
+export function getNavCategories(): Category[] {
+  return getCategories(true).filter(
+    (category) => category.hubGroup === "primary" || category.hubGroup === "specialty",
+  );
+}
+
 export function getCategoryBySlug(slug: string): Category | undefined {
   return categories.find((c) => c.slug === slug);
 }

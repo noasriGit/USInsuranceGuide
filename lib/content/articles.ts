@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
 import { ArticleFrontmatterSchema, type Article, type Category } from "@/lib/schemas";
+import { getHrefForArticleSlug, isMigratedArticleSlug } from "@/lib/content/seo-manifest";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content/articles");
 
@@ -39,6 +40,15 @@ export function getArticleBySlug(slug: string): Article | undefined {
   return getArticles().find((a) => a.slug === slug);
 }
 
+/** Articles that remain on /blog/ after state-guide migrations. */
+export function getBlogArticles(): Article[] {
+  return getArticles().filter((article) => !isMigratedArticleSlug(article.slug));
+}
+
+export function getArticleHref(article: Pick<Article, "slug">): string {
+  return getHrefForArticleSlug(article.slug);
+}
+
 export function getArticlesByCategory(categorySlug: string): Article[] {
   return getArticles().filter((a) => a.category === categorySlug);
 }
@@ -61,6 +71,12 @@ export function getArticlesForCategoryHub(category: Category): Article[] {
 
 export function getArticlesByState(stateSlug: string): Article[] {
   return getArticles().filter((a) => a.states?.includes(stateSlug));
+}
+
+export function getSupportingArticlesByState(stateSlug: string): Article[] {
+  return getArticlesByState(stateSlug).filter(
+    (article) => getArticleHref(article).startsWith("/blog/"),
+  );
 }
 
 export function getRelatedArticles(article: Article, limit = 4): Article[] {

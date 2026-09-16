@@ -3,13 +3,17 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { StateCard } from "@/components/content/StateCard";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { getStates } from "@/lib/content";
+import { getSeoPage, getStates } from "@/lib/content";
+
+const page = getSeoPage("/states/");
 
 export const metadata = buildMetadata({
-  title: "State Insurance Guides",
+  title: page?.metaTitle ?? "DMV Insurance Guides",
   description:
-    "State-by-state insurance guides for Virginia, Maryland, and Washington, D.C. Educational resources on coverage requirements and options.",
+    page?.metaDescription ??
+    "Insurance guides for Maryland, Virginia, and Washington, D.C.",
   path: "/states/",
+  modifiedTime: page?.lastModified,
 });
 
 export default function StatesIndexPage() {
@@ -17,10 +21,10 @@ export default function StatesIndexPage() {
 
   return (
     <Container className="py-8">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "State Guides" }]} />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "DMV Guides" }]} />
       <PageHero
-        title="State Insurance Guides"
-        description="Educational insurance resources organized by state. Explore coverage requirements, local considerations, and related guides."
+        title={page?.title ?? "Maryland, Virginia & Washington, D.C. Insurance Guides"}
+        description="US Insurance Guide covers the DMV region only. Each hub explains required insurance, major coverage types, official agencies, and published state guides."
       />
       <div className="py-10">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -28,9 +32,6 @@ export default function StatesIndexPage() {
             <StateCard key={state.slug} state={state} />
           ))}
         </div>
-        <p className="mt-10 text-sm text-slate-500">
-          Additional state guides will be added as US Insurance Guide expands nationally.
-        </p>
       </div>
     </Container>
   );

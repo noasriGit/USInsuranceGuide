@@ -3,7 +3,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleCard } from "@/components/content/ArticleCard";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { getArticles } from "@/lib/content";
+import { getBlogArticles } from "@/lib/content";
 
 export const metadata = buildMetadata({
   title: "Insurance Guides & Articles",
@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
 });
 
 export default function BlogIndexPage() {
-  const articles = getArticles();
+  const articles = getBlogArticles();
 
   return (
     <Container className="py-8">

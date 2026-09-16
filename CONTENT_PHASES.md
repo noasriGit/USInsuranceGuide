@@ -1,140 +1,130 @@
-# Content Phases
+# Content Phases — DMV-First Architecture
 
-## Phase 2 (structure) — complete
+US Insurance Guide publishes **Maryland, Virginia, and Washington, D.C. insurance guides only**. We are not rolling out a 50-state matrix or city-page explosion.
 
-Pages and routes exist with section shells and safe placeholder notices. **Shell pages are not indexed** until editorial content is approved in Phase 3.
+The SEO model is:
 
-### Indexing flags (`lib/constants.ts`)
+```text
+Insurance Topic
+        ↓
+DMV Coverage / Concept Guide
+        ↓
+Maryland / Virginia / Washington, D.C.
+        ↓
+Requirements / Cost / Laws / Specialty Pages
+```
 
-| Flag | Phase 3 action |
-|------|----------------|
-| `INDEX_STATE_CATEGORY_SHELLS` | Set `true` after state+category copy is reviewed |
+## Source of truth
+
+Every URL lives in `lib/content/seo-manifest.ts` with:
+
+| Field | Purpose |
+|------|---------|
+| `status` | `planned` · `draft` · `review` · `published` |
+| `indexable` | Canonical indexing flag |
+| `lastModified` | Real content date — never deploy time |
+| `contentSource` | `article`, `state-guide`, `hub`, or `static` |
+| `redirectsFrom` | Permanent redirects from retired URLs |
+
+**Public rule:** only `published && indexable` pages get a sitemap entry, internal links, and indexable canonicals. Incomplete shells are not generated.
+
+City pages are deferred until Search Console shows meaningful local query demand.
+
+---
+
+## Phase 0 — Technical cleanup (current)
+
+- [x] Replace blanket `INDEX_STATE_CATEGORY_SHELLS`
+- [x] Remove incomplete shells from the sitemap
+- [x] Use real content modification dates
+- [x] Explicit SEO/content manifest
+- [x] Restructure state/category relationships
+- [x] Redirect map for retired blog and state URLs
+- [x] Update navigation and homepage for DMV positioning
+- [x] Strengthen Maryland, Virginia, and D.C. hubs
+
+---
+
+## Phase 1 — Highest-value DMV landing pages
+
+Publish and expand these as full editorial guides (immediate answers, official sources, last reviewed dates):
+
+### Maryland
+
+1. Maryland Auto Insurance
+2. Maryland Renters Insurance
+3. Maryland Homeowners Insurance
+4. Maryland Auto Requirements
+5. Maryland Auto Cost *(planned — do not invent averages)*
+6. Maryland Homeowners Cost *(planned)*
+7. Maryland Homeowners Laws *(planned)*
+8. Maryland Renters Requirements *(planned)*
+
+### Virginia
+
+9. Virginia Auto Insurance
+10. Virginia Homeowners Insurance
+11. Virginia Renters Insurance
+12. Virginia Auto Requirements *(migrated from the existing requirements article)*
+13. Virginia Auto Cost *(planned)*
+14. Virginia Homeowners Cost *(planned)*
+15. Virginia Homeowners Laws *(planned)*
+16. Virginia Renters Requirements *(planned)*
+
+### Washington, D.C.
+
+17. D.C. Auto Insurance
+18. D.C. Auto Requirements
+19. D.C. Homeowners Insurance
+20. D.C. Renters Insurance
+
+Do **not** write unsupported “best company” rankings.
+
+---
+
+## Phase 2 — Business authority
+
+Expand:
+
+- Maryland / Virginia business insurance, general liability, workers’ compensation, commercial auto
+- D.C. business pages when SERP quality justifies further investment
+
+Concept hubs:
+
+- `/business-insurance/general-liability/`
+- `/business-insurance/workers-compensation/`
+- `/business-insurance/commercial-auto/`
+- `/business-insurance/business-owners-policy/` *(planned)*
+
+---
+
+## Phase 3 — Specialty coverage
+
+Add or upgrade only where demand or internal-link value justifies it:
+
+- Landlord insurance (Virginia already has meaningful demand)
+- Flood insurance (harder SERPs — do not prioritize over KD 0–10 clusters)
+- Umbrella pages only when useful
+
+---
+
+## Phase 4 — Search Console expansion
+
+County and city pages (Fairfax, Loudoun, Arlington, Montgomery County, Bethesda, Rockville, Silver Spring, etc.) are **not** created from a template matrix. Build them only after impression data shows real local queries.
+
+---
+
+## Editorial rules
+
+- Answer the question in the first paragraph. Do not open with filler.
+- State/legal facts must cite official sources (MIA/MVA, VA SCC/DMV, DC DISB/DMV, statutes, workers’ compensation commissions).
+- Store `lastUpdated`, `lastReviewed`, `effectiveDate`, `officialSources`, and `reviewer` on regulatory guides.
+- Never invent premiums, limits, or legal rules from model memory.
+- Life insurance remains technically supported but is not a publishing priority.
+
+## Indexing flags
+
+| Flag | Use |
+|------|-----|
+| Page `status` + `indexable` in the SEO manifest | Controls sitemap, canonicals, and internal links |
 | `SHOW_INSURANCE_DIRECTORY_NAV` | Set `true` when partner listings are ready |
-
-### Per-entity flags (`content/data/`)
-
-| Field | Location | Phase 3 action |
-|-------|----------|----------------|
-| `contentReady` | `categories.json` | Set `true` on each category hub when copy is complete |
-| `contentReady` | `cities.json` | Set `true` on each local guide when copy is complete |
-| `draft` | article frontmatter | Remove or set `false` when article is ready to publish |
-
----
-
-## Phase 3 (editorial) — full content pass
-
-Phase 3 is **not** only new shells and drafts. It includes a **complete editorial rewrite and SEO review of all Phase 1 published content**, which was seeded for infrastructure testing — not as final, accuracy-reviewed copy.
-
-### Editorial goals
-
-- **Accuracy:** Verify claims against official state sources (.gov, state insurance departments)
-- **SEO:** Strong meta titles/descriptions, natural keyword use, internal links, FAQ schema where appropriate
-- **Reading flow:** Clear headings, scannable structure, plain-English tone — not thin or repetitive
-- **Compliance:** No prohibited language; disclaimers, sources, and reviewer bylines where appropriate
-- **E-E-A-T:** Last updated dates, citations, correction path visible
-
-### Phase 3 content inventory
-
-#### Priority 1 — Published articles (rewrite, not patch)
-
-These 10 articles are live today and **must be fully rewritten** in Phase 3:
-
-| Slug | Notes |
-|------|-------|
-| `virginia-auto-insurance-requirements` | High YMYL — verify VA SCC sources |
-| `maryland-auto-insurance-requirements` | High YMYL — verify MIA sources |
-| `washington-dc-auto-insurance-requirements` | High YMYL — verify DISB sources |
-| `business-insurance-in-virginia` | State-specific business coverage |
-| `general-liability-insurance-explained` | Evergreen explainer |
-| `commercial-auto-insurance-explained` | Evergreen explainer |
-| `workers-compensation-insurance-explained` | Evergreen explainer |
-| `home-insurance-vs-flood-insurance` | Comparison guide |
-| `why-did-my-car-insurance-go-up` | Blog-style educational |
-| `what-insurance-does-a-small-business-need` | Blog-style educational |
-
-For each article, Phase 3 deliverables:
-
-- [ ] Rewritten body copy (reading flow + accuracy)
-- [ ] Optimized `metaTitle`, `metaDescription`, `excerpt`
-- [ ] FAQ section (where appropriate) + FAQ schema
-- [ ] Sources & references (authoritative links)
-- [ ] Reviewer byline on YMYL topics
-- [ ] Updated `updatedAt` date
-- [ ] Prohibited-language check
-- [ ] Internal links to relevant category/state pages
-
-#### Priority 2 — Draft articles (write from scratch)
-
-| Slug | Status |
-|------|--------|
-| `business-insurance-in-maryland` | `draft: true` |
-| `business-insurance-in-washington-dc` | `draft: true` |
-| `homeowners-insurance-in-virginia` | `draft: true` |
-| `homeowners-insurance-in-maryland` | `draft: true` |
-| `renters-insurance-in-washington-dc` | `draft: true` |
-| `umbrella-insurance-explained` | `draft: true` |
-
-#### Priority 3 — Category hub copy (`content/data/categories.json`)
-
-All 11 categories — review and rewrite where needed:
-
-- [ ] **Phase 1 hubs (5):** `shortDescription`, `metaTitle`, `metaDescription` — optimize even though `contentReady: true` today
-- [ ] **Phase 2 hubs (6):** Full hub intro copy on page + set `contentReady: true` when done
-
-#### Priority 4 — State hub copy (`content/data/states.json`)
-
-- [ ] Rewrite `overview` for Virginia, Maryland, Washington D.C.
-- [ ] Review `metaTitle` / `metaDescription` for each state
-
-#### Priority 5 — State + category guide pages (33 routes)
-
-Fill all `GuideSectionShell` sections defined in `STATE_CATEGORY_GUIDE_SECTIONS`:
-
-- Overview
-- Coverage Options to Consider
-- State Requirements & Regulations
-- Factors That May Affect Your Premium
-- Frequently Asked Questions
-- Sources & References
-
-Then set `INDEX_STATE_CATEGORY_SHELLS = true`.
-
-#### Priority 6 — Local city guides (9 routes)
-
-Fill all `LOCAL_GUIDE_SECTIONS` shells in `content/data/cities.json` pages, then set `contentReady: true` per city.
-
-#### Priority 7 — Static / trust pages (review pass)
-
-Light review or rewrite as needed — legal tone, accuracy, no overclaims:
-
-- About, Editorial Policy, Advertising Disclosure, Insurance Disclaimer
-- Privacy Policy, Terms of Use, Contact, Corrections
-
-Homepage hero and section intro copy (`app/page.tsx`) — review for SEO and clarity.
-
-### Suggested Phase 3 batch order
-
-1. **Batch A:** VA / MD / DC auto requirements (highest regulatory sensitivity)
-2. **Batch B:** Remaining published articles (explainers + blog posts)
-3. **Batch C:** Draft articles + homeowners/renters state guides
-4. **Batch D:** State+category pages (by state: VA → MD → DC)
-5. **Batch E:** Local city guides
-6. **Batch F:** Category hub meta + new hub body copy; static page review
-
-### Phase 3 completion checklist
-
-- [ ] All 10 Phase 1 articles rewritten and re-reviewed
-- [ ] All 6 draft articles published (`draft: false`)
-- [ ] All category hubs `contentReady: true` with optimized metadata
-- [ ] All local guides `contentReady: true`
-- [ ] `INDEX_STATE_CATEGORY_SHELLS = true`
-- [ ] Sitemap reflects all indexable pages
-- [ ] Internal linking audit complete
-- [ ] Optional: licensed professional or legal review on requirement pages
-
----
-
-## After Phase 3
-
-- Phase 4 (polish): GA4, Search Console, Lighthouse, domain fine-tuning
-- Partner directory: enable when listings exist (`SHOW_INSURANCE_DIRECTORY_NAV`)

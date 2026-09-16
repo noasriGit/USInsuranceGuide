@@ -36,7 +36,7 @@ sources:
     url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/virginia-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/virginia/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
 ---
 
@@ -109,7 +109,7 @@ A **business owners policy (BOP)** bundles general liability and commercial prop
 
 If your Virginia business owns vehicles, registers vehicles commercially, or uses vehicles primarily for work, you likely need [commercial auto insurance](/blog/commercial-auto-insurance-explained/) rather than a personal auto policy. Personal policies commonly exclude business use.
 
-Virginia commercial auto policies must meet the same minimum liability standards as personal policies — currently **50/100/25** for policies effective January 1, 2025 or later. See our [Virginia auto insurance requirements guide](/blog/virginia-auto-insurance-requirements/) for details on liability, uninsured motorist, and proof-of-insurance rules.
+Virginia commercial auto policies must meet the same minimum liability standards as personal policies — currently **50/100/25** for policies effective January 1, 2025 or later. See our [Virginia auto insurance requirements guide](/states/virginia/auto-insurance/requirements/) for details on liability, uninsured motorist, and proof-of-insurance rules.
 
 Businesses whose employees drive personal vehicles for work may also need **hired and non-owned auto (HNOA)** liability coverage, which is typically an endorsement on a commercial policy rather than a separate vehicle policy.
 

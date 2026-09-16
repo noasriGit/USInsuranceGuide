@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Article } from "@/lib/schemas";
+import { getHrefForArticleSlug } from "@/lib/content/seo-manifest";
 import { formatDate } from "@/lib/utils";
 import { cn } from "@/lib/utils";
 
@@ -17,7 +18,7 @@ export function ArticleCard({ article, className }: ArticleCardProps) {
       )}
     >
       <Link
-        href={`/blog/${article.slug}/`}
+        href={getHrefForArticleSlug(article.slug)}
         className="block rounded-md focus-visible:outline-offset-4"
       >
         <h3 className="text-lg font-semibold text-slate-900 group-hover:text-navy-800">

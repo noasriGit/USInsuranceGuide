@@ -39,7 +39,7 @@ General liability (GL) insurance is often the first commercial policy a business
 
 This explainer describes how general liability insurance generally works. Policy language varies by carrier and state. Read your own policy and discuss specifics with a licensed insurance professional.
 
-For how GL fits into a broader coverage plan, see [what insurance a small business may need](/blog/what-insurance-does-a-small-business-need/). For state-specific business context, see our guides for [Virginia](/blog/business-insurance-in-virginia/), [Maryland](/states/maryland/), and [Washington, D.C.](/states/washington-dc/).
+For how GL fits into a broader coverage plan, see [what insurance a small business may need](/blog/what-insurance-does-a-small-business-need/). For state-specific business context, see our guides for [Virginia](/states/virginia/business-insurance/), [Maryland](/states/maryland/), and [Washington, D.C.](/states/washington-dc/).
 
 ## What General Liability Insurance Is
 
@@ -152,7 +152,7 @@ Premiums vary based on:
 
 While GL rules are primarily driven by contracts rather than state statute, businesses operating in our coverage area should note:
 
-- **[Virginia](/blog/business-insurance-in-virginia/)** — No blanket GL mandate, but workers' comp is required at 3+ employees and commercial auto rules apply to business vehicles
+- **[Virginia](/states/virginia/business-insurance/)** — No blanket GL mandate, but workers' comp is required at 3+ employees and commercial auto rules apply to business vehicles
 - **[Maryland](/states/maryland/)** — Contractual GL requirements are common in Baltimore and D.C.-metro government and commercial leasing
 - **[Washington, D.C.](/states/washington-dc/)** — DISB notes that CGL covers bodily injury, property damage, personal injury, and false advertising claims; commercial auto and professional liability are separate policies
 

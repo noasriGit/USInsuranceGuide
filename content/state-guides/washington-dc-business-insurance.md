@@ -9,7 +9,7 @@ sections:
   Overview: |
     Washington, D.C. businesses face a mix of District mandates, federal contracting requirements, contract obligations, and optional coverage. No single policy covers every exposure.
 
-    See our [business insurance in Washington, D.C. guide](/blog/business-insurance-in-washington-dc/) for workers' comp rules, coverage types, and industry considerations.
+    See our [business insurance in Washington, D.C. guide](/states/washington-dc/business-insurance/) for workers' comp rules, coverage types, and industry considerations.
   Coverage Options to Consider: |
     | Coverage | Often required? |
     |---|---|
@@ -23,11 +23,11 @@ sections:
   State Requirements & Regulations: |
     **Workers' compensation:** Employers with **one or more employees** must carry coverage. Domestic workers employed 240+ hours per 13-week quarter may also trigger requirements. Administered by the [DC Office of Workers' Compensation](https://does.dc.gov/page/workers-compensation-does).
 
-    **Commercial auto:** Business vehicles must meet D.C. [auto minimums](/blog/washington-dc-auto-insurance-requirements/) (25/50/10).
+    **Commercial auto:** Business vehicles must meet D.C. [auto minimums](/states/washington-dc/auto-insurance/requirements/) (25/50/10).
 
     **General liability:** Not mandated for all businesses, but common in federal contracts, leases, and client agreements.
 
-    Compare: [Virginia](/blog/business-insurance-in-virginia/) requires workers' comp at **3+ employees** — important if you operate across the DMV.
+    Compare: [Virginia](/states/virginia/business-insurance/) requires workers' comp at **3+ employees** — important if you operate across the DMV.
   Factors That May Affect Your Premium: |
     Industry classification, payroll, claims history, number of employees, vehicles, location, and coverage limits selected. Workers' comp rates vary significantly by trade.
 faq:
@@ -47,7 +47,7 @@ sources:
     url: "https://disb.dc.gov/page/insurance"
     publisher: "DC DISB"
   - title: "Business Insurance in Washington, D.C. (full guide)"
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-washington-dc/"
+    url: "https://usinsuranceguide.com/states/washington-dc/business-insurance/"
     publisher: "US Insurance Guide"
 ---
 

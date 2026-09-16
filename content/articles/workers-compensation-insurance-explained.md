@@ -34,13 +34,13 @@ sources:
     url: "https://does.dc.gov/sites/default/files/dc/sites/does/page_content/attachments/OWC_FAQs.pdf"
     publisher: "DC Department of Employment Services"
   - title: "Business Insurance in Virginia"
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-virginia/"
+    url: "https://usinsuranceguide.com/states/virginia/business-insurance/"
     publisher: "US Insurance Guide"
 ---
 
 Workers' compensation insurance is one of the few business coverage types that **state law directly mandates** for many employers. It provides a structured system for handling work-related injuries and illnesses — balancing prompt benefits for injured workers against limited employer liability.
 
-This explainer covers what workers' compensation generally includes, how requirements vary by state, and what employers should know. For Virginia-specific rules, see [business insurance in Virginia](/blog/business-insurance-in-virginia/).
+This explainer covers what workers' compensation generally includes, how requirements vary by state, and what employers should know. For Virginia-specific rules, see [business insurance in Virginia](/states/virginia/business-insurance/).
 
 ## What Workers' Compensation Is
 
@@ -92,7 +92,7 @@ Since US Insurance Guide focuses on the DMV region, here is how the three jurisd
 
 | Jurisdiction | Coverage trigger | Key notes |
 |---|---|---|
-| **[Virginia](/blog/business-insurance-in-virginia/)** | More than 2 employees (i.e., 3+) | Subcontractor employees performing the same trade count; no waivers for qualifying employers; Virginia-specific coverage required for work in VA |
+| **[Virginia](/states/virginia/business-insurance/)** | More than 2 employees (i.e., 3+) | Subcontractor employees performing the same trade count; no waivers for qualifying employers; Virginia-specific coverage required for work in VA |
 | **[Maryland](https://www.wcc.state.md.us/Gen_Info/FAQ_Employees.html)** | 1 or more employees | Very few exemptions; employers and employees cannot waive the law; administered by MD Workers' Compensation Commission |
 | **[Washington, D.C.](https://does.dc.gov/page/workers-compensation-does)** | 1 or more employees | Administered by DC Office of Workers' Compensation (DOES); domestic workers at 240+ hours/quarter may trigger requirements for homeowners |
 

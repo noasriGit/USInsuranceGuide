@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
-import { getCategories, getDisclaimers } from "@/lib/content";
+import { getDisclaimers, getPrimaryCategories, getStates } from "@/lib/content";
 import { Container } from "./Container";
 
 const companyLinks = [
@@ -20,7 +20,8 @@ const policyLinks = [
 
 export function SiteFooter() {
   const disclaimers = getDisclaimers();
-  const categories = getCategories(true);
+  const categories = getPrimaryCategories();
+  const states = getStates();
 
   return (
     <footer className="mt-auto border-t border-slate-200 bg-slate-50">
@@ -29,7 +30,7 @@ export function SiteFooter() {
           <div>
             <p className="text-base font-bold text-navy-900">{SITE_NAME}</p>
             <p className="mt-2 text-sm leading-relaxed text-slate-600">
-              Educational insurance guides for consumers and businesses.
+              Educational insurance guides for Maryland, Virginia, and Washington, D.C.
             </p>
           </div>
 
@@ -62,14 +63,19 @@ export function SiteFooter() {
           <div>
             <h2 className="text-sm font-semibold text-slate-900">Explore</h2>
             <ul className="mt-3 space-y-2">
-              <li>
-                <Link href="/states/" className="text-sm text-slate-600 underline-offset-2 hover:text-navy-800 hover:underline">
-                  State Guides
-                </Link>
-              </li>
+              {states.map((state) => (
+                <li key={state.slug}>
+                  <Link
+                    href={`/states/${state.slug}/`}
+                    className="text-sm text-slate-600 underline-offset-2 hover:text-navy-800 hover:underline"
+                  >
+                    {state.name}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Link href="/blog/" className="text-sm text-slate-600 underline-offset-2 hover:text-navy-800 hover:underline">
-                  Blog
+                  Guides
                 </Link>
               </li>
               {categories.map((cat) => (

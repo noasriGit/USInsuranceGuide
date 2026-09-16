@@ -150,7 +150,7 @@ For more on why premiums change over time, see our guide on [why car insurance r
 
 ## Maryland vs. Neighboring Jurisdictions
 
-Minimum limits and mandatory coverages differ across the DMV region. [Virginia](/blog/virginia-auto-insurance-requirements/) now requires 50/100/25 liability with matching UM/UIM coverage and does not mandate PIP. [Washington, D.C.](/blog/washington-dc-auto-insurance-requirements/) requires 25/50/10 liability and offers PIP as optional coverage. Your policy should meet the requirements of the state where your vehicle is registered.
+Minimum limits and mandatory coverages differ across the DMV region. [Virginia](/states/virginia/auto-insurance/requirements/) now requires 50/100/25 liability with matching UM/UIM coverage and does not mandate PIP. [Washington, D.C.](/states/washington-dc/auto-insurance/requirements/) requires 25/50/10 liability and offers PIP as optional coverage. Your policy should meet the requirements of the state where your vehicle is registered.
 
 ## Questions to Ask a Licensed Professional
 

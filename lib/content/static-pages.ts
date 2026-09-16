@@ -7,11 +7,11 @@ export const staticPages = {
 
 ## Our Mission
 
-We publish clear, plain-English insurance guides, state-by-state resources, and practical articles designed to help you make informed decisions about coverage — always in consultation with a licensed insurance professional.
+We publish clear, plain-English insurance guides and practical articles for **Maryland, Virginia, and Washington, D.C.** — always in consultation with a licensed insurance professional.
 
 ## What We Are
 
-US Insurance Guide is an **educational resource**. We research and publish general information about insurance topics including auto, home, renters, business, and life insurance.
+US Insurance Guide is an **educational resource**. We research and publish general information about insurance topics including auto, home, renters, and business insurance in the DMV region.
 
 ## What We Are Not
 
@@ -151,7 +151,7 @@ We are aware of the following limitations and are working to address them:
 
 - **Third-party partner websites:** Links to insurance partners and government resources may open in a new browser tab and are outside our direct control.
 - **Display advertising:** When enabled, third-party ad units may not meet the same accessibility standards as our editorial content.
-- **City-level guides:** Some local guide pages are placeholders while content is in development.
+- **City-level guides:** Local city and county pages are not published until Search Console shows meaningful demand.
 - **PDF sources:** Some linked government publications are PDF files; accessibility of those documents depends on the publishing agency.
 
 ## Feedback and Accommodation Requests

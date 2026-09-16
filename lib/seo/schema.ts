@@ -42,7 +42,12 @@ export function breadcrumbSchema(
   };
 }
 
-export function articleSchema(article: Article, authorName: string) {
+export function articleSchema(
+  article: Article,
+  authorName: string,
+  canonicalPath?: string,
+) {
+  const path = canonicalPath ?? `/blog/${article.slug}/`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -61,7 +66,7 @@ export function articleSchema(article: Article, authorName: string) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/blog/${article.slug}/`,
+      "@id": `${SITE_URL}${path}`,
     },
   };
 }

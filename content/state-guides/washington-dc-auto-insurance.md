@@ -9,7 +9,7 @@ sections:
   Overview: |
     Washington, D.C. requires liability and uninsured motorist insurance on every registered vehicle under the Compulsory/No-Fault Motor Vehicle Insurance Act. DC DMV verifies continuous coverage.
 
-    This page is a brief state overview — not a full requirements guide. See our [D.C. auto insurance requirements article](/blog/washington-dc-auto-insurance-requirements/) for limits, PIP elections, penalties, and proof-of-insurance details.
+    This page is a brief state overview — not a full requirements guide. See our [D.C. auto insurance requirements article](/states/washington-dc/auto-insurance/requirements/) for limits, PIP elections, penalties, and proof-of-insurance details.
   Coverage Options to Consider: |
     **Required:** Bodily injury and property damage liability (25/50/10), plus uninsured motorist bodily injury (25/50) and uninsured motorist property damage ($5,000 with a $200 deductible).
 
@@ -21,7 +21,7 @@ sections:
 
     You must maintain coverage as long as your vehicle is registered. If insurance terminates, return tags to DC DMV — lapses may trigger fines and registration suspension.
 
-    Neighboring [Maryland](/blog/maryland-auto-insurance-requirements/) (30/60/15) and [Virginia](/blog/virginia-auto-insurance-requirements/) (50/100/25) set different minimums — your policy must meet D.C. rules where the vehicle is registered.
+    Neighboring [Maryland](/states/maryland/auto-insurance/requirements/) (30/60/15) and [Virginia](/states/virginia/auto-insurance/requirements/) (50/100/25) set different minimums — your policy must meet D.C. rules where the vehicle is registered.
   Factors That May Affect Your Premium: |
     Insurers may consider driving record, age, vehicle type, garaging location, mileage, coverage limits, deductibles, PIP election, and credit-based insurance scores where permitted.
 
@@ -42,7 +42,7 @@ sources:
     url: "https://dmv.dc.gov/service/vehicle-insurance"
     publisher: "District of Columbia Department of Motor Vehicles"
   - title: "Washington, D.C. Auto Insurance Requirements (full guide)"
-    url: "https://usinsuranceguide.com/blog/washington-dc-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/washington-dc/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
 ---
 

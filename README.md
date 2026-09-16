@@ -23,8 +23,12 @@ npm start
 ## Content
 
 - **Articles:** `content/articles/*.md` (gray-matter frontmatter)
+- **State guides:** `content/state-guides/*.md`
 - **Data:** `content/data/*.json` (categories, states, partners, etc.)
-- **Phases:** See [CONTENT_PHASES.md](./CONTENT_PHASES.md) for structure vs editorial workflow
+- **SEO manifest:** `lib/content/seo-manifest.ts` — publication status, canonical URLs, redirects, and last-modified dates
+- **Phases:** See [CONTENT_PHASES.md](./CONTENT_PHASES.md) for the DMV-first publishing plan
+
+US Insurance Guide covers **Maryland, Virginia, and Washington, D.C. only**.
 
 ## Phase 3 (editorial) — see [CONTENT_PHASES.md](./CONTENT_PHASES.md)
 

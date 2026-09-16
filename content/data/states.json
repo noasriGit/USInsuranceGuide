@@ -1,57 +1,63 @@
 [
   {
-    "slug": "virginia",
-    "name": "Virginia",
-    "abbreviation": "VA",
-    "metaTitle": "Virginia Insurance Guides",
-    "metaDescription": "Educational insurance guides for Virginia residents and businesses. Auto, home, renters, business, and life insurance resources.",
-    "featuredCategories": [
-      "auto-insurance",
-      "home-insurance",
-      "renters-insurance",
-      "business-insurance",
-      "life-insurance",
-      "commercial-auto-insurance",
-      "general-liability-insurance",
-      "workers-compensation-insurance",
-      "landlord-insurance",
-      "umbrella-insurance",
-      "flood-insurance"
-    ],
-    "overview": "Virginia has specific insurance requirements and regulations that may affect coverage options for residents and businesses. Our educational guides cover auto insurance minimums, homeowners considerations, and business coverage topics relevant to the Commonwealth.",
-    "externalSources": [
-      {
-        "title": "Virginia Bureau of Insurance",
-        "url": "https://www.scc.virginia.gov/consumers/insurance/",
-        "publisher": "Virginia SCC"
-      }
-    ]
-  },
-  {
     "slug": "maryland",
     "name": "Maryland",
     "abbreviation": "MD",
     "metaTitle": "Maryland Insurance Guides",
-    "metaDescription": "Educational insurance guides for Maryland residents and businesses covering auto, home, renters, business, and life insurance resources.",
-    "featuredCategories": [
-      "auto-insurance",
-      "home-insurance",
-      "renters-insurance",
-      "business-insurance",
-      "life-insurance",
-      "commercial-auto-insurance",
-      "general-liability-insurance",
-      "workers-compensation-insurance",
-      "landlord-insurance",
-      "umbrella-insurance",
-      "flood-insurance"
+    "metaDescription": "Maryland insurance guides covering auto requirements, homeowners, renters, and business coverage, plus official Maryland Insurance Administration and MVA resources.",
+    "overview": "Maryland requires registered vehicles to carry liability insurance, matching uninsured motorist coverage, and a personal injury protection offer. Homeowners insurance is not required by state law, though mortgage lenders typically require it. Renters insurance is generally optional unless a lease requires it. Most employers with one or more employees must carry workers' compensation insurance.",
+    "requiredInsuranceSummary": "Maryland's most common legal insurance requirements are auto liability (currently 30/60/15) with matching UM/UIM, a PIP offer that can be waived in writing, and workers' compensation for nearly all employers with one or more employees. Homeowners and renters insurance are not mandated by statute.",
+    "majorRisks": [
+      "Coastal and Chesapeake Bay wind and storm exposure",
+      "Flood risk in waterfront, low-lying, and inland overflow areas",
+      "Winter weather and nor'easters, especially in western and central Maryland"
     ],
-    "overview": "Maryland maintains its own insurance requirements and regulatory framework. Our guides provide general educational information on auto insurance mandates, homeowners coverage, and business insurance topics for Maryland residents.",
     "externalSources": [
       {
         "title": "Maryland Insurance Administration",
         "url": "https://insurance.maryland.gov/Pages/default.aspx",
         "publisher": "Maryland Insurance Administration"
+      },
+      {
+        "title": "Maryland Motor Vehicle Administration",
+        "url": "https://mva.maryland.gov/",
+        "publisher": "Maryland Motor Vehicle Administration"
+      },
+      {
+        "title": "Maryland Workers' Compensation Commission",
+        "url": "https://www.wcc.state.md.us/",
+        "publisher": "Maryland Workers' Compensation Commission"
+      }
+    ]
+  },
+  {
+    "slug": "virginia",
+    "name": "Virginia",
+    "abbreviation": "VA",
+    "metaTitle": "Virginia Insurance Guides",
+    "metaDescription": "Virginia insurance guides covering auto requirements, homeowners, renters, and business coverage, plus official SCC Bureau of Insurance and DMV resources.",
+    "overview": "Virginia requires registered vehicles to carry 50/100/25 liability insurance and matching uninsured/underinsured motorist coverage unless UM/UIM is rejected in writing. The uninsured motor vehicle fee option ended July 1, 2024. Homeowners insurance is not required by statute. Workers' compensation is generally required for employers with three or more employees.",
+    "requiredInsuranceSummary": "Virginia's core mandates are auto liability at 50/100/25 for policies effective January 1, 2025 or later, matching UM/UIM unless rejected in writing, and workers' compensation at three or more employees. Homeowners and renters insurance are not required by state law.",
+    "majorRisks": [
+      "Higher dwelling replacement costs in Northern Virginia",
+      "Coastal exposure in Hampton Roads versus inland and mountain weather inland",
+      "Severe thunderstorms, winter storms, and localized flooding"
+    ],
+    "externalSources": [
+      {
+        "title": "Virginia SCC Bureau of Insurance",
+        "url": "https://www.scc.virginia.gov/consumers/insurance/",
+        "publisher": "Virginia State Corporation Commission"
+      },
+      {
+        "title": "Virginia Department of Motor Vehicles",
+        "url": "https://www.dmv.virginia.gov/",
+        "publisher": "Virginia Department of Motor Vehicles"
+      },
+      {
+        "title": "Virginia Workers' Compensation Commission",
+        "url": "https://www.workcomp.virginia.gov/",
+        "publisher": "Virginia Workers' Compensation Commission"
       }
     ]
   },
@@ -60,26 +66,24 @@
     "name": "Washington, D.C.",
     "abbreviation": "DC",
     "metaTitle": "Washington, D.C. Insurance Guides",
-    "metaDescription": "Educational insurance guides for Washington, D.C. residents and businesses covering auto, home, renters, business, and life insurance resources.",
-    "featuredCategories": [
-      "auto-insurance",
-      "home-insurance",
-      "renters-insurance",
-      "business-insurance",
-      "life-insurance",
-      "commercial-auto-insurance",
-      "general-liability-insurance",
-      "workers-compensation-insurance",
-      "landlord-insurance",
-      "umbrella-insurance",
-      "flood-insurance"
+    "metaDescription": "Washington, D.C. insurance guides covering auto requirements, homeowners, renters, and business coverage, plus official DISB and DC DMV resources.",
+    "overview": "Washington, D.C. requires 25/50/10 auto liability and uninsured motorist coverage. The District has a high share of renters, rowhomes, condos, and older housing stock, so lease-required renters insurance and building-specific property coverage come up often. Most employers need workers' compensation. Homeowners insurance is not required by District statute, but lenders typically require it.",
+    "requiredInsuranceSummary": "D.C. requires auto liability at 25/50/10 plus uninsured motorist coverage. PIP is generally optional. Homeowners and renters insurance are not mandated by statute, though leases and mortgages often require coverage. Most employers must carry workers' compensation.",
+    "majorRisks": [
+      "Rowhomes, condos, and older housing stock",
+      "High renter and landlord prevalence",
+      "Urban property, theft, and liability exposure"
     ],
-    "overview": "Washington, D.C. has distinct insurance requirements that differ from surrounding states. Our educational guides cover auto insurance mandates, renters coverage considerations, and business insurance topics for D.C. residents.",
     "externalSources": [
       {
         "title": "DC Department of Insurance, Securities and Banking",
         "url": "https://disb.dc.gov/",
         "publisher": "DC DISB"
+      },
+      {
+        "title": "DC Department of Motor Vehicles",
+        "url": "https://dmv.dc.gov/",
+        "publisher": "DC Department of Motor Vehicles"
       }
     ]
   }

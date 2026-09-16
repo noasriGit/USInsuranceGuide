@@ -9,7 +9,7 @@ sections:
   Overview: |
     Your landlord's insurance covers the building, not your belongings. Renters insurance (HO-4) may protect personal property, liability, and additional living expenses after a covered loss.
 
-    See our [D.C. renters insurance guide](/blog/renters-insurance-in-washington-dc/) for coverage details, lease requirements, and questions to ask an agent.
+    See our [D.C. renters insurance guide](/states/washington-dc/renters-insurance/) for coverage details, lease requirements, and questions to ask an agent.
   Coverage Options to Consider: |
     **Personal property** — furniture, electronics, clothing against covered perils such as fire and theft.
 
@@ -38,7 +38,7 @@ sources:
     url: "https://disb.dc.gov/page/insurance-tips-homeowners-and-renters"
     publisher: "DC Department of Insurance, Securities and Banking"
   - title: "Renters Insurance in Washington, D.C. (full guide)"
-    url: "https://usinsuranceguide.com/blog/renters-insurance-in-washington-dc/"
+    url: "https://usinsuranceguide.com/states/washington-dc/renters-insurance/"
     publisher: "US Insurance Guide"
 ---
 

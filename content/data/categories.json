@@ -11,7 +11,8 @@
     ],
     "launchPriority": 1,
     "active": true,
-    "contentReady": true
+    "contentReady": true,
+    "hubGroup": "primary"
   },
   {
     "slug": "home-insurance",
@@ -26,7 +27,8 @@
     ],
     "launchPriority": 2,
     "active": true,
-    "contentReady": true
+    "contentReady": true,
+    "hubGroup": "primary"
   },
   {
     "slug": "renters-insurance",
@@ -40,7 +42,8 @@
     ],
     "launchPriority": 3,
     "active": true,
-    "contentReady": true
+    "contentReady": true,
+    "hubGroup": "primary"
   },
   {
     "slug": "business-insurance",
@@ -55,7 +58,8 @@
     ],
     "launchPriority": 4,
     "active": true,
-    "contentReady": true
+    "contentReady": true,
+    "hubGroup": "primary"
   },
   {
     "slug": "life-insurance",
@@ -66,9 +70,10 @@
     "relatedCategories": [
       "business-insurance"
     ],
-    "launchPriority": 5,
+    "launchPriority": 12,
     "active": true,
-    "contentReady": true
+    "contentReady": true,
+    "hubGroup": "deprioritized"
   },
   {
     "slug": "commercial-auto-insurance",
@@ -83,6 +88,8 @@
     "launchPriority": 6,
     "active": true,
     "contentReady": true,
+    "hubGroup": "nested",
+    "canonicalPath": "/business-insurance/commercial-auto/",
     "featuredArticleSlugs": [
       "commercial-auto-insurance-explained"
     ]
@@ -99,6 +106,8 @@
     "launchPriority": 7,
     "active": true,
     "contentReady": true,
+    "hubGroup": "nested",
+    "canonicalPath": "/business-insurance/general-liability/",
     "featuredArticleSlugs": [
       "general-liability-insurance-explained"
     ]
@@ -115,6 +124,8 @@
     "launchPriority": 8,
     "active": true,
     "contentReady": true,
+    "hubGroup": "nested",
+    "canonicalPath": "/business-insurance/workers-compensation/",
     "featuredArticleSlugs": [
       "workers-compensation-insurance-explained"
     ]
@@ -132,6 +143,7 @@
     "launchPriority": 9,
     "active": true,
     "contentReady": true,
+    "hubGroup": "specialty",
     "interimNote": "A full landlord insurance hub guide is in development. Start with the state overviews below — each links to official resources and related renters coverage for tenants."
   },
   {
@@ -147,6 +159,7 @@
     "launchPriority": 10,
     "active": true,
     "contentReady": true,
+    "hubGroup": "specialty",
     "featuredArticleSlugs": [
       "umbrella-insurance-explained"
     ]
@@ -163,6 +176,7 @@
     "launchPriority": 11,
     "active": true,
     "contentReady": true,
+    "hubGroup": "specialty",
     "featuredArticleSlugs": [
       "home-insurance-vs-flood-insurance"
     ]

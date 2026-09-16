@@ -24,7 +24,7 @@ sections:
     - Client and vendor agreements
     - Professional licensing boards
 
-    Insurers are regulated by [DISB](https://disb.dc.gov/page/introduction-liability-insurance). See also [business insurance in Washington, D.C.](/blog/business-insurance-in-washington-dc/) for state-mandated coverage like workers' comp.
+    Insurers are regulated by [DISB](https://disb.dc.gov/page/introduction-liability-insurance). See also [business insurance in Washington, D.C.](/states/washington-dc/business-insurance/) for state-mandated coverage like workers' comp.
   Factors That May Affect Your Premium: |
     Industry type, revenue, payroll, claims history, coverage limits, location, and operations (subcontractors, public access) may affect GL premium.
 faq:
@@ -44,7 +44,7 @@ sources:
     url: "https://usinsuranceguide.com/blog/general-liability-insurance-explained/"
     publisher: "US Insurance Guide"
   - title: "Business Insurance in Washington, D.C."
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-washington-dc/"
+    url: "https://usinsuranceguide.com/states/washington-dc/business-insurance/"
     publisher: "US Insurance Guide"
 ---
 

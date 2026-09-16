@@ -10,7 +10,7 @@ interface CategoryCardProps {
 export function CategoryCard({ category, className }: CategoryCardProps) {
   return (
     <Link
-      href={`/${category.slug}/`}
+      href={category.canonicalPath ?? `/${category.slug}/`}
       className={cn(
         "block rounded-lg border border-slate-200 bg-white p-5 transition-shadow hover:shadow-md hover:border-navy-200",
         className,

@@ -11,8 +11,7 @@ const headerLinks = [
   { label: "Home", href: "/home-insurance/" },
   { label: "Renters", href: "/renters-insurance/" },
   { label: "Business", href: "/business-insurance/" },
-  { label: "Life", href: "/life-insurance/" },
-  { label: "Blog", href: "/blog/" },
+  { label: "Guides", href: "/blog/" },
 ];
 
 const navLinkClassName =
@@ -104,7 +103,7 @@ export function SiteHeader() {
               aria-expanded={statesOpen}
               aria-controls={statesMenuId}
             >
-              State Guides
+              DMV Guides
               <ChevronDown className="h-4 w-4" aria-hidden="true" />
             </button>
             {statesOpen && (
@@ -120,7 +119,7 @@ export function SiteHeader() {
                       className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:underline"
                       onClick={closeStatesMenu}
                     >
-                      All States
+                      All DMV Guides
                     </Link>
                   </li>
                   {states.map((state) => (
@@ -185,14 +184,14 @@ export function SiteHeader() {
               </Link>
             ))}
             <p className="mt-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-600">
-              State Guides
+              DMV Guides
             </p>
             <Link
               href="/states/"
               className="rounded-md px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:underline"
               onClick={closeMobileMenu}
             >
-              All States
+              All DMV Guides
             </Link>
             {states.map((state) => (
               <Link

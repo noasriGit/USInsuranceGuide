@@ -2,21 +2,23 @@ export const SITE_NAME = "US Insurance Guide";
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://usinsuranceguide.com";
 export const SITE_TAGLINE =
-  "Clear insurance guides, state-by-state resources, and practical coverage information for consumers and businesses.";
+  "Insurance guides for Maryland, Virginia, and Washington, D.C.";
 export const SITE_DESCRIPTION =
-  "Educational insurance guides covering auto, home, renters, business, and life insurance with state resources for Virginia, Maryland, and Washington, D.C.";
+  "Educational insurance guides for Maryland, Virginia, and Washington, D.C. covering auto, homeowners, renters, and business insurance requirements, costs, and coverage rules.";
 
 export const LAUNCH_CATEGORY_SLUGS = [
   "auto-insurance",
   "home-insurance",
   "renters-insurance",
   "business-insurance",
-  "life-insurance",
+  "landlord-insurance",
+  "flood-insurance",
+  "umbrella-insurance",
 ] as const;
 
 export const LAUNCH_STATE_SLUGS = [
-  "virginia",
   "maryland",
+  "virginia",
   "washington-dc",
 ] as const;
 
@@ -39,5 +41,9 @@ export const RESERVED_SLUGS = new Set([
 /** Set true when directory has partner listings worth promoting in nav. */
 export const SHOW_INSURANCE_DIRECTORY_NAV = false;
 
-/** Set true when all 33 state+category guide pages are approved for indexing. */
-export const INDEX_STATE_CATEGORY_SHELLS = true;
+export const PRIMARY_TOPIC_SLUGS = [
+  "auto-insurance",
+  "home-insurance",
+  "renters-insurance",
+  "business-insurance",
+] as const;

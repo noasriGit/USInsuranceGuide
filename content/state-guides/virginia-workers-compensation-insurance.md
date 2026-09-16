@@ -9,7 +9,7 @@ sections:
   Overview: |
     Workers' compensation provides benefits for work-related injuries and illnesses. In Virginia, it is state-mandated for many employers.
 
-    See our [workers' compensation explainer](/blog/workers-compensation-insurance-explained/) and [Virginia business insurance guide](/blog/business-insurance-in-virginia/) for details.
+    See our [workers' compensation explainer](/blog/workers-compensation-insurance-explained/) and [Virginia business insurance guide](/states/virginia/business-insurance/) for details.
   Coverage Options to Consider: |
     Workers' comp is not optional for qualifying employers — coverage is obtained from a Virginia-licensed carrier, approved self-insurance, or registered PEO.
 
@@ -41,7 +41,7 @@ sources:
     url: "https://usinsuranceguide.com/blog/workers-compensation-insurance-explained/"
     publisher: "US Insurance Guide"
   - title: "Business Insurance in Virginia"
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-virginia/"
+    url: "https://usinsuranceguide.com/states/virginia/business-insurance/"
     publisher: "US Insurance Guide"
 ---
 

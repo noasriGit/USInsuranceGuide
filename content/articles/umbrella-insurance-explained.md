@@ -45,7 +45,7 @@ A serious car accident, a guest injured at your home, or a social media post tha
 
 This explainer describes how personal umbrella insurance generally works. Policy language varies by carrier and state. Read your own policy and discuss specifics with a licensed insurance professional.
 
-For broader context, see our [umbrella insurance category hub](/umbrella-insurance/). For underlying coverage types, see our explainers on [general liability](/blog/general-liability-insurance-explained/), [commercial auto](/blog/commercial-auto-insurance-explained/), and our [homeowners](/blog/homeowners-insurance-in-virginia/) and [renters](/blog/renters-insurance-in-washington-dc/) guides.
+For broader context, see our [umbrella insurance category hub](/umbrella-insurance/). For underlying coverage types, see our explainers on [general liability](/blog/general-liability-insurance-explained/), [commercial auto](/blog/commercial-auto-insurance-explained/), and our [homeowners](/states/virginia/homeowners-insurance/) and [renters](/states/washington-dc/renters-insurance/) guides.
 
 ## What Umbrella Insurance Is
 
@@ -162,11 +162,11 @@ Umbrella insurance does not replace your underlying policies — it supplements 
 
 ### Auto insurance
 
-Your [auto liability limits](/blog/virginia-auto-insurance-requirements/) are the first line of defense in an accident you cause. Minimum state limits — such as Virginia's 50/100/25 or Maryland's 30/60/15 — are often well below what a serious injury claim may cost. Umbrella coverage sits above whatever limits you carry.
+Your [auto liability limits](/states/virginia/auto-insurance/requirements/) are the first line of defense in an accident you cause. Minimum state limits — such as Virginia's 50/100/25 or Maryland's 30/60/15 — are often well below what a serious injury claim may cost. Umbrella coverage sits above whatever limits you carry.
 
 ### Homeowners or renters insurance
 
-[Homeowners](/blog/homeowners-insurance-in-virginia/) and [renters](/blog/renters-insurance-in-washington-dc/) policies include personal liability coverage — commonly $100,000 to $300,000. Umbrella insurance extends above that limit for covered claims.
+[Homeowners](/states/virginia/homeowners-insurance/) and [renters](/states/washington-dc/renters-insurance/) policies include personal liability coverage — commonly $100,000 to $300,000. Umbrella insurance extends above that limit for covered claims.
 
 ### Commercial policies
 

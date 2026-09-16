@@ -44,7 +44,7 @@ sources:
     url: "https://usinsuranceguide.com/blog/general-liability-insurance-explained/"
     publisher: "US Insurance Guide"
   - title: "Business Insurance in Virginia"
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-virginia/"
+    url: "https://usinsuranceguide.com/states/virginia/business-insurance/"
     publisher: "US Insurance Guide"
 ---
 

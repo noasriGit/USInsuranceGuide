@@ -9,7 +9,7 @@ sections:
   Overview: |
     Maryland requires liability insurance on every registered vehicle. The Motor Vehicle Administration (MVA) verifies coverage electronically.
 
-    This page is a brief state overview — not a full requirements guide. See our [Maryland auto insurance requirements article](/blog/maryland-auto-insurance-requirements/) for limits, PIP waivers, penalties, and proof-of-insurance details.
+    This page is a brief state overview — not a full requirements guide. See our [Maryland auto insurance requirements article](/states/maryland/auto-insurance/requirements/) for limits, PIP waivers, penalties, and proof-of-insurance details.
   Coverage Options to Consider: |
     **Required:** Bodily injury and property damage liability (30/60/15), plus uninsured/underinsured motorist coverage at matching minimums.
 
@@ -21,7 +21,7 @@ sections:
 
     MVA may impose penalty fees for lapses — $150 for the first 30 days without verified coverage and $7 for each additional day. Registration suspension and an FR-19 certificate may be required for reinstatement.
 
-    Neighboring [Virginia](/blog/virginia-auto-insurance-requirements/) (50/100/25) and [D.C.](/blog/washington-dc-auto-insurance-requirements/) set different minimums — your policy must meet Maryland rules where the vehicle is registered.
+    Neighboring [Virginia](/states/virginia/auto-insurance/requirements/) (50/100/25) and [D.C.](/states/washington-dc/auto-insurance/requirements/) set different minimums — your policy must meet Maryland rules where the vehicle is registered.
   Factors That May Affect Your Premium: |
     Insurers may consider driving record, age, vehicle type, garaging location, mileage, coverage limits, deductibles, PIP election, and credit-based insurance scores where permitted.
 
@@ -40,7 +40,7 @@ sources:
     url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Maryland Auto Insurance Requirements (full guide)"
-    url: "https://usinsuranceguide.com/blog/maryland-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/maryland/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
 ---
 

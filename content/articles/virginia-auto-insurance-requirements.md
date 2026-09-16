@@ -137,7 +137,7 @@ For more on why premiums change over time, see our guide on [why car insurance r
 
 ## Virginia vs. Neighboring Jurisdictions
 
-If you live near a state line or commute across borders, remember that each jurisdiction sets its own requirements. Minimum limits and mandatory coverages differ in [Maryland](/blog/maryland-auto-insurance-requirements/) and [Washington, D.C.](/blog/washington-dc-auto-insurance-requirements/). Your policy should meet the requirements of the state where your vehicle is registered.
+If you live near a state line or commute across borders, remember that each jurisdiction sets its own requirements. Minimum limits and mandatory coverages differ in [Maryland](/states/maryland/auto-insurance/requirements/) and [Washington, D.C.](/states/washington-dc/auto-insurance/requirements/). Your policy should meet the requirements of the state where your vehicle is registered.
 
 ## Questions to Ask a Licensed Professional
 

@@ -34,13 +34,13 @@ sources:
     url: "https://disb.dc.gov/page/introduction-liability-insurance"
     publisher: "DC Department of Insurance, Securities and Banking"
   - title: "Virginia Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/virginia-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/virginia/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
 ---
 
 Opening your renewal notice and seeing a higher premium is frustrating — especially when your driving record hasn't changed. Auto insurance rates are not fixed. They shift based on your personal risk profile, your policy choices, and broader trends that affect every driver in your area.
 
-This guide explains the most common reasons premiums increase and what you can do when it happens. For state-specific minimum coverage context, see our guides for [Virginia](/blog/virginia-auto-insurance-requirements/), [Maryland](/blog/maryland-auto-insurance-requirements/), and [Washington, D.C.](/blog/washington-dc-auto-insurance-requirements/).
+This guide explains the most common reasons premiums increase and what you can do when it happens. For state-specific minimum coverage context, see our guides for [Virginia](/states/virginia/auto-insurance/requirements/), [Maryland](/states/maryland/auto-insurance/requirements/), and [Washington, D.C.](/states/washington-dc/auto-insurance/requirements/).
 
 ## How Insurers Set Auto Insurance Premiums
 
@@ -136,7 +136,7 @@ You are entitled to request the reasons for an adverse rating action from your i
 
 Sometimes the law itself changes your premium. For example, Virginia increased minimum liability limits from 30/60/20 to **50/100/25** effective January 1, 2025. Drivers renewing at minimum limits may see higher premiums because they are purchasing more coverage — not because their risk profile changed.
 
-See our [Virginia auto insurance requirements](/blog/virginia-auto-insurance-requirements/) guide for details on the 2025 limit increase.
+See our [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/) guide for details on the 2025 limit increase.
 
 ## What to Do When Your Premium Increases
 

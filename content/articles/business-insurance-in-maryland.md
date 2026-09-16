@@ -36,10 +36,10 @@ sources:
     url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Maryland Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/maryland-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/maryland/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
   - title: "Business Insurance in Virginia"
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-virginia/"
+    url: "https://usinsuranceguide.com/states/virginia/business-insurance/"
     publisher: "US Insurance Guide"
 ---
 
@@ -120,7 +120,7 @@ A **business owners policy (BOP)** bundles general liability and commercial prop
 
 If your Maryland business owns vehicles, registers vehicles commercially, or uses vehicles primarily for work, you likely need [commercial auto insurance](/blog/commercial-auto-insurance-explained/) rather than a personal auto policy. Personal policies commonly exclude business use.
 
-Maryland commercial auto policies must meet the same minimum liability standards as personal policies — currently **30/60/15** for bodily injury and property damage, plus mandatory uninsured motorist coverage and a mandatory PIP offer. See our [Maryland auto insurance requirements guide](/blog/maryland-auto-insurance-requirements/) for details on liability, PIP waivers, and lapse penalties.
+Maryland commercial auto policies must meet the same minimum liability standards as personal policies — currently **30/60/15** for bodily injury and property damage, plus mandatory uninsured motorist coverage and a mandatory PIP offer. See our [Maryland auto insurance requirements guide](/states/maryland/auto-insurance/requirements/) for details on liability, PIP waivers, and lapse penalties.
 
 Businesses whose employees drive personal vehicles for work may also need **hired and non-owned auto (HNOA)** liability coverage, which is typically an endorsement on a commercial policy rather than a separate vehicle policy.
 
@@ -174,10 +174,10 @@ If you operate across state lines in the DMV region, workers' compensation thres
 | Jurisdiction | Workers' comp trigger |
 |---|---|
 | **Maryland** | 1 or more employees |
-| **[Virginia](/blog/business-insurance-in-virginia/)** | 3 or more employees |
+| **[Virginia](/states/virginia/business-insurance/)** | 3 or more employees |
 | **Washington, D.C.** | 1 or more employees |
 
-Auto insurance minimums also differ. See our guides for [Virginia](/blog/virginia-auto-insurance-requirements/) and [Washington, D.C.](/blog/washington-dc-auto-insurance-requirements/) auto requirements if your vehicles are registered or operated outside Maryland.
+Auto insurance minimums also differ. See our guides for [Virginia](/states/virginia/auto-insurance/requirements/) and [Washington, D.C.](/states/washington-dc/auto-insurance/requirements/) auto requirements if your vehicles are registered or operated outside Maryland.
 
 ## How to Assess Your Maryland Business Insurance Needs
 

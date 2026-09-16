@@ -9,7 +9,7 @@ sections:
   Overview: |
     Homeowners insurance is not required by Maryland law, but mortgage lenders typically require it. A standard policy may cover your dwelling, belongings, liability, and additional living expenses after a covered loss.
 
-    See our [Maryland homeowners insurance guide](/blog/homeowners-insurance-in-maryland/) for coverage types, regional risks, and questions to ask an agent.
+    See our [Maryland homeowners insurance guide](/states/maryland/homeowners-insurance/) for coverage types, regional risks, and questions to ask an agent.
   Coverage Options to Consider: |
     Typical HO-3 policies include dwelling, other structures, personal property, loss of use, personal liability, and medical payments coverage.
 
@@ -40,7 +40,7 @@ sources:
     url: "https://insurance.maryland.gov/Consumer/Pages/homeownersinsurance.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Maryland Homeowners Insurance (full guide)"
-    url: "https://usinsuranceguide.com/blog/homeowners-insurance-in-maryland/"
+    url: "https://usinsuranceguide.com/states/maryland/homeowners-insurance/"
     publisher: "US Insurance Guide"
 ---
 

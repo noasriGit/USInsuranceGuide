@@ -12,6 +12,13 @@ export const FAQItemSchema = z.object({
   answer: z.string(),
 });
 
+export const CategoryHubGroupSchema = z.enum([
+  "primary",
+  "specialty",
+  "nested",
+  "deprioritized",
+]);
+
 export const CategorySchema = z.object({
   slug: z.string(),
   name: z.string(),
@@ -22,6 +29,9 @@ export const CategorySchema = z.object({
   launchPriority: z.number(),
   active: z.boolean().default(true),
   contentReady: z.boolean().default(false),
+  /** Public path when this hub is nested under another topic. */
+  canonicalPath: z.string().optional(),
+  hubGroup: CategoryHubGroupSchema.default("primary"),
   /** Interim explainer links until Batch F full hub copy ships. */
   featuredArticleSlugs: z.array(z.string()).optional(),
   /** Short note for shell hubs without a featured explainer (e.g. landlord). */
@@ -34,8 +44,9 @@ export const StateSchema = z.object({
   abbreviation: z.string(),
   metaTitle: z.string(),
   metaDescription: z.string(),
-  featuredCategories: z.array(z.string()),
   overview: z.string(),
+  requiredInsuranceSummary: z.string(),
+  majorRisks: z.array(z.string()),
   externalSources: z.array(SourceSchema).optional(),
 });
 
@@ -136,8 +147,76 @@ export const ArticleFrontmatterSchema = z.object({
   draft: z.boolean().optional(),
 });
 
+export const PageStatusSchema = z.enum([
+  "planned",
+  "draft",
+  "review",
+  "published",
+]);
+
+export const SeoPageKindSchema = z.enum([
+  "home",
+  "static",
+  "topic-hub",
+  "topic-guide",
+  "state-index",
+  "state-hub",
+  "state-guide",
+  "state-child",
+  "article-index",
+  "article",
+]);
+
+export const SeoPageClusterSchema = z.enum([
+  "primary",
+  "specialty",
+  "supporting",
+  "deprioritized",
+]);
+
+export const SeoContentSourceSchema = z.object({
+  type: z.enum(["state-guide", "article", "static", "hub"]),
+  slug: z.string().optional(),
+  categorySlug: z.string().optional(),
+});
+
+export const SeoPageSchema = z.object({
+  path: z.string(),
+  title: z.string(),
+  metaTitle: z.string(),
+  metaDescription: z.string(),
+  status: PageStatusSchema,
+  indexable: z.boolean(),
+  lastModified: z.string(),
+  lastReviewed: z.string().optional(),
+  effectiveDate: z.string().optional(),
+  reviewer: z.string().optional(),
+  kind: SeoPageKindSchema,
+  phase: z.number().int().min(0).max(4),
+  cluster: SeoPageClusterSchema.optional(),
+  stateSlug: z.string().optional(),
+  categorySlug: z.string().optional(),
+  guideSlug: z.string().optional(),
+  childSlug: z.string().optional(),
+  parentPath: z.string().optional(),
+  relatedPaths: z.array(z.string()).default([]),
+  primaryKeyword: z.string().optional(),
+  contentSource: SeoContentSourceSchema.optional(),
+  redirectsFrom: z.array(z.string()).optional(),
+  changeFrequency: z
+    .enum(["weekly", "monthly", "yearly"])
+    .optional(),
+  priority: z.number().optional(),
+  navLabel: z.string().optional(),
+});
+
 export type Category = z.infer<typeof CategorySchema>;
+export type CategoryHubGroup = z.infer<typeof CategoryHubGroupSchema>;
 export type State = z.infer<typeof StateSchema>;
+export type PageStatus = z.infer<typeof PageStatusSchema>;
+export type SeoPage = z.infer<typeof SeoPageSchema>;
+export type SeoPageKind = z.infer<typeof SeoPageKindSchema>;
+export type SeoPageCluster = z.infer<typeof SeoPageClusterSchema>;
 export type City = z.infer<typeof CitySchema>;
 export type Author = z.infer<typeof AuthorSchema>;
 export type Reviewer = z.infer<typeof ReviewerSchema>;

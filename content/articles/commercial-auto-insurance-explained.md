@@ -25,13 +25,13 @@ faq:
     answer: "Yes. Commercial auto policies must meet the minimum liability requirements of the state where the vehicle is registered. In Virginia, Maryland, and D.C., minimums differ — see our state auto requirements guides for current limits."
 sources:
   - title: "Virginia Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/virginia-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/virginia/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
   - title: "Maryland Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/maryland-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/maryland/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
   - title: "Washington, D.C. Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/washington-dc-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/washington-dc/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
   - title: "Federal Motor Carrier Minimum Financial Responsibility (49 CFR 387.9)"
     url: "https://www.law.cornell.edu/cfr/text/49/387.9"
@@ -43,7 +43,7 @@ sources:
 
 If your business owns vehicles, delivers products, transports clients, or sends employees to job sites, auto insurance is a operational necessity — and a personal auto policy may not provide adequate protection. **Commercial auto insurance** is designed for vehicles used in connection with business activities.
 
-This explainer covers when businesses may need commercial auto coverage, what policies typically include, and how commercial auto differs from personal auto insurance. For how commercial auto fits into a broader business insurance plan, see [business insurance in Virginia](/blog/business-insurance-in-virginia/) or [what insurance a small business may need](/blog/what-insurance-does-a-small-business-need/).
+This explainer covers when businesses may need commercial auto coverage, what policies typically include, and how commercial auto differs from personal auto insurance. For how commercial auto fits into a broader business insurance plan, see [business insurance in Virginia](/states/virginia/business-insurance/) or [what insurance a small business may need](/blog/what-insurance-does-a-small-business-need/).
 
 ## Personal Auto vs. Commercial Auto Insurance
 
@@ -71,9 +71,9 @@ State minimums for commercial vehicles follow the same requirements as personal 
 
 | State | Current minimum liability | Guide |
 |---|---|---|
-| Virginia | 50/100/25 (policies effective Jan. 1, 2025+) | [VA requirements](/blog/virginia-auto-insurance-requirements/) |
-| Maryland | 30/60/15 | [MD requirements](/blog/maryland-auto-insurance-requirements/) |
-| Washington, D.C. | 25/50/10 | [DC requirements](/blog/washington-dc-auto-insurance-requirements/) |
+| Virginia | 50/100/25 (policies effective Jan. 1, 2025+) | [VA requirements](/states/virginia/auto-insurance/requirements/) |
+| Maryland | 30/60/15 | [MD requirements](/states/maryland/auto-insurance/requirements/) |
+| Washington, D.C. | 25/50/10 | [DC requirements](/states/washington-dc/auto-insurance/requirements/) |
 
 Business assets often warrant liability limits well above state minimums.
 

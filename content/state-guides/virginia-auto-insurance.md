@@ -9,7 +9,7 @@ sections:
   Overview: |
     Virginia requires liability insurance on every registered vehicle. Since July 1, 2024, the uninsured motor vehicle fee option no longer exists.
 
-    This page is a brief state overview — not a full requirements guide. See our [Virginia auto insurance requirements article](/blog/virginia-auto-insurance-requirements/) for limits, penalties, and proof-of-insurance details.
+    This page is a brief state overview — not a full requirements guide. See our [Virginia auto insurance requirements article](/states/virginia/auto-insurance/requirements/) for limits, penalties, and proof-of-insurance details.
   Coverage Options to Consider: |
     **Required:** Bodily injury and property damage liability (50/100/25 for policies effective January 1, 2025+), plus uninsured/underinsured motorist coverage unless rejected in writing.
 
@@ -19,7 +19,7 @@ sections:
 
     DMV verifies insurance electronically. Lapses may lead to license and registration suspension, a $600 noncompliance fee, and an SR-22 filing requirement.
 
-    Neighboring [Maryland](/blog/maryland-auto-insurance-requirements/) and [D.C.](/blog/washington-dc-auto-insurance-requirements/) set different minimums — your policy must meet Virginia rules where the vehicle is registered.
+    Neighboring [Maryland](/states/maryland/auto-insurance/requirements/) and [D.C.](/states/washington-dc/auto-insurance/requirements/) set different minimums — your policy must meet Virginia rules where the vehicle is registered.
   Factors That May Affect Your Premium: |
     Insurers may consider driving record, age, vehicle type, garaging location, mileage, coverage limits, deductibles, and credit-based insurance scores where permitted.
 
@@ -38,7 +38,7 @@ sources:
     url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Auto Insurance Requirements (full guide)"
-    url: "https://usinsuranceguide.com/blog/virginia-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/virginia/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
 ---
 

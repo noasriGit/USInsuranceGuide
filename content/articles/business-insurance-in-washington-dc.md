@@ -39,7 +39,7 @@ sources:
     url: "https://disb.dc.gov/page/introduction-liability-insurance"
     publisher: "DC Department of Insurance, Securities and Banking"
   - title: "Washington, D.C. Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/washington-dc-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/washington-dc/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
 ---
 
@@ -115,7 +115,7 @@ A **business owners policy (BOP)** bundles general liability and commercial prop
 
 If your District business owns vehicles, registers vehicles commercially, or uses vehicles primarily for work, you likely need [commercial auto insurance](/blog/commercial-auto-insurance-explained/) rather than a personal auto policy. Personal policies commonly exclude business use.
 
-District commercial auto policies must meet the same minimum liability standards as personal policies — currently **25/50/10** for bodily injury and property damage, plus mandatory uninsured motorist coverage. See our [Washington, D.C. auto insurance requirements guide](/blog/washington-dc-auto-insurance-requirements/) for details on liability, PIP options, and proof-of-insurance rules.
+District commercial auto policies must meet the same minimum liability standards as personal policies — currently **25/50/10** for bodily injury and property damage, plus mandatory uninsured motorist coverage. See our [Washington, D.C. auto insurance requirements guide](/states/washington-dc/auto-insurance/requirements/) for details on liability, PIP options, and proof-of-insurance rules.
 
 Businesses whose employees drive personal vehicles for work may also need **hired and non-owned auto (HNOA)** liability coverage, which is typically an endorsement on a commercial policy rather than a separate vehicle policy.
 
@@ -170,10 +170,10 @@ If you operate across state lines in the DMV region, workers' compensation thres
 | Jurisdiction | Workers' comp trigger | Auto liability minimums |
 |---|---|---|
 | **Washington, D.C.** | 1 or more employees | 25/50/10 |
-| **[Virginia](/blog/business-insurance-in-virginia/)** | 3 or more employees | 50/100/25 |
+| **[Virginia](/states/virginia/business-insurance/)** | 3 or more employees | 50/100/25 |
 | **Maryland** | 1 or more employees | 30/60/15 |
 
-See our guides for [Virginia](/blog/virginia-auto-insurance-requirements/) and [Maryland](/blog/maryland-auto-insurance-requirements/) auto requirements if your vehicles are registered or operated outside the District.
+See our guides for [Virginia](/states/virginia/auto-insurance/requirements/) and [Maryland](/states/maryland/auto-insurance/requirements/) auto requirements if your vehicles are registered or operated outside the District.
 
 ## How to Assess Your D.C. Business Insurance Needs
 

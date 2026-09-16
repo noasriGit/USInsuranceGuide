@@ -9,7 +9,7 @@ sections:
   Overview: |
     Homeowners insurance is not required by Virginia law, but mortgage lenders typically require it. A standard policy may cover your dwelling, belongings, liability, and additional living expenses after a covered loss.
 
-    See our [Virginia homeowners insurance guide](/blog/homeowners-insurance-in-virginia/) for coverage types, regional risks, and questions to ask an agent.
+    See our [Virginia homeowners insurance guide](/states/virginia/homeowners-insurance/) for coverage types, regional risks, and questions to ask an agent.
   Coverage Options to Consider: |
     Typical HO-3 policies include dwelling, other structures, personal property, loss of use, personal liability, and medical payments coverage.
 
@@ -36,7 +36,7 @@ sources:
     url: "https://www.scc.virginia.gov/consumers/insurance/property-casualty-consumer/virginia-homeowners-insurance-guide/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Homeowners Insurance (full guide)"
-    url: "https://usinsuranceguide.com/blog/homeowners-insurance-in-virginia/"
+    url: "https://usinsuranceguide.com/states/virginia/homeowners-insurance/"
     publisher: "US Insurance Guide"
 ---
 

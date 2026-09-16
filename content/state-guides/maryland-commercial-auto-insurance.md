@@ -19,11 +19,11 @@ sections:
 
     Maryland commercial policies must meet the same minimums as personal auto — **30/60/15** liability plus matching UM/UIM.
   State Requirements & Regulations: |
-    Vehicles registered to a business or used primarily for commercial purposes must carry liability insurance meeting [Maryland minimums](/blog/maryland-auto-insurance-requirements/).
+    Vehicles registered to a business or used primarily for commercial purposes must carry liability insurance meeting [Maryland minimums](/states/maryland/auto-insurance/requirements/).
 
     UM/UIM and PIP offer rules mirror personal auto policies. MVA requires proof of insurance for registration.
 
-    For broader business context, see [business insurance in Maryland](/blog/business-insurance-in-maryland/). Compare [Virginia commercial auto minimums](/blog/virginia-auto-insurance-requirements/) (50/100/25) if you operate across state lines.
+    For broader business context, see [business insurance in Maryland](/states/maryland/business-insurance/). Compare [Virginia commercial auto minimums](/states/virginia/auto-insurance/requirements/) (50/100/25) if you operate across state lines.
   Factors That May Affect Your Premium: |
     Fleet size, vehicle types, driver records, radius of operation, cargo hauled, coverage limits, and industry classification may affect commercial auto premiums.
 faq:
@@ -43,7 +43,7 @@ sources:
     url: "https://usinsuranceguide.com/blog/commercial-auto-insurance-explained/"
     publisher: "US Insurance Guide"
   - title: "Maryland Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/maryland-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/maryland/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
 ---
 

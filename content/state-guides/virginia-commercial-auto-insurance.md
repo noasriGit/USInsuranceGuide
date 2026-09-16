@@ -19,11 +19,11 @@ sections:
 
     Virginia commercial policies must meet the same minimums as personal auto — currently **50/100/25** for policies effective January 1, 2025+.
   State Requirements & Regulations: |
-    Vehicles registered to a business or used primarily for commercial purposes must carry liability insurance meeting [Virginia minimums](/blog/virginia-auto-insurance-requirements/).
+    Vehicles registered to a business or used primarily for commercial purposes must carry liability insurance meeting [Virginia minimums](/states/virginia/auto-insurance/requirements/).
 
     UM/UIM coverage rules mirror personal auto policies. Proof of insurance is required for registration.
 
-    For broader business context, see [business insurance in Virginia](/blog/business-insurance-in-virginia/).
+    For broader business context, see [business insurance in Virginia](/states/virginia/business-insurance/).
   Factors That May Affect Your Premium: |
     Fleet size, vehicle types, driver records, radius of operation, cargo hauled, coverage limits, and industry classification may affect commercial auto premiums.
 faq:
@@ -43,7 +43,7 @@ sources:
     url: "https://usinsuranceguide.com/blog/commercial-auto-insurance-explained/"
     publisher: "US Insurance Guide"
   - title: "Virginia Auto Insurance Requirements"
-    url: "https://usinsuranceguide.com/blog/virginia-auto-insurance-requirements/"
+    url: "https://usinsuranceguide.com/states/virginia/auto-insurance/requirements/"
     publisher: "US Insurance Guide"
 ---
 

@@ -9,7 +9,7 @@ sections:
   Overview: |
     Maryland businesses face a mix of state mandates, contract requirements, and optional coverage. No single policy covers every exposure.
 
-    See our [business insurance in Maryland guide](/blog/business-insurance-in-maryland/) for workers' comp rules, coverage types, and industry considerations.
+    See our [business insurance in Maryland guide](/states/maryland/business-insurance/) for workers' comp rules, coverage types, and industry considerations.
   Coverage Options to Consider: |
     | Coverage | Often required? |
     |---|---|
@@ -23,11 +23,11 @@ sections:
   State Requirements & Regulations: |
     **Workers' compensation:** Employers with **one or more employees** — full-time or part-time — must carry coverage. No waivers. Administered by the [Maryland Workers' Compensation Commission](https://www.wcc.state.md.us/).
 
-    **Commercial auto:** Business vehicles must meet Maryland [auto minimums](/blog/maryland-auto-insurance-requirements/) (30/60/15).
+    **Commercial auto:** Business vehicles must meet Maryland [auto minimums](/states/maryland/auto-insurance/requirements/) (30/60/15).
 
     **General liability:** Not mandated for all businesses, but common in leases and contracts — especially in the Baltimore-Washington corridor.
 
-    Compare: [Virginia](/blog/business-insurance-in-virginia/) requires workers' comp at **3+ employees** — important if you operate across the DMV.
+    Compare: [Virginia](/states/virginia/business-insurance/) requires workers' comp at **3+ employees** — important if you operate across the DMV.
   Factors That May Affect Your Premium: |
     Industry classification, payroll, claims history, number of employees, vehicles, location, and coverage limits selected. Workers' comp rates vary significantly by trade.
 faq:
@@ -47,7 +47,7 @@ sources:
     url: "https://insurance.maryland.gov/Pages/default.aspx"
     publisher: "Maryland Insurance Administration"
   - title: "Business Insurance in Maryland (full guide)"
-    url: "https://usinsuranceguide.com/blog/business-insurance-in-maryland/"
+    url: "https://usinsuranceguide.com/states/maryland/business-insurance/"
     publisher: "US Insurance Guide"
 ---
 

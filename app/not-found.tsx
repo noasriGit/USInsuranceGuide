@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
-import { getCategories, getStates } from "@/lib/content/data";
+import { getPrimaryCategories, getStates } from "@/lib/content/data";
+import { getCategoryCanonicalPath } from "@/lib/content/indexing";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
@@ -12,7 +13,7 @@ export const metadata: Metadata = buildMetadata({
 });
 
 export default function NotFound() {
-  const categories = getCategories(true).slice(0, 5);
+  const categories = getPrimaryCategories();
   const states = getStates();
 
   return (
@@ -33,7 +34,7 @@ export default function NotFound() {
           {categories.map((c) => (
             <Link
               key={c.slug}
-              href={`/${c.slug}/`}
+              href={getCategoryCanonicalPath(c)}
               className="rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
             >
               {c.name}

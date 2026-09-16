@@ -163,7 +163,7 @@ For more on why premiums change over time, see our guide on [why car insurance r
 
 ## D.C. vs. Neighboring Jurisdictions
 
-The DMV region has three distinct regulatory frameworks. [Virginia](/blog/virginia-auto-insurance-requirements/) requires 50/100/25 liability with mandatory UM/UIM and no PIP. [Maryland](/blog/maryland-auto-insurance-requirements/) requires 30/60/15 liability with mandatory UM/UIM and a mandatory PIP offer. D.C. requires 25/50/10 liability with mandatory UM coverage and optional PIP. Your policy must satisfy the jurisdiction where your vehicle is registered.
+The DMV region has three distinct regulatory frameworks. [Virginia](/states/virginia/auto-insurance/requirements/) requires 50/100/25 liability with mandatory UM/UIM and no PIP. [Maryland](/states/maryland/auto-insurance/requirements/) requires 30/60/15 liability with mandatory UM/UIM and a mandatory PIP offer. D.C. requires 25/50/10 liability with mandatory UM coverage and optional PIP. Your policy must satisfy the jurisdiction where your vehicle is registered.
 
 ## Questions to Ask a Licensed Professional
 
