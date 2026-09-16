@@ -36,7 +36,13 @@ export const RESERVED_SLUGS = new Set([
   "insurance-agencies",
   "accessibility",
   "api",
+  "get-insurance-help",
+  "public-case-studies",
+  "case-studies",
 ]);
+
+export const LEAD_PATH = "/get-insurance-help/";
+export const PUBLIC_CASE_STUDIES_PATH = "/public-case-studies/";
 
 /** Set true when directory has partner listings worth promoting in nav. */
 export const SHOW_INSURANCE_DIRECTORY_NAV = false;

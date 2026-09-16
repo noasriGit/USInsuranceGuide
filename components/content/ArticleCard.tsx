@@ -11,22 +11,15 @@ interface ArticleCardProps {
 
 export function ArticleCard({ article, className }: ArticleCardProps) {
   return (
-    <article
-      className={cn(
-        "group rounded-lg border border-slate-200 bg-white p-5 transition-shadow hover:shadow-md",
-        className,
-      )}
-    >
+    <article className={cn("group border-t border-line pt-4", className)}>
       <Link
         href={getHrefForArticleSlug(article.slug)}
-        className="block rounded-md focus-visible:outline-offset-4"
+        className="block rounded-sm focus-visible:outline-offset-4"
       >
-        <h3 className="text-lg font-semibold text-slate-900 group-hover:text-navy-800">
+        <h3 className="text-lg font-semibold text-ink group-hover:text-navy-800">
           {article.title}
         </h3>
-        <p className="mt-2 text-sm leading-relaxed text-slate-600 line-clamp-2">
-          {article.excerpt}
-        </p>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">{article.excerpt}</p>
         <p className="mt-3 text-xs text-slate-500">
           <time dateTime={article.updatedAt}>{formatDate(article.updatedAt)}</time>
           {" · "}

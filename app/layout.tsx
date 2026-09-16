@@ -3,6 +3,7 @@ import { Inter, Source_Serif_4 } from "next/font/google";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SkipLink } from "@/components/a11y/SkipLink";
+import { ClientBehaviors } from "@/components/analytics/ClientBehaviors";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants";
@@ -52,6 +53,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-full flex-col antialiased">
         <SkipLink />
+        <ClientBehaviors />
         <SiteHeader />
         <main id="main-content" className="flex-1" tabIndex={-1}>
           {children}

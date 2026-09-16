@@ -14,7 +14,7 @@ export function FAQSection({ faqs, className }: FAQSectionProps) {
   return (
     <section className={cn("mt-10", className)} aria-labelledby="faq-heading">
       <JsonLd data={faqSchema(faqs)} />
-      <h2 id="faq-heading" className="text-2xl font-bold text-slate-900">
+      <h2 id="faq-heading" className="text-xl font-semibold text-ink">
         Frequently Asked Questions
       </h2>
       <dl className="mt-6 space-y-6">

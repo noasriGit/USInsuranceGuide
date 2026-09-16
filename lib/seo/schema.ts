@@ -85,3 +85,33 @@ export function faqSchema(faqs: FAQItem[]) {
     })),
   };
 }
+
+export function sourcedArticleSchema(input: {
+  title: string;
+  description: string;
+  path: string;
+  dateModified: string;
+  datePublished?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: input.title,
+    description: input.description,
+    datePublished: input.datePublished ?? input.dateModified,
+    dateModified: input.dateModified,
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}${input.path}`,
+    },
+  };
+}

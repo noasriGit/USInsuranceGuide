@@ -20,6 +20,7 @@ export default function ContactPage() {
         { label: "Contact" },
       ]}
       content={page.content}
+      path="/contact/"
     />
   );
 }

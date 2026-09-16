@@ -228,12 +228,42 @@ export type FAQItem = z.infer<typeof FAQItemSchema>;
 export type Source = z.infer<typeof SourceSchema>;
 export type PlacementSlot = z.infer<typeof PlacementSlotSchema>;
 
-const stateCategorySectionTitles = [
-  "Overview",
-  "Coverage Options to Consider",
-  "State Requirements & Regulations",
-  "Factors That May Affect Your Premium",
-] as const;
+export const LeadStateSlugSchema = z.enum([
+  "maryland",
+  "virginia",
+  "washington-dc",
+]);
+
+export const PublicCaseStudyFactSchema = z.object({
+  label: z.string(),
+  value: z.string(),
+});
+
+export const PublicCaseStudyQuoteSchema = z.object({
+  text: z.string().max(280),
+  attribution: z.string(),
+});
+
+export const PublicCaseStudySchema = z.object({
+  slug: z.string(),
+  title: z.string(),
+  jurisdiction: LeadStateSlugSchema,
+  topics: z.array(z.string()),
+  sourcePublisher: z.string(),
+  sourceUrl: z.string().url(),
+  sourcePublishedAt: z.string().optional(),
+  lastVerifiedAt: z.string(),
+  summary: z.string(),
+  body: z.string(),
+  facts: z.array(PublicCaseStudyFactSchema),
+  quote: PublicCaseStudyQuoteSchema.optional(),
+  takeaways: z.array(z.string()),
+  disclaimer: z.string(),
+  relatedPaths: z.array(z.string()).default([]),
+});
+
+export type LeadStateSlug = z.infer<typeof LeadStateSlugSchema>;
+export type PublicCaseStudy = z.infer<typeof PublicCaseStudySchema>;
 
 export const StateCategoryGuideFrontmatterSchema = z.object({
   stateSlug: z.string(),

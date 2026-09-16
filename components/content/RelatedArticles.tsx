@@ -17,7 +17,7 @@ export function RelatedArticles({
 
   return (
     <section className={cn("mt-10", className)} aria-labelledby="related-heading">
-      <h2 id="related-heading" className="text-2xl font-bold text-slate-900">
+      <h2 id="related-heading" className="text-xl font-semibold text-ink">
         {title}
       </h2>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">

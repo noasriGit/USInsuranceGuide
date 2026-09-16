@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { Components } from "react-markdown";
 import { isExternalHref, newTabAriaLabel } from "@/lib/a11y/external-link";
-import { cn } from "@/lib/utils";
+import { cn, slugifyHeading } from "@/lib/utils";
 
 interface ProseProps {
   content: string;
@@ -29,6 +29,11 @@ const markdownComponents: Components = {
         decoding="async"
       />
     );
+  },
+  h2({ children }) {
+    const text = getLinkText(children);
+    const id = slugifyHeading(text);
+    return <h2 id={id || undefined}>{children}</h2>;
   },
   a({ href, children, ...props }) {
     const url = typeof href === "string" ? href : undefined;

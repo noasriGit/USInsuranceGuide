@@ -1,20 +1,23 @@
 import Link from "next/link";
 import { ArticleCard } from "@/components/content/ArticleCard";
-import { StateCard } from "@/components/content/StateCard";
 import { GuideNetwork } from "@/components/content/GuideNetwork";
+import { PublicCaseStudySection } from "@/components/content/PublicCaseStudySection";
+import { LeadCTA } from "@/components/leads/LeadCTA";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
 import { AdSlot } from "@/components/monetization/AdSlot";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { Category, SeoPage } from "@/lib/schemas";
 import {
   getArticlesForCategoryHub,
-  getStates,
-  getStateBySlug,
+  getPublicCaseStudiesForPage,
 } from "@/lib/content";
 import {
   getNestedTopicGuides,
   getPublishedStateLandingsForCategory,
 } from "@/lib/content/seo-manifest";
 import { resolvePlacements } from "@/lib/monetization/placements";
+import { inferLeadContextFromPath } from "@/lib/leads/context";
+import { getStateBySlug } from "@/lib/content/data";
 
 interface CategoryHubViewProps {
   category: Category;
@@ -23,7 +26,6 @@ interface CategoryHubViewProps {
 
 export function CategoryHubView({ category, page }: CategoryHubViewProps) {
   const articles = getArticlesForCategoryHub(category);
-  const states = getStates();
   const stateLandings = getPublishedStateLandingsForCategory(category.slug);
   const nestedGuides = getNestedTopicGuides(page.path);
   const partners = resolvePlacements({
@@ -35,47 +37,52 @@ export function CategoryHubView({ category, page }: CategoryHubViewProps) {
     hasFeatured && articles.length <= (category.featuredArticleSlugs?.length ?? 0)
       ? "Featured Guide"
       : "Related Guides";
+  const context = inferLeadContextFromPath(page.path, page.kind);
+  const caseStudies = getPublicCaseStudiesForPage({
+    categorySlug: category.slug,
+    limit: 1,
+  });
+  const ctaVariant = context.intent === "business" ? "business" : "end";
 
   return (
-    <div className="grid gap-10 py-10 lg:grid-cols-3">
-      <div className="lg:col-span-2 space-y-10">
-        <p className="max-w-3xl text-base leading-relaxed text-slate-600">
+    <div className="grid gap-12 py-10 lg:grid-cols-12">
+      <div className="space-y-12 lg:col-span-8">
+        <p className="max-w-[46rem] text-base leading-relaxed text-slate-600">
           This {category.name.toLowerCase()} guide explains the concept, then
           connects it to the rules and coverage choices that apply in Maryland,
           Virginia, and Washington, D.C.
         </p>
 
         {category.interimNote && (
-          <p className="max-w-3xl text-sm leading-relaxed text-slate-600">
+          <p className="max-w-[46rem] text-sm leading-relaxed text-slate-600">
             {category.interimNote}
           </p>
         )}
 
         {nestedGuides.length > 0 && (
           <section aria-labelledby="nested-guides-heading">
-            <h2 id="nested-guides-heading" className="text-xl font-bold text-slate-900">
-              Coverage Types
-            </h2>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            <SectionHeading id="nested-guides-heading" title="Coverage Types" />
+            <ul className="mt-5 divide-y divide-line border-y border-line">
               {nestedGuides.map((guide) => (
-                <Link
-                  key={guide.path}
-                  href={guide.path}
-                  className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 underline-offset-2 hover:border-navy-200 hover:text-navy-800 hover:underline transition-colors"
-                >
-                  {guide.navLabel ?? guide.title}
-                </Link>
+                <li key={guide.path}>
+                  <Link
+                    href={guide.path}
+                    className="block py-3 text-sm font-medium text-navy-800 hover:underline"
+                  >
+                    {guide.navLabel ?? guide.title}
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         )}
 
+        <LeadCTA context={context} variant={ctaVariant} />
+
         {articles.length > 0 && (
           <section aria-labelledby="category-guides-heading">
-            <h2 id="category-guides-heading" className="text-xl font-bold text-slate-900">
-              {guidesHeading}
-            </h2>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <SectionHeading id="category-guides-heading" title={guidesHeading} />
+            <div className="mt-6 grid gap-6">
               {articles.map((article) => (
                 <ArticleCard key={article.slug} article={article} />
               ))}
@@ -84,48 +91,57 @@ export function CategoryHubView({ category, page }: CategoryHubViewProps) {
         )}
 
         <section aria-labelledby="explore-by-state-heading">
-          <h2 id="explore-by-state-heading" className="text-xl font-bold text-slate-900">
-            Maryland, Virginia & Washington, D.C.
-          </h2>
-          <p className="mt-2 text-sm text-slate-600">
-            State-specific {category.name.toLowerCase()} rules and coverage
-            considerations.
-          </p>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          <SectionHeading
+            id="explore-by-state-heading"
+            title="Maryland, Virginia & Washington, D.C."
+            description={`State-specific ${category.name.toLowerCase()} rules and coverage considerations.`}
+          />
+          <ul className="mt-5 divide-y divide-line border-y border-line">
             {stateLandings.map((landing) => {
               const state = landing.stateSlug
                 ? getStateBySlug(landing.stateSlug)
                 : undefined;
               return (
-                <Link
-                  key={landing.path}
-                  href={landing.path}
-                  className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 underline-offset-2 hover:border-navy-200 hover:text-navy-800 hover:underline transition-colors"
-                >
-                  {landing.navLabel
-                    ? `${state?.name ?? landing.title}`
-                    : landing.title}
-                </Link>
+                <li key={landing.path}>
+                  <Link
+                    href={landing.path}
+                    className="block py-3 text-sm font-medium text-navy-800 hover:underline"
+                  >
+                    {landing.navLabel ? `${state?.name ?? landing.title}` : landing.title}
+                  </Link>
+                </li>
               );
             })}
-          </div>
+          </ul>
         </section>
 
+        {caseStudies.length > 0 && <PublicCaseStudySection studies={caseStudies} />}
         <GuideNetwork page={page} />
         <ContextualCTA partners={partners} />
       </div>
 
-      <aside className="space-y-6" aria-label="Category sidebar">
+      <aside className="space-y-8 lg:col-span-4" aria-label="Category sidebar">
         <AdSlot slot="category-sidebar" />
-        <div>
-          <h3 className="text-sm font-semibold text-slate-900">
+        <div className="border-t border-line pt-5">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
             DMV Insurance Guides
-          </h3>
-          <div className="mt-3 space-y-3">
-            {states.map((state) => (
-              <StateCard key={state.slug} state={state} />
-            ))}
-          </div>
+          </h2>
+          <ul className="mt-4 space-y-3">
+            {["maryland", "virginia", "washington-dc"].map((slug) => {
+              const state = getStateBySlug(slug);
+              if (!state) return null;
+              return (
+                <li key={state.slug}>
+                  <Link
+                    href={`/states/${state.slug}/`}
+                    className="text-sm font-medium text-navy-800 hover:underline"
+                  >
+                    {state.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </aside>
     </div>

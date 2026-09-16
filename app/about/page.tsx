@@ -17,6 +17,7 @@ export default function AboutPage() {
       description={page.description}
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       content={page.content}
+      path="/about/"
     />
   );
 }

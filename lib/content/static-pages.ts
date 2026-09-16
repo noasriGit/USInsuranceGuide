@@ -7,7 +7,7 @@ export const staticPages = {
 
 ## Our Mission
 
-We publish clear, plain-English insurance guides and practical articles for **Maryland, Virginia, and Washington, D.C.** — always in consultation with a licensed insurance professional.
+We publish clear, plain-English insurance guides and practical articles for **Maryland, Virginia, and Washington, D.C.** Readers who want help finding coverage can [request insurance help](/get-insurance-help/). When appropriate, we may route that request to a licensed insurance professional. That does not make US Insurance Guide an insurance carrier, agency, or broker.
 
 ## What We Are
 
@@ -58,6 +58,10 @@ Sponsored partner placements and advertising do not influence our educational co
 ## Sources
 
 When we cite statistics, requirements, or regulatory information, we link to authoritative sources where possible. Readers should verify current requirements with official state resources and licensed professionals.
+
+Public Insurance Case Files summarize publicly available regulatory or government records. They are not US Insurance Guide customer testimonials and do not predict individual claim outcomes. We prefer state insurance regulators, DMV or government agencies, statutes, federal agencies, and public administrative records. We do not invent consumers or imply a private client relationship.
+
+The Virginia State Corporation Commission currently warns that AI tools can often provide incorrect information about insurance. We use official sources, last-reviewed dates, and a clear separation between sourced facts and general explanation for the same reason.
 
 ## Corrections
 
@@ -192,15 +196,18 @@ A baseline audit report is maintained internally and updated after significant s
 
 ## Information We Collect
 
-We may collect information you voluntarily provide when you contact us by email or submit a correction request, including your name, email address, and message content.
+We may collect information you voluntarily provide when you contact us by email, submit a correction request, or request insurance help through our form. That can include your name, email address, phone number, ZIP code, coverage type, and the answers you provide about your request.
 
-We may automatically collect certain technical information when you visit our site, such as browser type, device type, pages viewed, and referring URL, through analytics tools.
+If you submit the Find Insurance Help form, we use that information to respond to your request and, when appropriate, share it with a licensed insurance professional. We do not sell insurance, and submitting a request does not enroll you in marketing texts or automated calls.
+
+We may automatically collect certain technical information when you visit our site, such as browser type, device type, pages viewed, and referring URL, through analytics tools. Analytics events for the lead form do not include names, email addresses, phone numbers, ZIP codes, or free-form answers.
 
 ## How We Use Information
 
 We use collected information to:
 
-- Respond to your inquiries and correction requests
+- Respond to your inquiries, correction requests, and insurance-help requests
+- Share a help request with a licensed insurance professional when appropriate
 - Improve our website and content
 - Analyze site usage and performance
 - Comply with legal obligations
@@ -292,7 +299,7 @@ For media inquiries or partnership questions, email **partnerships@usinsurancegu
 
 ## Important Note
 
-We cannot provide personalized insurance, legal, or financial advice. For coverage questions specific to your situation, please speak with a licensed insurance professional in your state.
+For coverage questions specific to your situation, use [Find Insurance Help](/get-insurance-help/) or speak with a licensed insurance professional in your state. We cannot provide personalized insurance, legal, or financial advice by email.
 
 ## Correction Requests
 

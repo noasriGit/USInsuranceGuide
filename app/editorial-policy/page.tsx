@@ -20,6 +20,7 @@ export default function EditorialPolicyPage() {
         { label: "Editorial Policy" },
       ]}
       content={page.content}
+      path="/editorial-policy/"
     />
   );
 }

@@ -19,6 +19,7 @@ export default function BlogIndexPage() {
     <Container className="py-8">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog" }]} />
       <PageHero
+        eyebrow="Guides"
         title="Insurance Guides & Articles"
         description="Educational guides on coverage options, state requirements, and practical insurance topics."
       />
@@ -30,7 +31,7 @@ export default function BlogIndexPage() {
             <h2 id="blog-articles-heading" className="sr-only">
               All articles
             </h2>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-8 sm:grid-cols-2">
               {articles.map((article) => (
                 <ArticleCard key={article.slug} article={article} />
               ))}

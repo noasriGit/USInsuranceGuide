@@ -12,7 +12,7 @@ export function SourcesList({ sources, className }: SourcesListProps) {
 
   return (
     <section className={cn("mt-10", className)} aria-labelledby="sources-heading">
-      <h2 id="sources-heading" className="text-xl font-bold text-slate-900">
+      <h2 id="sources-heading" className="text-xl font-semibold text-ink">
         Sources & References
       </h2>
       <ul className="mt-4 space-y-3">

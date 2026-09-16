@@ -22,6 +22,7 @@ export default function CorrectionsPage() {
           { label: "Corrections" },
         ]}
         content={page.content}
+        path="/corrections/"
       />
       <div className="mx-auto max-w-3xl px-4 pb-10 -mt-6">
         <CorrectionLink />

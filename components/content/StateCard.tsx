@@ -12,14 +12,12 @@ export function StateCard({ state, className }: StateCardProps) {
     <Link
       href={`/states/${state.slug}/`}
       className={cn(
-        "block rounded-lg border border-slate-200 bg-white p-5 transition-shadow hover:shadow-md hover:border-navy-200",
+        "interactive-row block border-t border-line pt-4 hover:border-navy-700",
         className,
       )}
     >
-      <h3 className="text-lg font-semibold text-slate-900">{state.name}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-slate-600 line-clamp-3">
-        {state.overview}
-      </p>
+      <h3 className="text-lg font-semibold text-ink">{state.name}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-slate-600">{state.overview}</p>
     </Link>
   );
 }

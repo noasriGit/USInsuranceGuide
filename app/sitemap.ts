@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL, SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
-import { getBlogArticles, getPublicSeoPages } from "@/lib/content";
+import { getBlogArticles, getPublicCaseStudies, getPublicSeoPages } from "@/lib/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -33,6 +33,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(article.updatedAt),
       changeFrequency: "monthly",
       priority: 0.7,
+    });
+  }
+
+  for (const study of getPublicCaseStudies()) {
+    const path = `/public-case-studies/${study.slug}/`;
+    if (seen.has(path)) continue;
+    entries.push({
+      url: `${SITE_URL}${path}`,
+      lastModified: new Date(study.lastVerifiedAt),
+      changeFrequency: "monthly",
+      priority: 0.55,
     });
   }
 

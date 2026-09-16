@@ -95,6 +95,37 @@ const staticPages: SeoPage[] = [
     changeFrequency: "monthly",
     priority: 0.9,
   }),
+  page({
+    path: "/get-insurance-help/",
+    title: "Find Insurance Help",
+    metaTitle: "Find Insurance Help",
+    metaDescription:
+      "Request insurance help in Maryland, Virginia, or Washington, D.C. US Insurance Guide can route your request to a licensed insurance professional when available.",
+    status: "published",
+    indexable: true,
+    lastModified: STATIC_DATE,
+    kind: "static",
+    phase: 0,
+    changeFrequency: "monthly",
+    priority: 0.6,
+    contentSource: { type: "static" },
+  }),
+  page({
+    path: "/public-case-studies/",
+    title: "Public Insurance Case Files",
+    metaTitle: "Public Insurance Case Files",
+    metaDescription:
+      "Public-source insurance examples from Maryland, Virginia, and Washington, D.C. regulators and government records. These are not customer testimonials.",
+    status: "published",
+    indexable: true,
+    lastModified: STATIC_DATE,
+    kind: "static",
+    phase: 0,
+    changeFrequency: "monthly",
+    priority: 0.6,
+    contentSource: { type: "static" },
+    redirectsFrom: ["/case-studies/"],
+  }),
 ];
 
 const legalPages: Array<{ path: string; title: string; metaDescription: string }> = [
