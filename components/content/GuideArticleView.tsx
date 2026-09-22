@@ -104,8 +104,8 @@ export function GuideArticleView({
       />
 
       {article.faq && article.faq.length > 0 && (
-        <section className="mt-8 border-t border-line pt-6" aria-labelledby="key-points-heading">
-          <h2 id="key-points-heading" className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+        <section className="mt-8 rounded-xl bg-sand/80 p-5" aria-labelledby="key-points-heading">
+          <h2 id="key-points-heading" className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-navy-700">
             Key points
           </h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-slate-700">
@@ -117,8 +117,8 @@ export function GuideArticleView({
       )}
 
       {headings.length >= 4 && (
-        <nav className="mt-8 border-t border-line pt-6" aria-labelledby="toc-heading">
-          <h2 id="toc-heading" className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+        <nav className="mt-6 rounded-xl bg-navy-50 p-5" aria-labelledby="toc-heading">
+          <h2 id="toc-heading" className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-navy-700">
             In this guide
           </h2>
           <ol className="mt-3 space-y-2">

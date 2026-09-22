@@ -6,6 +6,7 @@ import { LeadCTA } from "@/components/leads/LeadCTA";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
 import { AdSlot } from "@/components/monetization/AdSlot";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { CoverageIcon, coverageVisualFromSlug } from "@/components/visual/CoverageIcon";
 import type { Category, SeoPage } from "@/lib/schemas";
 import {
   getArticlesForCategoryHub,
@@ -62,13 +63,17 @@ export function CategoryHubView({ category, page }: CategoryHubViewProps) {
         {nestedGuides.length > 0 && (
           <section aria-labelledby="nested-guides-heading">
             <SectionHeading id="nested-guides-heading" title="Coverage Types" />
-            <ul className="mt-5 divide-y divide-line border-y border-line">
+            <ul className="mt-5 grid gap-3 sm:grid-cols-2">
               {nestedGuides.map((guide) => (
                 <li key={guide.path}>
                   <Link
                     href={guide.path}
-                    className="block py-3 text-sm font-medium text-navy-800 hover:underline"
+                    className="surface-card surface-card-interactive flex items-center gap-3 px-4 py-4 text-sm font-medium text-navy-800"
                   >
+                    <CoverageIcon
+                      name={coverageVisualFromSlug(guide.categorySlug ?? guide.guideSlug)}
+                      className="h-5 w-5"
+                    />
                     {guide.navLabel ?? guide.title}
                   </Link>
                 </li>
@@ -96,18 +101,32 @@ export function CategoryHubView({ category, page }: CategoryHubViewProps) {
             title="Maryland, Virginia & Washington, D.C."
             description={`State-specific ${category.name.toLowerCase()} rules and coverage considerations.`}
           />
-          <ul className="mt-5 divide-y divide-line border-y border-line">
+          <ul className="mt-5 grid gap-3 sm:grid-cols-3">
             {stateLandings.map((landing) => {
               const state = landing.stateSlug
                 ? getStateBySlug(landing.stateSlug)
                 : undefined;
+              const tint =
+                landing.stateSlug === "virginia"
+                  ? "tint-virginia"
+                  : landing.stateSlug === "washington-dc"
+                    ? "tint-dc"
+                    : "tint-maryland";
               return (
                 <li key={landing.path}>
                   <Link
                     href={landing.path}
-                    className="block py-3 text-sm font-medium text-navy-800 hover:underline"
+                    className={`surface-card surface-card-interactive block px-4 py-5 ${tint}`}
                   >
-                    {landing.navLabel ? `${state?.name ?? landing.title}` : landing.title}
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-navy-700">
+                      {state?.name ?? landing.title}
+                    </p>
+                    <p className="link-arrow mt-3 text-sm">
+                      {category.name} guide
+                      <span data-arrow aria-hidden="true">
+                        →
+                      </span>
+                    </p>
                   </Link>
                 </li>
               );
@@ -122,8 +141,8 @@ export function CategoryHubView({ category, page }: CategoryHubViewProps) {
 
       <aside className="space-y-8 lg:col-span-4" aria-label="Category sidebar">
         <AdSlot slot="category-sidebar" />
-        <div className="border-t border-line pt-5">
-          <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+        <div className="surface-card p-5">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-navy-700">
             DMV Insurance Guides
           </h2>
           <ul className="mt-4 space-y-3">

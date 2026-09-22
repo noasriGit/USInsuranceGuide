@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SITE_NAME, PUBLIC_CASE_STUDIES_PATH } from "@/lib/constants";
 import { getDisclaimers, getPrimaryCategories, getStates } from "@/lib/content";
+import { RegionalVisual } from "@/components/visual/RegionalVisual";
 import { Container } from "./Container";
 
 const aboutLinks = [
@@ -24,13 +25,18 @@ export function SiteFooter() {
   const states = getStates();
 
   return (
-    <footer className="mt-auto border-t border-line bg-navy-900 text-slate-300">
-      <Container className="py-14">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-1">
-            <p className="text-base font-semibold text-white">{SITE_NAME}</p>
-            <p className="mt-3 text-sm leading-relaxed text-slate-300">
+    <footer className="mt-auto bg-[image:var(--footer-wash)] text-slate-300">
+      <Container size="wide" className="py-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-6">
+          <div className="lg:col-span-2">
+            <p className="text-lg font-semibold tracking-tight text-white">{SITE_NAME}</p>
+            <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-300">
               Independent insurance information for Maryland, Virginia, and Washington, D.C.
+              Built from regulator, DMV, and public-record sources.
+            </p>
+            <p className="mt-4 max-w-sm text-xs leading-relaxed text-slate-400">
+              Coverage rules differ across the DMV. Guides are organized by jurisdiction first,
+              then by insurance type.
             </p>
           </div>
 
@@ -99,16 +105,21 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-8">
-          <p className="max-w-3xl text-xs leading-relaxed text-slate-400">
-            {disclaimers.siteFooterDisclaimer}{" "}
-            <Link href="/insurance-disclaimer/" className="underline hover:text-slate-200">
-              Read full disclaimer
-            </Link>
-          </p>
-          <p className="mt-4 text-xs text-slate-400">
-            © {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
-          </p>
+        <div className="mt-12 grid items-end gap-8 border-t border-white/10 pt-8 lg:grid-cols-12">
+          <div className="lg:col-span-8">
+            <p className="max-w-3xl text-xs leading-relaxed text-slate-400">
+              {disclaimers.siteFooterDisclaimer}{" "}
+              <Link href="/insurance-disclaimer/" className="underline hover:text-slate-200">
+                Read full disclaimer
+              </Link>
+            </p>
+            <p className="mt-4 text-xs text-slate-400">
+              © {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
+            </p>
+          </div>
+          <div className="hidden lg:col-span-4 lg:block">
+            <RegionalVisual variant="footer" className="min-h-[7.5rem] bg-white/5" />
+          </div>
         </div>
       </Container>
     </footer>

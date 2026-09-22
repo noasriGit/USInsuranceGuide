@@ -7,17 +7,33 @@ interface StateCardProps {
   className?: string;
 }
 
+const toneClass: Record<string, string> = {
+  maryland: "tint-maryland",
+  virginia: "tint-virginia",
+  "washington-dc": "tint-dc",
+};
+
 export function StateCard({ state, className }: StateCardProps) {
   return (
     <Link
       href={`/states/${state.slug}/`}
       className={cn(
-        "interactive-row block border-t border-line pt-4 hover:border-navy-700",
+        "surface-card surface-card-interactive block p-6",
+        toneClass[state.slug],
         className,
       )}
     >
-      <h3 className="text-lg font-semibold text-ink">{state.name}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-slate-600">{state.overview}</p>
+      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-navy-700">
+        {state.name}
+      </p>
+      <h3 className="mt-2 text-xl font-semibold text-ink">{state.name} insurance</h3>
+      <p className="mt-3 text-sm leading-relaxed text-slate-600">{state.overview}</p>
+      <p className="link-arrow mt-5">
+        Explore {state.name}
+        <span data-arrow aria-hidden="true">
+          →
+        </span>
+      </p>
     </Link>
   );
 }

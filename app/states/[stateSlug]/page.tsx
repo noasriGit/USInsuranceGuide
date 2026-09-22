@@ -28,6 +28,8 @@ import { resolvePlacements } from "@/lib/monetization/placements";
 import { shouldIndexPath } from "@/lib/content/indexing";
 import { inferLeadContextFromPath } from "@/lib/leads/context";
 import { MARYLAND_RECENT_PUBLIC_FACT } from "@/content/data/public-case-studies";
+import { CoverageIcon, coverageVisualFromSlug } from "@/components/visual/CoverageIcon";
+import { RegionalVisual } from "@/components/visual/RegionalVisual";
 import type { SeoPage } from "@/lib/schemas";
 
 interface PageProps {
@@ -41,17 +43,25 @@ function GuideDirectoryCard({
   guide: SeoPage;
   childPages: SeoPage[];
 }) {
+  const visual = coverageVisualFromSlug(guide.categorySlug ?? guide.guideSlug);
   return (
-    <div className="border-t border-line py-5">
-      <Link href={guide.path} className="text-lg font-semibold text-ink hover:text-navy-800">
-        {guide.navLabel ?? guide.title}
+    <div className="surface-card p-5">
+      <p className="flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-navy-700">
+        <CoverageIcon name={visual} className="h-4 w-4" />
+        {guide.navLabel && guide.navLabel !== guide.title ? guide.navLabel : "Guide"}
+      </p>
+      <Link href={guide.path} className="mt-2 block text-lg font-semibold text-ink hover:text-navy-800">
+        {guide.title}
       </Link>
       <p className="mt-2 text-sm leading-relaxed text-slate-600">{guide.metaDescription}</p>
       {childPages.length > 0 && (
-        <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+        <ul className="mt-4 flex flex-wrap gap-2">
           {childPages.map((child) => (
             <li key={child.path}>
-              <Link href={child.path} className="text-sm text-navy-800 hover:underline">
+              <Link
+                href={child.path}
+                className="inline-flex min-h-9 items-center rounded-lg bg-white/80 px-3 text-sm font-medium text-navy-800 hover:bg-white"
+              >
                 {child.navLabel ??
                   (child.title.replace(guide.navLabel ?? "", "").trim() || child.title)}
               </Link>
@@ -59,6 +69,12 @@ function GuideDirectoryCard({
           ))}
         </ul>
       )}
+      <Link href={guide.path} className="link-arrow mt-4">
+        Read guide
+        <span data-arrow aria-hidden="true">
+          →
+        </span>
+      </Link>
     </div>
   );
 }
@@ -100,21 +116,52 @@ export default async function StateHubPage({ params }: PageProps) {
   const context = inferLeadContextFromPath(page.path, page.kind);
   const caseStudies = getPublicCaseStudiesForPage({ stateSlug, limit: 1 });
   const sourceNames = state.externalSources?.map((source) => source.publisher) ?? [];
+  const heroTint =
+    stateSlug === "virginia" ? "tint-virginia" : stateSlug === "washington-dc" ? "tint-dc" : "tint-maryland";
+  const primaryChips = primaryGuides.slice(0, 4);
 
   return (
-    <Container className="py-8">
-      <Breadcrumbs
-        items={[
-          { label: "Home", href: "/" },
-          { label: "DMV Guides", href: "/states/" },
-          { label: state.name },
-        ]}
-      />
-      <PageHero
-        eyebrow={`${state.name} insurance`}
-        title={page.title}
-        description={state.overview}
-      />
+    <>
+      <div className={heroTint}>
+        <Container className="py-8 lg:py-10">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "DMV Guides", href: "/states/" },
+              { label: state.name },
+            ]}
+          />
+          <div className="mt-6 grid items-end gap-8 lg:grid-cols-12">
+            <div className="lg:col-span-8">
+              <PageHero
+                bare
+                className="pb-2"
+                eyebrow={`${state.name} insurance`}
+                title={page.title}
+                description={state.overview}
+              >
+                <ul className="mt-8 flex flex-wrap gap-2">
+                  {primaryChips.map((guide) => (
+                    <li key={guide.path}>
+                      <Link
+                        href={guide.path}
+                        className="inline-flex min-h-10 items-center rounded-lg border border-navy-200 bg-white/80 px-3.5 text-sm font-medium text-navy-800 hover:border-navy-600"
+                      >
+                        {guide.navLabel ?? guide.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </PageHero>
+            </div>
+            <div className="hidden lg:col-span-4 lg:block">
+              <RegionalVisual className="min-h-[13rem] bg-navy-900" />
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      <Container className="py-8">
 
       <ReviewMeta
         className="mt-6"
@@ -139,7 +186,7 @@ export default async function StateHubPage({ params }: PageProps) {
               title={`Key ${state.name} insurance guides`}
               description="Start with auto, homeowners, renters, and business coverage."
             />
-            <div className="mt-4 border-b border-line">
+            <div className="mt-5 grid gap-4">
               {primaryGuides.map((guide) => (
                 <GuideDirectoryCard
                   key={guide.path}
@@ -181,12 +228,12 @@ export default async function StateHubPage({ params }: PageProps) {
           {specialtyGuides.length > 0 && (
             <section>
               <SectionHeading title="Specialty coverage" />
-              <ul className="mt-4 divide-y divide-line border-y border-line">
+              <ul className="mt-4 grid gap-2 sm:grid-cols-2">
                 {specialtyGuides.map((guide) => (
                   <li key={guide.path}>
                     <Link
                       href={guide.path}
-                      className="block py-3 text-sm font-medium text-navy-800 hover:underline"
+                      className="surface-card surface-card-interactive block px-4 py-3 text-sm font-medium text-navy-800"
                     >
                       {guide.navLabel ?? guide.title}
                     </Link>
@@ -248,8 +295,8 @@ export default async function StateHubPage({ params }: PageProps) {
 
         <aside className="lg:col-span-4" aria-label="Official resources">
           {state.externalSources && state.externalSources.length > 0 && (
-            <div className="border-t border-line pt-5">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+            <div className="surface-card p-5">
+              <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-navy-700">
                 Official {state.name} resources
               </h2>
               <ul className="mt-4 space-y-2">
@@ -272,5 +319,6 @@ export default async function StateHubPage({ params }: PageProps) {
         </aside>
       </div>
     </Container>
+    </>
   );
 }

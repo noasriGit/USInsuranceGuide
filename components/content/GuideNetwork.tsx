@@ -11,16 +11,16 @@ export function GuideNetwork({ page }: { page: SeoPage }) {
   if (related.length === 0) return null;
 
   return (
-    <nav aria-label="Related insurance guides" className="border-t border-line pt-6">
-      <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+    <nav aria-label="Related insurance guides">
+      <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-navy-700">
         Related Guides
       </h2>
-      <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+      <ul className="mt-4 grid gap-3 sm:grid-cols-2">
         {related.map((item) => (
           <li key={item.path}>
             <Link
               href={item.path}
-              className="text-sm text-navy-800 underline-offset-2 hover:underline"
+              className="surface-card surface-card-interactive block px-4 py-4 text-sm font-medium text-navy-800"
             >
               {networkLabel(item)}
             </Link>

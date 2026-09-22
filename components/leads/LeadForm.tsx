@@ -198,7 +198,7 @@ export function LeadForm({ context }: LeadFormProps) {
 
   if (successId) {
     return (
-      <div className="border-t border-line pt-6" role="status">
+      <div className="surface-card p-6 sm:p-8" role="status">
         <h2 className="text-2xl font-semibold text-ink">Request received</h2>
         <p className="mt-3 max-w-xl text-base leading-relaxed text-slate-600">
           Thank you. We received your request for {coverageLabel(form.coverageType)} coverage
@@ -217,13 +217,10 @@ export function LeadForm({ context }: LeadFormProps) {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="max-w-xl" onFocus={markStarted}>
-      <p className="text-sm text-slate-600">Step {step} of 4</p>
-      <div className="mt-2 h-px bg-line" aria-hidden="true">
-        <div
-          className="h-px bg-navy-800 transition-[width] duration-150"
-          style={{ width: `${(step / 4) * 100}%` }}
-        />
+    <form onFocus={markStarted} onSubmit={onSubmit} noValidate>
+      <p className="text-sm font-medium text-navy-700">Step {step} of 4</p>
+      <div className="progress-track mt-3" aria-hidden="true">
+        <div className="progress-fill" style={{ width: `${(step / 4) * 100}%` }} />
       </div>
 
       {form.coverageType && form.state && (
@@ -256,7 +253,7 @@ export function LeadForm({ context }: LeadFormProps) {
             {COVERAGE_TYPES.map((option) => (
               <label
                 key={option.id}
-                className="flex min-h-11 cursor-pointer items-center gap-3 border border-line px-3 py-2.5 hover:border-navy-700"
+                className="choice-option"
               >
                 <input
                   type="radio"
@@ -285,7 +282,7 @@ export function LeadForm({ context }: LeadFormProps) {
               {LEAD_STATES.map((option) => (
                 <label
                   key={option.id}
-                  className="flex min-h-11 cursor-pointer items-center gap-3 border border-line px-3 py-2.5 hover:border-navy-700"
+                  className="choice-option"
                 >
                   <input
                     type="radio"
@@ -316,7 +313,7 @@ export function LeadForm({ context }: LeadFormProps) {
               value={form.zipCode}
               onChange={(event) => setForm((current) => ({ ...current, zipCode: event.target.value }))}
               aria-describedby={fieldErrors.zipCode ? "zip-error" : undefined}
-              className="mt-2 min-h-11 w-full border border-line bg-white px-3 text-sm"
+              className="field-input mt-2"
             />
             {fieldErrors.zipCode && (
               <p id="zip-error" className="mt-2 text-sm text-red-800" role="alert">
@@ -338,7 +335,7 @@ export function LeadForm({ context }: LeadFormProps) {
                   {question.options?.map((option) => (
                     <label
                       key={option.id}
-                      className="flex min-h-11 cursor-pointer items-center gap-3 border border-line px-3 py-2.5 hover:border-navy-700"
+                      className="choice-option"
                     >
                       <input
                         type="radio"
@@ -369,7 +366,7 @@ export function LeadForm({ context }: LeadFormProps) {
                       answers: { ...current.answers, [question.id]: event.target.value },
                     }))
                   }
-                  className="mt-3 min-h-24 w-full border border-line bg-white px-3 py-2 text-sm"
+                  className="field-input mt-3 min-h-24 py-2"
                 />
               )}
               {fieldErrors[`answers.${question.id}`] && (
@@ -397,7 +394,7 @@ export function LeadForm({ context }: LeadFormProps) {
                 required
                 value={form.firstName}
                 onChange={(event) => setForm((current) => ({ ...current, firstName: event.target.value }))}
-                className="mt-2 min-h-11 w-full border border-line bg-white px-3 text-sm"
+                className="field-input mt-2"
               />
               {fieldErrors.firstName && (
                 <p className="mt-2 text-sm text-red-800" role="alert">
@@ -416,7 +413,7 @@ export function LeadForm({ context }: LeadFormProps) {
                 required
                 value={form.lastName}
                 onChange={(event) => setForm((current) => ({ ...current, lastName: event.target.value }))}
-                className="mt-2 min-h-11 w-full border border-line bg-white px-3 text-sm"
+                className="field-input mt-2"
               />
               {fieldErrors.lastName && (
                 <p className="mt-2 text-sm text-red-800" role="alert">
@@ -437,7 +434,7 @@ export function LeadForm({ context }: LeadFormProps) {
               value={form.email}
               onChange={(event) => setForm((current) => ({ ...current, email: event.target.value }))}
               aria-describedby={fieldErrors.email ? "email-error" : undefined}
-              className="mt-2 min-h-11 w-full border border-line bg-white px-3 text-sm"
+              className="field-input mt-2"
             />
             {fieldErrors.email && (
               <p id="email-error" className="mt-2 text-sm text-red-800" role="alert">
@@ -456,7 +453,7 @@ export function LeadForm({ context }: LeadFormProps) {
               autoComplete="tel"
               value={form.phone}
               onChange={(event) => setForm((current) => ({ ...current, phone: event.target.value }))}
-              className="mt-2 min-h-11 w-full border border-line bg-white px-3 text-sm"
+              className="field-input mt-2"
             />
             {fieldErrors.phone && (
               <p className="mt-2 text-sm text-red-800" role="alert">

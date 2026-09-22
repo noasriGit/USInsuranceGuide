@@ -17,6 +17,8 @@ export function PublicCaseStudySection({
 }: PublicCaseStudySectionProps) {
   if (studies.length === 0) return null;
 
+  const [featured, ...rest] = studies;
+
   return (
     <section aria-labelledby="case-files-heading">
       <SectionHeading
@@ -25,10 +27,17 @@ export function PublicCaseStudySection({
         title={title}
         description={description}
       />
-      <div className="mt-8 grid gap-8 lg:grid-cols-2">
-        {studies.map((study) => (
-          <PublicCaseStudyCard key={study.slug} study={study} />
-        ))}
+      <div className="mt-8 grid items-start gap-5 lg:grid-cols-12">
+        <div className={rest.length > 0 ? "lg:col-span-7" : "lg:col-span-12"}>
+          <PublicCaseStudyCard study={featured} featured />
+        </div>
+        {rest.length > 0 && (
+          <div className="grid gap-5 lg:col-span-5">
+            {rest.map((study) => (
+              <PublicCaseStudyCard key={study.slug} study={study} />
+            ))}
+          </div>
+        )}
       </div>
       <div className="mt-8">
         <ButtonLink href={PUBLIC_CASE_STUDIES_PATH} variant="secondary">

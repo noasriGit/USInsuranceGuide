@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export function PublicCaseStudyDisclaimer({ className }: { className?: string }) {
   return (
-    <p className={cn("text-sm leading-relaxed text-slate-600", className)}>
+    <p className={cn("surface-card bg-sand/80 p-4 text-sm leading-relaxed text-slate-600", className)}>
       {PUBLIC_CASE_STUDY_DISCLAIMER}
     </p>
   );

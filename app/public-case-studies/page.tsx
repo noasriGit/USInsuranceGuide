@@ -60,11 +60,11 @@ export default async function PublicCaseStudiesPage({ searchParams }: PageProps)
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
               Jurisdiction
             </p>
-            <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            <ul className="mt-2 flex flex-wrap gap-2 text-sm">
               <li>
                 <Link
                   href={topic ? `${PUBLIC_CASE_STUDIES_PATH}?topic=${topic}` : PUBLIC_CASE_STUDIES_PATH}
-                  className={!jurisdiction ? "font-semibold text-ink" : "text-navy-800 hover:underline"}
+                  className={!jurisdiction ? "chip chip-active" : "chip"}
                 >
                   All
                 </Link>
@@ -74,9 +74,7 @@ export default async function PublicCaseStudiesPage({ searchParams }: PageProps)
                   <Link
                     href={`${PUBLIC_CASE_STUDIES_PATH}?jurisdiction=${state.id}${topic ? `&topic=${topic}` : ""}`}
                     className={
-                      jurisdiction === state.id
-                        ? "font-semibold text-ink"
-                        : "text-navy-800 hover:underline"
+                      jurisdiction === state.id ? "chip chip-active" : "chip"
                     }
                   >
                     {state.label}
@@ -89,7 +87,7 @@ export default async function PublicCaseStudiesPage({ searchParams }: PageProps)
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
               Topic
             </p>
-            <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            <ul className="mt-2 flex flex-wrap gap-2 text-sm">
               <li>
                 <Link
                   href={
@@ -97,7 +95,7 @@ export default async function PublicCaseStudiesPage({ searchParams }: PageProps)
                       ? `${PUBLIC_CASE_STUDIES_PATH}?jurisdiction=${jurisdiction}`
                       : PUBLIC_CASE_STUDIES_PATH
                   }
-                  className={!topic ? "font-semibold text-ink" : "text-navy-800 hover:underline"}
+                  className={!topic ? "chip chip-active" : "chip"}
                 >
                   All
                 </Link>
@@ -107,7 +105,7 @@ export default async function PublicCaseStudiesPage({ searchParams }: PageProps)
                   <Link
                     href={`${PUBLIC_CASE_STUDIES_PATH}?topic=${item.id}${jurisdiction ? `&jurisdiction=${jurisdiction}` : ""}`}
                     className={
-                      topic === item.id ? "font-semibold text-ink" : "text-navy-800 hover:underline"
+                      topic === item.id ? "chip chip-active" : "chip"
                     }
                   >
                     {item.label}
@@ -121,7 +119,7 @@ export default async function PublicCaseStudiesPage({ searchParams }: PageProps)
         {studies.length === 0 ? (
           <p className="text-slate-600">No public case files match those filters yet.</p>
         ) : (
-          <div className="grid gap-10 lg:grid-cols-2">
+          <div className="grid gap-5 lg:grid-cols-2">
             {studies.map((study) => (
               <PublicCaseStudyCard key={study.slug} study={study} />
             ))}

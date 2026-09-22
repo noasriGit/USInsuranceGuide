@@ -13,8 +13,8 @@ export function GuideSectionShell({
 }: GuideSectionShellProps) {
   return (
     <section>
-      <h2 className="text-xl font-semibold text-ink">{title}</h2>
-      <div className="mt-4">
+      <h2 className="text-xl font-semibold tracking-tight text-ink">{title}</h2>
+      <div className="mt-5">
         {pending && !children ? <ContentPendingNotice topic={title} /> : children}
       </div>
     </section>

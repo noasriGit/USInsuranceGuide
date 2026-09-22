@@ -8,7 +8,7 @@ interface SourceTrustCalloutProps {
 
 export function SourceTrustCallout({ className }: SourceTrustCalloutProps) {
   return (
-    <aside className={cn("border-y border-line py-6", className)} aria-label="Editorial standards">
+    <aside className={cn("surface-card bg-sand/80 p-6", className)} aria-label="Editorial standards">
       <p className="text-xs font-semibold uppercase tracking-[0.16em] text-navy-700">
         Why sources matter
       </p>

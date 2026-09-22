@@ -6,6 +6,7 @@ interface PageHeroProps {
   description?: string;
   className?: string;
   children?: React.ReactNode;
+  bare?: boolean;
 }
 
 export function PageHero({
@@ -14,25 +15,26 @@ export function PageHero({
   description,
   className,
   children,
+  bare = false,
 }: PageHeroProps) {
   return (
-    <header className={cn("border-b border-line pb-8", className)}>
+    <header className={cn(!bare && "border-b border-line pb-8", className)}>
       <div className="max-w-3xl">
         {eyebrow && (
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-navy-700">
+          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-navy-700">
             {eyebrow}
           </p>
         )}
         <h1
           className={cn(
-            "text-3xl font-semibold tracking-tight text-ink sm:text-4xl",
+            "text-[2rem] font-semibold tracking-tight text-ink sm:text-4xl lg:text-[2.65rem] lg:leading-tight",
             eyebrow && "mt-3",
           )}
         >
           {title}
         </h1>
         {description && (
-          <p className="mt-4 max-w-[46rem] text-lg leading-relaxed text-slate-600">
+          <p className="mt-4 max-w-[40rem] text-lg leading-relaxed text-slate-600">
             {description}
           </p>
         )}

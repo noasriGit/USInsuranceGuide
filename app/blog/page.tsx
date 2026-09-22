@@ -31,7 +31,7 @@ export default function BlogIndexPage() {
             <h2 id="blog-articles-heading" className="sr-only">
               All articles
             </h2>
-            <div className="grid gap-8 sm:grid-cols-2">
+            <div className="grid gap-5 sm:grid-cols-2">
               {articles.map((article) => (
                 <ArticleCard key={article.slug} article={article} />
               ))}

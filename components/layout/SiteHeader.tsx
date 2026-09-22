@@ -27,7 +27,7 @@ const resourceLinks = [
 ];
 
 const navLinkClassName =
-  "px-3 py-2 text-sm font-medium text-slate-700 underline-offset-4 hover:text-navy-800 hover:underline transition-colors";
+  "px-3 py-2 text-sm font-medium text-slate-700 underline-offset-4 transition-colors hover:text-navy-800 hover:underline";
 
 export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -83,10 +83,10 @@ export function SiteHeader() {
   }, [mobileOpen]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-white/95 supports-[backdrop-filter]:bg-white/90">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 border-b border-line/80 bg-white/85 backdrop-blur-md supports-[backdrop-filter]:bg-white/75">
+      <div className="mx-auto flex h-[4.25rem] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="rounded-sm">
-          <span className="text-[0.95rem] font-semibold tracking-tight text-navy-900">
+          <span className="text-[0.98rem] font-semibold tracking-[-0.02em] text-navy-900">
             {SITE_NAME}
           </span>
         </Link>
@@ -115,13 +115,13 @@ export function SiteHeader() {
                 <nav
                   id={statesMenuId}
                   aria-labelledby={`${statesMenuId}-button`}
-                  className="absolute left-0 top-full mt-1 w-52 border border-line bg-white py-1"
+                  className="surface-card absolute left-0 top-full z-20 mt-2 w-56 py-2"
                 >
                   <ul className="list-none">
                     <li>
                       <Link
                         href="/states/"
-                        className="block px-4 py-2 text-sm text-slate-700 hover:bg-paper-blue hover:underline"
+                        className="block px-4 py-2 text-sm text-slate-700 hover:bg-navy-50"
                         onClick={closeMenus}
                       >
                         All DMV Guides
@@ -131,7 +131,7 @@ export function SiteHeader() {
                       <li key={state.slug}>
                         <Link
                           href={`/states/${state.slug}/`}
-                          className="block px-4 py-2 text-sm text-slate-700 hover:bg-paper-blue hover:underline"
+                          className="block px-4 py-2 text-sm text-slate-700 hover:bg-navy-50"
                           onClick={closeMenus}
                         >
                           {state.name}
@@ -161,14 +161,14 @@ export function SiteHeader() {
                 <nav
                   id={resourcesMenuId}
                   aria-labelledby={`${resourcesMenuId}-button`}
-                  className="absolute right-0 top-full mt-1 w-56 border border-line bg-white py-1"
+                  className="surface-card absolute right-0 top-full z-20 mt-2 w-56 py-2"
                 >
                   <ul className="list-none">
                     {resourceLinks.map((link) => (
                       <li key={link.href}>
                         <Link
                           href={link.href}
-                          className="block px-4 py-2 text-sm text-slate-700 hover:bg-paper-blue hover:underline"
+                          className="block px-4 py-2 text-sm text-slate-700 hover:bg-navy-50"
                           onClick={closeMenus}
                         >
                           {link.label}

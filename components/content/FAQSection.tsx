@@ -17,10 +17,10 @@ export function FAQSection({ faqs, className }: FAQSectionProps) {
       <h2 id="faq-heading" className="text-xl font-semibold text-ink">
         Frequently Asked Questions
       </h2>
-      <dl className="mt-6 space-y-6">
+      <dl className="mt-6 grid gap-4">
         {faqs.map((faq) => (
-          <div key={faq.question} className="border-b border-slate-200 pb-6 last:border-0">
-            <dt className="text-base font-semibold text-slate-900">{faq.question}</dt>
+          <div key={faq.question} className="surface-card p-5">
+            <dt className="text-base font-semibold text-ink">{faq.question}</dt>
             <dd className="mt-2 text-sm leading-relaxed text-slate-600">{faq.answer}</dd>
           </div>
         ))}

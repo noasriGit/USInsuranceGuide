@@ -130,13 +130,15 @@ export default async function PublicCaseStudyPage({ params }: PageProps) {
             <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
               Related guides
             </h2>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-4 grid gap-3">
               {study.relatedPaths.map((relatedPath) => {
                 const related = getSeoPage(relatedPath);
                 return (
                   <li key={relatedPath}>
-                    <Link href={relatedPath} className="text-sm text-navy-800 hover:underline">
-                      {related?.title ?? relatedPath}
+                    <Link href={relatedPath} className="surface-card surface-card-interactive block px-4 py-4">
+                      <span className="text-sm font-medium text-navy-800">
+                        {related?.title ?? relatedPath}
+                      </span>
                     </Link>
                   </li>
                 );

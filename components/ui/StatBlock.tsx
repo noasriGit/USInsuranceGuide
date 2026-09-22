@@ -8,9 +8,9 @@ interface StatBlockProps {
 
 export function StatBlock({ value, label, className }: StatBlockProps) {
   return (
-    <div className={cn("border-t border-line pt-4", className)}>
-      <p className="text-2xl font-semibold tracking-tight text-ink">{value}</p>
-      <p className="mt-1 text-sm leading-relaxed text-slate-600">{label}</p>
+    <div className={cn("surface-card p-6", className)}>
+      <p className="text-4xl font-semibold tracking-tight text-ink sm:text-5xl">{value}</p>
+      <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-600">{label}</p>
     </div>
   );
 }

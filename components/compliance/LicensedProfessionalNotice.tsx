@@ -10,7 +10,7 @@ export function LicensedProfessionalNotice({ className }: LicensedProfessionalNo
   return (
     <aside
       aria-label="Licensed professional reminder"
-      className={cn("border-t border-line pt-5", className)}
+      className={cn("rounded-xl bg-navy-50/80 p-5", className)}
     >
       <p className="text-sm font-semibold text-ink">Before you decide on coverage</p>
       <p className="mt-2 text-sm leading-relaxed text-slate-600">

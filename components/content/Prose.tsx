@@ -59,23 +59,23 @@ const markdownComponents: Components = {
   },
   table({ children }) {
     return (
-      <div className="my-6 overflow-x-auto">
+      <div className="my-7 overflow-x-auto rounded-xl border border-line">
         <table className="min-w-full border-collapse text-left text-sm">{children}</table>
       </div>
     );
   },
   thead({ children }) {
-    return <thead className="border-b border-slate-300 bg-slate-50">{children}</thead>;
+    return <thead className="bg-navy-50">{children}</thead>;
   },
   th({ children }) {
     return (
-      <th scope="col" className="px-4 py-2 font-semibold text-slate-900">
+      <th scope="col" className="px-4 py-3 font-semibold text-ink">
         {children}
       </th>
     );
   },
   td({ children }) {
-    return <td className="border-b border-slate-200 px-4 py-2 text-slate-700">{children}</td>;
+    return <td className="border-t border-line px-4 py-3 text-slate-700">{children}</td>;
   },
 };
 

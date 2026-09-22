@@ -15,7 +15,7 @@ export function PartnerCard({ partner, className }: PartnerCardProps) {
   return (
     <div
       className={cn(
-        "border border-line border-l-2 border-l-navy-700 bg-paper-blue p-5",
+        "surface-card border-l-[3px] border-l-navy-700 p-5",
         className,
       )}
     >
@@ -34,7 +34,7 @@ export function PartnerCard({ partner, className }: PartnerCardProps) {
         target="_blank"
         rel={partner.sponsored ? "sponsored noopener noreferrer" : "noopener noreferrer"}
         aria-label={newTabAriaLabel(`${partner.ctaText} — ${partner.name}`)}
-        className="mt-4 inline-flex items-center bg-navy-800 px-4 py-2 text-sm font-medium text-white hover:bg-navy-900 transition-colors"
+        className="btn btn-primary mt-4"
       >
         {partner.ctaText}
       </a>

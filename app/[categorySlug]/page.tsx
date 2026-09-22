@@ -3,6 +3,8 @@ import { Container } from "@/components/layout/Container";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { CategoryHubView } from "@/components/content/CategoryHubView";
+import { coverageTintClass, coverageVisualFromSlug } from "@/components/visual/CoverageIcon";
+import { CategoryIllustration } from "@/components/visual/CategoryIllustration";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { shouldIndexPath, getCategoryCanonicalPath } from "@/lib/content/indexing";
 import { getCategories, getCategoryBySlug, isCategorySlug } from "@/lib/content";
@@ -52,11 +54,26 @@ export default async function CategoryHubPage({ params }: PageProps) {
   const page = getSeoPage(path);
   if (!page || page.status !== "published") notFound();
 
+  const visual = coverageVisualFromSlug(category.slug);
+
   return (
-    <Container className="py-8">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: category.name }]} />
-      <PageHero title={page.title} description={page.metaDescription} />
-      <CategoryHubView category={category} page={page} />
-    </Container>
+    <>
+      <div className={coverageTintClass(visual)}>
+        <Container className="py-8 lg:py-10">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: category.name }]} />
+          <div className="mt-6 grid items-end gap-8 lg:grid-cols-12">
+            <div className="lg:col-span-8">
+              <PageHero bare title={page.title} description={page.metaDescription} />
+            </div>
+            <div className="hidden lg:col-span-4 lg:block">
+              <CategoryIllustration name={visual} />
+            </div>
+          </div>
+        </Container>
+      </div>
+      <Container>
+        <CategoryHubView category={category} page={page} />
+      </Container>
+    </>
   );
 }
