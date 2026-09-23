@@ -36,8 +36,8 @@
     "abbreviation": "VA",
     "metaTitle": "Virginia Insurance Guides",
     "metaDescription": "Virginia insurance guides covering auto requirements, homeowners, renters, and business coverage, plus official SCC Bureau of Insurance and DMV resources.",
-    "overview": "Virginia requires registered vehicles to carry 50/100/25 liability insurance and matching uninsured/underinsured motorist coverage unless UM/UIM is rejected in writing. The uninsured motor vehicle fee option ended July 1, 2024. Homeowners insurance is not required by statute. Workers' compensation is generally required for employers with three or more employees.",
-    "requiredInsuranceSummary": "Virginia's core mandates are auto liability at 50/100/25 for policies effective January 1, 2025 or later, matching UM/UIM unless rejected in writing, and workers' compensation at three or more employees. Homeowners and renters insurance are not required by state law.",
+    "overview": "Virginia requires registered vehicles to carry 50/100/25 liability insurance and uninsured/underinsured motorist coverage at least at those statutory minimums. Extra UM/UIM may be reduced, but it cannot be dropped. The uninsured motor vehicle fee option ended July 1, 2024. Homeowners insurance is not required by statute. Workers' compensation is generally required for employers with three or more employees.",
+    "requiredInsuranceSummary": "Virginia's core mandates are auto liability at 50/100/25 for policies effective January 1, 2025 or later, UM/UIM at least at those statutory minimums, and workers' compensation at three or more employees. Homeowners and renters insurance are not required by state law.",
     "majorRisks": [
       "Higher dwelling replacement costs in Northern Virginia",
       "Coastal exposure in Hampton Roads versus inland and mountain weather inland",

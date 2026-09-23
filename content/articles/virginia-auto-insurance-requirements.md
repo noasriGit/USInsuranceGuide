@@ -2,7 +2,7 @@
 title: "Virginia Auto Insurance Requirements"
 metaTitle: "Virginia Auto Insurance Requirements"
 metaDescription: "Virginia requires 50/100/25 liability and matching uninsured motorist coverage. Limits, proof of insurance, registration rules, and lapse penalties."
-excerpt: "Yes. Virginia requires liability insurance on every registered vehicle. For policies effective January 1, 2025 or later, the legal floor is 50/100/25, plus uninsured and underinsured motorist coverage unless you reject it in writing."
+excerpt: "Yes. Virginia requires liability insurance on every registered vehicle. For policies effective January 1, 2025 or later, the legal floor is 50/100/25, plus uninsured and underinsured motorist coverage that cannot be reduced below those statutory minimums."
 type: guide
 category: auto-insurance
 states:
@@ -16,11 +16,11 @@ faq:
   - question: "Do you have to have car insurance in Virginia?"
     answer: "Yes. Every vehicle registered in Virginia must carry a liability policy that meets current state minimums. The former uninsured motor vehicle fee ended July 1, 2024. Paying a DMV fee is no longer a substitute for insurance."
   - question: "What is the minimum car insurance required in Virginia?"
-    answer: "For policies effective on or after January 1, 2025, Virginia requires minimum liability of $50,000 per person for bodily injury, $100,000 per accident for bodily injury, and $25,000 per accident for property damage (50/100/25). Uninsured and underinsured motorist coverage must match those limits unless you reject it in writing."
+    answer: "For policies effective on or after January 1, 2025, Virginia requires minimum liability of $50,000 per person for bodily injury, $100,000 per accident for bodily injury, and $25,000 per accident for property damage (50/100/25). Uninsured and underinsured motorist coverage must be included at least at those statutory minimums. UM/UIM generally matches the policy's liability limits, but a named insured may reduce the additional UM/UIM, not below 50/100/25."
   - question: "Do you need insurance to register a car in Virginia?"
     answer: "Yes. To purchase license plates or decals, you must certify that the vehicle is covered by a liability policy from a company authorized to do business in Virginia. DMV tells new residents to get insurance before they register. Coverage must stay in force for the full registration period, even if the vehicle is not driven."
   - question: "Does Virginia require uninsured motorist coverage?"
-    answer: "Yes, unless you reject it in writing. Virginia law requires every motor vehicle liability policy to include uninsured motorist (UM) and underinsured motorist (UIM) coverage at minimum limits matching your liability coverage. UM may apply if you are hit by an uninsured or hit-and-run driver. UIM may apply when an at-fault driver's limits are too low."
+    answer: "Yes. Virginia requires every motor vehicle liability policy to include uninsured motorist (UM) and underinsured motorist (UIM) coverage at no less than the financial-responsibility minimums, currently 50/100/25 for policies effective January 1, 2025 or later. UM/UIM generally defaults to the policy's liability limits. A named insured may reduce the additional UM/UIM coverage, but cannot drop it below those statutory minimums. UM may apply if you are hit by an uninsured or hit-and-run driver. UIM may apply when an at-fault driver's limits are too low."
   - question: "What happens if my Virginia auto insurance lapses?"
     answer: "If DMV cannot verify continuous insurance, your driver's license, registration, and license plates may be suspended. Reinstatement typically requires a $600 noncompliance fee, a $145 reinstatement fee, and proof of future financial responsibility, commonly an SR-22 certificate for three years. DMV also warns that a lapse can lead to higher premiums for the next three years."
   - question: "When does Virginia auto insurance need to start?"
@@ -38,8 +38,14 @@ sources:
   - title: "Virginia Auto Insurance Consumer Guide (PDF)"
     url: "https://www.scc.virginia.gov/media/sccvirginiagov-home/consumer-home/insurance/property-amp-casualty/automobile-insurance/autoguide.pdf"
     publisher: "Virginia Bureau of Insurance"
-  - title: "Code of Virginia § 38.2-2206 - Motor Vehicle Liability Policies"
-    url: "https://law.lis.virginia.gov/vacode/title38.2/chapter22/section38.2-2206/"
+  - title: "Code of Virginia § 38.2-2202 - Required Notice of Optional Coverage Available"
+    url: "https://law.lis.virginia.gov/vacode/title38.2/chapter22/section38.2-2202/"
+    publisher: "Virginia General Assembly"
+  - title: "Code of Virginia § 38.2-2206 - Uninsured Motorist Insurance Coverage"
+    url: "https://law.lis.virginia.gov/vacodeupdates/title38.2/section38.2-2206/"
+    publisher: "Virginia General Assembly"
+  - title: "Code of Virginia § 46.2-472 - Coverage of Owner's Policy"
+    url: "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-472/"
     publisher: "Virginia General Assembly"
   - title: "Code of Virginia § 46.2-706 - Proof of Insurance Required"
     url: "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-706/"
@@ -55,7 +61,7 @@ sources:
     publisher: "Virginia Department of Motor Vehicles"
 ---
 
-**Yes. Virginia requires car insurance on every registered vehicle.** You cannot register a car, keep plates, or legally keep a registered vehicle on the road without a liability policy that meets current minimums. For policies effective January 1, 2025 or later, that floor is **50/100/25**, plus uninsured and underinsured motorist coverage unless you reject UM/UIM in writing. The former uninsured motor vehicle fee ended July 1, 2024.
+**Yes. Virginia requires car insurance on every registered vehicle.** You cannot register a car, keep plates, or legally keep a registered vehicle on the road without a liability policy that meets current minimums. For policies effective January 1, 2025 or later, that floor is **50/100/25**, plus uninsured and underinsured motorist coverage at least at those statutory minimums. UM/UIM generally matches the policy's liability limits. A named insured may reduce the additional UM/UIM, but cannot drop it entirely. The former uninsured motor vehicle fee ended July 1, 2024.
 
 This page is the legal checklist. For premiums, rating factors, and how to compare quotes, use [Virginia car insurance cost](/states/virginia/auto-insurance/cost/). Requirements can change, so confirm current limits with the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/), [Virginia DMV](https://www.dmv.virginia.gov/vehicles/insurance-requirements), or a licensed insurance professional before you buy or renew.
 
@@ -65,7 +71,7 @@ For broader context, see [Virginia auto insurance](/states/virginia/auto-insuran
 |---|---|
 | Is insurance required? | Yes, on every registered vehicle. |
 | 2025+ liability floor | 50/100/25 |
-| UM / UIM | Required unless rejected in writing |
+| UM / UIM | Required at least at 50/100/25; extra UM/UIM may be reduced |
 | UMV fee | Eliminated July 1, 2024 |
 | Proof to register | Certify coverage from a Virginia-authorized insurer |
 | If coverage ends | Reinsure, deactivate plates, or surrender plates to DMV |
@@ -101,14 +107,16 @@ Liability coverage does not pay for your own injuries or damage to your own vehi
 
 ## Uninsured and Underinsured Motorist Coverage
 
-Virginia requires every motor vehicle liability policy to include **uninsured motorist (UM)** and **underinsured motorist (UIM)** coverage at minimum limits matching your liability coverage — currently 50/100/25 for policies effective January 1, 2025 or later.
+Virginia requires every motor vehicle liability policy to include **uninsured motorist (UM)** and **underinsured motorist (UIM)** coverage at no less than the financial-responsibility minimums required by [§ 46.2-472](https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-472/). For policies effective January 1, 2025 or later, those minimums are 50/100/25.
+
+UM/UIM generally defaults to limits equal to the policy's liability coverage. Under [§ 38.2-2202](https://law.lis.virginia.gov/vacode/title38.2/chapter22/section38.2-2202/) and [§ 38.2-2206](https://law.lis.virginia.gov/vacodeupdates/title38.2/section38.2-2206/), a named insured may elect to reduce the additional UM/UIM below the liability limits. The UM/UIM limits cannot be reduced below Virginia's statutory minimums. That election is not a right to eliminate UM/UIM.
+
+For policies issued, delivered, or renewed after July 1, 2025, Virginia also requires a separate written notice about how underinsured-motorist payments are calculated. A named insured may elect, in writing, to change that calculation. That election can affect how UIM interacts with the at-fault driver's liability coverage. It is not a form that removes UIM coverage.
 
 | Coverage | What it generally covers |
 |---|---|
 | Uninsured motorist (UM) | Injuries and property damage when you are hit by a driver with no insurance, or by a hit-and-run driver who cannot be identified |
 | Underinsured motorist (UIM) | Damages when an at-fault driver has insurance, but their policy limits are lower than your UM/UIM limits and insufficient to cover your losses |
-
-You may **reject UM/UIM coverage in writing**, but doing so removes a layer of protection that many drivers find valuable — especially given that not every driver on the road carries adequate insurance.
 
 **Hit-and-run note:** If your vehicle is damaged by an unidentified hit-and-run driver, Virginia law requires you to pay the first **$200** in property damage before UM property damage coverage applies.
 
@@ -183,7 +191,7 @@ State minimums are a legal floor, not a coverage recommendation. Before you buy 
 
 - Do my current limits meet Virginia's 50/100/25 requirement after the January 2025 increase?
 - Should I carry liability limits above the state minimum based on my assets and driving habits?
-- What are the tradeoffs of rejecting uninsured/underinsured motorist coverage?
+- If I buy liability above 50/100/25, should UM/UIM stay at those higher limits or be reduced toward the statutory minimum?
 - Would collision, comprehensive, or MedPay coverage make sense for my vehicle?
 - What deductibles and coverage combinations fit my budget while maintaining adequate protection?
 - Are there discounts I may qualify for, such as multi-policy, good driver, or safety feature discounts?

@@ -14,11 +14,11 @@ updatedAt: "2026-09-22"
 toc: true
 faq:
   - question: "What auto insurance limits does Virginia require for Alexandria drivers?"
-    answer: "For policies effective January 1, 2025 or later, Virginia requires 50/100/25 liability: $50,000 bodily injury per person, $100,000 bodily injury per accident, and $25,000 property damage per accident. Uninsured and underinsured motorist coverage must be included at those minimums unless you reject it in writing."
+    answer: "For policies effective January 1, 2025 or later, Virginia requires 50/100/25 liability: $50,000 bodily injury per person, $100,000 bodily injury per accident, and $25,000 property damage per accident. Uninsured and underinsured motorist coverage must be included at least at those statutory minimums. UM/UIM generally matches liability limits. A named insured may reduce additional UM/UIM, but not below 50/100/25."
   - question: "Can Alexandria residents still pay an uninsured motor vehicle fee instead of buying insurance?"
     answer: "No. Virginia ended the uninsured motor vehicle fee option on July 1, 2024. A vehicle registered in Alexandria must carry a liability policy that meets current state minimums. Paying a fee to DMV is no longer a substitute for insurance."
-  - question: "Should I reject UM/UIM coverage in writing?"
-    answer: "Virginia lets you reject uninsured and underinsured motorist coverage in writing. Rejection removes a layer of protection if you are hit by a driver with no insurance, too little insurance, or a hit-and-run driver. Ask a licensed producer what you give up before you sign a rejection."
+  - question: "Can I drop UM/UIM coverage in Virginia?"
+    answer: "No. Virginia requires uninsured and underinsured motorist coverage at least at the statutory minimums, currently 50/100/25 for policies effective January 1, 2025 or later. UM/UIM generally matches the policy's liability limits. A named insured may reduce additional UM/UIM toward those minimums, but cannot eliminate the coverage. Ask a licensed producer what first-party protection you give up if you reduce the extra limits."
   - question: "How do Old Town streets and urban parking change the coverage discussion?"
     answer: "They do not change the legal minimums. They do change optional coverages worth discussing: collision for tight historic streets and garage ramps, and comprehensive for theft, vandalism, and weather while the car sits on the street or in a shared garage. State law does not require those optional coverages."
   - question: "What happens if my Virginia auto insurance lapses?"
@@ -38,7 +38,7 @@ sources:
     publisher: "Federal Emergency Management Agency"
 ---
 
-If you garage or register a vehicle in Alexandria, Virginia, you must meet Virginia auto insurance rules. For policies effective January 1, 2025 or later, that means 50/100/25 liability and matching uninsured/underinsured motorist coverage unless you reject UM/UIM in writing. Alexandria is an independent city. City hall does not set those limits. The [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/) and [Virginia DMV](https://www.dmv.virginia.gov/) do.
+If you garage or register a vehicle in Alexandria, Virginia, you must meet Virginia auto insurance rules. For policies effective January 1, 2025 or later, that means 50/100/25 liability and uninsured/underinsured motorist coverage at least at those statutory minimums. UM/UIM generally matches the policy's liability limits. A named insured may reduce additional UM/UIM, but cannot drop it. Alexandria is an independent city. City hall does not set those limits. The [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/) and [Virginia DMV](https://www.dmv.virginia.gov/) do.
 
 This page is about what is locally different: Old Town streets, I-95 / I-495 / Route 1 commuting, Blue and Yellow Line Metro access, and street parking versus urban garages. It does not invent crash rates or city-specific premiums. For the statewide legal floor, use the [Virginia auto insurance requirements guide](/states/virginia/auto-insurance/requirements/). For rate factors and comparison steps, use [Virginia car insurance cost](/states/virginia/auto-insurance/cost/). For the statewide hub, use the [Virginia auto insurance overview](/states/virginia/auto-insurance/).
 
@@ -64,7 +64,7 @@ Minimum liability for policies effective January 1, 2025 or later:
 
 Those figures are commonly written 50/100/25. Older policies issued under the prior 30/60/20 floor should be checked at renewal.
 
-Virginia also requires uninsured and underinsured motorist coverage at matching minimums unless you reject that coverage in writing. UM may apply when the other driver has no insurance or cannot be identified. UIM may apply when the at-fault driver has insurance that is too low. A written rejection is a real choice with a real gap. It is not a default setting you should click through.
+Virginia also requires uninsured and underinsured motorist coverage at least at those statutory minimums. UM/UIM generally matches the policy's liability limits. A named insured may reduce additional UM/UIM, but not below 50/100/25. UM may apply when the other driver has no insurance or cannot be identified. UIM may apply when the at-fault driver has insurance that is too low. Reducing extra UM/UIM is a real coverage choice. It is not a way to remove the coverage.
 
 Virginia is a fault-based state. It does not require personal injury protection (PIP). Medical payments (MedPay) may be offered as an optional add-on. That is a different design from [Maryland auto insurance requirements](/states/maryland/auto-insurance/requirements/), where insurers must offer PIP.
 
@@ -101,7 +101,7 @@ For the full penalty and proof walkthrough, use the [Virginia auto insurance req
 Talk through these combinations with a licensed Virginia producer. They are discussion points, not a city ordinance:
 
 - Liability at or above 50/100/25, based on assets and how you use the car
-- UM/UIM kept or rejected in writing, with a clear explanation of the gap
+- UM/UIM at or above 50/100/25, including whether extra UM/UIM should stay matched to higher liability limits
 - Collision and comprehensive if you park on the street, in a shared garage, or finance the vehicle
 - MedPay if you want some medical coverage that does not depend on proving the other driver's fault
 - Deductibles you can actually pay after a garage or street incident
@@ -130,7 +130,7 @@ Related pages:
 ## Questions to ask a licensed professional
 
 - Does my current policy meet 50/100/25 for a 2025 or later effective date?
-- What happens if I sign a written UM/UIM rejection?
+- If I buy liability above 50/100/25, should I keep UM/UIM at those higher limits or reduce it toward the statutory minimum?
 - How should I describe street parking versus a garage on the application?
 - Do collision and comprehensive make sense for this car and this parking pattern?
 - If I commute into Maryland or D.C., do I still meet Virginia registration rules?

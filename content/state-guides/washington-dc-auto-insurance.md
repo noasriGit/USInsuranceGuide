@@ -28,7 +28,7 @@ sections:
     |---|---|---|---|
     | **Washington, D.C.** | 25/50/10 | Required (UM BI 25/50; UM PD $5,000) | Offer required; you may decline |
     | **Maryland** | 30/60/15 | Required at matching minimums | Offer required; written waiver allowed |
-    | **Virginia** | 50/100/25 (policies effective 1/1/2025+) | Required unless rejected in writing | Not required |
+    | **Virginia** | 50/100/25 (policies effective 1/1/2025+) | Required at least at 50/100/25; extra UM/UIM may be reduced | Not required |
 
     A car registered in the District must meet D.C. rules even if you garage it near a Maryland or Virginia line or commute on I-295, I-395, or New York Avenue. See [Maryland auto insurance](/states/maryland/auto-insurance/) and [Virginia auto insurance](/states/virginia/auto-insurance/) if the vehicle is registered there instead.
 

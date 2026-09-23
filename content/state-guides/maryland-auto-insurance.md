@@ -27,7 +27,7 @@ sections:
     | Jurisdiction | Minimum liability | UM / UIM | PIP |
     |---|---|---|---|
     | **Maryland** | 30/60/15 | Required at matching minimums | Offer required; written waiver allowed |
-    | **Virginia** | 50/100/25 (policies effective 1/1/2025+) | Required unless rejected in writing | Not required |
+    | **Virginia** | 50/100/25 (policies effective 1/1/2025+) | Required at least at 50/100/25; extra UM/UIM may be reduced | Not required |
     | **Washington, D.C.** | 25/50/10 | Required (UM BI 25/50; UM PD $5,000) | Offer required; you may decline |
 
     Neighboring [Virginia car insurance](/states/virginia/auto-insurance/) and [D.C. car insurance](/states/washington-dc/auto-insurance/) use different floors. A policy must meet the rules where the vehicle is registered.

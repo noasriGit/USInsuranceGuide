@@ -74,7 +74,7 @@ Maryland law decides whether a policy is legal. It does not decide what a specif
 
 Collision, comprehensive, rental reimbursement, and roadside assistance are optional under state law. They change premium because they change the insurer's exposure.
 
-If you also keep a vehicle in [Virginia](/states/virginia/auto-insurance/cost/), Virginia's floor for policies effective January 1, 2025 or later is 50/100/25, with UM/UIM unless rejected in writing. A Maryland-registered vehicle still has to meet Maryland rules. See [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/).
+If you also keep a vehicle in [Virginia](/states/virginia/auto-insurance/cost/), Virginia's floor for policies effective January 1, 2025 or later is 50/100/25, with UM/UIM required at least at those statutory minimums. Extra UM/UIM may be reduced, but it cannot be dropped. A Maryland-registered vehicle still has to meet Maryland rules. See [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/).
 
 ## Why 30/60/15 Is a Legal Floor, Not a Recommended Limit
 

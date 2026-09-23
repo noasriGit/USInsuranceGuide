@@ -30,7 +30,7 @@ faq:
   - question: "When do Virginia businesses need commercial auto insurance?"
     answer: "When vehicles are owned by the business, registered commercially, or used primarily for work. Personal policies commonly exclude business use."
   - question: "What are Virginia's commercial auto minimum limits?"
-    answer: "The same 50/100/25 liability minimums that apply to personal auto policies effective January 1, 2025 or later, plus UM/UIM requirements unless rejected in writing."
+    answer: "The same 50/100/25 liability minimums that apply to personal auto policies effective January 1, 2025 or later, plus UM/UIM that cannot be reduced below those statutory minimums."
   - question: "What is hired and non-owned auto coverage?"
     answer: "HNOA liability covers situations where employees drive personal or rented vehicles for business — it is typically an endorsement, not a separate vehicle policy."
   - question: "Where are Virginia commercial auto rules set?"
