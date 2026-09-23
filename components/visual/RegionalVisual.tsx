@@ -41,15 +41,15 @@ export function RegionalVisual({ className, variant = "hero" }: RegionalVisualPr
           strokeWidth="1.2"
           strokeOpacity="0.45"
         />
-        <circle cx="168" cy="28" r="4" fill="#FCFBF8" fillOpacity="0.9" />
-        <circle cx="214" cy="96" r="4" fill="#FCFBF8" fillOpacity="0.9" />
-        <circle cx="248" cy="142" r="4" fill="#FCFBF8" fillOpacity="0.9" />
+        <circle cx="168" cy="28" r="4" fill="#FCFEFE" fillOpacity="0.9" />
+        <circle cx="214" cy="96" r="4" fill="#FCFEFE" fillOpacity="0.9" />
+        <circle cx="248" cy="142" r="4" fill="#FCFEFE" fillOpacity="0.9" />
       </svg>
       <div className="relative z-10 flex h-full flex-col justify-center gap-3 p-5 sm:p-6">
         {nodes.map((node) => (
           <div
             key={node.id}
-            className="max-w-[17rem] rounded-xl border border-white/18 bg-[rgb(11_31_51_/_0.42)] px-4 py-3 backdrop-blur-[2px]"
+            className="max-w-[17rem] rounded-xl border border-white/18 bg-[rgb(8_47_91_/_0.42)] px-4 py-3 backdrop-blur-[2px]"
           >
             <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-white/85">
               {node.label}

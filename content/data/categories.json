@@ -23,7 +23,8 @@
     "relatedCategories": [
       "renters-insurance",
       "flood-insurance",
-      "umbrella-insurance"
+      "umbrella-insurance",
+      "condo-insurance"
     ],
     "launchPriority": 2,
     "active": true,
@@ -54,7 +55,8 @@
     "relatedCategories": [
       "general-liability-insurance",
       "workers-compensation-insurance",
-      "commercial-auto-insurance"
+      "commercial-auto-insurance",
+      "professional-liability-insurance"
     ],
     "launchPriority": 4,
     "active": true,
@@ -179,6 +181,45 @@
     "hubGroup": "specialty",
     "featuredArticleSlugs": [
       "home-insurance-vs-flood-insurance"
+    ]
+  },
+  {
+    "slug": "condo-insurance",
+    "name": "Condo Insurance",
+    "shortDescription": "HO-6 coverage for condominium owners, including walls-in property, loss assessment, and association master-policy gaps.",
+    "metaTitle": "Condo Insurance Guides",
+    "metaDescription": "Educational guides on condo insurance (HO-6) for Maryland, Virginia, and Washington, D.C. owners, including how it differs from homeowners coverage.",
+    "relatedCategories": [
+      "home-insurance",
+      "renters-insurance",
+      "flood-insurance"
+    ],
+    "launchPriority": 13,
+    "active": true,
+    "contentReady": true,
+    "hubGroup": "nested",
+    "canonicalPath": "/home-insurance/condo-insurance/",
+    "featuredArticleSlugs": [
+      "condo-insurance-explained"
+    ]
+  },
+  {
+    "slug": "professional-liability-insurance",
+    "name": "Professional Liability Insurance",
+    "shortDescription": "Errors and omissions coverage for professional advice, services, and alleged mistakes.",
+    "metaTitle": "Professional Liability Insurance",
+    "metaDescription": "Educational guides on professional liability and errors and omissions insurance for Maryland, Virginia, and Washington, D.C. businesses.",
+    "relatedCategories": [
+      "business-insurance",
+      "general-liability-insurance"
+    ],
+    "launchPriority": 14,
+    "active": true,
+    "contentReady": true,
+    "hubGroup": "nested",
+    "canonicalPath": "/business-insurance/professional-liability/",
+    "featuredArticleSlugs": [
+      "professional-liability-insurance-explained"
     ]
   }
 ]

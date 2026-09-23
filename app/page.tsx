@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { ArticleCard } from "@/components/content/ArticleCard";
@@ -9,7 +10,6 @@ import { LeadCTA } from "@/components/leads/LeadCTA";
 import { AdSlot } from "@/components/monetization/AdSlot";
 import { CoverageCard } from "@/components/visual/CoverageCard";
 import { coverageVisualFromSlug } from "@/components/visual/CoverageIcon";
-import { RegionalVisual } from "@/components/visual/RegionalVisual";
 import { SectionSurface } from "@/components/visual/SectionSurface";
 import { StateFeaturePanel } from "@/components/visual/StateFeaturePanel";
 import { TrustStrip } from "@/components/visual/TrustStrip";
@@ -23,7 +23,7 @@ import {
   getSeoPage,
   getStates,
 } from "@/lib/content";
-import { SITE_DESCRIPTION, LEAD_PATH } from "@/lib/constants";
+import { getStateBannerPath, HERO_BANNER_PATH, SITE_DESCRIPTION, LEAD_PATH } from "@/lib/constants";
 import { inferLeadContextFromPath } from "@/lib/leads/context";
 
 export const metadata = buildMetadata({
@@ -70,19 +70,31 @@ export default function HomePage() {
   const stateHubs = getPublishedStateHubs();
   const topicHubs = getPrimaryTopicHubs();
   const articles = getBlogArticles().slice(0, 4);
-  const caseStudies = getPublicCaseStudies().slice(0, 3);
+  const caseStudies = getPublicCaseStudies().slice(0, 4);
   const homeContext = inferLeadContextFromPath("/", "home");
-  const featuredArticle = articles[0];
-  const supportingArticles = articles.slice(1, 3);
-  const wideArticle = articles[3];
+  const heroFeaturedArticle = articles[0];
+  const moreArticles = articles.slice(1, 4);
 
   return (
     <>
-      <SectionSurface tone="navy">
-        <Container size="wide" className="py-14 sm:py-16 lg:py-20">
-          <div className="grid items-center gap-12 lg:grid-cols-12">
+      <section className="relative min-h-[calc(100svh-4.25rem)] overflow-hidden text-white">
+        <Image
+          src={HERO_BANNER_PATH}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div
+          className="absolute inset-0 bg-[linear-gradient(105deg,rgb(7_31_58_/_0.94)_0%,rgb(7_31_58_/_0.82)_42%,rgb(7_31_58_/_0.55)_100%)]"
+          aria-hidden="true"
+        />
+        <Container size="wide" className="relative z-10 flex min-h-[calc(100svh-4.25rem)] items-center py-14 sm:py-16 lg:py-20">
+          <div className="grid w-full items-center gap-12 lg:grid-cols-12">
             <div className="lg:col-span-6">
-              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/70">
+              <p className="flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/70">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-red/80" aria-hidden="true" />
                 Independent insurance information for the DMV
               </p>
               <h1 className="mt-4 text-[2.15rem] font-semibold tracking-tight text-white sm:text-5xl lg:text-[3.35rem] lg:leading-[1.12]">
@@ -103,12 +115,20 @@ export default function HomePage() {
               </div>
               <StateSelector className="mt-10" />
             </div>
-            <div className="lg:col-span-6">
-              <RegionalVisual />
-            </div>
+            {heroFeaturedArticle && (
+              <div className="lg:col-span-6" aria-labelledby="hero-featured-heading">
+                <p
+                  id="hero-featured-heading"
+                  className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/75"
+                >
+                  Featured guide
+                </p>
+                <ArticleCard article={heroFeaturedArticle} featured className="mt-4" />
+              </div>
+            )}
           </div>
         </Container>
-      </SectionSurface>
+      </section>
 
       <TrustStrip />
 
@@ -170,6 +190,7 @@ export default function HomePage() {
                     description={stateContext[state.slug] ?? state.requiredInsuranceSummary}
                     guides={guides}
                     tone={stateTone[state.slug as keyof typeof stateTone] ?? "maryland"}
+                    bannerSrc={getStateBannerPath(state.slug)}
                     featured={featured}
                     wide={wide}
                   />
@@ -205,22 +226,10 @@ export default function HomePage() {
               </span>
             </Link>
           </div>
-          <div className="mt-10 grid items-start gap-5 lg:grid-cols-12">
-            {featuredArticle && (
-              <div className="lg:col-span-7">
-                <ArticleCard article={featuredArticle} featured />
-              </div>
-            )}
-            <div className="grid gap-5 lg:col-span-5">
-              {supportingArticles.map((article) => (
-                <ArticleCard key={article.slug} article={article} />
-              ))}
-            </div>
-            {wideArticle && (
-              <div className="lg:col-span-12">
-                <ArticleCard article={wideArticle} />
-              </div>
-            )}
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {moreArticles.map((article) => (
+              <ArticleCard key={article.slug} article={article} />
+            ))}
           </div>
         </Container>
       </SectionSurface>

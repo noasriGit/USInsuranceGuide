@@ -239,7 +239,7 @@ export function LeadForm({ context }: LeadFormProps) {
       )}
 
       {error && (
-        <p id={errorId} className="mt-4 text-sm text-red-800" role="alert">
+        <p id={errorId} className="mt-4 text-sm text-error-red" role="alert">
           {error}
         </p>
       )}
@@ -267,7 +267,7 @@ export function LeadForm({ context }: LeadFormProps) {
             ))}
           </div>
           {fieldErrors.coverageType && (
-            <p className="mt-2 text-sm text-red-800" role="alert">
+            <p className="mt-2 text-sm text-error-red" role="alert">
               {fieldErrors.coverageType}
             </p>
           )}
@@ -296,7 +296,7 @@ export function LeadForm({ context }: LeadFormProps) {
               ))}
             </div>
             {fieldErrors.state && (
-              <p className="mt-2 text-sm text-red-800" role="alert">
+              <p className="mt-2 text-sm text-error-red" role="alert">
                 {fieldErrors.state}
               </p>
             )}
@@ -316,7 +316,7 @@ export function LeadForm({ context }: LeadFormProps) {
               className="field-input mt-2"
             />
             {fieldErrors.zipCode && (
-              <p id="zip-error" className="mt-2 text-sm text-red-800" role="alert">
+              <p id="zip-error" className="mt-2 text-sm text-error-red" role="alert">
                 {fieldErrors.zipCode}
               </p>
             )}
@@ -370,7 +370,7 @@ export function LeadForm({ context }: LeadFormProps) {
                 />
               )}
               {fieldErrors[`answers.${question.id}`] && (
-                <p className="mt-2 text-sm text-red-800" role="alert">
+                <p className="mt-2 text-sm text-error-red" role="alert">
                   {fieldErrors[`answers.${question.id}`]}
                 </p>
               )}
@@ -397,7 +397,7 @@ export function LeadForm({ context }: LeadFormProps) {
                 className="field-input mt-2"
               />
               {fieldErrors.firstName && (
-                <p className="mt-2 text-sm text-red-800" role="alert">
+                <p className="mt-2 text-sm text-error-red" role="alert">
                   {fieldErrors.firstName}
                 </p>
               )}
@@ -416,7 +416,7 @@ export function LeadForm({ context }: LeadFormProps) {
                 className="field-input mt-2"
               />
               {fieldErrors.lastName && (
-                <p className="mt-2 text-sm text-red-800" role="alert">
+                <p className="mt-2 text-sm text-error-red" role="alert">
                   {fieldErrors.lastName}
                 </p>
               )}
@@ -437,7 +437,7 @@ export function LeadForm({ context }: LeadFormProps) {
               className="field-input mt-2"
             />
             {fieldErrors.email && (
-              <p id="email-error" className="mt-2 text-sm text-red-800" role="alert">
+              <p id="email-error" className="mt-2 text-sm text-error-red" role="alert">
                 {fieldErrors.email}
               </p>
             )}
@@ -456,7 +456,7 @@ export function LeadForm({ context }: LeadFormProps) {
               className="field-input mt-2"
             />
             {fieldErrors.phone && (
-              <p className="mt-2 text-sm text-red-800" role="alert">
+              <p className="mt-2 text-sm text-error-red" role="alert">
                 {fieldErrors.phone}
               </p>
             )}
@@ -492,7 +492,7 @@ export function LeadForm({ context }: LeadFormProps) {
               </span>
             </label>
             {fieldErrors.consent && (
-              <p className="mt-2 text-sm text-red-800" role="alert">
+              <p className="mt-2 text-sm text-error-red" role="alert">
                 {fieldErrors.consent}
               </p>
             )}

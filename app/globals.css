@@ -1,41 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fcfbf8;
-  --foreground: #102438;
-  --ink: #102438;
-  --paper: #fcfbf8;
-  --paper-blue: #eef4f8;
-  --sand: #f3efe7;
-  --stone: #eceae5;
-  --sage: #dce7e1;
-  --sage-deep: #40675a;
-  --gold: #e9dfc3;
-  --gold-deep: #78643b;
-  --line: #ddd6cb;
-  --muted: #5b6573;
-  --navy-50: #eef4f8;
-  --navy-200: #dce9f3;
-  --navy-400: #4b7fa5;
-  --navy-600: #245b84;
-  --navy-700: #1a4668;
-  --navy-800: #153b5a;
-  --navy-900: #0b1f33;
-  --accent-blue: #245b84;
-  --accent-green: #40675a;
-  --hero-wash: linear-gradient(135deg, #0b1f33 0%, #153b5a 55%, #245b84 100%);
-  --section-blue: linear-gradient(180deg, #eef4f8 0%, #fcfbf8 100%);
-  --section-sand: linear-gradient(135deg, #f3efe7 0%, #fcfbf8 72%);
-  --section-sage: linear-gradient(180deg, #e8f0ec 0%, #fcfbf8 100%);
-  --section-white: linear-gradient(180deg, #ffffff 0%, #fcfbf8 100%);
-  --navy-wash: radial-gradient(ellipse at 82% 12%, rgb(75 127 165 / 0.32), transparent 52%),
-    linear-gradient(135deg, #0b1f33 0%, #153b5a 58%, #245b84 100%);
-  --footer-wash: linear-gradient(180deg, #0b1f33 0%, #081624 100%);
-  --cta-wash: radial-gradient(ellipse at 90% 80%, rgb(36 91 132 / 0.45), transparent 48%),
-    linear-gradient(135deg, #0b1f33 0%, #153b5a 60%, #1a4668 100%);
-  --shadow-card: 0 1px 2px rgb(11 31 51 / 0.05), 0 10px 28px rgb(11 31 51 / 0.07);
-  --shadow-card-hover: 0 2px 4px rgb(11 31 51 / 0.07), 0 16px 36px rgb(11 31 51 / 0.1);
-  --shadow-btn: 0 1px 2px rgb(11 31 51 / 0.16);
+  --background: #fcfefe;
+  --foreground: #082f5b;
+  --ink: #082f5b;
+  --paper: #fcfefe;
+  --paper-blue: #edf5fc;
+  --sand: #edf5fc;
+  --stone: #e3ebf3;
+  --sage: #e8f0f8;
+  --sage-deep: #4a6a8a;
+  --gold: #fceef1;
+  --gold-deep: #a02844;
+  --line: #c8d4e0;
+  --muted: #5a6b7d;
+  --brand-red: #d7193f;
+  --brand-red-deep: #b01434;
+  --error-red: #c53030;
+  --navy-50: #edf5fc;
+  --navy-200: #dce9fa;
+  --navy-400: #5a8fc4;
+  --navy-600: #0e5aa7;
+  --navy-700: #0a4989;
+  --navy-800: #0a315f;
+  --navy-900: #082f5b;
+  --accent-blue: #155fa7;
+  --accent-green: #4a6a8a;
+  --hero-wash: linear-gradient(135deg, #071f3a 0%, #0a3d73 55%, #115d9e 100%);
+  --section-blue: linear-gradient(180deg, #edf5fc 0%, #fcfefe 100%);
+  --section-sand: linear-gradient(135deg, #edf5fc 0%, #fcfefe 72%);
+  --section-sage: linear-gradient(180deg, #e8f0f8 0%, #fcfefe 100%);
+  --section-white: linear-gradient(180deg, #ffffff 0%, #fcfefe 100%);
+  --navy-wash: radial-gradient(ellipse at 82% 12%, rgb(14 90 167 / 0.28), transparent 52%),
+    radial-gradient(ellipse at 8% 88%, rgb(215 25 63 / 0.06), transparent 42%),
+    linear-gradient(135deg, #071f3a 0%, #0a3d73 58%, #115d9e 100%);
+  --footer-wash: linear-gradient(180deg, #071f3a 0%, #051529 100%);
+  --cta-wash: radial-gradient(ellipse at 90% 80%, rgb(14 90 167 / 0.4), transparent 48%),
+    radial-gradient(ellipse at 12% 20%, rgb(215 25 63 / 0.05), transparent 40%),
+    linear-gradient(135deg, #071f3a 0%, #0a3d73 60%, #0a4989 100%);
+  --shadow-card: 0 1px 2px rgb(8 47 91 / 0.05), 0 10px 28px rgb(8 47 91 / 0.07);
+  --shadow-card-hover: 0 2px 4px rgb(8 47 91 / 0.07), 0 16px 36px rgb(8 47 91 / 0.1);
+  --shadow-btn: 0 1px 2px rgb(8 47 91 / 0.16);
   --radius-btn: 7px;
   --radius-card: 12px;
   --ease-ui: ease;
@@ -56,6 +61,9 @@
   --color-gold-deep: var(--gold-deep);
   --color-line: var(--line);
   --color-muted: var(--muted);
+  --color-brand-red: var(--brand-red);
+  --color-brand-red-deep: var(--brand-red-deep);
+  --color-error-red: var(--error-red);
   --color-navy-50: var(--navy-50);
   --color-navy-200: var(--navy-200);
   --color-navy-400: var(--navy-400);
@@ -160,7 +168,7 @@ body {
 
 .surface-card {
   background: #ffffff;
-  border: 1px solid rgb(11 31 51 / 0.08);
+  border: 1px solid rgb(8 47 91 / 0.08);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
 }
@@ -178,35 +186,36 @@ body {
 .surface-card-interactive:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgb(36 91 132 / 0.28);
+  border-color: rgb(14 90 167 / 0.28);
 }
 
 .tint-auto {
-  background: linear-gradient(180deg, #e7f1f7 0%, #f7fbfe 100%);
+  background: linear-gradient(180deg, #e4f0fb 0%, #f7fbfe 100%);
 }
 
 .tint-home {
-  background: linear-gradient(180deg, #f4eee4 0%, #fbf8f3 100%);
+  background: linear-gradient(180deg, #eef4fa 0%, #f9fbfd 100%);
 }
 
 .tint-renters {
-  background: linear-gradient(180deg, #e4eee9 0%, #f6faf8 100%);
+  background: linear-gradient(180deg, #e6edf5 0%, #f6f9fc 100%);
 }
 
 .tint-business {
-  background: linear-gradient(180deg, #e6ecf1 0%, #f5f7f9 100%);
+  background: linear-gradient(180deg, #dde6f0 0%, #f3f7fb 100%);
 }
 
 .tint-maryland {
-  background: linear-gradient(160deg, #dce9f3 0%, #f7fbfd 100%);
+  background: linear-gradient(160deg, #dce9f8 0%, #f5f9fd 100%);
 }
 
 .tint-virginia {
-  background: linear-gradient(160deg, #dce7e1 0%, #f6faf8 100%);
+  background: linear-gradient(160deg, #d4e0ed 0%, #f2f6fa 100%);
 }
 
 .tint-dc {
-  background: linear-gradient(160deg, #f3efe7 0%, #fcfbf8 100%);
+  background: linear-gradient(160deg, #edf1f5 0%, #fafbfc 100%);
+  box-shadow: inset 3px 0 0 rgb(215 25 63 / 0.22);
 }
 
 .btn {
@@ -243,14 +252,14 @@ body {
 
 .btn-primary:hover {
   background: var(--navy-900);
-  box-shadow: 0 8px 22px rgb(11 31 51 / 0.22);
+  box-shadow: 0 8px 22px rgb(8 47 91 / 0.22);
 }
 
 .btn-secondary {
   background: #ffffff;
   color: var(--navy-800);
-  border-color: rgb(11 31 51 / 0.14);
-  box-shadow: 0 1px 2px rgb(11 31 51 / 0.04);
+  border-color: rgb(8 47 91 / 0.14);
+  box-shadow: 0 1px 2px rgb(8 47 91 / 0.04);
 }
 
 .btn-secondary:hover {
@@ -339,7 +348,7 @@ body {
 
 .field-input:focus {
   border-color: var(--navy-600);
-  outline: 2px solid rgb(36 91 132 / 0.18);
+  outline: 2px solid rgb(14 90 167 / 0.18);
   outline-offset: 0;
 }
 
@@ -353,7 +362,7 @@ body {
 .progress-fill {
   height: 100%;
   border-radius: 999px;
-  background: var(--navy-800);
+  background: var(--navy-600);
   transition: width var(--duration-ui) var(--ease-ui);
 }
 
@@ -429,7 +438,7 @@ body {
 
 .prose {
   font-family: var(--font-source-serif), Georgia, serif;
-  color: #334155;
+  color: #3d4f63;
   line-height: 1.78;
   font-size: 1.0625rem;
   max-width: 46rem;
@@ -520,18 +529,18 @@ body {
 .prose td {
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--line);
-  color: #3d4a5c;
+  color: #3d4f63;
 }
 
 .prose tbody tr:nth-child(even) {
-  background: rgb(243 239 231 / 0.45);
+  background: rgb(237 245 252 / 0.55);
 }
 
 .prose blockquote {
   margin: 1.75rem 0;
   padding: 1rem 1.15rem;
   border-left: 3px solid var(--navy-600);
-  background: var(--sand);
+  background: var(--paper-blue);
   color: var(--navy-800);
   font-style: italic;
   border-radius: 0 10px 10px 0;

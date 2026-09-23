@@ -167,6 +167,43 @@ export function getContextualQuestions(coverageType: CoverageTypeId | undefined)
           ],
         },
       ];
+    case "professional-liability":
+      return [
+        {
+          id: "businessType",
+          label: "What type of professional work is this?",
+          type: "single",
+          required: true,
+          options: [
+            { id: "professional", label: "Professional services" },
+            { id: "healthcare", label: "Healthcare" },
+            { id: "real-estate", label: "Real estate" },
+            { id: "contractor", label: "Contractor / trades" },
+            { id: "other", label: "Other" },
+          ],
+        },
+        {
+          id: "currentlyInsured",
+          label: "Do you currently have professional liability coverage?",
+          type: "single",
+          required: true,
+          options: insuredOptions,
+        },
+      ];
+    case "condo":
+      return [
+        {
+          id: "homeStatus",
+          label: "Which best describes your situation?",
+          type: "single",
+          required: true,
+          options: [
+            { id: "own", label: "I own the condo" },
+            { id: "buying", label: "I'm buying a condo" },
+            { id: "refinancing", label: "I'm refinancing" },
+          ],
+        },
+      ];
     default:
       return [
         {

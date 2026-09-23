@@ -8,6 +8,8 @@ export const COVERAGE_TYPES = [
   { id: "workers-compensation", label: "Workers Compensation", topic: "workers-compensation-insurance" },
   { id: "landlord", label: "Landlord", topic: "landlord-insurance" },
   { id: "flood", label: "Flood", topic: "flood-insurance" },
+  { id: "professional-liability", label: "Professional Liability", topic: "professional-liability-insurance" },
+  { id: "condo", label: "Condo", topic: "condo-insurance" },
   { id: "other", label: "Other", topic: undefined },
 ] as const;
 

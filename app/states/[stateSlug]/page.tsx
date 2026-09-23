@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { Container } from "@/components/layout/Container";
+import Image from "next/image";
+import Link from "next/link";import { Container } from "@/components/layout/Container";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleCard } from "@/components/content/ArticleCard";
@@ -13,7 +13,7 @@ import { ReviewMeta } from "@/components/ui/ReviewMeta";
 import { StatBlock } from "@/components/ui/StatBlock";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { newTabAriaLabel } from "@/lib/a11y/external-link";
-import { SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
+import { getStateBannerPath, SHOW_INSURANCE_DIRECTORY_NAV } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo/metadata";
 import {
   getStates,
@@ -23,6 +23,7 @@ import {
   getPublishedStateGuides,
   getPublishedChildren,
   getPublicCaseStudiesForPage,
+  getPublicSeoPages,
 } from "@/lib/content";
 import { resolvePlacements } from "@/lib/monetization/placements";
 import { shouldIndexPath } from "@/lib/content/indexing";
@@ -109,6 +110,9 @@ export default async function StateHubPage({ params }: PageProps) {
   const primaryGuides = getPublishedStateGuides(stateSlug, "primary");
   const specialtyGuides = getPublishedStateGuides(stateSlug, "specialty");
   const otherGuides = getPublishedStateGuides(stateSlug, "deprioritized");
+  const localGuides = getPublicSeoPages().filter(
+    (item) => item.kind === "local-guide" && item.stateSlug === stateSlug,
+  );
   const partners = resolvePlacements({
     slot: "state-hub-card",
     stateSlug,
@@ -118,49 +122,93 @@ export default async function StateHubPage({ params }: PageProps) {
   const sourceNames = state.externalSources?.map((source) => source.publisher) ?? [];
   const heroTint =
     stateSlug === "virginia" ? "tint-virginia" : stateSlug === "washington-dc" ? "tint-dc" : "tint-maryland";
+  const bannerSrc = getStateBannerPath(stateSlug);
   const primaryChips = primaryGuides.slice(0, 4);
+  const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "DMV Guides", href: "/states/" },
+    { label: state.name },
+  ];
+
+  const heroContent = (
+    <>
+      <Breadcrumbs items={breadcrumbItems} onDark={Boolean(bannerSrc)} />
+      <PageHero
+        bare
+        onDark={Boolean(bannerSrc)}
+        className="pb-2"
+        eyebrow={`${state.name} insurance`}
+        title={page.title}
+        description={state.overview}
+      >
+        <ul className="mt-8 flex flex-wrap gap-2">
+          {primaryChips.map((guide) => (
+            <li key={guide.path}>
+              <Link
+                href={guide.path}
+                className="inline-flex min-h-10 items-center rounded-lg border border-white/25 bg-white/90 px-3.5 text-sm font-medium text-navy-800 hover:border-white hover:bg-white"
+              >
+                {guide.navLabel ?? guide.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </PageHero>
+    </>
+  );
 
   return (
     <>
-      <div className={heroTint}>
-        <Container className="py-8 lg:py-10">
-          <Breadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "DMV Guides", href: "/states/" },
-              { label: state.name },
-            ]}
+      {bannerSrc ? (
+        <section className="relative overflow-hidden text-white">
+          <Image
+            src={bannerSrc}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
           />
-          <div className="mt-6 grid items-end gap-8 lg:grid-cols-12">
-            <div className="lg:col-span-8">
-              <PageHero
-                bare
-                className="pb-2"
-                eyebrow={`${state.name} insurance`}
-                title={page.title}
-                description={state.overview}
-              >
-                <ul className="mt-8 flex flex-wrap gap-2">
-                  {primaryChips.map((guide) => (
-                    <li key={guide.path}>
-                      <Link
-                        href={guide.path}
-                        className="inline-flex min-h-10 items-center rounded-lg border border-navy-200 bg-white/80 px-3.5 text-sm font-medium text-navy-800 hover:border-navy-600"
-                      >
-                        {guide.navLabel ?? guide.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </PageHero>
+          <div
+            className="absolute inset-0 bg-[linear-gradient(105deg,rgb(7_31_58_/_0.92)_0%,rgb(7_31_58_/_0.78)_45%,rgb(7_31_58_/_0.52)_100%)]"
+            aria-hidden="true"
+          />
+          <Container className="relative z-10 py-8 lg:py-12">{heroContent}</Container>
+        </section>
+      ) : (
+        <div className={heroTint}>
+          <Container className="py-8 lg:py-10">
+            <Breadcrumbs items={breadcrumbItems} />
+            <div className="mt-6 grid items-end gap-8 lg:grid-cols-12">
+              <div className="lg:col-span-8">
+                <PageHero
+                  bare
+                  className="pb-2"
+                  eyebrow={`${state.name} insurance`}
+                  title={page.title}
+                  description={state.overview}
+                >
+                  <ul className="mt-8 flex flex-wrap gap-2">
+                    {primaryChips.map((guide) => (
+                      <li key={guide.path}>
+                        <Link
+                          href={guide.path}
+                          className="inline-flex min-h-10 items-center rounded-lg border border-navy-200 bg-white/80 px-3.5 text-sm font-medium text-navy-800 hover:border-navy-600"
+                        >
+                          {guide.navLabel ?? guide.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </PageHero>
+              </div>
+              <div className="hidden lg:col-span-4 lg:block">
+                <RegionalVisual className="min-h-[13rem] bg-navy-900" />
+              </div>
             </div>
-            <div className="hidden lg:col-span-4 lg:block">
-              <RegionalVisual className="min-h-[13rem] bg-navy-900" />
-            </div>
-          </div>
-        </Container>
-      </div>
-
+          </Container>
+        </div>
+      )}
       <Container className="py-8">
 
       <ReviewMeta
@@ -224,6 +272,32 @@ export default async function StateHubPage({ params }: PageProps) {
           {stateSlug === "virginia" && <SourceTrustCallout />}
 
           {caseStudies.length > 0 && <PublicCaseStudySection studies={caseStudies} />}
+
+          {localGuides.length > 0 && (
+            <section>
+              <SectionHeading
+                title={`Local ${state.name} guides`}
+                description="City and county pages that add housing, commute, and risk context on top of statewide rules."
+              />
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {localGuides.map((guide) => (
+                  <li key={guide.path}>
+                    <Link
+                      href={guide.path}
+                      className="surface-card surface-card-interactive block px-4 py-4"
+                    >
+                      <span className="block text-sm font-semibold text-ink">
+                        {guide.navLabel ?? guide.title}
+                      </span>
+                      <span className="mt-1 block text-sm leading-relaxed text-slate-600">
+                        {guide.metaDescription}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {specialtyGuides.length > 0 && (
             <section>

@@ -163,6 +163,7 @@ export const SeoPageKindSchema = z.enum([
   "state-hub",
   "state-guide",
   "state-child",
+  "local-guide",
   "article-index",
   "article",
 ]);
@@ -195,6 +196,7 @@ export const SeoPageSchema = z.object({
   phase: z.number().int().min(0).max(4),
   cluster: SeoPageClusterSchema.optional(),
   stateSlug: z.string().optional(),
+  citySlug: z.string().optional(),
   categorySlug: z.string().optional(),
   guideSlug: z.string().optional(),
   childSlug: z.string().optional(),
@@ -283,6 +285,15 @@ export const StateCategoryGuideFrontmatterSchema = z.object({
   faq: z.array(FAQItemSchema).min(1),
   sources: z.array(SourceSchema).min(1),
   draft: z.boolean().optional(),
+  quickAnswer: z.string().optional(),
+  keyFacts: z
+    .array(
+      z.object({
+        label: z.string(),
+        value: z.string(),
+      }),
+    )
+    .optional(),
 });
 
 export type StateCategoryGuideFrontmatter = z.infer<

@@ -2,6 +2,7 @@ import type { SeoPage, SeoPageCluster } from "../schemas";
 
 const CONTENT_DATE = "2025-06-19";
 const STATIC_DATE = "2026-06-19";
+const WAVE_DATE = "2026-09-22";
 
 type StateSlug = "maryland" | "virginia" | "washington-dc";
 
@@ -195,6 +196,9 @@ function topicHub(opts: {
   redirectsFrom?: string[];
   priority?: number;
   parentPath?: string;
+  lastModified?: string;
+  articleSlug?: string;
+  relatedPaths?: string[];
 }): SeoPage {
   return page({
     path: opts.path,
@@ -203,16 +207,19 @@ function topicHub(opts: {
     metaDescription: opts.metaDescription,
     status: "published",
     indexable: true,
-    lastModified: CONTENT_DATE,
+    lastModified: opts.lastModified ?? CONTENT_DATE,
     kind: opts.path.split("/").filter(Boolean).length > 1 ? "topic-guide" : "topic-hub",
     phase: opts.phase ?? 0,
     cluster: opts.cluster,
     categorySlug: opts.slug,
     parentPath: opts.parentPath,
     redirectsFrom: opts.redirectsFrom,
+    relatedPaths: opts.relatedPaths,
     changeFrequency: "monthly",
     priority: opts.priority ?? (opts.cluster === "primary" ? 0.9 : 0.7),
-    contentSource: { type: "hub", categorySlug: opts.slug },
+    contentSource: opts.articleSlug
+      ? { type: "article", slug: opts.articleSlug }
+      : { type: "hub", categorySlug: opts.slug },
     navLabel: opts.title.replace(/ Guides?$/, ""),
   });
 }
@@ -331,6 +338,48 @@ const topicHubs: SeoPage[] = [
     redirectsFrom: ["/commercial-auto-insurance/"],
     priority: 0.75,
     parentPath: "/business-insurance/",
+  }),
+  topicHub({
+    path: "/home-insurance/condo-insurance/",
+    slug: "condo-insurance",
+    title: "Condo Insurance",
+    metaTitle: "Condo Insurance Guide",
+    metaDescription:
+      "How condo insurance (HO-6) works for Maryland, Virginia, and Washington, D.C. owners, including walls-in coverage, loss assessment, and association master policies.",
+    cluster: "supporting",
+    phase: 1,
+    priority: 0.75,
+    parentPath: "/home-insurance/",
+    lastModified: WAVE_DATE,
+    articleSlug: "condo-insurance-explained",
+    relatedPaths: [
+      "/home-insurance/",
+      "/states/maryland/homeowners-insurance/",
+      "/states/virginia/homeowners-insurance/",
+      "/states/washington-dc/homeowners-insurance/",
+      "/renters-insurance/",
+    ],
+  }),
+  topicHub({
+    path: "/business-insurance/professional-liability/",
+    slug: "professional-liability-insurance",
+    title: "Professional Liability Insurance",
+    metaTitle: "Professional Liability Insurance",
+    metaDescription:
+      "Professional liability and errors and omissions insurance for Maryland, Virginia, and Washington, D.C. businesses, including how it differs from general liability.",
+    cluster: "supporting",
+    phase: 1,
+    priority: 0.75,
+    parentPath: "/business-insurance/",
+    lastModified: WAVE_DATE,
+    articleSlug: "professional-liability-insurance-explained",
+    relatedPaths: [
+      "/business-insurance/",
+      "/business-insurance/general-liability/",
+      "/states/maryland/business-insurance/",
+      "/states/virginia/business-insurance/",
+      "/states/washington-dc/business-insurance/",
+    ],
   }),
 ];
 
@@ -495,6 +544,18 @@ const plannedTopicGuides: SeoPage[] = [
     categorySlug: "business-insurance",
     parentPath: "/business-insurance/",
   }),
+  planned({
+    path: "/business-insurance/contractors-insurance/",
+    title: "Contractors Insurance",
+    metaTitle: "Contractors Insurance",
+    metaDescription:
+      "Insurance considerations for contractors in Maryland, Virginia, and Washington, D.C., including general liability, workers' compensation, and commercial auto.",
+    kind: "topic-guide",
+    phase: 2,
+    cluster: "supporting",
+    categorySlug: "business-insurance",
+    parentPath: "/business-insurance/",
+  }),
 ];
 
 const stateHubCopy: Record<
@@ -555,6 +616,8 @@ function stateGuide(opts: {
   contentSource: SeoPage["contentSource"];
   redirectsFrom?: string[];
   navLabel?: string;
+  lastModified?: string;
+  relatedPaths?: string[];
 }): SeoPage {
   const state = STATES[opts.state];
   return page({
@@ -564,7 +627,7 @@ function stateGuide(opts: {
     metaDescription: opts.metaDescription,
     status: "published",
     indexable: true,
-    lastModified: CONTENT_DATE,
+    lastModified: opts.lastModified ?? CONTENT_DATE,
     lastReviewed: CONTENT_DATE,
     reviewer: "content-review-team",
     kind: "state-guide",
@@ -577,6 +640,7 @@ function stateGuide(opts: {
     primaryKeyword: opts.primaryKeyword,
     contentSource: opts.contentSource,
     redirectsFrom: opts.redirectsFrom,
+    relatedPaths: opts.relatedPaths,
     changeFrequency: "monthly",
     priority: opts.cluster === "primary" ? 0.85 : 0.65,
     navLabel: opts.navLabel ?? opts.title,
@@ -597,6 +661,8 @@ function stateChild(opts: {
   contentSource: SeoPage["contentSource"];
   redirectsFrom?: string[];
   effectiveDate?: string;
+  lastModified?: string;
+  relatedPaths?: string[];
 }): SeoPage {
   const state = STATES[opts.state];
   const parentPath = `${state.path}${opts.guideSlug}/`;
@@ -607,8 +673,8 @@ function stateChild(opts: {
     metaDescription: opts.metaDescription,
     status: "published",
     indexable: true,
-    lastModified: CONTENT_DATE,
-    lastReviewed: CONTENT_DATE,
+    lastModified: opts.lastModified ?? CONTENT_DATE,
+    lastReviewed: opts.lastModified ?? CONTENT_DATE,
     reviewer: "content-review-team",
     kind: "state-child",
     phase: opts.phase,
@@ -621,6 +687,7 @@ function stateChild(opts: {
     primaryKeyword: opts.primaryKeyword,
     contentSource: opts.contentSource,
     redirectsFrom: opts.redirectsFrom,
+    relatedPaths: opts.relatedPaths,
     effectiveDate: opts.effectiveDate,
     changeFrequency: "monthly",
     priority: 0.8,
@@ -666,6 +733,45 @@ function plannedStateChild(opts: {
   });
 }
 
+function localGuide(opts: {
+  state: StateSlug;
+  citySlug: string;
+  categorySlug: string;
+  title: string;
+  metaTitle: string;
+  metaDescription: string;
+  primaryKeyword: string;
+  contentSource: SeoPage["contentSource"];
+  relatedPaths?: string[];
+}): SeoPage {
+  const state = STATES[opts.state];
+  return page({
+    path: `${state.path}${opts.citySlug}/`,
+    title: opts.title,
+    metaTitle: opts.metaTitle,
+    metaDescription: opts.metaDescription,
+    status: "published",
+    indexable: true,
+    lastModified: WAVE_DATE,
+    lastReviewed: WAVE_DATE,
+    reviewer: "content-review-team",
+    kind: "local-guide",
+    phase: 4,
+    cluster: "primary",
+    stateSlug: opts.state,
+    citySlug: opts.citySlug,
+    categorySlug: opts.categorySlug,
+    guideSlug: opts.citySlug,
+    parentPath: state.path,
+    primaryKeyword: opts.primaryKeyword,
+    contentSource: opts.contentSource,
+    relatedPaths: opts.relatedPaths,
+    changeFrequency: "monthly",
+    priority: 0.7,
+    navLabel: opts.title,
+  });
+}
+
 const marylandPages: SeoPage[] = [
   stateHub("maryland"),
   stateGuide({
@@ -681,6 +787,16 @@ const marylandPages: SeoPage[] = [
     cluster: "primary",
     contentSource: { type: "state-guide", categorySlug: "auto-insurance" },
     navLabel: "Auto Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/states/maryland/auto-insurance/requirements/",
+      "/states/maryland/auto-insurance/cost/",
+      "/states/maryland/rockville/",
+      "/states/maryland/bethesda/",
+      "/states/virginia/auto-insurance/",
+      "/states/washington-dc/auto-insurance/",
+      "/blog/why-did-my-car-insurance-go-up/",
+    ],
   }),
   stateChild({
     state: "maryland",
@@ -696,17 +812,19 @@ const marylandPages: SeoPage[] = [
     contentSource: { type: "article", slug: "maryland-auto-insurance-requirements" },
     redirectsFrom: ["/blog/maryland-auto-insurance-requirements/"],
   }),
-  plannedStateChild({
+  stateChild({
     state: "maryland",
     guideSlug: "auto-insurance",
     categorySlug: "auto-insurance",
     childSlug: "cost",
     title: "Maryland Car Insurance Cost",
-    metaTitle: "Average Car Insurance Cost Maryland",
+    metaTitle: "Maryland Car Insurance Rates and Cost Factors",
     metaDescription:
-      "Sourced averages and factors that affect Maryland car insurance rates. No invented numbers.",
-    primaryKeyword: "average car insurance cost Maryland",
+      "What affects Maryland car insurance rates, how to compare policies, and official consumer resources. No invented premium quotes.",
+    primaryKeyword: "Maryland car insurance rates",
     phase: 1,
+    lastModified: WAVE_DATE,
+    contentSource: { type: "article", slug: "maryland-car-insurance-cost" },
   }),
   stateGuide({
     state: "maryland",
@@ -725,8 +843,16 @@ const marylandPages: SeoPage[] = [
       "/blog/homeowners-insurance-in-maryland/",
     ],
     navLabel: "Homeowners Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/states/maryland/homeowners-insurance/cost/",
+      "/home-insurance/condo-insurance/",
+      "/states/maryland/renters-insurance/",
+      "/states/virginia/homeowners-insurance/",
+      "/flood-insurance/",
+    ],
   }),
-  plannedStateChild({
+  stateChild({
     state: "maryland",
     guideSlug: "homeowners-insurance",
     categorySlug: "home-insurance",
@@ -734,9 +860,11 @@ const marylandPages: SeoPage[] = [
     title: "Maryland Homeowners Insurance Cost",
     metaTitle: "Homeowners Insurance Cost Maryland",
     metaDescription:
-      "Sourced average homeowners insurance costs in Maryland and the factors that change premiums.",
+      "Factors that affect Maryland homeowners insurance premiums, lender requirements versus state law, and official comparison resources. No invented quotes.",
     primaryKeyword: "homeowners insurance cost Maryland",
     phase: 1,
+    lastModified: WAVE_DATE,
+    contentSource: { type: "article", slug: "maryland-homeowners-insurance-cost" },
   }),
   plannedStateChild({
     state: "maryland",
@@ -763,8 +891,16 @@ const marylandPages: SeoPage[] = [
     cluster: "primary",
     contentSource: { type: "state-guide", categorySlug: "renters-insurance" },
     navLabel: "Renters Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/states/maryland/renters-insurance/requirements/",
+      "/states/maryland/silver-spring/",
+      "/states/virginia/renters-insurance/",
+      "/states/washington-dc/renters-insurance/",
+      "/home-insurance/condo-insurance/",
+    ],
   }),
-  plannedStateChild({
+  stateChild({
     state: "maryland",
     guideSlug: "renters-insurance",
     categorySlug: "renters-insurance",
@@ -772,9 +908,11 @@ const marylandPages: SeoPage[] = [
     title: "Is Renters Insurance Required in Maryland?",
     metaTitle: "Is Renters Insurance Required in Maryland?",
     metaDescription:
-      "Maryland does not require renters insurance by statute. Landlords may require it in a lease.",
+      "Maryland does not require renters insurance by statute. Landlords may require it in a lease, and coverage still has to match the named insureds on the policy.",
     primaryKeyword: "is renters insurance required in Maryland",
     phase: 1,
+    lastModified: WAVE_DATE,
+    contentSource: { type: "article", slug: "maryland-renters-insurance-requirements" },
   }),
   stateGuide({
     state: "maryland",
@@ -790,6 +928,13 @@ const marylandPages: SeoPage[] = [
     contentSource: { type: "article", slug: "business-insurance-in-maryland" },
     redirectsFrom: ["/blog/business-insurance-in-maryland/"],
     navLabel: "Business Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/business-insurance/professional-liability/",
+      "/business-insurance/general-liability/",
+      "/states/maryland/business-insurance/workers-compensation/",
+      "/states/virginia/business-insurance/",
+    ],
   }),
   stateChild({
     state: "maryland",
@@ -912,6 +1057,14 @@ const virginiaPages: SeoPage[] = [
     cluster: "primary",
     contentSource: { type: "state-guide", categorySlug: "auto-insurance" },
     navLabel: "Auto Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/states/virginia/auto-insurance/requirements/",
+      "/states/virginia/alexandria/",
+      "/states/maryland/auto-insurance/",
+      "/states/washington-dc/auto-insurance/",
+      "/blog/why-did-my-car-insurance-go-up/",
+    ],
   }),
   stateChild({
     state: "virginia",
@@ -957,8 +1110,15 @@ const virginiaPages: SeoPage[] = [
       "/blog/homeowners-insurance-in-virginia/",
     ],
     navLabel: "Homeowners Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/states/virginia/homeowners-insurance/cost/",
+      "/home-insurance/condo-insurance/",
+      "/states/maryland/homeowners-insurance/",
+      "/flood-insurance/",
+    ],
   }),
-  plannedStateChild({
+  stateChild({
     state: "virginia",
     guideSlug: "homeowners-insurance",
     categorySlug: "home-insurance",
@@ -966,9 +1126,11 @@ const virginiaPages: SeoPage[] = [
     title: "Virginia Homeowners Insurance Rates",
     metaTitle: "Homeowners Insurance Rates Virginia",
     metaDescription:
-      "Sourced homeowners insurance rates and average costs in Virginia.",
+      "What affects Virginia homeowners insurance rates, coastal and Northern Virginia risk factors, and official SCC consumer resources. No invented quotes.",
     primaryKeyword: "homeowners insurance rates Virginia",
     phase: 1,
+    lastModified: WAVE_DATE,
+    contentSource: { type: "article", slug: "virginia-homeowners-insurance-cost" },
   }),
   plannedStateChild({
     state: "virginia",
@@ -995,8 +1157,16 @@ const virginiaPages: SeoPage[] = [
     cluster: "primary",
     contentSource: { type: "state-guide", categorySlug: "renters-insurance" },
     navLabel: "Renters Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/states/virginia/renters-insurance/requirements/",
+      "/states/virginia/arlington/",
+      "/states/virginia/fairfax/",
+      "/states/maryland/renters-insurance/",
+      "/states/washington-dc/renters-insurance/",
+    ],
   }),
-  plannedStateChild({
+  stateChild({
     state: "virginia",
     guideSlug: "renters-insurance",
     categorySlug: "renters-insurance",
@@ -1004,9 +1174,11 @@ const virginiaPages: SeoPage[] = [
     title: "Is Renters Insurance Required in Virginia?",
     metaTitle: "Is Renters Insurance Required in Virginia?",
     metaDescription:
-      "Virginia does not require renters insurance by statute. Landlords may require it in a lease.",
+      "Virginia does not require renters insurance by statute. A lease can still require coverage, and roommates generally need to be named on the policy.",
     primaryKeyword: "is renters insurance required in Virginia",
     phase: 1,
+    lastModified: WAVE_DATE,
+    contentSource: { type: "article", slug: "virginia-renters-insurance-requirements" },
   }),
   plannedStateChild({
     state: "virginia",
@@ -1034,6 +1206,13 @@ const virginiaPages: SeoPage[] = [
     contentSource: { type: "article", slug: "business-insurance-in-virginia" },
     redirectsFrom: ["/blog/business-insurance-in-virginia/"],
     navLabel: "Business Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/business-insurance/professional-liability/",
+      "/business-insurance/general-liability/",
+      "/states/virginia/business-insurance/workers-compensation/",
+      "/states/maryland/business-insurance/",
+    ],
   }),
   stateChild({
     state: "virginia",
@@ -1156,6 +1335,13 @@ const dcPages: SeoPage[] = [
     cluster: "primary",
     contentSource: { type: "state-guide", categorySlug: "auto-insurance" },
     navLabel: "Auto Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/states/washington-dc/auto-insurance/requirements/",
+      "/states/maryland/auto-insurance/",
+      "/states/virginia/auto-insurance/",
+      "/blog/why-did-my-car-insurance-go-up/",
+    ],
   }),
   stateChild({
     state: "washington-dc",
@@ -1200,6 +1386,14 @@ const dcPages: SeoPage[] = [
     contentSource: { type: "state-guide", categorySlug: "home-insurance" },
     redirectsFrom: ["/states/washington-dc/home-insurance/"],
     navLabel: "Homeowners Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/home-insurance/condo-insurance/",
+      "/states/maryland/homeowners-insurance/",
+      "/states/virginia/homeowners-insurance/",
+      "/states/washington-dc/renters-insurance/",
+      "/flood-insurance/",
+    ],
   }),
   stateGuide({
     state: "washington-dc",
@@ -1215,6 +1409,13 @@ const dcPages: SeoPage[] = [
     contentSource: { type: "article", slug: "renters-insurance-in-washington-dc" },
     redirectsFrom: ["/blog/renters-insurance-in-washington-dc/"],
     navLabel: "Renters Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/states/maryland/renters-insurance/",
+      "/states/virginia/renters-insurance/",
+      "/states/virginia/arlington/",
+      "/home-insurance/condo-insurance/",
+    ],
   }),
   stateGuide({
     state: "washington-dc",
@@ -1230,6 +1431,13 @@ const dcPages: SeoPage[] = [
     contentSource: { type: "article", slug: "business-insurance-in-washington-dc" },
     redirectsFrom: ["/blog/business-insurance-in-washington-dc/"],
     navLabel: "Business Insurance",
+    lastModified: WAVE_DATE,
+    relatedPaths: [
+      "/business-insurance/professional-liability/",
+      "/business-insurance/general-liability/",
+      "/states/maryland/business-insurance/",
+      "/states/virginia/business-insurance/",
+    ],
   }),
   stateChild({
     state: "washington-dc",
@@ -1337,6 +1545,105 @@ const dcPages: SeoPage[] = [
   }),
 ];
 
+const localPages: SeoPage[] = [
+  localGuide({
+    state: "virginia",
+    citySlug: "arlington",
+    categorySlug: "renters-insurance",
+    title: "Arlington, VA Renters Insurance",
+    metaTitle: "Renters Insurance Arlington VA",
+    metaDescription:
+      "Renters insurance in Arlington, Virginia: lease requirements, high-rise and Metro-area risks, and how Virginia coverage rules apply locally.",
+    primaryKeyword: "renters insurance Arlington VA",
+    contentSource: { type: "article", slug: "arlington-va-renters-insurance" },
+    relatedPaths: [
+      "/states/virginia/renters-insurance/",
+      "/states/virginia/renters-insurance/requirements/",
+      "/states/virginia/auto-insurance/",
+    ],
+  }),
+  localGuide({
+    state: "virginia",
+    citySlug: "alexandria",
+    categorySlug: "auto-insurance",
+    title: "Alexandria, VA Auto Insurance",
+    metaTitle: "Car Insurance Alexandria VA",
+    metaDescription:
+      "Car insurance in Alexandria, Virginia: 50/100/25 state minimums, commuting patterns, and how Virginia DMV rules apply to city residents.",
+    primaryKeyword: "car insurance Alexandria VA",
+    contentSource: { type: "article", slug: "alexandria-va-auto-insurance" },
+    relatedPaths: [
+      "/states/virginia/auto-insurance/",
+      "/states/virginia/auto-insurance/requirements/",
+      "/states/virginia/renters-insurance/",
+    ],
+  }),
+  localGuide({
+    state: "virginia",
+    citySlug: "fairfax",
+    categorySlug: "renters-insurance",
+    title: "Fairfax, VA Renters Insurance",
+    metaTitle: "Renters Insurance Fairfax VA",
+    metaDescription:
+      "Renters insurance in Fairfax, Virginia: lease requirements, suburban rental housing, and how Virginia coverage rules apply locally.",
+    primaryKeyword: "Fairfax VA renters insurance",
+    contentSource: { type: "article", slug: "fairfax-va-renters-insurance" },
+    relatedPaths: [
+      "/states/virginia/renters-insurance/",
+      "/states/virginia/renters-insurance/requirements/",
+      "/states/virginia/auto-insurance/",
+    ],
+  }),
+  localGuide({
+    state: "maryland",
+    citySlug: "rockville",
+    categorySlug: "auto-insurance",
+    title: "Rockville, MD Auto Insurance",
+    metaTitle: "Car Insurance Rockville MD",
+    metaDescription:
+      "Car insurance in Rockville, Maryland: 30/60/15 minimums, Montgomery County commuting, and Maryland MVA insurance rules for city residents.",
+    primaryKeyword: "car insurance Rockville MD",
+    contentSource: { type: "article", slug: "rockville-md-auto-insurance" },
+    relatedPaths: [
+      "/states/maryland/auto-insurance/",
+      "/states/maryland/auto-insurance/requirements/",
+      "/states/maryland/renters-insurance/",
+    ],
+  }),
+  localGuide({
+    state: "maryland",
+    citySlug: "bethesda",
+    categorySlug: "auto-insurance",
+    title: "Bethesda, MD Auto Insurance",
+    metaTitle: "Car Insurance Bethesda MD",
+    metaDescription:
+      "Car insurance in Bethesda, Maryland: state minimums, close-in Montgomery County commuting, and how Maryland insurance rules apply locally.",
+    primaryKeyword: "Bethesda MD car insurance",
+    contentSource: { type: "article", slug: "bethesda-md-auto-insurance" },
+    relatedPaths: [
+      "/states/maryland/auto-insurance/",
+      "/states/maryland/auto-insurance/requirements/",
+      "/states/maryland/homeowners-insurance/",
+    ],
+  }),
+  localGuide({
+    state: "maryland",
+    citySlug: "silver-spring",
+    categorySlug: "renters-insurance",
+    title: "Silver Spring, MD Renters Insurance",
+    metaTitle: "Renters Insurance Silver Spring MD",
+    metaDescription:
+      "Renters insurance in Silver Spring, Maryland: lease requirements, apartment and condo rentals, and how Maryland coverage rules apply locally.",
+    primaryKeyword: "Silver Spring MD renters insurance",
+    contentSource: { type: "article", slug: "silver-spring-md-renters-insurance" },
+    relatedPaths: [
+      "/states/maryland/renters-insurance/",
+      "/states/maryland/renters-insurance/requirements/",
+      "/states/maryland/auto-insurance/",
+    ],
+  }),
+];
+
 export const SEO_PAGES: SeoPage[] = [
   ...staticPages,
   ...legalPages.map((item) =>
@@ -1360,6 +1667,7 @@ export const SEO_PAGES: SeoPage[] = [
   ...marylandPages,
   ...virginiaPages,
   ...dcPages,
+  ...localPages,
 ];
 
 const pagesByPath = new Map(SEO_PAGES.map((item) => [item.path, item]));
@@ -1418,7 +1726,9 @@ export function getPublishedStateGuides(
 
 export function getPublishedChildren(parentPath: string): SeoPage[] {
   return getPublicSeoPages().filter(
-    (item) => item.parentPath === parentPath && item.kind === "state-child",
+    (item) =>
+      item.parentPath === parentPath &&
+      (item.kind === "state-child" || item.kind === "local-guide"),
   );
 }
 
@@ -1448,7 +1758,7 @@ export function getPublishedStatePage(
       item.stateSlug === stateSlug &&
       item.guideSlug === guideSlug &&
       !item.childSlug &&
-      (item.kind === "state-guide" || item.kind === "state-hub"),
+      (item.kind === "state-guide" || item.kind === "state-hub" || item.kind === "local-guide"),
   );
 }
 

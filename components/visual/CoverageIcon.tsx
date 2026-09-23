@@ -26,6 +26,10 @@ export function coverageVisualFromSlug(slug?: string): CoverageVisualId {
       return "flood";
     case "landlord-insurance":
       return "landlord";
+    case "condo-insurance":
+      return "home";
+    case "professional-liability-insurance":
+      return "business";
     case "workers-compensation":
     case "workers-compensation-insurance":
       return "workers";
@@ -56,7 +60,7 @@ export function CoverageIcon({ name, className }: CoverageIconProps) {
   const common = {
     viewBox: "0 0 32 32",
     fill: "none",
-    className: cn("h-8 w-8 text-navy-700", className),
+    className: cn("h-8 w-8 text-navy-600", className),
     "aria-hidden": true as const,
   };
 

@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { SITE_NAME, PUBLIC_CASE_STUDIES_PATH } from "@/lib/constants";
+import { SITE_NAME, PUBLIC_CASE_STUDIES_PATH, BRAND_SHIELD_PATH } from "@/lib/constants";
 import { getDisclaimers, getPrimaryCategories, getStates } from "@/lib/content";
 import { RegionalVisual } from "@/components/visual/RegionalVisual";
 import { Container } from "./Container";
@@ -29,7 +30,17 @@ export function SiteFooter() {
       <Container size="wide" className="py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-6">
           <div className="lg:col-span-2">
-            <p className="text-lg font-semibold tracking-tight text-white">{SITE_NAME}</p>
+            <Link href="/" className="inline-flex items-center gap-2.5 rounded-sm">
+              <Image
+                src={BRAND_SHIELD_PATH}
+                alt=""
+                width={1254}
+                height={1254}
+                aria-hidden
+                className="h-8 w-8 shrink-0"
+              />
+              <span className="text-lg font-semibold tracking-tight text-white">{SITE_NAME}</span>
+            </Link>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-300">
               Independent insurance information for Maryland, Virginia, and Washington, D.C.
               Built from regulator, DMV, and public-record sources.

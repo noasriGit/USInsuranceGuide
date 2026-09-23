@@ -2,28 +2,61 @@
 stateSlug: virginia
 categorySlug: auto-insurance
 metaTitle: "Virginia Auto Insurance Guide"
-metaDescription: "Virginia requires 50/100/25 liability and matching UM/UIM coverage. Summary of mandatory limits and where to learn more."
-updatedAt: "2025-06-19"
+metaDescription: "Virginia requires 50/100/25 liability and matching UM/UIM. Guide to car insurance rules, coverage choices, and related DMV requirements."
+updatedAt: "2026-09-22"
 reviewer: content-review-team
+quickAnswer: |
+  Virginia requires liability insurance on every registered vehicle. For policies effective January 1, 2025 or later, the legal floor is 50/100/25. Uninsured and underinsured motorist coverage must match those limits unless you reject it in writing. The old uninsured motor vehicle fee option ended July 1, 2024.
+keyFacts:
+  - label: "Minimum liability (2025+)"
+    value: "50/100/25 ($50,000 / $100,000 / $25,000)"
+  - label: "UM / UIM"
+    value: "Required unless rejected in writing"
+  - label: "PIP"
+    value: "Not required. Medical payments is optional"
+  - label: "UMV fee"
+    value: "Eliminated July 1, 2024"
+  - label: "Lapse risk"
+    value: "License and registration suspension, often a $600 fee and SR-22"
 sections:
   Overview: |
-    Virginia requires liability insurance on every registered vehicle. Since July 1, 2024, the uninsured motor vehicle fee option no longer exists.
+    Virginia auto insurance, also searched as car insurance Virginia or Virginia car insurance, is the policy that keeps a registered vehicle legal and pays certain crash costs. The [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/) and [Virginia DMV](https://www.dmv.virginia.gov/) administer consumer and registration rules.
 
-    This page is a brief state overview — not a full requirements guide. See our [Virginia auto insurance requirements article](/states/virginia/auto-insurance/requirements/) for limits, penalties, and proof-of-insurance details.
+    This landing page is the statewide starting point. Statutory limits, proof rules, and lapse penalties are on [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/). Local commuting and garaging context is on [Alexandria car insurance](/states/virginia/alexandria/).
+
+    | Jurisdiction | Minimum liability | UM / UIM | PIP |
+    |---|---|---|---|
+    | **Virginia** | 50/100/25 (policies effective 1/1/2025+) | Required unless rejected in writing | Not required |
+    | **Maryland** | 30/60/15 | Required at matching minimums | Offer required; written waiver allowed |
+    | **Washington, D.C.** | 25/50/10 | Required | Offer required; you may decline |
+
+    A vehicle garaged and registered in Virginia must meet Virginia rules even if you commute into Maryland or D.C. See [Maryland auto insurance](/states/maryland/auto-insurance/) and [D.C. auto insurance](/states/washington-dc/auto-insurance/) for the neighboring floors.
   Coverage Options to Consider: |
-    **Required:** Bodily injury and property damage liability (50/100/25 for policies effective January 1, 2025+), plus uninsured/underinsured motorist coverage unless rejected in writing.
+    **Required liability.** Bodily injury and property damage at 50/100/25 is the current legal minimum for new and renewal policies effective in 2025 or later. Older 30/60/20 figures no longer describe the current floor.
 
-    **Common optional coverages:** Collision, comprehensive, and medical payments (MedPay). Virginia is a fault-based state and does not require PIP.
+    **Uninsured and underinsured motorist coverage.** Virginia requires UM/UIM at matching limits unless you reject it in writing. Read the rejection form before you sign it. Details are on the [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/) page.
+
+    **Medical payments, not PIP.** Virginia is a fault-based state and does not require personal injury protection. Some policies offer MedPay as an optional first-party medical benefit.
+
+    **Collision, comprehensive, and "full coverage."** Full coverage is not a Virginia legal category. Collision may pay for your vehicle after a crash. Comprehensive may pay for non-crash losses such as theft or hail. Both are optional and use deductibles. Liability remains required.
+
+    **Non-owner and household drivers.** Drivers who do not own a vehicle may need a non-owner policy to meet financial-responsibility rules after a lapse or court order. Teen and newly licensed drivers are rated with the household. There is no official cheapest-teen program.
+
+    **Business and rideshare use.** Personal policies commonly exclude primary business use and many rideshare periods. See [commercial auto insurance](/blog/commercial-auto-insurance-explained/) if the vehicle is a work, delivery, or fleet vehicle.
   State Requirements & Regulations: |
-    Minimum liability is **50/100/25** for policies effective January 1, 2025 or later. UM/UIM must match liability limits unless waived in writing.
+    All registered vehicles must carry liability insurance that meets the current Virginia minimum. The former uninsured motor vehicle fee is gone. Paying a fee instead of buying insurance is no longer an option.
 
-    DMV verifies insurance electronically. Lapses may lead to license and registration suspension, a $600 noncompliance fee, and an SR-22 filing requirement.
+    DMV verifies insurance electronically. A lapse can lead to license and registration suspension, a noncompliance fee commonly cited at $600, and an SR-22 filing that often lasts three years. Confirm current fees with [Virginia DMV](https://www.dmv.virginia.gov/).
 
-    Neighboring [Maryland](/states/maryland/auto-insurance/requirements/) and [D.C.](/states/washington-dc/auto-insurance/requirements/) set different minimums — your policy must meet Virginia rules where the vehicle is registered.
+    If you move from Maryland or D.C., a 30/60/15 or 25/50/10 policy does not meet Virginia's 50/100/25 floor. Update the garaging address and limits before you register the vehicle in Virginia.
+
+    Independent cities such as Alexandria have the same statewide insurance statute as Fairfax County or Arlington. Local pages add commuting and parking context. They do not create a different legal minimum.
   Factors That May Affect Your Premium: |
-    Insurers may consider driving record, age, vehicle type, garaging location, mileage, coverage limits, deductibles, and credit-based insurance scores where permitted.
+    Insurers may consider driving record, age, vehicle, garaging location, mileage, limits, deductibles, and credit-based insurance scores where permitted. Northern Virginia ZIP codes, including Alexandria, Arlington, and the Fairfax area, can rate differently from rural Virginia. The legal minimum does not change.
 
-    See [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/) for common premium trends.
+    You can compare licensed insurers on the same limits, raise optional deductibles, and ask about discounts. You cannot lawfully drop required liability to save money. Rejecting UM/UIM in writing may change premium and also leaves a first-party gap if an uninsured driver hits you.
+
+    We do not publish invented Virginia average premiums. A dedicated Virginia cost child page remains planned until an official or clearly sourced average is available. For mid-term increases, see [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/).
 faq:
   - question: "What are Virginia's minimum auto insurance limits?"
     answer: "For policies effective January 1, 2025 or later, minimum liability is $50,000 per person, $100,000 per accident for bodily injury, and $25,000 per accident for property damage (50/100/25)."
@@ -33,13 +66,15 @@ faq:
     answer: "Yes, unless rejected in writing. UM/UIM limits must match liability minimums on the policy."
   - question: "What happens if my Virginia insurance lapses?"
     answer: "DMV may suspend your license and registration. Reinstatement typically requires fees, proof of insurance, and often an SR-22 filing for three years."
+  - question: "Is Virginia a no-fault state?"
+    answer: "No. Virginia is a fault-based state. PIP is not required. Some policies offer optional medical payments coverage."
 sources:
   - title: "Virginia Bureau of Insurance"
     url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
-  - title: "Virginia Auto Insurance Requirements (full guide)"
-    url: "https://usinsuranceguide.com/states/virginia/auto-insurance/requirements/"
-    publisher: "US Insurance Guide"
+  - title: "Virginia Department of Motor Vehicles"
+    url: "https://www.dmv.virginia.gov/"
+    publisher: "Virginia Department of Motor Vehicles"
 ---
 
 <!-- Editorial body lives in frontmatter sections. -->

@@ -17,7 +17,7 @@ import { articleSchema, faqSchema } from "@/lib/seo/schema";
 import type { Article, SeoPage } from "@/lib/schemas";
 import { resolvePlacements } from "@/lib/monetization/placements";
 import { formatDate, extractMarkdownHeadings, splitMarkdownForInlineCta } from "@/lib/utils";
-import { inferLeadContextFromPath, shouldShowStickyLeadCta } from "@/lib/leads/context";
+import { inferLeadContextFromPage, shouldShowStickyLeadCta } from "@/lib/leads/context";
 import { getPublicCaseStudiesForPage } from "@/lib/content/case-studies";
 import { getStateBySlug } from "@/lib/content/data";
 
@@ -41,7 +41,7 @@ export function GuideArticleView({
     categorySlug: page.categorySlug ?? article.category,
     stateSlug: page.stateSlug ?? article.states?.[0],
   });
-  const context = inferLeadContextFromPath(page.path, page.kind);
+  const context = inferLeadContextFromPage(page);
   const headings = extractMarkdownHeadings(article.content);
   const { before, after } = splitMarkdownForInlineCta(article.content);
   const caseStudies = getPublicCaseStudiesForPage({

@@ -10,7 +10,7 @@ states:
 author: editorial-team
 reviewer: content-review-team
 publishedAt: "2025-06-01"
-updatedAt: "2025-06-19"
+updatedAt: "2026-09-22"
 toc: true
 faq:
   - question: "Is homeowners insurance required in Maryland?"
@@ -47,7 +47,7 @@ Homeowners insurance is a critical financial protection for Maryland property ow
 
 This guide summarizes homeowners insurance considerations for Maryland residents based on official resources from the [Maryland Insurance Administration (MIA)](https://insurance.maryland.gov/Pages/default.aspx). It is educational information, not a coverage recommendation. Policy language varies by carrier. A licensed insurance professional can help you evaluate limits, endorsements, and gaps specific to your home.
 
-For broader context, see our [Maryland insurance guides](/states/maryland/) and [home insurance category hub](/home-insurance/). For the important distinction between homeowners and flood coverage, see our [home insurance vs flood insurance guide](/blog/home-insurance-vs-flood-insurance/).
+For broader context, see our [Maryland insurance guides](/states/maryland/) and [home insurance category hub](/home-insurance/). For premium factors without invented quotes, see [Maryland homeowners insurance cost](/states/maryland/homeowners-insurance/cost/). Condo unit owners should use the [condo insurance guide](/home-insurance/condo-insurance/). For the important distinction between homeowners and flood coverage, see our [home insurance vs flood insurance guide](/blog/home-insurance-vs-flood-insurance/).
 
 ## Why Homeowners Insurance Matters in Maryland
 

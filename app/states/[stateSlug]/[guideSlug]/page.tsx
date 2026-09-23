@@ -22,7 +22,12 @@ interface PageProps {
 
 export async function generateStaticParams() {
   return getPublicSeoPages()
-    .filter((page) => page.kind === "state-guide" && page.stateSlug && page.guideSlug)
+    .filter(
+      (page) =>
+        (page.kind === "state-guide" || page.kind === "local-guide") &&
+        page.stateSlug &&
+        page.guideSlug,
+    )
     .map((page) => ({
       stateSlug: page.stateSlug as string,
       guideSlug: page.guideSlug as string,
@@ -48,7 +53,7 @@ export default async function StateGuidePage({ params }: PageProps) {
   const { stateSlug, guideSlug } = await params;
   const state = getStateBySlug(stateSlug);
   const page = getPublishedStatePage(stateSlug, guideSlug);
-  if (!state || !page || page.kind !== "state-guide") notFound();
+  if (!state || !page || (page.kind !== "state-guide" && page.kind !== "local-guide")) notFound();
 
   const content = resolveSeoPageContent(page);
   if (content.type === "missing" || content.type === "none") notFound();

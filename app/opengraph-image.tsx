@@ -16,11 +16,22 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "72px",
-          background: "linear-gradient(135deg, #0f2744 0%, #1a3a5c 45%, #0c4a6e 100%)",
+          background: "linear-gradient(135deg, #071f3a 0%, #0a3d73 48%, #115d9e 100%)",
           color: "#f8fafc",
           fontFamily: "Georgia, 'Times New Roman', serif",
+          position: "relative",
         }}
       >
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: 6,
+            background: "linear-gradient(90deg, #082f5b 0%, #0e5aa7 55%, #d7193f 100%)",
+          }}
+        />
         <div
           style={{
             display: "flex",

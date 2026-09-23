@@ -25,7 +25,10 @@ const items = [
 
 export function TrustStrip() {
   return (
-    <section aria-label="Editorial standards" className="surface-white border-b border-line">
+    <section
+      aria-label="Editorial standards"
+      className="surface-white border-b border-line border-t-2 border-t-brand-red/70"
+    >
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-line md:grid-cols-4">
         {items.map((item) => (
           <div key={item.title} className="flex items-start gap-3 bg-paper px-4 py-5 sm:px-6">

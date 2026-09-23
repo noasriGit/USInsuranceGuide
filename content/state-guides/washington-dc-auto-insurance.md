@@ -2,32 +2,55 @@
 stateSlug: washington-dc
 categorySlug: auto-insurance
 metaTitle: "D.C. Auto Insurance Guide"
-metaDescription: "D.C. requires 25/50/10 liability and uninsured motorist coverage. Summary of mandatory limits plus links to full District guides."
-updatedAt: "2025-06-19"
+metaDescription: "Washington, D.C. requires 25/50/10 liability and uninsured motorist coverage. Guide to car insurance rules and related DMV requirements."
+updatedAt: "2026-09-22"
 reviewer: content-review-team
+quickAnswer: |
+  Washington, D.C. requires liability and uninsured motorist insurance on every registered vehicle. The legal floor is 25/50/10 liability, uninsured motorist bodily injury at 25/50, and uninsured motorist property damage of $5,000 with a $200 deductible. Insurers must offer PIP. You may decline it.
+keyFacts:
+  - label: "Minimum liability"
+    value: "25/50/10 ($25,000 / $50,000 / $10,000)"
+  - label: "UM bodily injury"
+    value: "25/50 required"
+  - label: "UM property damage"
+    value: "$5,000 with a $200 deductible"
+  - label: "PIP"
+    value: "Must be offered. You may decline. 60-day election if you carry it"
+  - label: "If coverage ends"
+    value: "Return tags to DC DMV while the vehicle stays registered"
 sections:
   Overview: |
-    Washington, D.C. requires liability and uninsured motorist insurance on every registered vehicle under the Compulsory/No-Fault Motor Vehicle Insurance Act. DC DMV verifies continuous coverage.
+    D.C. car insurance is governed by the Compulsory/No-Fault Motor Vehicle Insurance Act and enforced by [DC DMV](https://dmv.dc.gov/service/vehicle-insurance) and [DISB](https://disb.dc.gov/page/insurance). This landing page is the District starting point. Limits, PIP elections, and proof rules are on [D.C. auto insurance requirements](/states/washington-dc/auto-insurance/requirements/).
 
-    This page is a brief state overview — not a full requirements guide. See our [D.C. auto insurance requirements article](/states/washington-dc/auto-insurance/requirements/) for limits, PIP elections, penalties, and proof-of-insurance details.
+    | Jurisdiction | Minimum liability | UM / UIM | PIP |
+    |---|---|---|---|
+    | **Washington, D.C.** | 25/50/10 | Required (UM BI 25/50; UM PD $5,000) | Offer required; you may decline |
+    | **Maryland** | 30/60/15 | Required at matching minimums | Offer required; written waiver allowed |
+    | **Virginia** | 50/100/25 (policies effective 1/1/2025+) | Required unless rejected in writing | Not required |
+
+    A car registered in the District must meet D.C. rules even if you garage it near a Maryland or Virginia line or commute on I-295, I-395, or New York Avenue. See [Maryland auto insurance](/states/maryland/auto-insurance/) and [Virginia auto insurance](/states/virginia/auto-insurance/) if the vehicle is registered there instead.
+
+    We do not publish a separate /states/washington-dc/washington-dc/ city page. This District hub is the local page for Washington, D.C.
   Coverage Options to Consider: |
-    **Required:** Bodily injury and property damage liability (25/50/10), plus uninsured motorist bodily injury (25/50) and uninsured motorist property damage ($5,000 with a $200 deductible).
+    **Required liability.** 25/50/10 is the legal floor. The $10,000 property damage limit is lower than Maryland or Virginia. A serious parked-car or property claim can exceed it quickly.
 
-    **PIP:** Optional — insurers must offer personal injury protection, but you may decline. If you carry PIP and are injured, D.C. law requires a 60-day election between PIP benefits and a fault-based lawsuit.
+    **Uninsured motorist coverage.** D.C. requires UM bodily injury at 25/50 and UM property damage of $5,000 with a $200 deductible. Details are on the [D.C. auto insurance requirements](/states/washington-dc/auto-insurance/requirements/) page.
 
-    **Common optional coverages:** Collision, comprehensive, and higher liability limits. D.C. is often described as a choice no-fault jurisdiction.
+    **PIP election.** Insurers must offer personal injury protection. If you carry PIP and are injured, D.C. law requires a 60-day choice between PIP benefits and a fault-based lawsuit. That election is a District-specific rule, not a Maryland or Virginia clone.
+
+    **Collision, comprehensive, and deductibles.** Optional physical-damage coverages matter in a dense city with street parking, garage theft exposure, and hail or vandalism claims. They do not replace liability. "Full coverage" is not a DISB legal category.
+
+    **Rideshare and business use.** Personal policies commonly exclude periods when an app is on or the vehicle is used primarily for work. See [commercial auto insurance](/blog/commercial-auto-insurance-explained/).
   State Requirements & Regulations: |
-    Minimum liability is **25/50/10**. The $10,000 property damage limit is lower than neighboring states.
+    You must maintain coverage for as long as the vehicle is registered. If insurance terminates, return tags to DC DMV. Leaving a registered vehicle uninsured can lead to fines and registration or reciprocity-sticker suspension.
 
-    You must maintain coverage as long as your vehicle is registered. If insurance terminates, return tags to DC DMV — lapses may trigger fines and registration suspension.
+    Reciprocity for Maryland and Virginia residents who drive in the District does not rewrite the registration state's minimum. The policy still has to satisfy the state or District that issued the plates.
 
-    Neighboring [Maryland](/states/maryland/auto-insurance/requirements/) (30/60/15) and [Virginia](/states/virginia/auto-insurance/requirements/) (50/100/25) set different minimums — your policy must meet D.C. rules where the vehicle is registered.
+    Proof of insurance should match the registered vehicle. DISB can help you confirm that an insurer is licensed in the District before you buy.
   Factors That May Affect Your Premium: |
-    Insurers may consider driving record, age, vehicle type, garaging location, mileage, coverage limits, deductibles, PIP election, and credit-based insurance scores where permitted.
+    Insurers may consider driving record, age, vehicle, garaging location, mileage, limits, deductibles, PIP election, and credit-based scores where permitted. Urban traffic density, street parking, and theft or vandalism claims can affect District premiums compared with suburban Maryland or Virginia ZIP codes. That is a rating difference, not a different statute.
 
-    Urban traffic density and parking-related claims may affect premiums in the District.
-
-    See [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/) for common premium trends.
+    Compare licensed insurers on the same limits. Do not drop required liability or UM coverage to save money. A dedicated D.C. cost child page remains planned until a clearly sourced official average exists. For mid-term increases, see [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/).
 faq:
   - question: "What are D.C.'s minimum auto insurance limits?"
     answer: "Minimum liability is $25,000 per person, $50,000 per accident for bodily injury, and $10,000 per accident for property damage (25/50/10). UM bodily injury minimums are 25/50; UM property damage is $5,000 with a $200 deductible."
@@ -38,12 +61,12 @@ faq:
   - question: "What happens if my D.C. auto insurance lapses?"
     answer: "Registration or reciprocity sticker may be suspended and fines may increase over time. You must return tags to DC DMV if coverage terminates while the vehicle remains registered."
 sources:
-  - title: "DC DMV — Vehicle Insurance"
+  - title: "DC DMV: Vehicle Insurance"
     url: "https://dmv.dc.gov/service/vehicle-insurance"
     publisher: "District of Columbia Department of Motor Vehicles"
-  - title: "Washington, D.C. Auto Insurance Requirements (full guide)"
-    url: "https://usinsuranceguide.com/states/washington-dc/auto-insurance/requirements/"
-    publisher: "US Insurance Guide"
+  - title: "DC DISB: Insurance"
+    url: "https://disb.dc.gov/page/insurance"
+    publisher: "DC Department of Insurance, Securities and Banking"
 ---
 
 <!-- Editorial body lives in frontmatter sections. -->

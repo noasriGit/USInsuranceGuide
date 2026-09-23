@@ -1,4 +1,5 @@
 import { LEAD_PATH } from "@/lib/constants";
+import type { SeoPage } from "@/lib/schemas";
 import {
   COVERAGE_TYPES,
   type CoverageTypeId,
@@ -43,6 +44,9 @@ const topicBySegment: Record<string, CoverageTypeId> = {
   "workers-compensation": "workers-compensation",
   "landlord-insurance": "landlord",
   "flood-insurance": "flood",
+  "professional-liability-insurance": "professional-liability",
+  "professional-liability": "professional-liability",
+  "condo-insurance": "condo",
 };
 
 const stateBySegment: Record<string, LeadStateId> = {
@@ -113,12 +117,27 @@ function resolveIntent(
     coverageType === "business" ||
     coverageType === "commercial-auto" ||
     coverageType === "general-liability" ||
-    coverageType === "workers-compensation"
+    coverageType === "workers-compensation" ||
+    coverageType === "professional-liability"
   ) {
     return "business";
   }
   if (pageType === "static") return "subtle";
+  if (pageType === "local-guide") return "default";
   return "default";
+}
+
+export function inferLeadContextFromPage(page: SeoPage): LeadPageContext {
+  const inferred = inferLeadContextFromPath(page.path, page.kind);
+  return {
+    ...inferred,
+    coverageType: inferred.coverageType ?? coverageFromSlug(page.categorySlug),
+    sourceTopic:
+      inferred.sourceTopic ??
+      COVERAGE_TYPES.find(
+        (item) => item.id === (inferred.coverageType ?? coverageFromSlug(page.categorySlug)),
+      )?.topic,
+  };
 }
 
 export function buildLeadHref(
@@ -167,6 +186,7 @@ export function shouldShowStickyLeadCta(context: LeadPageContext): boolean {
     context.intent === "business" ||
     context.sourcePageType === "article" ||
     context.sourcePageType === "state-guide" ||
-    context.sourcePageType === "state-child"
+    context.sourcePageType === "state-child" ||
+    context.sourcePageType === "local-guide"
   );
 }

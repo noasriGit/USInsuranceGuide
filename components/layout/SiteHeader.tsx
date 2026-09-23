@@ -1,13 +1,14 @@
 "use client";
 
 import { useCallback, useEffect, useId, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import {
-  SITE_NAME,
   SHOW_INSURANCE_DIRECTORY_NAV,
   LEAD_PATH,
   PUBLIC_CASE_STUDIES_PATH,
+  BRAND_WORDMARK_PATH,
 } from "@/lib/constants";
 import { getStates } from "@/lib/content/data";
 import { cn } from "@/lib/utils";
@@ -85,10 +86,18 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/80 bg-white/85 backdrop-blur-md supports-[backdrop-filter]:bg-white/75">
       <div className="mx-auto flex h-[4.25rem] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="rounded-sm">
-          <span className="text-[0.98rem] font-semibold tracking-[-0.02em] text-navy-900">
-            {SITE_NAME}
-          </span>
+        <Link
+          href="/"
+          className="mr-2 flex shrink-0 items-center rounded-sm focus-visible:outline-offset-4 sm:mr-3"
+        >
+          <Image
+            src={BRAND_WORDMARK_PATH}
+            alt="US Insurance Guide"
+            width={2172}
+            height={724}
+            priority
+            className="h-9 w-auto max-w-[9.75rem] sm:h-10 sm:max-w-[12rem]"
+          />
         </Link>
 
         <div className="hidden items-center gap-1 lg:flex" ref={navRef}>

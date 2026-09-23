@@ -14,7 +14,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { faqSchema } from "@/lib/seo/schema";
 import type { SeoPage, StateCategoryGuide } from "@/lib/schemas";
 import { resolvePlacements } from "@/lib/monetization/placements";
-import { inferLeadContextFromPath, shouldShowStickyLeadCta } from "@/lib/leads/context";
+import { inferLeadContextFromPage, shouldShowStickyLeadCta } from "@/lib/leads/context";
+import { QuickAnswer } from "@/components/content/QuickAnswer";
+import { KeyFacts } from "@/components/content/KeyFacts";
 import { getPublicCaseStudiesForPage } from "@/lib/content/case-studies";
 import { getStateBySlug } from "@/lib/content/data";
 
@@ -29,7 +31,7 @@ export function StateGuideView({ page, guide }: StateGuideViewProps) {
     stateSlug: page.stateSlug,
     categorySlug: page.categorySlug,
   });
-  const context = inferLeadContextFromPath(page.path, page.kind);
+  const context = inferLeadContextFromPage(page);
   const stateName = page.stateSlug ? getStateBySlug(page.stateSlug)?.name : undefined;
   const caseStudies = getPublicCaseStudiesForPage({
     stateSlug: page.stateSlug,
@@ -56,6 +58,9 @@ export function StateGuideView({ page, guide }: StateGuideViewProps) {
         jurisdiction={stateName}
         sources={[...new Set(guide.sources.map((source) => source.publisher))].slice(0, 4)}
       />
+
+      {guide.quickAnswer && <QuickAnswer content={guide.quickAnswer} />}
+      {guide.keyFacts && guide.keyFacts.length > 0 && <KeyFacts facts={guide.keyFacts} />}
 
       {firstSection && (
         <GuideSectionShell title={firstSection} pending={false}>

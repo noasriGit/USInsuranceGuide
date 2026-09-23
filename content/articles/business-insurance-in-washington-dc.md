@@ -10,7 +10,7 @@ states:
 author: editorial-team
 reviewer: content-review-team
 publishedAt: "2025-06-01"
-updatedAt: "2025-06-19"
+updatedAt: "2026-09-22"
 toc: true
 faq:
   - question: "What types of business insurance might a D.C. business need?"
@@ -47,7 +47,7 @@ Operating a business in Washington, D.C. means navigating a mix of District-mand
 
 This guide summarizes business insurance considerations for District operations based on official resources from the [Department of Employment Services](https://does.dc.gov/page/workers-compensation-does) and the [Department of Insurance, Securities and Banking (DISB)](https://disb.dc.gov/page/insurance). It is educational information, not a coverage recommendation. A licensed insurance professional can help you identify gaps between what the law requires, what your contracts demand, and what your operations actually need.
 
-For broader context, see our [Washington, D.C. insurance guides](/states/washington-dc/) and [business insurance category hub](/business-insurance/). For coverage-type deep dives, see our explainers on [general liability](/blog/general-liability-insurance-explained/), [commercial auto](/blog/commercial-auto-insurance-explained/), and [workers' compensation](/blog/workers-compensation-insurance-explained/).
+For broader context, see our [Washington, D.C. insurance guides](/states/washington-dc/) and [business insurance category hub](/business-insurance/). For coverage-type deep dives, see our explainers on [general liability](/blog/general-liability-insurance-explained/), [professional liability](/business-insurance/professional-liability/), [commercial auto](/blog/commercial-auto-insurance-explained/), and [workers' compensation](/blog/workers-compensation-insurance-explained/).
 
 ## Coverage Types D.C. Businesses Commonly Consider
 
@@ -57,7 +57,7 @@ For broader context, see our [Washington, D.C. insurance guides](/states/washing
 | Commercial property | Buildings, equipment, inventory, and business personal property | By lenders; otherwise optional |
 | [Workers' compensation](/blog/workers-compensation-insurance-explained/) | Work-related employee injuries and illnesses | Yes, if you employ 1+ workers |
 | [Commercial auto](/blog/commercial-auto-insurance-explained/) | Business-owned or business-used vehicles | Yes, if you operate registered vehicles |
-| Professional liability (E&O) | Negligent acts, errors, or omissions in professional services | By licensing bodies and contracts |
+| [Professional liability (E&O)](/business-insurance/professional-liability/) | Negligent acts, errors, or omissions in professional services | By licensing bodies and contracts |
 | Cyber liability | Data breaches, ransomware, and digital business interruption | Optional; increasingly contract-driven |
 | Business interruption | Lost income after a covered property loss | Optional; often bundled in BOPs |
 | Umbrella / excess liability | Additional limits above underlying policies | Optional |

@@ -10,7 +10,7 @@ states:
 author: editorial-team
 reviewer: content-review-team
 publishedAt: "2025-06-01"
-updatedAt: "2025-06-19"
+updatedAt: "2026-09-22"
 toc: true
 faq:
   - question: "Is renters insurance required in Washington, D.C.?"
@@ -47,7 +47,7 @@ If you rent an apartment, condo, or house in Washington, D.C., your landlord's i
 
 This guide summarizes renters insurance considerations for District tenants based on official resources from [DISB](https://disb.dc.gov/page/insurance). It is educational information, not a coverage recommendation. Policy language varies by carrier. A licensed insurance professional can help you evaluate limits and coverage specific to your situation.
 
-For broader context, see our [Washington, D.C. insurance guides](/states/washington-dc/) and [renters insurance category hub](/renters-insurance/).
+For broader context, see our [Washington, D.C. insurance guides](/states/washington-dc/) and [renters insurance category hub](/renters-insurance/). If you rent across the river, see [Arlington renters insurance](/states/virginia/arlington/), [Maryland renters insurance](/states/maryland/renters-insurance/), and [Virginia renters insurance](/states/virginia/renters-insurance/). Condo unit owners should use the [condo insurance guide](/home-insurance/condo-insurance/) instead of an HO-4.
 
 ## Why Renters Insurance Matters in D.C.
 

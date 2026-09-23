@@ -8,7 +8,8 @@ export function shouldIndexCategory(category: Category): boolean {
 }
 
 export function shouldIndexCity(city: City): boolean {
-  return city.contentReady;
+  if (!city.contentReady) return false;
+  return shouldIndexPath(`/states/${city.stateSlug}/${city.slug}/`);
 }
 
 export function shouldIndexPath(path: string): boolean {
