@@ -1,6 +1,6 @@
 # DMV Content Manifest
 
-Last inventoried: 2026-09-22. Ahrefs volumes are directional (same date). Status values: `published`, `planned`, `draft`.
+Last inventoried: 2026-09-23. Ahrefs volumes are directional (2026-09-22). Status values: `published`, `planned`, `draft`.
 
 Lead value is editorial, not a traffic forecast. Implementation priority:
 
@@ -28,12 +28,12 @@ No current ranking URL was changed for prettier slugs.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `/states/maryland/auto-insurance/` | state-guide | MD | car insurance Maryland | maryland auto insurance; auto insurance maryland; car insurance in maryland | informational / commercial | 2,800–4,600 | 0–10 | high | published | `/states/maryland/` | requirements, cost; Rockville; Bethesda | MIA; MVA | deepened 2026-09-22 | index | P1 |
 | `/states/maryland/auto-insurance/requirements/` | state-child | MD | Maryland auto insurance requirements | PIP; UM/UIM; lapse | regulatory | — | — | medium | published | MD auto | — | MIA; MVA; MD Code | existing | index | P1 |
-| `/states/maryland/auto-insurance/cost/` | state-child | MD | Maryland car insurance rates | cheap auto insurance maryland | commercial | 900–1,300 | 4–6 | high | published | MD auto | — | MIA; MVA | new 2026-09-22 | index | P1 |
-| `/states/virginia/auto-insurance/` | state-guide | VA | car insurance Virginia | virginia car insurance; auto insurance Virginia | informational / commercial | 1,700–2,600 | 0–5 | high | published | `/states/virginia/` | requirements; Alexandria | SCC; VA DMV | deepened 2026-09-22 | index | P1 |
-| `/states/virginia/auto-insurance/requirements/` | state-child | VA | Virginia auto insurance requirements | 50/100/25; UM/UIM | regulatory | — | — | medium | published | VA auto | — | SCC; VA DMV | existing | index | P1 |
-| `/states/virginia/auto-insurance/cost/` | state-child | VA | average car insurance cost Virginia | — | commercial | — | — | high | planned | VA auto | — | need official average | deferred | noindex | P2 |
-| `/states/washington-dc/auto-insurance/` | state-guide | DC | car insurance Washington DC | — | informational / commercial | 900 | 1 | high | published | `/states/washington-dc/` | requirements | DISB; DC DMV | deepened 2026-09-22 | index | P1 |
-| `/states/washington-dc/auto-insurance/requirements/` | state-child | DC | Washington DC auto insurance requirements | 25/50/10; PIP election | regulatory | — | — | medium | published | DC auto | — | DISB; DC DMV | existing | index | P1 |
+| `/states/maryland/auto-insurance/cost/` | state-child | MD | Maryland car insurance rates | how much is car insurance in maryland; why is car insurance so expensive in maryland | commercial | 900–1,300 | 4–6 | high | published | MD auto | — | MIA; MVA | AI-search pass 2026-09-23 | index | P1 |
+| `/states/virginia/auto-insurance/` | state-guide | VA | car insurance Virginia | virginia car insurance; auto insurance Virginia | informational / commercial | 1,700–2,600 | 0–5 | high | published | `/states/virginia/` | requirements; cost; Alexandria | SCC; VA DMV | AI-search pass 2026-09-23 | index | P1 |
+| `/states/virginia/auto-insurance/requirements/` | state-child | VA | Virginia auto insurance requirements | 50/100/25; UM/UIM; do you have to have car insurance in virginia | regulatory | 150–250 | 1–6 | medium | published | VA auto | — | SCC; VA DMV | AI-search pass 2026-09-23 | index | P1 |
+| `/states/virginia/auto-insurance/cost/` | state-child | VA | average car insurance cost Virginia | how much is car insurance in virginia | commercial | ~400 | ~5 | high | published | VA auto | — | SCC competitive rating; VA DMV | published 2026-09-23 without invented average | index | P1 |
+| `/states/washington-dc/auto-insurance/` | state-guide | DC | car insurance Washington DC | how much is car insurance in washington dc | informational / commercial | 900 | 1 | high | published | `/states/washington-dc/` | requirements | DISB; DC DMV | AI-search pass 2026-09-23 | index | P1 |
+| `/states/washington-dc/auto-insurance/requirements/` | state-child | DC | Washington DC auto insurance requirements | 25/50/10; PIP election; DISB vs DMV | regulatory | — | — | medium | published | DC auto | — | DISB; DC DMV | AI-search pass 2026-09-23 | index | P1 |
 | `/states/washington-dc/auto-insurance/cost/` | state-child | DC | average car insurance cost Washington DC | — | commercial | — | — | high | planned | DC auto | — | need official average | deferred | noindex | P2 |
 | `/states/virginia/alexandria/` | local-guide | VA | car insurance Alexandria VA | — | local commercial | 150 | 1 | high | published | `/states/virginia/` | — | SCC; VA DMV; City of Alexandria | new 2026-09-22 | index | P1 |
 | `/states/maryland/rockville/` | local-guide | MD | car insurance Rockville MD | — | local commercial | 90 | — | high | published | `/states/maryland/` | — | MIA; MVA; City of Rockville | new 2026-09-22 | index | P1 |
@@ -59,10 +59,10 @@ IN/OUT for auto landings: hub + children + peer jurisdictions + why-rates-rise b
 | URL | Type | Jur. | Primary keyword | Secondary | Intent | Vol | KD | Lead | Status | Parent | Children / locals | Sources | Content | Index | Pri |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `/renters-insurance/` | topic-hub | DMV | renters insurance | — | informational | — | — | medium | published | `/` | state landings | MIA; SCC; DISB | existing hub | index | P1 |
-| `/states/maryland/renters-insurance/` | state-guide | MD | renters insurance Maryland | — | informational / commercial | 2,100 | 0 | high | published | `/states/maryland/` | requirements; Silver Spring | MIA | deepened 2026-09-22 | index | P1 |
+| `/states/maryland/renters-insurance/` | state-guide | MD | renters insurance Maryland | how much is renters insurance in maryland | informational / commercial | 2,100 / ~400 | 0 / 28 | high | published | `/states/maryland/` | requirements; Silver Spring | MIA rate guide Aug 2026 | cost section 2026-09-23 | index | P1 |
 | `/states/maryland/renters-insurance/requirements/` | state-child | MD | is renters insurance required in Maryland | — | regulatory | 200 | 1 | medium | published | MD renters | — | MIA | new 2026-09-22 | index | P1 |
 | `/states/virginia/renters-insurance/` | state-guide | VA | renters insurance Virginia | — | informational / commercial | 1,000 | 4 | high | published | `/states/virginia/` | requirements; Arlington; Fairfax | SCC | deepened 2026-09-22 | index | P1 |
-| `/states/virginia/renters-insurance/requirements/` | state-child | VA | is renters insurance required in Virginia | — | regulatory | — | — | medium | published | VA renters | — | SCC | new 2026-09-22 | index | P1 |
+| `/states/virginia/renters-insurance/requirements/` | state-child | VA | is renters insurance required in Virginia | does virginia require renters insurance | regulatory | ~150 | 0 | medium | published | VA renters | — | SCC | AI-search pass 2026-09-23 | index | P1 |
 | `/states/virginia/renters-insurance/cost/` | state-child | VA | average cost of renters insurance in Virginia | — | commercial | — | — | medium | planned | VA renters | — | need official average | deferred | noindex | P2 |
 | `/states/washington-dc/renters-insurance/` | state-guide | DC | renters insurance Washington DC | — | informational / commercial | 450 | 34 | high | published | `/states/washington-dc/` | — | DISB; FEMA | links + date 2026-09-22 | index | P1 |
 | `/states/virginia/arlington/` | local-guide | VA | renters insurance Arlington VA | — | local commercial | 200 | 0 | high | published | `/states/virginia/` | — | SCC; Arlington; FEMA | new 2026-09-22 | index | P1 |
@@ -86,7 +86,7 @@ Existing published GL / WC / commercial-auto state children stay as-is (Wave 2 d
 
 ## P2 — expansion
 
-- Virginia and D.C. auto cost pages, only with citeable figures.
+- D.C. auto cost page, only with citeable figures. Virginia auto cost is published as a factor/comparison page without an invented statewide average.
 - Homeowners laws children, only if they can be more than a restatement of the landing.
 - Virginia renters cost.
 - Workers' compensation, general liability, and commercial auto state depth.

@@ -52,7 +52,7 @@ sources:
 | Campus or dorm contract | Often yes, especially for on-campus or university-arranged housing. |
 | Landlord's building policy | Covers the structure, not your belongings or your personal liability. |
 
-For coverage context beyond the legal question, see [Maryland renters insurance](/states/maryland/renters-insurance/). The same "not required by statute, often required by lease" pattern applies in [Virginia](/states/virginia/renters-insurance/) and [Washington, D.C.](/states/washington-dc/renters-insurance/).
+For coverage context beyond the legal question, including how much renters insurance may cost, see [Maryland renters insurance](/states/maryland/renters-insurance/). The same "not required by statute, often required by lease" pattern applies in [Virginia](/states/virginia/renters-insurance/) and [Washington, D.C.](/states/washington-dc/renters-insurance/).
 
 ## Maryland Law Versus Lease and Contract Requirements
 

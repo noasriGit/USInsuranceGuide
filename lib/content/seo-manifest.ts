@@ -3,6 +3,7 @@ import type { SeoPage, SeoPageCluster } from "../schemas";
 const CONTENT_DATE = "2025-06-19";
 const STATIC_DATE = "2026-06-19";
 const WAVE_DATE = "2026-09-22";
+const AI_SEARCH_DATE = "2026-09-23";
 
 type StateSlug = "maryland" | "virginia" | "washington-dc";
 
@@ -823,8 +824,14 @@ const marylandPages: SeoPage[] = [
       "What affects Maryland car insurance rates, how to compare policies, and official consumer resources. No invented premium quotes.",
     primaryKeyword: "Maryland car insurance rates",
     phase: 1,
-    lastModified: WAVE_DATE,
+    lastModified: AI_SEARCH_DATE,
     contentSource: { type: "article", slug: "maryland-car-insurance-cost" },
+    relatedPaths: [
+      "/states/maryland/auto-insurance/",
+      "/states/maryland/auto-insurance/requirements/",
+      "/states/virginia/auto-insurance/cost/",
+      "/blog/why-did-my-car-insurance-go-up/",
+    ],
   }),
   stateGuide({
     state: "maryland",
@@ -891,7 +898,7 @@ const marylandPages: SeoPage[] = [
     cluster: "primary",
     contentSource: { type: "state-guide", categorySlug: "renters-insurance" },
     navLabel: "Renters Insurance",
-    lastModified: WAVE_DATE,
+    lastModified: AI_SEARCH_DATE,
     relatedPaths: [
       "/states/maryland/renters-insurance/requirements/",
       "/states/maryland/silver-spring/",
@@ -1057,9 +1064,10 @@ const virginiaPages: SeoPage[] = [
     cluster: "primary",
     contentSource: { type: "state-guide", categorySlug: "auto-insurance" },
     navLabel: "Auto Insurance",
-    lastModified: WAVE_DATE,
+    lastModified: AI_SEARCH_DATE,
     relatedPaths: [
       "/states/virginia/auto-insurance/requirements/",
+      "/states/virginia/auto-insurance/cost/",
       "/states/virginia/alexandria/",
       "/states/maryland/auto-insurance/",
       "/states/washington-dc/auto-insurance/",
@@ -1077,11 +1085,17 @@ const virginiaPages: SeoPage[] = [
       "Virginia requires 50/100/25 liability and matching uninsured motorist coverage. Limits, proof rules, lapse penalties, and official sources.",
     primaryKeyword: "Virginia auto insurance requirements",
     phase: 1,
+    lastModified: AI_SEARCH_DATE,
     contentSource: { type: "article", slug: "virginia-auto-insurance-requirements" },
     redirectsFrom: ["/blog/virginia-auto-insurance-requirements/"],
+    relatedPaths: [
+      "/states/virginia/auto-insurance/cost/",
+      "/states/maryland/auto-insurance/requirements/",
+      "/states/washington-dc/auto-insurance/requirements/",
+    ],
     effectiveDate: "2025-01-01",
   }),
-  plannedStateChild({
+  stateChild({
     state: "virginia",
     guideSlug: "auto-insurance",
     categorySlug: "auto-insurance",
@@ -1089,9 +1103,18 @@ const virginiaPages: SeoPage[] = [
     title: "Virginia Car Insurance Cost",
     metaTitle: "Average Car Insurance Cost Virginia",
     metaDescription:
-      "Sourced averages and factors that affect Virginia car insurance rates.",
+      "What affects Virginia car insurance rates, how to compare policies, and official SCC and DMV resources. No invented premium quotes.",
     primaryKeyword: "average car insurance cost Virginia",
     phase: 1,
+    lastModified: AI_SEARCH_DATE,
+    contentSource: { type: "article", slug: "virginia-car-insurance-cost" },
+    relatedPaths: [
+      "/states/virginia/auto-insurance/",
+      "/states/virginia/auto-insurance/requirements/",
+      "/states/maryland/auto-insurance/cost/",
+      "/states/virginia/alexandria/",
+      "/blog/why-did-my-car-insurance-go-up/",
+    ],
   }),
   stateGuide({
     state: "virginia",
@@ -1177,7 +1200,7 @@ const virginiaPages: SeoPage[] = [
       "Virginia does not require renters insurance by statute. A lease can still require coverage, and roommates generally need to be named on the policy.",
     primaryKeyword: "is renters insurance required in Virginia",
     phase: 1,
-    lastModified: WAVE_DATE,
+    lastModified: AI_SEARCH_DATE,
     contentSource: { type: "article", slug: "virginia-renters-insurance-requirements" },
   }),
   plannedStateChild({
@@ -1335,7 +1358,7 @@ const dcPages: SeoPage[] = [
     cluster: "primary",
     contentSource: { type: "state-guide", categorySlug: "auto-insurance" },
     navLabel: "Auto Insurance",
-    lastModified: WAVE_DATE,
+    lastModified: AI_SEARCH_DATE,
     relatedPaths: [
       "/states/washington-dc/auto-insurance/requirements/",
       "/states/maryland/auto-insurance/",
@@ -1354,11 +1377,16 @@ const dcPages: SeoPage[] = [
       "D.C. auto insurance minimums, uninsured motorist rules, optional PIP, proof requirements, and official DISB and DMV sources.",
     primaryKeyword: "Washington DC auto insurance requirements",
     phase: 1,
+    lastModified: AI_SEARCH_DATE,
     contentSource: {
       type: "article",
       slug: "washington-dc-auto-insurance-requirements",
     },
     redirectsFrom: ["/blog/washington-dc-auto-insurance-requirements/"],
+    relatedPaths: [
+      "/states/maryland/auto-insurance/requirements/",
+      "/states/virginia/auto-insurance/requirements/",
+    ],
   }),
   plannedStateChild({
     state: "washington-dc",
@@ -1575,6 +1603,7 @@ const localPages: SeoPage[] = [
     relatedPaths: [
       "/states/virginia/auto-insurance/",
       "/states/virginia/auto-insurance/requirements/",
+      "/states/virginia/auto-insurance/cost/",
       "/states/virginia/renters-insurance/",
     ],
   }),

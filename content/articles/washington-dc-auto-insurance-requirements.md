@@ -2,7 +2,7 @@
 title: "Washington, D.C. Auto Insurance Requirements"
 metaTitle: "D.C. Auto Insurance Requirements"
 metaDescription: "D.C. requires 25/50/10 liability and uninsured motorist coverage. Learn mandatory limits, optional PIP elections, proof rules, and lapse penalties."
-excerpt: "Washington, D.C. drivers must carry liability and uninsured motorist insurance with 25/50/10 minimum limits. PIP is optional but involves important election choices. This guide explains what District law requires."
+excerpt: "Yes. Washington, D.C. requires liability and uninsured motorist insurance on every registered vehicle. The legal floor is 25/50/10. PIP is optional. DC DMV handles registration and proof. DISB regulates insurers."
 type: guide
 category: auto-insurance
 states:
@@ -10,21 +10,25 @@ states:
 author: editorial-team
 reviewer: content-review-team
 publishedAt: "2025-01-15"
-updatedAt: "2025-06-19"
+updatedAt: "2026-09-23"
 toc: true
 faq:
-  - question: "What are Washington, D.C.'s minimum auto insurance requirements?"
-    answer: "D.C. requires minimum liability limits of $25,000 per person for bodily injury, $50,000 per accident for bodily injury, and $10,000 per accident for property damage (25/50/10). You must also carry uninsured motorist bodily injury coverage of $25,000 per person and $50,000 per accident, plus uninsured motorist property damage coverage of $5,000 subject to a $200 deductible."
-  - question: "Is Washington, D.C. a no-fault state?"
-    answer: "D.C. is often described as a choice no-fault jurisdiction. Liability insurance is mandatory, but personal injury protection (PIP) is optional — insurers must offer it, but you can waive it. If you carry PIP and are injured, you must elect within 60 days whether to receive PIP benefits or pursue a fault-based lawsuit against the other driver."
+  - question: "What auto insurance does D.C. require?"
+    answer: "D.C. requires minimum liability of $25,000 per person for bodily injury, $50,000 per accident for bodily injury, and $10,000 per accident for property damage (25/50/10). You must also carry uninsured motorist bodily injury coverage of $25,000 per person and $50,000 per accident, plus uninsured motorist property damage of $5,000 subject to a $200 deductible."
+  - question: "Do I need insurance before registering my vehicle in D.C.?"
+    answer: "Yes. You must show valid proof of D.C. insurance to register a vehicle or renew registration. Coverage must remain in force for as long as the vehicle stays registered."
+  - question: "Do I need new car insurance when I move to Washington, D.C.?"
+    answer: "If you will register the vehicle in the District, you need coverage that meets D.C. minimums. DC DMV gives new residents 60 calendar days from the date they begin living in D.C. to register, and registration requires proof of valid D.C. insurance. Convert your out-of-state license to a District credential first. A Maryland or Virginia policy does not automatically satisfy District registration."
+  - question: "Which D.C. government agency regulates auto insurance?"
+    answer: "DC DMV handles vehicle registration, proof of insurance at a stop, tags, and lapse enforcement. The Department of Insurance, Securities and Banking (DISB) licenses insurers and producers, reviews rates and policy forms, and mediates consumer insurance complaints."
+  - question: "What happens if my D.C. insurance lapses?"
+    answer: "You must maintain continuous insurance as long as your vehicle is registered in the District. If coverage lapses, your D.C. DMV registration or reciprocity sticker may be suspended and fines may be assessed that increase over time. You must return or surrender your vehicle tags to DC DMV if insurance is terminated."
   - question: "Is personal injury protection (PIP) required in D.C.?"
     answer: "No. PIP is optional in the District. Insurers are required to offer PIP as part of your policy, but you may decline it. If you do carry PIP and are injured in an accident, electing to receive PIP benefits generally restricts your ability to sue the at-fault driver unless your injuries meet specific severity thresholds defined by D.C. law."
-  - question: "What happens if my D.C. auto insurance lapses?"
-    answer: "You must maintain continuous insurance as long as your vehicle is registered in the District. If coverage lapses, your D.C. DMV registration or reciprocity sticker may be suspended and fines may be assessed that increase over time. You must return or surrender your vehicle tags to DC DMV if insurance is terminated — failure to do so results in additional fines and penalties."
   - question: "Does D.C. require uninsured motorist coverage?"
     answer: "Yes. D.C.'s Compulsory/No-Fault Motor Vehicle Insurance Act requires uninsured motorist bodily injury coverage of $25,000 per person and $50,000 per accident, plus uninsured motorist property damage coverage of $5,000 with a $200 deductible."
-  - question: "Do I need more than D.C.'s minimum coverage?"
-    answer: "D.C.'s $10,000 property damage limit is among the lower minimums in the region and may not cover the full cost of repairing or replacing a newer vehicle after an at-fault accident. Higher liability limits, collision, comprehensive, and optional PIP may provide additional financial protection. A licensed insurance professional can help you evaluate your options."
+  - question: "Is Washington, D.C. a no-fault state?"
+    answer: "D.C. is often described as a choice no-fault jurisdiction. Liability insurance is mandatory, but personal injury protection (PIP) is optional. Insurers must offer it, but you can waive it. If you carry PIP and are injured, you must elect within 60 days whether to receive PIP benefits or pursue a fault-based lawsuit against the other driver."
 sources:
   - title: "DC DMV — Vehicle Insurance"
     url: "https://dmv.dc.gov/service/vehicle-insurance"
@@ -41,21 +45,27 @@ sources:
   - title: "Compulsory/No-Fault Motor Vehicle Insurance Act"
     url: "https://code.dccouncil.gov/us/dc/council/code/titles/31/chapters/24"
     publisher: "Council of the District of Columbia"
+  - title: "DC DISB: Insurance Bureau"
+    url: "https://disb.dc.gov/page/insurance-bureau"
+    publisher: "DC Department of Insurance, Securities and Banking"
+  - title: "DC DMV: Registration of a New or Used Vehicle"
+    url: "https://dmv.dc.gov/service/registration-new-or-used-vehicle"
+    publisher: "District of Columbia Department of Motor Vehicles"
 ---
 
-Washington, D.C. has its own auto insurance laws under the Compulsory/No-Fault Motor Vehicle Insurance Act — separate from Virginia and Maryland. Every person registering a vehicle or obtaining a reciprocity sticker in the District must maintain continuous liability and uninsured motorist coverage. D.C. also has a unique optional PIP system that requires careful election decisions after an accident.
+**Yes. Washington, D.C. requires auto insurance on every registered vehicle.** The Compulsory/No-Fault Motor Vehicle Insurance Act requires continuous liability and uninsured motorist coverage if you register a vehicle or obtain a reciprocity sticker. The legal floor is **25/50/10**, plus uninsured motorist bodily injury at 25/50 and uninsured motorist property damage of $5,000 with a $200 deductible. Insurers must offer PIP. You may decline it.
 
-This guide summarizes D.C.'s auto insurance requirements based on District law and official guidance from [DC DMV](https://dmv.dc.gov/service/vehicle-insurance) and the [Department of Insurance, Securities and Banking (DISB)](https://disb.dc.gov/). Requirements can change, so verify current limits with official sources or a licensed insurance professional before you buy or renew a policy.
+[DC DMV](https://dmv.dc.gov/service/vehicle-insurance) handles registration, proof of insurance, tags, and lapse enforcement. The [Department of Insurance, Securities and Banking (DISB)](https://disb.dc.gov/page/insurance-bureau) licenses insurers, reviews rates and policy forms, and mediates consumer insurance complaints. Requirements can change, so confirm current limits with those agencies or a licensed professional before you buy or renew.
 
-For broader context, see our [Washington, D.C. insurance guides](/states/washington-dc/) and [auto insurance category hub](/auto-insurance/).
+For broader context, see [Washington, D.C. auto insurance](/states/washington-dc/auto-insurance/) and the [auto insurance category hub](/auto-insurance/).
 
-## Is Auto Insurance Required in D.C.?
+## Do you have to have car insurance in D.C.?
 
 Yes. The District's Compulsory/No-Fault Motor Vehicle Insurance Act requires every person applying for vehicle registration or a reciprocity sticker to maintain valid D.C. vehicle insurance. You must keep coverage in force for as long as your vehicle remains registered.
 
 If you stop driving your vehicle, do not cancel your insurance until you return your tags to DC DMV. Letting coverage lapse while your vehicle remains registered can trigger fines and registration suspension.
 
-## Minimum Liability Coverage Limits
+## What auto insurance does D.C. require?
 
 D.C. sets minimum bodily injury and property damage limits that every policy must meet:
 
@@ -132,13 +142,28 @@ Beyond the mandatory minimums, you may add coverages depending on your vehicle a
 
 If you use your vehicle primarily for business, you may need a **commercial auto policy** rather than a personal auto policy. DISB advises confirming your policy type with your insurer.
 
-## Proof of Insurance and Registration
+## Do I need insurance before registering my vehicle in D.C.?
 
-You must show valid proof of D.C. insurance to register a vehicle or renew your registration. Carry your insurance ID card or digital proof whenever you drive.
+Yes. You must show valid proof of D.C. insurance to register a vehicle or renew your registration. Carry your insurance ID card or digital proof whenever you drive.
 
 If your insurance is terminated for any reason, you must **return or surrender your vehicle tags and registration to DC DMV immediately**. Keeping tags on an uninsured vehicle can result in escalating fines.
 
-## Penalties for Lapses and Driving Uninsured
+## Do I need new car insurance when I move to Washington, D.C.?
+
+If the vehicle will be housed and operated in the District, District law requires D.C. registration. [DC DMV](https://dmv.dc.gov/service/registration-new-or-used-vehicle) gives new residents **60 calendar days** from the date they begin living in D.C. to register. You must first convert your out-of-state driver license to a District credential. Registration requires proof of valid D.C. insurance.
+
+A [Maryland](/states/maryland/auto-insurance/requirements/) 30/60/15 policy or a [Virginia](/states/virginia/auto-insurance/requirements/) 50/100/25 policy does not automatically satisfy District registration. Buy coverage that meets D.C. 25/50/10 and UM minimums from an insurer that can write District business before you go to DMV.
+
+## Which D.C. government agency regulates auto insurance?
+
+Two District agencies handle different parts of the question:
+
+- **DC DMV** verifies insurance for registration, asks motorists to carry proof, receives insurer cancellation notices, suspends registrations after a lapse, and takes surrendered tags.
+- **DISB** licenses insurance companies and producers, reviews rates and policy forms, examines insurer practices, and mediates consumer disputes with insurers.
+
+Ask DMV about plates, proof, and lapses. Ask DISB whether a company is licensed and how to file an insurance complaint.
+
+## What happens if my D.C. insurance lapses?
 
 Failing to maintain continuous insurance on a D.C.-registered vehicle can lead to:
 
@@ -148,18 +173,9 @@ Failing to maintain continuous insurance on a D.C.-registered vehicle can lead t
 
 Maintaining uninterrupted coverage is essential for keeping your registration active and avoiding compounding fines.
 
-## Factors That May Affect Your Premium in D.C.
+## How much is car insurance in Washington, D.C.?
 
-Auto insurance premiums in the District reflect both individual risk factors and the urban driving environment:
-
-- Driving record and claims history
-- Vehicle garaging neighborhood and parking arrangements
-- Urban traffic density and collision frequency
-- Vehicle theft rates in your area
-- Coverage limits, deductibles, and PIP elections
-- Age, driving experience, and annual mileage
-
-For more on why premiums change over time, see our guide on [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/).
+The District does not publish one official average premium in the sources used for this page. This site does not invent a District-wide average or a cheapest-insurer ranking. Price can vary by driving record, vehicle, neighborhood, mileage, limits, deductibles, PIP election, and the insurer's rating plan. Compare equivalent quotes from licensed companies. Rate-factor context is on [Washington, D.C. auto insurance](/states/washington-dc/auto-insurance/). For mid-term increases, see [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/).
 
 ## D.C. vs. Neighboring Jurisdictions
 

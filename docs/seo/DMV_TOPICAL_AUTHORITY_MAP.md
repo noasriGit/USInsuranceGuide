@@ -1,6 +1,6 @@
 # DMV Topical Authority Map
 
-Last inventoried: 2026-09-22.
+Last inventoried: 2026-09-23.
 
 US Insurance Guide is a Maryland, Virginia, and Washington, D.C. insurance publication. This map is the site graph that crawlers, people, and LLM systems should be able to walk:
 
@@ -52,7 +52,7 @@ Head-term landings, not duplicate keyword URLs:
 Children and locals:
 
 - Requirements: MD, VA, DC published.
-- Cost: Maryland published as a factor/comparison page. VA and DC cost remain planned until an official average can be cited.
+- Cost: Maryland and Virginia published as factor/comparison pages without invented statewide averages. D.C. cost remains planned until an official average can be cited.
 - Locals: Alexandria auto, Rockville auto, Bethesda auto.
 
 Supporting blog (canonical): `/blog/why-did-my-car-insurance-go-up/`.

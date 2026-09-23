@@ -40,7 +40,7 @@ sources:
 
 If you garage or register a vehicle in Alexandria, Virginia, you must meet Virginia auto insurance rules. For policies effective January 1, 2025 or later, that means 50/100/25 liability and matching uninsured/underinsured motorist coverage unless you reject UM/UIM in writing. Alexandria is an independent city. City hall does not set those limits. The [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/) and [Virginia DMV](https://www.dmv.virginia.gov/) do.
 
-This page is about what is locally different: Old Town streets, I-95 / I-495 / Route 1 commuting, Blue and Yellow Line Metro access, and street parking versus urban garages. It does not invent crash rates or city-specific premiums. For the statewide legal floor, use the [Virginia auto insurance requirements guide](/states/virginia/auto-insurance/requirements/) and the [Virginia auto insurance overview](/states/virginia/auto-insurance/).
+This page is about what is locally different: Old Town streets, I-95 / I-495 / Route 1 commuting, Blue and Yellow Line Metro access, and street parking versus urban garages. It does not invent crash rates or city-specific premiums. For the statewide legal floor, use the [Virginia auto insurance requirements guide](/states/virginia/auto-insurance/requirements/). For rate factors and comparison steps, use [Virginia car insurance cost](/states/virginia/auto-insurance/cost/). For the statewide hub, use the [Virginia auto insurance overview](/states/virginia/auto-insurance/).
 
 ## An independent city with a mixed driving pattern
 
@@ -120,6 +120,7 @@ Related pages:
 
 - [Virginia auto insurance](/states/virginia/auto-insurance/)
 - [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/)
+- [Virginia car insurance cost](/states/virginia/auto-insurance/cost/)
 - [Arlington, Virginia renters insurance](/states/virginia/arlington/)
 - [Fairfax, Virginia renters insurance](/states/virginia/fairfax/)
 - [Rockville, Maryland auto insurance](/states/maryland/rockville/)

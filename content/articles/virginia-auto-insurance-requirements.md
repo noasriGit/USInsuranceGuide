@@ -1,8 +1,8 @@
 ---
 title: "Virginia Auto Insurance Requirements"
 metaTitle: "Virginia Auto Insurance Requirements"
-metaDescription: "Virginia requires 50/100/25 liability and matching uninsured motorist coverage. Learn mandatory limits, proof of insurance rules, and lapse penalties."
-excerpt: "Virginia drivers must carry liability insurance with 50/100/25 minimum limits and uninsured/underinsured motorist coverage. This guide explains what the law requires and what to verify before you buy or renew a policy."
+metaDescription: "Virginia requires 50/100/25 liability and matching uninsured motorist coverage. Limits, proof of insurance, registration rules, and lapse penalties."
+excerpt: "Yes. Virginia requires liability insurance on every registered vehicle. For policies effective January 1, 2025 or later, the legal floor is 50/100/25, plus uninsured and underinsured motorist coverage unless you reject it in writing."
 type: guide
 category: auto-insurance
 states:
@@ -10,52 +10,73 @@ states:
 author: editorial-team
 reviewer: content-review-team
 publishedAt: "2025-01-15"
-updatedAt: "2025-06-19"
+updatedAt: "2026-09-23"
 toc: true
 faq:
-  - question: "What are Virginia's minimum auto insurance requirements in 2025?"
-    answer: "For policies effective on or after January 1, 2025, Virginia requires minimum liability limits of $50,000 per person for bodily injury, $100,000 per accident for bodily injury, and $25,000 per accident for property damage (often written as 50/100/25). Every liability policy must also include uninsured/underinsured motorist (UM/UIM) coverage at these same minimum limits unless you reject it in writing."
-  - question: "Is auto insurance required in Virginia?"
-    answer: "Yes. As of July 1, 2024, all vehicles registered in Virginia must be covered by a liability insurance policy that meets state minimum limits. Virginia eliminated the option to pay an uninsured motor vehicle (UMV) fee instead of carrying insurance."
+  - question: "Do you have to have car insurance in Virginia?"
+    answer: "Yes. Every vehicle registered in Virginia must carry a liability policy that meets current state minimums. The former uninsured motor vehicle fee ended July 1, 2024. Paying a DMV fee is no longer a substitute for insurance."
+  - question: "What is the minimum car insurance required in Virginia?"
+    answer: "For policies effective on or after January 1, 2025, Virginia requires minimum liability of $50,000 per person for bodily injury, $100,000 per accident for bodily injury, and $25,000 per accident for property damage (50/100/25). Uninsured and underinsured motorist coverage must match those limits unless you reject it in writing."
+  - question: "Do you need insurance to register a car in Virginia?"
+    answer: "Yes. To purchase license plates or decals, you must certify that the vehicle is covered by a liability policy from a company authorized to do business in Virginia. DMV tells new residents to get insurance before they register. Coverage must stay in force for the full registration period, even if the vehicle is not driven."
   - question: "Does Virginia require uninsured motorist coverage?"
-    answer: "Yes. Virginia law requires every motor vehicle liability policy to include uninsured motorist (UM) and underinsured motorist (UIM) coverage at minimum limits matching your liability coverage, unless you reject UM/UIM in writing. UM coverage may help if you are hit by an uninsured or hit-and-run driver; UIM coverage may apply when an at-fault driver's limits are too low to cover your damages."
+    answer: "Yes, unless you reject it in writing. Virginia law requires every motor vehicle liability policy to include uninsured motorist (UM) and underinsured motorist (UIM) coverage at minimum limits matching your liability coverage. UM may apply if you are hit by an uninsured or hit-and-run driver. UIM may apply when an at-fault driver's limits are too low."
   - question: "What happens if my Virginia auto insurance lapses?"
-    answer: "If DMV cannot verify continuous insurance, your driver's license, registration, and license plates may be suspended. Reinstatement typically requires paying a $600 noncompliance fee, filing proof of future financial responsibility (often an SR-22 certificate for three years), and paying a reinstatement fee. Penalties and procedures are set by Virginia law and administered by DMV."
+    answer: "If DMV cannot verify continuous insurance, your driver's license, registration, and license plates may be suspended. Reinstatement typically requires a $600 noncompliance fee, a $145 reinstatement fee, and proof of future financial responsibility, commonly an SR-22 certificate for three years. DMV also warns that a lapse can lead to higher premiums for the next three years."
+  - question: "When does Virginia auto insurance need to start?"
+    answer: "Have liability coverage in force before you register the vehicle, and on the day you first drive it as your own. The Bureau of Insurance also says you should consider physical-damage coverage on the day you take title if you want theft or damage protection before the car is driven. A lender may require collision and comprehensive as soon as the loan starts."
+  - question: "What should I know if I am moving to Virginia?"
+    answer: "Title the vehicle within 30 days of moving, buy insurance that meets Virginia's current 50/100/25 floor before you register, and register for Virginia plates within 30 days. A Maryland 30/60/15 or D.C. 25/50/10 policy does not meet Virginia's current liability floor. You also have 60 days to obtain a Virginia driver's license."
   - question: "Is Virginia a no-fault state?"
     answer: "No. Virginia is a traditional fault-based (tort) state for auto accidents. The at-fault driver's liability insurance generally pays for injuries and property damage they cause. Virginia does not require personal injury protection (PIP), though insurers may offer medical payments (MedPay) as optional coverage."
-  - question: "Do I need more than the state minimum coverage?"
-    answer: "State minimums satisfy legal requirements, but they may not cover the full cost of a serious accident. Medical bills, vehicle repairs, and legal judgments can exceed minimum limits quickly. A licensed insurance professional can help you evaluate whether higher liability limits or optional coverages such as collision and comprehensive fit your situation."
+  - question: "Is minimum coverage the cheapest legal option?"
+    answer: "50/100/25 is the legal floor for 2025 and later policies, not a cheapest-insurer ranking. Buying only the minimum may produce a lower quoted premium than higher limits, but it may not pay a serious claim. Pricing and comparison steps are on the Virginia car insurance cost page."
 sources:
-  - title: "Virginia Bureau of Insurance — Automobile Insurance"
+  - title: "Virginia Bureau of Insurance - Automobile Insurance"
     url: "https://www.scc.virginia.gov/consumers/insurance/"
     publisher: "Virginia State Corporation Commission"
   - title: "Virginia Auto Insurance Consumer Guide (PDF)"
     url: "https://www.scc.virginia.gov/media/sccvirginiagov-home/consumer-home/insurance/property-amp-casualty/automobile-insurance/autoguide.pdf"
     publisher: "Virginia Bureau of Insurance"
-  - title: "Code of Virginia § 38.2-2206 — Motor Vehicle Liability Policies"
+  - title: "Code of Virginia § 38.2-2206 - Motor Vehicle Liability Policies"
     url: "https://law.lis.virginia.gov/vacode/title38.2/chapter22/section38.2-2206/"
     publisher: "Virginia General Assembly"
-  - title: "Code of Virginia § 46.2-706 — Proof of Insurance Required"
+  - title: "Code of Virginia § 46.2-706 - Proof of Insurance Required"
     url: "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-706/"
     publisher: "Virginia General Assembly"
-  - title: "New Laws Effective July 1, 2024 — Uninsured Motor Vehicle Fee Eliminated"
+  - title: "New Laws Effective July 1, 2024 - Uninsured Motor Vehicle Fee Eliminated"
     url: "https://www.dmv.virginia.gov/news/new-laws-take-effect-today-july-1-2024"
+    publisher: "Virginia Department of Motor Vehicles"
+  - title: "Insurance Requirements for Virginia Vehicles"
+    url: "https://www.dmv.virginia.gov/vehicles/insurance-requirements"
+    publisher: "Virginia Department of Motor Vehicles"
+  - title: "New to Virginia"
+    url: "https://www.dmv.virginia.gov/moving/new-virginia"
     publisher: "Virginia Department of Motor Vehicles"
 ---
 
-If you own or register a vehicle in Virginia, state law requires you to meet specific financial responsibility standards before you can legally drive. For most drivers, that means carrying an auto insurance policy with minimum liability limits and uninsured/underinsured motorist coverage.
+**Yes. Virginia requires car insurance on every registered vehicle.** You cannot register a car, keep plates, or legally keep a registered vehicle on the road without a liability policy that meets current minimums. For policies effective January 1, 2025 or later, that floor is **50/100/25**, plus uninsured and underinsured motorist coverage unless you reject UM/UIM in writing. The former uninsured motor vehicle fee ended July 1, 2024.
 
-This guide summarizes Virginia's current auto insurance requirements based on state law and official consumer publications from the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/). Requirements can change, so verify current limits and rules with official sources or a licensed insurance professional before you buy or renew a policy.
+This page is the legal checklist. For premiums, rating factors, and how to compare quotes, use [Virginia car insurance cost](/states/virginia/auto-insurance/cost/). Requirements can change, so confirm current limits with the [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/), [Virginia DMV](https://www.dmv.virginia.gov/vehicles/insurance-requirements), or a licensed insurance professional before you buy or renew.
 
-For broader context, see our [Virginia insurance guides](/states/virginia/) and [auto insurance category hub](/auto-insurance/).
+For broader context, see [Virginia auto insurance](/states/virginia/auto-insurance/) and the [auto insurance category hub](/auto-insurance/).
 
-## Is Auto Insurance Required in Virginia?
+| Question | Current rule |
+|---|---|
+| Is insurance required? | Yes, on every registered vehicle. |
+| 2025+ liability floor | 50/100/25 |
+| UM / UIM | Required unless rejected in writing |
+| UMV fee | Eliminated July 1, 2024 |
+| Proof to register | Certify coverage from a Virginia-authorized insurer |
+| If coverage ends | Reinsure, deactivate plates, or surrender plates to DMV |
 
-Yes. Virginia now requires all registered vehicles to carry liability insurance.
+## Do you have to have car insurance in Virginia?
 
-Until July 1, 2024, Virginia was one of the few states that allowed drivers to register an uninsured vehicle by paying an uninsured motor vehicle (UMV) fee to DMV. That fee did not provide insurance — it only allowed you to drive at your own financial risk. Under [Senate Bill 951](https://www.dmv.virginia.gov/news/new-laws-take-effect-today-july-1-2024), the UMV fee option was eliminated effective July 1, 2024. All vehicles registered in Virginia must now have a liability policy that meets state minimum limits.
+Yes. Virginia requires all registered vehicles to carry liability insurance.
 
-## Minimum Liability Coverage Limits
+Until July 1, 2024, Virginia allowed drivers to register an uninsured vehicle by paying an uninsured motor vehicle (UMV) fee to DMV. That fee did not provide insurance. It only allowed you to drive at your own financial risk. Under [Senate Bill 951](https://www.dmv.virginia.gov/news/new-laws-take-effect-today-july-1-2024), the UMV fee option was eliminated effective July 1, 2024. All vehicles registered in Virginia must now have a liability policy that meets state minimum limits.
+
+## What is the minimum car insurance required in Virginia?
 
 Virginia sets minimum bodily injury and property damage limits in the [Code of Virginia](https://law.lis.virginia.gov/vacode/title38.2/chapter22/section38.2-2206/). Limits increased for policies effective on or after **January 1, 2025**.
 
@@ -102,46 +123,63 @@ Virginia law does not require collision, comprehensive, rental reimbursement, or
 
 Virginia is a **fault-based state** — it does not require personal injury protection (PIP) coverage. After an accident, fault generally determines which party's liability insurance pays for damages.
 
-## Proof of Insurance and Registration
+## Do you need insurance to register a car in Virginia?
 
-When you register or renew a vehicle in Virginia, you must certify that the vehicle is insured. Under [§ 46.2-706](https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-706/), DMV verifies insurance electronically with insurers. If no record is found, you may be asked to provide proof of coverage.
+Yes. [Virginia DMV](https://www.dmv.virginia.gov/vehicles/insurance-requirements) requires you to certify that the vehicle is covered by the minimum liability limits before you purchase license plates or decals. The insurer must be authorized to conduct business in Virginia. Under [§ 46.2-706](https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-706/), DMV verifies insurance electronically. If no record is found, you may be asked to provide proof of coverage.
 
-You should also carry proof of insurance — such as an insurance ID card or digital equivalent — whenever you drive. Law enforcement may request it during a traffic stop.
+Carry proof of insurance, such as an insurance ID card or a digital equivalent, whenever you drive. Law enforcement may request it during a traffic stop.
 
-Large fleet operators with more than 20 vehicles may qualify for a certificate of self-insurance from the State Corporation Commission instead of a standard policy, but this option applies only in specific circumstances.
+Large fleet operators with more than 20 vehicles may qualify for a certificate of self-insurance from the State Corporation Commission instead of a standard policy. That option applies only in specific circumstances.
 
-## Penalties for Lapses and Driving Uninsured
+## When does coverage need to start?
+
+Have liability insurance in force **before you register**, and on the day you first drive the vehicle as your own. [Virginia DMV](https://www.dmv.virginia.gov/moving/new-virginia) tells new residents to get insurance before they register, not after.
+
+The Bureau of Insurance also says you should consider physical-damage coverage on the day you take title if you want theft or damage protection before the car is driven. If you trade vehicles or add a vehicle, contact your agent immediately. Some coverages extend for only a limited period on a newly acquired car.
+
+Coverage must remain in force for the entire registration period, even if the vehicle is not working or not being operated. If you cancel insurance while plates stay active, DMV can treat that as a lapse.
+
+## What if the vehicle is financed or leased?
+
+Virginia statute does not require collision or comprehensive. A lender or lessor typically does. If you do not keep that physical-damage coverage, the lender may force-place collateral protection. The Bureau of Insurance warns that force-placed coverage often protects the lender's interest only. It generally does not protect you for your equity in the vehicle, and it does not satisfy DMV's liability requirement.
+
+Read the finance or lease contract for the required deductibles and loss-payee language. Those are contract rules on top of Virginia's 50/100/25 floor.
+
+## What happens after a lapse?
 
 Failing to maintain continuous insurance can have serious consequences in Virginia:
 
-- **License and registration suspension** — If DMV cannot verify insurance, your driver's license, registration certificates, and license plates may be suspended
-- **$600 noncompliance fee** — Reinstatement after a lapse typically requires paying this fee to the Commissioner
-- **SR-22 filing** — You may need to file proof of future financial responsibility (commonly an SR-22 certificate) for three years
-- **Reinstatement fees** — Additional DMV fees may apply to restore your driving privileges
+- **License and registration suspension.** If DMV cannot verify insurance, your driver's license, registration certificates, and license plates may be suspended.
+- **$600 noncompliance fee.** Reinstatement after a lapse typically requires paying this fee.
+- **$145 reinstatement fee.** Virginia DMV's new-resident guidance lists this additional fee when driving and registration privileges are suspended.
+- **SR-22 filing.** You may need to file proof of future financial responsibility, commonly an SR-22 certificate, for three years.
+- **Higher future premiums.** DMV warns that a lapse can lead to higher insurance premiums for the next three years.
+
+If liability coverage terminates during the registration period, DMV says you must reinsure the vehicle, deactivate the plates, or permanently surrender the plates.
 
 If you are convicted of driving without insurance under [§ 46.2-707](https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-707/), DMV may suspend your license and registration. Suspension may be waived if records show the vehicle was insured at the time of the alleged offense.
 
-## Factors That May Affect Your Premium in Virginia
+Pricing after a lapse is covered on [Virginia car insurance cost](/states/virginia/auto-insurance/cost/).
 
-Auto insurance premiums vary by insurer and individual circumstances. Factors that may influence what you pay include:
+## What should someone moving into Virginia know?
 
-- Driving record, including accidents and traffic violations
-- Age and driving experience
-- Vehicle make, model, and year
-- Where the vehicle is garaged (urban vs. rural areas)
-- Annual mileage and how you use the vehicle (commuting, business, pleasure)
-- Coverage limits, deductibles, and optional coverages selected
-- Credit-based insurance scores, where permitted by law
+[Virginia DMV](https://www.dmv.virginia.gov/moving/new-virginia) gives new residents a separate timeline from the insurance floor:
 
-For more on why premiums change over time, see our guide on [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/).
+- Obtain a Virginia driver's license within **60 days** of moving (30 days if you hold a CDL).
+- Title the vehicle in Virginia within **30 days**.
+- Buy a liability policy that meets the current Virginia minimum **before** you register.
+- Register and get Virginia plates within **30 days** of moving.
+- Keep that coverage in force for the full registration period.
 
-## Virginia vs. Neighboring Jurisdictions
+A [Maryland](/states/maryland/auto-insurance/requirements/) 30/60/15 policy or a [Washington, D.C.](/states/washington-dc/auto-insurance/requirements/) 25/50/10 policy does not meet Virginia's current 50/100/25 floor. Update the garaging address and limits before you title and register here. Some Northern Virginia localities also require a local sticker or decal within 30 days, sold by the locality, not by DMV.
 
-If you live near a state line or commute across borders, remember that each jurisdiction sets its own requirements. Minimum limits and mandatory coverages differ in [Maryland](/states/maryland/auto-insurance/requirements/) and [Washington, D.C.](/states/washington-dc/auto-insurance/requirements/). Your policy should meet the requirements of the state where your vehicle is registered.
+## Virginia vs. neighboring jurisdictions
 
-## Questions to Ask a Licensed Professional
+Minimum limits and mandatory coverages differ in [Maryland](/states/maryland/auto-insurance/requirements/) and [Washington, D.C.](/states/washington-dc/auto-insurance/requirements/). Your policy should meet the rules of the state where the vehicle is registered. Pricing differences are on [Virginia car insurance cost](/states/virginia/auto-insurance/cost/).
 
-State minimums are a legal floor, not a coverage recommendation. Before purchasing or renewing a Virginia auto policy, consider asking a licensed insurance agent or broker:
+## Questions to ask a licensed professional
+
+State minimums are a legal floor, not a coverage recommendation. Before you buy or renew a Virginia auto policy, consider asking a licensed insurance agent or broker:
 
 - Do my current limits meet Virginia's 50/100/25 requirement after the January 2025 increase?
 - Should I carry liability limits above the state minimum based on my assets and driving habits?

@@ -10,7 +10,7 @@ states:
 author: editorial-team
 reviewer: content-review-team
 publishedAt: "2026-09-22"
-updatedAt: "2026-09-22"
+updatedAt: "2026-09-23"
 toc: true
 faq:
   - question: "Is renters insurance required in Virginia?"
@@ -23,6 +23,8 @@ faq:
     answer: "Standard renters policies typically exclude flood, meaning rising water, storm surge, and surface water. Sudden water damage from a burst pipe or appliance overflow may be covered, subject to the policy. Theft is commonly a covered peril for personal property, again subject to limits and deductibles."
   - question: "Do roommates and college students in Virginia need their own renters policy?"
     answer: "A policy generally covers the named insured and resident relatives. Unrelated roommates are not automatically covered. Each roommate may need a separate policy, or each person should be named on the same policy if the insurer allows it. Students should confirm whether a parent's policy extends to the Virginia address."
+  - question: "Does a Virginia landlord's property policy cover a tenant's belongings?"
+    answer: "No. The landlord's building policy generally covers the structure. It does not replace a tenant's furniture, electronics, clothing, or personal liability. A lease can still require the tenant to carry a separate HO-4 renters policy."
   - question: "How do renters insurance limits work in Virginia?"
     answer: "The personal property limit is typically the most the insurer will pay for covered belongings, minus the deductible and after any special-item sublimits. Liability is usually written per occurrence. Loss-of-use coverage is often a stated dollar limit or a percentage of the property limit. Choose limits from an inventory, not from a guess."
 sources:
@@ -54,11 +56,13 @@ sources:
 
 The official consumer starting point is the [Virginia SCC renters insurance guide](https://www.scc.virginia.gov/consumers/insurance/property-casualty-consumer/renters-insurance-guide/). For statewide coverage context, see [Virginia renters insurance](/states/virginia/renters-insurance/). The same "not required by statute, often required by lease" pattern applies in [Maryland](/states/maryland/renters-insurance/) and [Washington, D.C.](/states/washington-dc/renters-insurance/).
 
-## Virginia Law Versus Lease and Contract Requirements
+## Does Virginia require renters insurance?
 
 The [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/) regulates insurers and publishes shopping guidance. It does not impose a statute that every Virginia tenant must buy an HO-4 policy.
 
-A **lease** is different. Landlords and property managers commonly use the lease to address two risks they do not want to keep:
+## Can a landlord require renters insurance in Virginia?
+
+Yes. A lease is a private contract. Landlords and property managers commonly use the lease to address two risks they do not want to keep:
 
 - Injury or property damage you cause in the building
 - The mistaken belief that the master or landlord policy will replace your belongings

@@ -10,7 +10,7 @@ states:
 author: editorial-team
 reviewer: content-review-team
 publishedAt: "2026-09-22"
-updatedAt: "2026-09-22"
+updatedAt: "2026-09-23"
 toc: true
 faq:
   - question: "How much does car insurance cost in Maryland?"
@@ -23,6 +23,14 @@ faq:
     answer: "No. Maryland requires uninsured and underinsured motorist coverage at the same bodily injury and property damage minimums as your liability coverage. You may discuss higher UM/UIM limits with a licensed professional, but you should not drop the required coverage to reduce premium."
   - question: "What happens if my Maryland auto insurance lapses?"
     answer: "Maryland verifies coverage electronically through the Motor Vehicle Administration. A lapse can trigger penalty fees of $150 for the first 30 days without verified insurance and $7 for each additional day. Registration may be suspended, and you may need an FR-19 certificate before reinstatement. A lapse can also make future coverage harder or more expensive to obtain."
+  - question: "How much is car insurance in Maryland per month?"
+    answer: "Maryland does not publish an official monthly average premium. A quoted price may be for six months or for a year. Confirm the policy term before dividing a total into a monthly figure, and include any installment fees the company adds outside the base premium."
+  - question: "Why is car insurance so expensive in Maryland?"
+    answer: "Maryland does not publish a finding that every driver pays an expensive premium. A higher quote can reflect claims frequency, vehicle repair costs, medical costs, garaging location, theft exposure, driving record, coverage selections, annual mileage, and the insurer's own rating model. Two drivers in the same county can still receive very different prices."
+  - question: "What is the cheapest type of car insurance in Maryland?"
+    answer: "This site does not rank insurers as cheapest or best. Buying only Maryland's 30/60/15 minimum may produce a lower quoted premium than higher limits or added physical-damage coverage, but it may not pay a serious claim. Compare equivalent policies from licensed companies. Dropping required liability or required UM/UIM is not a lawful way to save money."
+  - question: "Can I legally buy only Maryland's minimum coverage?"
+    answer: "You can buy a policy that meets the 30/60/15 liability floor, matching UM/UIM, and Maryland's PIP offer rules. That package satisfies the Motor Vehicle Administration. It is not a recommendation for a serious crash, and a lender can still require collision and comprehensive."
   - question: "How should I compare Maryland auto quotes without using made-up averages?"
     answer: "Ask each insurer for a written quote on the same vehicles, drivers, ZIP code, limits, deductibles, and PIP choice. Confirm the company is licensed in Maryland, read exclusions and discount eligibility, and review the declarations page before you bind. Official consumer publications from the Maryland Insurance Administration can help you compare coverage terms, not invented statewide averages."
 sources:
@@ -48,6 +56,7 @@ Maryland does not publish one official car insurance price that applies to every
 | What you are asking | Short answer |
 |---|---|
 | Is there an official statewide average premium? | No. Compare equivalent quotes from licensed insurers. |
+| Is there an official monthly average? | No. Confirm whether a quote is for six months or a year before dividing. |
 | What is the legal liability floor? | 30/60/15, plus matching UM/UIM. |
 | Does PIP affect cost? | Insurers must offer at least $2,500 in PIP. You may waive it in writing. |
 | What should you not drop to save money? | Required liability and required UM/UIM. |
@@ -65,7 +74,7 @@ Maryland law decides whether a policy is legal. It does not decide what a specif
 
 Collision, comprehensive, rental reimbursement, and roadside assistance are optional under state law. They change premium because they change the insurer's exposure.
 
-If you also keep a vehicle in [Virginia](/states/virginia/auto-insurance/), Virginia's floor for policies effective January 1, 2025 or later is 50/100/25, with UM/UIM unless rejected in writing. A Maryland-registered vehicle still has to meet Maryland rules. See [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/).
+If you also keep a vehicle in [Virginia](/states/virginia/auto-insurance/cost/), Virginia's floor for policies effective January 1, 2025 or later is 50/100/25, with UM/UIM unless rejected in writing. A Maryland-registered vehicle still has to meet Maryland rules. See [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/).
 
 ## Why 30/60/15 Is a Legal Floor, Not a Recommended Limit
 
@@ -89,6 +98,22 @@ Insurers licensed in Maryland use rating plans that the Maryland Insurance Admin
 | Credit-based insurance scores | Where permitted, insurers may use credit-based scores as one rating variable. |
 
 No single factor is a quote by itself. Two households on the same street can receive different prices after an insurer reviews drivers, vehicles, and coverage elections.
+
+## Why is car insurance expensive in Maryland?
+
+Maryland does not publish a finding that car insurance is objectively expensive for every driver. A quote can still feel high when several rating inputs stack together. Factors that **may** raise a Maryland premium, without applying to every household, include:
+
+- **Claims frequency** in the area where the car is garaged
+- **Vehicle repair costs**, including parts and labor for the specific model
+- **Medical costs** that affect bodily injury claims
+- **Garaging location**, including close-in Montgomery County ZIP codes versus other parts of the state
+- **Theft or vandalism exposure** for the vehicle and parking arrangement
+- **Driving record**, including at-fault accidents, violations, and lapses
+- **Coverage selections**, including limits, deductibles, and PIP election
+- **Annual mileage** and how the car is used
+- **Insurer-specific rating models**, which can price the same household differently from one licensed company to the next
+
+None of those factors is a statewide average, and none is a claim that Maryland is always more expensive than Virginia or Washington, D.C. Compare equivalent quotes. For neighboring rate-factor context, see [Virginia car insurance cost](/states/virginia/auto-insurance/cost/).
 
 For a broader explanation of renewal increases that are not tied to one ticket, see [why car insurance may go up](/blog/why-did-my-car-insurance-go-up/).
 

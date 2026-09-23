@@ -3,7 +3,7 @@ stateSlug: virginia
 categorySlug: auto-insurance
 metaTitle: "Virginia Auto Insurance Guide"
 metaDescription: "Virginia requires 50/100/25 liability and matching UM/UIM. Guide to car insurance rules, coverage choices, and related DMV requirements."
-updatedAt: "2026-09-22"
+updatedAt: "2026-09-23"
 reviewer: content-review-team
 quickAnswer: |
   Virginia requires liability insurance on every registered vehicle. For policies effective January 1, 2025 or later, the legal floor is 50/100/25. Uninsured and underinsured motorist coverage must match those limits unless you reject it in writing. The old uninsured motor vehicle fee option ended July 1, 2024.
@@ -22,7 +22,7 @@ sections:
   Overview: |
     Virginia auto insurance, also searched as car insurance Virginia or Virginia car insurance, is the policy that keeps a registered vehicle legal and pays certain crash costs. The [Virginia Bureau of Insurance](https://www.scc.virginia.gov/consumers/insurance/) and [Virginia DMV](https://www.dmv.virginia.gov/) administer consumer and registration rules.
 
-    This landing page is the statewide starting point. Statutory limits, proof rules, and lapse penalties are on [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/). Local commuting and garaging context is on [Alexandria car insurance](/states/virginia/alexandria/).
+    This landing page is the statewide starting point. Statutory limits, proof rules, and lapse penalties are on [Virginia auto insurance requirements](/states/virginia/auto-insurance/requirements/). Rate factors and comparison steps, without invented statewide averages, are on [Virginia car insurance cost](/states/virginia/auto-insurance/cost/). Local commuting and garaging context is on [Alexandria car insurance](/states/virginia/alexandria/).
 
     | Jurisdiction | Minimum liability | UM / UIM | PIP |
     |---|---|---|---|
@@ -56,7 +56,7 @@ sections:
 
     You can compare licensed insurers on the same limits, raise optional deductibles, and ask about discounts. You cannot lawfully drop required liability to save money. Rejecting UM/UIM in writing may change premium and also leaves a first-party gap if an uninsured driver hits you.
 
-    We do not publish invented Virginia average premiums. A dedicated Virginia cost child page remains planned until an official or clearly sourced average is available. For mid-term increases, see [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/).
+    Virginia does not publish one official average premium. The Bureau of Insurance describes a competitive rating law: different companies charge different prices for the same driver. Use [Virginia car insurance cost](/states/virginia/auto-insurance/cost/) for the comparison method, and [why car insurance rates may increase](/blog/why-did-my-car-insurance-go-up/) for common mid-term changes.
 faq:
   - question: "What are Virginia's minimum auto insurance limits?"
     answer: "For policies effective January 1, 2025 or later, minimum liability is $50,000 per person, $100,000 per accident for bodily injury, and $25,000 per accident for property damage (50/100/25)."
@@ -65,9 +65,11 @@ faq:
   - question: "Does Virginia require uninsured motorist coverage?"
     answer: "Yes, unless rejected in writing. UM/UIM limits must match liability minimums on the policy."
   - question: "What happens if my Virginia insurance lapses?"
-    answer: "DMV may suspend your license and registration. Reinstatement typically requires fees, proof of insurance, and often an SR-22 filing for three years."
+    answer: "DMV may suspend your license and registration. Reinstatement typically requires a $600 noncompliance fee, a $145 reinstatement fee, proof of insurance, and often an SR-22 filing for three years."
   - question: "Is Virginia a no-fault state?"
     answer: "No. Virginia is a fault-based state. PIP is not required. Some policies offer optional medical payments coverage."
+  - question: "How much is car insurance in Virginia?"
+    answer: "There is no official statewide average. Virginia uses competitive rating, so licensed insurers can quote different prices for the same household. See the Virginia car insurance cost page for rate factors and comparison steps."
 sources:
   - title: "Virginia Bureau of Insurance"
     url: "https://www.scc.virginia.gov/consumers/insurance/"
