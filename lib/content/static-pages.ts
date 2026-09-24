@@ -7,7 +7,7 @@ export const staticPages = {
 
 ## Our Mission
 
-We publish clear, plain-English insurance guides and practical articles for **Maryland, Virginia, and Washington, D.C.** Readers who want help finding coverage can [request insurance help](/get-insurance-help/). When appropriate, we may route that request to a licensed insurance professional. That does not make US Insurance Guide an insurance carrier, agency, or broker.
+We publish clear, plain-English insurance guides and practical articles for **Maryland, Virginia, and Washington, D.C.** Readers who want help finding coverage can [get matched with insurance help](/get-insurance-help/). When appropriate, we may route that request to a licensed insurance professional. That does not make US Insurance Guide an insurance carrier, agency, or broker.
 
 ## What We Are
 
@@ -198,7 +198,7 @@ A baseline audit report is maintained internally and updated after significant s
 
 We may collect information you voluntarily provide when you contact us by email, submit a correction request, or request insurance help through our form. That can include your name, email address, phone number, ZIP code, coverage type, and the answers you provide about your request.
 
-If you submit the Find Insurance Help form, we use that information to respond to your request and, when appropriate, share it with a licensed insurance professional. We do not sell insurance, and submitting a request does not enroll you in marketing texts or automated calls.
+If you submit the Get Matched With Insurance Help form, we use that information to respond to your request and, when appropriate, share it with a licensed insurance professional. We do not sell insurance, and submitting a request does not enroll you in marketing texts or automated calls.
 
 We may automatically collect certain technical information when you visit our site, such as browser type, device type, pages viewed, and referring URL, through analytics tools. Analytics events for the lead form do not include names, email addresses, phone numbers, ZIP codes, or free-form answers.
 
@@ -299,7 +299,7 @@ For media inquiries or partnership questions, email **partnerships@usinsurancegu
 
 ## Important Note
 
-For coverage questions specific to your situation, use [Find Insurance Help](/get-insurance-help/) or speak with a licensed insurance professional in your state. We cannot provide personalized insurance, legal, or financial advice by email.
+For coverage questions specific to your situation, use [Get Matched With Insurance Help](/get-insurance-help/) or speak with a licensed insurance professional in your state. We cannot provide personalized insurance, legal, or financial advice by email.
 
 ## Correction Requests
 

@@ -130,7 +130,7 @@ Related guides on this site:
 - [Washington, D.C. renters insurance](/states/washington-dc/renters-insurance/)
 - [Silver Spring, Maryland renters insurance](/states/maryland/silver-spring/) if you are comparing a Maryland lease
 
-If you want help finding a licensed professional, use [Get insurance help](/get-insurance-help/).
+If you want help finding a licensed professional, use [Get matched with insurance help](/get-insurance-help/).
 
 ## Questions to ask a licensed professional
 

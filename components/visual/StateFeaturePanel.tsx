@@ -14,7 +14,6 @@ interface StateFeaturePanelProps {
   guides: StateGuideLink[];
   tone: "maryland" | "virginia" | "dc";
   bannerSrc?: string;
-  featured?: boolean;
   wide?: boolean;
   className?: string;
 }
@@ -34,14 +33,13 @@ export function StateFeaturePanel({
   guides,
   tone,
   bannerSrc,
-  featured = false,
   wide = false,
   className,
 }: StateFeaturePanelProps) {
   return (
     <article
       className={cn(
-        "surface-card relative overflow-hidden",
+        "surface-card relative flex h-full min-h-full flex-1 flex-col overflow-hidden",
         !bannerSrc && toneClass[tone],
         className,
       )}
@@ -63,7 +61,7 @@ export function StateFeaturePanel({
       )}
       <div
         className={cn(
-          "p-6 sm:p-7",
+          "flex flex-1 flex-col p-6 sm:p-7",
           bannerSrc && toneClass[tone],
           wide && "lg:grid lg:grid-cols-12 lg:items-center lg:gap-10",
         )}
@@ -83,16 +81,21 @@ export function StateFeaturePanel({
           <h3
             className={cn(
               "mt-3 font-semibold tracking-tight text-ink",
-              featured || wide ? "text-3xl" : "text-2xl",
+              wide ? "text-3xl" : "text-2xl",
             )}
           >
             {name} insurance
           </h3>
-          <p className={cn("mt-3 text-sm leading-relaxed text-slate-600", wide ? "max-w-xl" : "max-w-md")}>
+          <p
+            className={cn(
+              "mt-3 text-sm leading-relaxed text-slate-600",
+              wide ? "max-w-xl" : "min-h-[4.5rem] max-w-md",
+            )}
+          >
             {description}
           </p>
         </div>
-        <div className={cn(wide ? "mt-6 lg:col-span-7 lg:mt-0" : "mt-6")}>
+        <div className={cn(wide ? "mt-6 lg:col-span-7 lg:mt-0" : "mt-6 flex flex-1 flex-col")}>
           <ul className={cn(wide ? "grid gap-2 sm:grid-cols-2" : "space-y-1")}>
             {guides.map((guide) => (
               <li key={guide.href}>
@@ -106,7 +109,7 @@ export function StateFeaturePanel({
               </li>
             ))}
           </ul>
-          <Link href={href} className="link-arrow mt-6">
+          <Link href={href} className={cn("link-arrow", wide ? "mt-6" : "mt-auto pt-6")}>
             Explore {name}
             <span data-arrow aria-hidden="true">
               →

@@ -144,7 +144,7 @@ A useful comparison uses the same house and the same coverage design:
 
 If a quote is much lower, find the missing limit, higher deductible, or ACV clause before you assume you found a bargain. This site does not rank carriers and does not publish invented Maryland averages.
 
-For help lining up equivalent quotes, [get insurance help](/get-insurance-help/).
+For help lining up equivalent quotes, [get matched with insurance help](/get-insurance-help/).
 
 ## Questions to Ask a Licensed Professional About Maryland Homeowners Cost
 

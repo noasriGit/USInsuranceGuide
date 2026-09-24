@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { ArticleCard } from "@/components/content/ArticleCard";
 import { PublicCaseStudySection } from "@/components/content/PublicCaseStudySection";
+import { HeroFeaturedGuide } from "@/components/visual/HeroFeaturedGuide";
 import { StateSelector } from "@/components/content/StateSelector";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -107,7 +108,7 @@ export default function HomePage() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <ButtonLink href={LEAD_PATH} variant="onDark" dataLeadCta="hero">
-                  Find Insurance Help
+                  Get Matched With Insurance Help
                 </ButtonLink>
                 <ButtonLink href="/states/" variant="onDarkSecondary">
                   Browse Insurance Guides
@@ -123,7 +124,7 @@ export default function HomePage() {
                 >
                   Featured guide
                 </p>
-                <ArticleCard article={heroFeaturedArticle} featured className="mt-4" />
+                <HeroFeaturedGuide article={heroFeaturedArticle} className="mt-4" />
               </div>
             )}
           </div>
@@ -177,12 +178,11 @@ export default function HomePage() {
                   href: guide.path,
                   label: guide.navLabel ?? guide.title,
                 }));
-              const featured = index === 0;
               const wide = index === 2;
               return (
                 <div
                   key={state.slug}
-                  className={wide ? "lg:col-span-12" : "lg:col-span-6"}
+                  className={wide ? "lg:col-span-12" : "lg:col-span-6 flex flex-col"}
                 >
                   <StateFeaturePanel
                     name={state.name}
@@ -191,7 +191,6 @@ export default function HomePage() {
                     guides={guides}
                     tone={stateTone[state.slug as keyof typeof stateTone] ?? "maryland"}
                     bannerSrc={getStateBannerPath(state.slug)}
-                    featured={featured}
                     wide={wide}
                   />
                 </div>

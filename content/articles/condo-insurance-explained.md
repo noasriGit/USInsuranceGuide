@@ -173,4 +173,4 @@ Ask how the master policy treats interior finishes, unit-only HVAC, balconies an
 - Are my liability limits high enough, and would [umbrella insurance](/blog/umbrella-insurance-explained/) sit above this HO-6?
 - If I rent the unit, what changes for landlord-style exposure?
 
-Bring the resale package, the master-policy certificate, and a list of renovations to that conversation. For help connecting with a licensed professional, use [get insurance help](/get-insurance-help/).
+Bring the resale package, the master-policy certificate, and a list of renovations to that conversation. For help connecting with a licensed professional, use [get matched with insurance help](/get-insurance-help/).

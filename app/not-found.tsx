@@ -28,7 +28,7 @@ export default function NotFound() {
           Return Home
         </Link>
         <Link href={LEAD_PATH} className="btn btn-secondary" data-lead-cta="not-found">
-          Find Insurance Help
+          Get Matched With Insurance Help
         </Link>
       </div>
       <div className="mt-12">

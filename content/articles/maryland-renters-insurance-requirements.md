@@ -150,4 +150,4 @@ The [Virginia SCC renters insurance guide](https://www.scc.virginia.gov/consumer
 - Is flood excluded, and do I have contents flood exposure in this building?
 - If I am a student, does a parent's policy actually extend to this address?
 
-A licensed professional can match the lease language to an HO-4 and keep roommates from sharing one name on a policy that will not pay their losses. If you want help reviewing those questions, [get insurance help](/get-insurance-help/).
+A licensed professional can match the lease language to an HO-4 and keep roommates from sharing one name on a policy that will not pay their losses. If you want help reviewing those questions, [get matched with insurance help](/get-insurance-help/).

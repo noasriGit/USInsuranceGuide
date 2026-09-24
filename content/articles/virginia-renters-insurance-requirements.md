@@ -152,4 +152,4 @@ Maryland consumer notes on homeowners and renters products are on the [MIA homeo
 - Is flood excluded, and do I have contents flood exposure in this building?
 - If I am a student, does a parent's policy actually extend to this Virginia address?
 
-A licensed professional can match the lease language to an HO-4 and keep roommates from sharing one name on a policy that will not pay their losses. If you want help reviewing those questions, [get insurance help](/get-insurance-help/).
+A licensed professional can match the lease language to an HO-4 and keep roommates from sharing one name on a policy that will not pay their losses. If you want help reviewing those questions, [get matched with insurance help](/get-insurance-help/).

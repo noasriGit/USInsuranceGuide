@@ -5,7 +5,7 @@ export function leadHeadline(context: LeadPageContext, variant: LeadCtaVariant):
   const coverage = coverageLabel(context.coverageType);
   const state = stateLabel(context.state);
 
-  if (variant === "hero") return "Find Insurance Help";
+  if (variant === "hero") return "Get Matched With Insurance Help";
   if (variant === "final") {
     return "Need help finding coverage in Maryland, Virginia or D.C.?";
   }
@@ -33,16 +33,16 @@ export function leadHeadline(context: LeadPageContext, variant: LeadCtaVariant):
 }
 
 export function leadButtonLabel(context: LeadPageContext, variant: LeadCtaVariant): string {
-  if (variant === "subtle") return "Request insurance help";
+  if (variant === "subtle") return "Get matched with insurance help";
   if (variant === "business" || context.intent === "business") {
     return "Tell us about your business";
   }
   if (context.state) {
-    return `Request ${stateLabel(context.state)} insurance help`;
+    return `Get matched with ${stateLabel(context.state)} insurance help`;
   }
-  if (variant === "hero") return "Find Insurance Help";
-  if (variant === "final" || variant === "end") return "Request Insurance Help";
-  return "Find Insurance Help";
+  if (variant === "hero") return "Get Matched With Insurance Help";
+  if (variant === "final" || variant === "end") return "Get Matched With Insurance Help";
+  return "Get Matched With Insurance Help";
 }
 
 export function leadSupportingCopy(variant: LeadCtaVariant): string {

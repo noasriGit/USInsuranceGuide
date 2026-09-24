@@ -127,7 +127,7 @@ Comparison works when every quote describes the same risk and the same coverage.
 4. Match the declarations line by line, including listed discounts.
 5. Ask what changes the renewal price: a new household driver, a usage change, or a lapse.
 
-The [Maryland Auto Insurance Guide](https://insurance.maryland.gov/consumer/documents/publications/autoinsuranceguide.pdf) explains coverages. It is not a price list. If you want help lining up equivalent quotes, [get insurance help](/get-insurance-help/).
+The [Maryland Auto Insurance Guide](https://insurance.maryland.gov/consumer/documents/publications/autoinsuranceguide.pdf) explains coverages. It is not a price list. If you want help lining up equivalent quotes, [get matched with insurance help](/get-insurance-help/).
 
 ## Discounts That May Lower a Maryland Auto Premium
 

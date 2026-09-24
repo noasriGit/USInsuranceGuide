@@ -173,4 +173,4 @@ This guide does not quote premiums or recommend a limit. DISB notes that profess
 - Does any licensing board that regulates my work specify a form or minimum limit? (Confirm the rule with the board. The agent can then help you see whether a policy matches it.)
 - Would a commercial umbrella sit above these limits, and does the umbrella follow the professional liability form?
 
-Bring sample contracts and any certificate language a client has already sent. For help connecting with a licensed professional, use [get insurance help](/get-insurance-help/).
+Bring sample contracts and any certificate language a client has already sent. For help connecting with a licensed professional, use [get matched with insurance help](/get-insurance-help/).

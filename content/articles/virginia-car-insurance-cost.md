@@ -114,7 +114,7 @@ Comparison works when every quote describes the same risk and the same coverage.
 
 The Bureau of Insurance publishes a [2025 Auto Insurance Consumer Guide](https://www.scc.virginia.gov/media/sccvirginiagov-home/consumer-home/insurance/property-amp-casualty/automobile-insurance/autoguide.pdf) and a shopper's worksheet. Those tools help you line up coverages. They are not a price list. If you cannot obtain coverage in the standard market, a licensed agent can place you in the **Virginia Automobile Insurance Plan**. The Bureau of Insurance describes that plan as a last resort because premiums are often higher than those of voluntary companies.
 
-If you want help lining up equivalent quotes, [get insurance help](/get-insurance-help/).
+If you want help lining up equivalent quotes, [get matched with insurance help](/get-insurance-help/).
 
 ## Required Versus Optional Coverage
 

@@ -162,7 +162,7 @@ The Bureau of Insurance consumer pages are for shopping questions and complaints
 5. Confirm each company is **licensed in Virginia**.
 6. Read flood, earth-movement, and maintenance-related water exclusions.
 
-If one quote is much lower, find the missing limit or the ACV clause before you bind. For help lining up equivalent specifications, [get insurance help](/get-insurance-help/).
+If one quote is much lower, find the missing limit or the ACV clause before you bind. For help lining up equivalent specifications, [get matched with insurance help](/get-insurance-help/).
 
 ## Questions to Ask a Licensed Professional About Virginia Homeowners Cost
 

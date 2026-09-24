@@ -45,7 +45,7 @@ export function LeadCTA({ context, variant = "end", className }: LeadCTAProps) {
     return (
       <aside
         className={cn("surface-card my-8 bg-sand/70 p-5 sm:p-6", className)}
-        aria-label="Request insurance help"
+        aria-label="Get matched with insurance help"
       >
         <p className="text-sm font-semibold text-ink">{headline}</p>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">{support}</p>
@@ -62,7 +62,7 @@ export function LeadCTA({ context, variant = "end", className }: LeadCTAProps) {
 
   if (dark) {
     return (
-      <aside className={cn("surface-cta overflow-hidden", className)} aria-label="Request insurance help">
+      <aside className={cn("surface-cta overflow-hidden", className)} aria-label="Get matched with insurance help">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:px-8 lg:py-16">
           <div className="lg:col-span-7">
             <p className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">{headline}</p>
@@ -82,7 +82,7 @@ export function LeadCTA({ context, variant = "end", className }: LeadCTAProps) {
   }
 
   return (
-    <aside className={cn("surface-card p-6 sm:p-7", className)} aria-label="Request insurance help">
+    <aside className={cn("surface-card p-6 sm:p-7", className)} aria-label="Get matched with insurance help">
       <p className="text-xl font-semibold tracking-tight text-ink">{headline}</p>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600">{support}</p>
       <div className="mt-5">

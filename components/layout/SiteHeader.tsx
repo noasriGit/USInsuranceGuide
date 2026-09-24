@@ -195,7 +195,7 @@ export function SiteHeader() {
             className="btn btn-primary ml-3 min-h-10 px-4 text-sm"
             data-lead-cta="header"
           >
-            Find Insurance Help
+            Get Matched With Insurance Help
           </Link>
           {SHOW_INSURANCE_DIRECTORY_NAV && (
             <Link
@@ -281,7 +281,7 @@ export function SiteHeader() {
               data-lead-cta="header-mobile"
               onClick={closeMobileMenu}
             >
-              Find Insurance Help
+              Get Matched With Insurance Help
             </Link>
           </div>
         </nav>

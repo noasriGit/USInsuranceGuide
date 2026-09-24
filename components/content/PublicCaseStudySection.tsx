@@ -59,21 +59,13 @@ export function PublicCaseStudySection({
       />
       {useBentoLayout ? (
         <div className="mt-8 grid items-start gap-5 lg:grid-cols-12">
-          <div className="lg:col-span-7 lg:row-span-2">
+          <div className="grid gap-5 lg:col-span-7">
             <PublicCaseStudyCard study={featured} featured />
-          </div>
-          {rest[0] && (
-            <div className="lg:col-span-5">
-              <PublicCaseStudyCard study={rest[0]} />
-            </div>
-          )}
-          {rest[1] && (
-            <div className="lg:col-span-5">
-              <PublicCaseStudyCard study={rest[1]} />
-            </div>
-          )}
-          <div className="lg:col-span-7">
             {rest[2] ? <PublicCaseStudyCard study={rest[2]} /> : <PublicCaseStudyBrowseCard />}
+          </div>
+          <div className="grid content-start gap-5 lg:col-span-5">
+            {rest[0] && <PublicCaseStudyCard study={rest[0]} />}
+            {rest[1] && <PublicCaseStudyCard study={rest[1]} />}
           </div>
         </div>
       ) : (

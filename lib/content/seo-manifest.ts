@@ -99,10 +99,10 @@ const staticPages: SeoPage[] = [
   }),
   page({
     path: "/get-insurance-help/",
-    title: "Find Insurance Help",
-    metaTitle: "Find Insurance Help",
+    title: "Get Matched With Insurance Help",
+    metaTitle: "Get Matched With Insurance Help",
     metaDescription:
-      "Request insurance help in Maryland, Virginia, or Washington, D.C. US Insurance Guide can route your request to a licensed insurance professional when available.",
+      "Get matched with insurance help in Maryland, Virginia, or Washington, D.C. US Insurance Guide can route your request to a licensed insurance professional when available.",
     status: "published",
     indexable: true,
     lastModified: STATIC_DATE,
