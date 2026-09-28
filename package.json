@@ -11,6 +11,7 @@
     "test": "tsx scripts/validate-seo.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.21.0",
