@@ -3,7 +3,7 @@ stateSlug: washington-dc
 categorySlug: flood-insurance
 metaTitle: "D.C. Flood Insurance Guide"
 metaDescription: "Overview of flood insurance in Washington, D.C. — why it is separate from homeowners coverage and NFIP basics for owners."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

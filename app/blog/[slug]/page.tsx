@@ -137,7 +137,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
         <ReviewMeta
           className="mt-6"
-          lastReviewed={article.updatedAt}
+          lastUpdated={article.updatedAt}
           sources={article.sources?.map((source) => source.publisher).slice(0, 4)}
         />
 

@@ -46,6 +46,7 @@ export function articleSchema(
   article: Article,
   authorName: string,
   canonicalPath?: string,
+  dateModified = article.updatedAt,
 ) {
   const path = canonicalPath ?? `/blog/${article.slug}/`;
   return {
@@ -54,9 +55,9 @@ export function articleSchema(
     headline: article.title,
     description: article.metaDescription,
     datePublished: article.publishedAt,
-    dateModified: article.updatedAt,
+    dateModified,
     author: {
-      "@type": "Person",
+      "@type": authorName.includes("Team") ? "Organization" : "Person",
       name: authorName,
     },
     publisher: {
@@ -98,7 +99,7 @@ export function sourcedArticleSchema(input: {
     "@type": "Article",
     headline: input.title,
     description: input.description,
-    datePublished: input.datePublished ?? input.dateModified,
+    ...(input.datePublished && { datePublished: input.datePublished }),
     dateModified: input.dateModified,
     author: {
       "@type": "Organization",

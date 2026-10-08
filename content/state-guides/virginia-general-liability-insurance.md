@@ -3,7 +3,7 @@ stateSlug: virginia
 categorySlug: general-liability-insurance
 metaTitle: "Virginia General Liability Guide"
 metaDescription: "Overview of general liability insurance for Virginia businesses — what it may cover and when contracts or landlords require it."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

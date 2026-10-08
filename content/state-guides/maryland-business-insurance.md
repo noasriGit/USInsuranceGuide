@@ -3,7 +3,7 @@ stateSlug: maryland
 categorySlug: business-insurance
 metaTitle: "Maryland Business Insurance"
 metaDescription: "Overview of Maryland business insurance, including workers' comp at one or more employees, common coverage types, and official resources."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

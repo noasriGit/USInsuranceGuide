@@ -7,8 +7,8 @@ type: article
 category: auto-insurance
 author: editorial-team
 reviewer: content-review-team
-publishedAt: "2025-03-15"
-updatedAt: "2025-06-19"
+publishedAt: "2026-06-19"
+updatedAt: "2026-06-19"
 toc: true
 faq:
   - question: "Can my car insurance go up without an accident?"

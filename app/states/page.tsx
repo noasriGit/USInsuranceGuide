@@ -4,7 +4,12 @@ import { PageHero } from "@/components/layout/PageHero";
 import { StateCard } from "@/components/content/StateCard";
 import { SectionSurface } from "@/components/visual/SectionSurface";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { getSeoPage, getStates } from "@/lib/content";
+import {
+  getAutoClusterForState,
+  getPublicSeoPages,
+  getSeoPage,
+  getStates,
+} from "@/lib/content";
 
 const page = getSeoPage("/states/");
 
@@ -19,6 +24,7 @@ export const metadata = buildMetadata({
 
 export default function StatesIndexPage() {
   const states = getStates();
+  const publicPages = getPublicSeoPages();
 
   return (
     <>
@@ -33,9 +39,20 @@ export default function StatesIndexPage() {
       <SectionSurface tone="sand">
         <Container className="py-12">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {states.map((state) => (
-              <StateCard key={state.slug} state={state} />
-            ))}
+            {states.map((state) => {
+              const autoGuide = getAutoClusterForState(publicPages, state.slug)[0];
+              return (
+                <StateCard
+                  key={state.slug}
+                  state={state}
+                  autoGuide={
+                    autoGuide
+                      ? { href: autoGuide.path, label: autoGuide.title }
+                      : undefined
+                  }
+                />
+              );
+            })}
           </div>
         </Container>
       </SectionSurface>

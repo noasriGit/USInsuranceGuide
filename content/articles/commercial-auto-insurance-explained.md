@@ -7,8 +7,8 @@ type: explainer
 category: business-insurance
 author: editorial-team
 reviewer: content-review-team
-publishedAt: "2025-02-10"
-updatedAt: "2025-06-19"
+publishedAt: "2026-06-19"
+updatedAt: "2026-06-19"
 toc: true
 faq:
   - question: "When do I need commercial auto insurance instead of personal auto?"

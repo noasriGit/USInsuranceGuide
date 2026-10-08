@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAuthorBySlug, getReviewerBySlug } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -16,14 +17,20 @@ export function AuthorByline({ authorSlug, reviewerSlug, className }: AuthorByli
   return (
     <div className={cn("text-sm text-slate-600", className)}>
       <p>
-        <span className="font-medium text-slate-800">Written by:</span> {author.name}
+        <span className="font-medium text-slate-800">Written by:</span>{" "}
+        <Link href="/editorial-policy/" className="underline-offset-2 hover:underline">
+          {author.name}
+        </Link>
         {author.title && (
           <span className="text-slate-500"> · {author.title}</span>
         )}
       </p>
       {reviewer && (
         <p className="mt-1">
-          <span className="font-medium text-slate-800">Reviewed by:</span> {reviewer.name}
+          <span className="font-medium text-slate-800">Reviewed by:</span>{" "}
+          <Link href="/editorial-policy/" className="underline-offset-2 hover:underline">
+            {reviewer.name}
+          </Link>
           {reviewer.reviewFocus && (
             <span className="text-slate-500"> · {reviewer.reviewFocus}</span>
           )}

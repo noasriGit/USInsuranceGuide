@@ -3,7 +3,7 @@ stateSlug: virginia
 categorySlug: home-insurance
 metaTitle: "Virginia Home Insurance Guide"
 metaDescription: "Overview of Virginia homeowners insurance — standard coverages, the flood coverage gap, and official consumer resources."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

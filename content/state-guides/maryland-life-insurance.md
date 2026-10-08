@@ -3,7 +3,7 @@ stateSlug: maryland
 categorySlug: life-insurance
 metaTitle: "Maryland Life Insurance Guide"
 metaDescription: "Overview of life insurance in Maryland — common policy types and consumer resources from the Maryland Insurance Administration."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

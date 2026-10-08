@@ -9,8 +9,11 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CoverageIcon, coverageVisualFromSlug } from "@/components/visual/CoverageIcon";
 import type { Category, SeoPage } from "@/lib/schemas";
 import {
+  getArticleHref,
   getArticlesForCategoryHub,
+  getAutoClusterForState,
   getPublicCaseStudiesForPage,
+  getPublicSeoPages,
 } from "@/lib/content";
 import {
   getNestedTopicGuides,
@@ -27,7 +30,21 @@ interface CategoryHubViewProps {
 
 export function CategoryHubView({ category, page }: CategoryHubViewProps) {
   const articles = getArticlesForCategoryHub(category);
+  const publicPages = getPublicSeoPages();
   const stateLandings = getPublishedStateLandingsForCategory(category.slug);
+  const autoClusters =
+    category.slug === "auto-insurance"
+      ? ["maryland", "virginia", "washington-dc"].map((stateSlug) => ({
+          stateSlug,
+          pages: getAutoClusterForState(publicPages, stateSlug),
+        }))
+      : [];
+  const autoClusterPaths = new Set(
+    autoClusters.flatMap((cluster) => cluster.pages.map((item) => item.path)),
+  );
+  const supportingArticles = articles.filter(
+    (article) => !autoClusterPaths.has(getArticleHref(article)),
+  );
   const nestedGuides = getNestedTopicGuides(page.path);
   const partners = resolvePlacements({
     slot: "category-mid",
@@ -82,20 +99,64 @@ export function CategoryHubView({ category, page }: CategoryHubViewProps) {
           </section>
         )}
 
+        {autoClusters.length > 0 && (
+          <section aria-labelledby="auto-by-state-heading">
+            <SectionHeading
+              id="auto-by-state-heading"
+              title="Auto insurance by jurisdiction"
+              description="Start with the statewide guide, then review requirements and cost factors for that jurisdiction."
+            />
+            <div className="mt-6 grid gap-4 lg:grid-cols-3">
+              {autoClusters.map(({ stateSlug, pages }) => {
+                const state = getStateBySlug(stateSlug);
+                const [landing, ...children] = pages;
+                if (!state || !landing) return null;
+                return (
+                  <article key={stateSlug} className="surface-card p-5">
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-navy-700">
+                      {state.name}
+                    </p>
+                    <Link
+                      href={landing.path}
+                      className="mt-3 block text-base font-semibold text-ink hover:text-navy-800"
+                    >
+                      {landing.title}
+                    </Link>
+                    {children.length > 0 && (
+                      <ul className="mt-4 space-y-2 border-t border-line pt-4">
+                        {children.map((child) => (
+                          <li key={child.path}>
+                            <Link
+                              href={child.path}
+                              className="text-sm font-medium text-navy-800 hover:underline"
+                            >
+                              {child.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
         <LeadCTA context={context} variant={ctaVariant} />
 
-        {articles.length > 0 && (
+        {supportingArticles.length > 0 && (
           <section aria-labelledby="category-guides-heading">
             <SectionHeading id="category-guides-heading" title={guidesHeading} />
             <div className="mt-6 grid gap-6">
-              {articles.map((article) => (
+              {supportingArticles.map((article) => (
                 <ArticleCard key={article.slug} article={article} />
               ))}
             </div>
           </section>
         )}
 
-        <section aria-labelledby="explore-by-state-heading">
+        {autoClusters.length === 0 && <section aria-labelledby="explore-by-state-heading">
           <SectionHeading
             id="explore-by-state-heading"
             title="Maryland, Virginia & Washington, D.C."
@@ -132,7 +193,7 @@ export function CategoryHubView({ category, page }: CategoryHubViewProps) {
               );
             })}
           </ul>
-        </section>
+        </section>}
 
         {caseStudies.length > 0 && <PublicCaseStudySection studies={caseStudies} />}
         <GuideNetwork page={page} />

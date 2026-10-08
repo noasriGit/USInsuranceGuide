@@ -3,7 +3,7 @@ stateSlug: maryland
 categorySlug: commercial-auto-insurance
 metaTitle: "Maryland Commercial Auto Guide"
 metaDescription: "Overview of commercial auto insurance in Maryland — when businesses may need it and how state minimum liability limits apply."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface StateCardProps {
   state: State;
+  autoGuide?: { href: string; label: string };
   className?: string;
 }
 
@@ -13,12 +14,11 @@ const toneClass: Record<string, string> = {
   "washington-dc": "tint-dc",
 };
 
-export function StateCard({ state, className }: StateCardProps) {
+export function StateCard({ state, autoGuide, className }: StateCardProps) {
   return (
-    <Link
-      href={`/states/${state.slug}/`}
+    <article
       className={cn(
-        "surface-card surface-card-interactive block p-6",
+        "surface-card p-6",
         toneClass[state.slug],
         className,
       )}
@@ -28,12 +28,20 @@ export function StateCard({ state, className }: StateCardProps) {
       </p>
       <h3 className="mt-2 text-xl font-semibold text-ink">{state.name} insurance</h3>
       <p className="mt-3 text-sm leading-relaxed text-slate-600">{state.overview}</p>
-      <p className="link-arrow mt-5">
-        Explore {state.name}
-        <span data-arrow aria-hidden="true">
-          →
-        </span>
-      </p>
-    </Link>
+      <div className="mt-5 flex flex-col gap-3">
+        <Link href={`/states/${state.slug}/`} className="link-arrow">
+          Explore {state.name} insurance guides
+          <span data-arrow aria-hidden="true">→</span>
+        </Link>
+        {autoGuide && (
+          <Link
+            href={autoGuide.href}
+            className="rounded-lg bg-white/65 px-3 py-3 text-sm font-medium text-navy-800 hover:bg-white"
+          >
+            {autoGuide.label}
+          </Link>
+        )}
+      </div>
+    </article>
   );
 }

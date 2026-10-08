@@ -3,7 +3,7 @@ stateSlug: maryland
 categorySlug: landlord-insurance
 metaTitle: "Maryland Landlord Insurance"
 metaDescription: "Overview of landlord insurance in Maryland — how it differs from homeowners coverage and what rental property owners may consider."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

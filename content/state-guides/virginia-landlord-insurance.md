@@ -3,7 +3,7 @@ stateSlug: virginia
 categorySlug: landlord-insurance
 metaTitle: "Virginia Landlord Insurance"
 metaDescription: "Overview of landlord insurance in Virginia — how it differs from homeowners coverage and what rental property owners may consider."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

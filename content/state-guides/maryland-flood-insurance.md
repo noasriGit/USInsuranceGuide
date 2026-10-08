@@ -3,7 +3,7 @@ stateSlug: maryland
 categorySlug: flood-insurance
 metaTitle: "Maryland Flood Insurance Guide"
 metaDescription: "Overview of flood insurance in Maryland — why it is separate from homeowners coverage and NFIP basics for property owners."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

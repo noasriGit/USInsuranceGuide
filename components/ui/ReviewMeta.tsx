@@ -2,6 +2,7 @@ import { formatDate } from "@/lib/utils";
 import { cn } from "@/lib/utils";
 
 interface ReviewMetaProps {
+  lastUpdated?: string;
   lastReviewed?: string;
   sources?: string[];
   jurisdiction?: string;
@@ -9,12 +10,13 @@ interface ReviewMetaProps {
 }
 
 export function ReviewMeta({
+  lastUpdated,
   lastReviewed,
   sources,
   jurisdiction,
   className,
 }: ReviewMetaProps) {
-  if (!lastReviewed && !sources?.length && !jurisdiction) return null;
+  if (!lastUpdated && !lastReviewed && !sources?.length && !jurisdiction) return null;
 
   return (
     <dl
@@ -23,6 +25,16 @@ export function ReviewMeta({
         className,
       )}
     >
+      {lastUpdated && (
+        <div>
+          <dt className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-navy-700">
+            Last updated
+          </dt>
+          <dd className="mt-1 text-ink">
+            <time dateTime={lastUpdated}>{formatDate(lastUpdated)}</time>
+          </dd>
+        </div>
+      )}
       {lastReviewed && (
         <div>
           <dt className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-navy-700">

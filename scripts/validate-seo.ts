@@ -8,6 +8,12 @@ import {
   getTopicHubForCategory,
   isPublicPage,
 } from "../lib/content/seo-manifest";
+import {
+  CORE_CRAWL_PATHS,
+  MANUAL_INDEXING_PATHS,
+  getAutoClusterForState,
+} from "../lib/content/crawl-priority";
+import { getGuideGraphGroups } from "../lib/content/guide-graph";
 
 const ROOT = path.join(__dirname, "..");
 const errors: string[] = [];
@@ -75,6 +81,7 @@ for (const slug of articleSlugs) {
 
 const pagesByPath = new Map(SEO_PAGES.map((page) => [page.path, page]));
 const publicPages = getPublicSeoPages();
+const publicPageByPath = new Map(publicPages.map((page) => [page.path, page]));
 const redirectSources = new Map(
   getPermanentRedirects().map((item) => [
     item.source.endsWith("/") ? item.source : `${item.source}/`,
@@ -98,6 +105,75 @@ for (const page of SEO_PAGES) {
   }
   for (const related of page.relatedPaths ?? []) {
     addInbound(page.path, related);
+  }
+}
+
+if (publicPages.filter((page) => page.crawlPriority === "core").length !== CORE_CRAWL_PATHS.length) {
+  fail(`Expected exactly ${CORE_CRAWL_PATHS.length} core crawl-priority pages`);
+}
+
+for (const path of CORE_CRAWL_PATHS) {
+  const page = publicPageByPath.get(path);
+  if (!page) {
+    fail(`Core crawl-priority path is not public: ${path}`);
+  } else if (page.crawlPriority !== "core") {
+    fail(`Core crawl-priority path is misclassified: ${path}`);
+  } else {
+    const relatedCount = getGuideGraphGroups(page).reduce(
+      (total, group) => total + group.links.length,
+      0,
+    );
+    if (relatedCount > 6) {
+      fail(`Core page has more than six guide-network links: ${path}`);
+    }
+  }
+}
+
+for (const page of publicPages.filter((item) => item.crawlPriority === "low")) {
+  const crossLinkedLowPage = getGuideGraphGroups(page)
+    .flatMap((group) => group.links)
+    .map((link) => publicPageByPath.get(link.href))
+    .find(
+      (linked) =>
+        linked?.crawlPriority === "low" &&
+        Boolean(page.stateSlug) &&
+        Boolean(linked.stateSlug) &&
+        linked.stateSlug !== page.stateSlug,
+    );
+  if (crossLinkedLowPage) {
+    fail(`Low-priority page cross-links another low-priority page: ${page.path} -> ${crossLinkedLowPage.path}`);
+  }
+}
+
+for (const path of MANUAL_INDEXING_PATHS) {
+  if (publicPageByPath.get(path)?.crawlPriority !== "core") {
+    fail(`Manual-indexing path is not a public core page: ${path}`);
+  }
+}
+
+for (const stateSlug of ["maryland", "virginia", "washington-dc"]) {
+  const cluster = getAutoClusterForState(publicPages, stateSlug);
+  const expectedChildren = stateSlug === "washington-dc" ? ["requirements"] : ["requirements", "cost"];
+  if (cluster[0]?.kind !== "state-guide") {
+    fail(`Auto cluster for ${stateSlug} does not start with its state guide`);
+  }
+  for (const childSlug of expectedChildren) {
+    if (!cluster.some((page) => page.childSlug === childSlug)) {
+      fail(`Auto cluster for ${stateSlug} is missing ${childSlug}`);
+    }
+  }
+}
+
+const earliestPublicationDate = "2026-06-19";
+for (const file of [
+  ...walkFiles(path.join(ROOT, "content", "articles"), [".md"]),
+  ...walkFiles(path.join(ROOT, "content", "state-guides"), [".md"]),
+]) {
+  const text = fs.readFileSync(file, "utf8");
+  for (const match of text.matchAll(/^(publishedAt|updatedAt):\s*["'](\d{4}-\d{2}-\d{2})["']/gm)) {
+    if (match[2] < earliestPublicationDate) {
+      fail(`${path.relative(ROOT, file)} has ${match[1]} before repository publication: ${match[2]}`);
+    }
   }
 }
 

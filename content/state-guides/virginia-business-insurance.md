@@ -3,7 +3,7 @@ stateSlug: virginia
 categorySlug: business-insurance
 metaTitle: "Virginia Business Insurance"
 metaDescription: "Overview of Virginia business insurance — workers' comp thresholds, common coverage types, and official Bureau of Insurance resources."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

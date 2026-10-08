@@ -3,7 +3,7 @@ stateSlug: maryland
 categorySlug: umbrella-insurance
 metaTitle: "Maryland Umbrella Insurance"
 metaDescription: "Overview of personal umbrella insurance in Maryland — extra liability protection above auto and homeowners policy limits."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

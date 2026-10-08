@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { ArticleCard } from "@/components/content/ArticleCard";
 import { PublicCaseStudySection } from "@/components/content/PublicCaseStudySection";
-import { HeroFeaturedGuide } from "@/components/visual/HeroFeaturedGuide";
 import { StateSelector } from "@/components/content/StateSelector";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -17,10 +16,11 @@ import { TrustStrip } from "@/components/visual/TrustStrip";
 import { buildMetadata } from "@/lib/seo/metadata";
 import {
   getBlogArticles,
+  getAutoClusterForState,
   getPrimaryTopicHubs,
-  getPublishedStateGuides,
   getPublishedStateHubs,
   getPublicCaseStudies,
+  getPublicSeoPages,
   getSeoPage,
   getStates,
 } from "@/lib/content";
@@ -32,13 +32,6 @@ export const metadata = buildMetadata({
   description: SITE_DESCRIPTION,
   path: "/",
 });
-
-const primaryGuideOrder = [
-  "auto-insurance",
-  "homeowners-insurance",
-  "renters-insurance",
-  "business-insurance",
-];
 
 const stateContext: Record<string, string> = {
   maryland:
@@ -72,9 +65,9 @@ export default function HomePage() {
   const topicHubs = getPrimaryTopicHubs();
   const articles = getBlogArticles().slice(0, 4);
   const caseStudies = getPublicCaseStudies().slice(0, 4);
+  const publicPages = getPublicSeoPages();
   const homeContext = inferLeadContextFromPath("/", "home");
-  const heroFeaturedArticle = articles[0];
-  const moreArticles = articles.slice(1, 4);
+  const moreArticles = articles.slice(0, 3);
 
   return (
     <>
@@ -116,17 +109,43 @@ export default function HomePage() {
               </div>
               <StateSelector className="mt-10" />
             </div>
-            {heroFeaturedArticle && (
-              <div className="lg:col-span-6" aria-labelledby="hero-featured-heading">
-                <p
-                  id="hero-featured-heading"
-                  className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/75"
-                >
-                  Featured guide
-                </p>
-                <HeroFeaturedGuide article={heroFeaturedArticle} className="mt-4" />
+            <div className="lg:col-span-6" aria-labelledby="hero-featured-heading">
+              <p
+                id="hero-featured-heading"
+                className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/75"
+              >
+                Priority guide collection
+              </p>
+              <div className="mt-4 rounded-2xl border border-white/20 bg-navy-950/75 p-6 shadow-xl backdrop-blur-sm sm:p-7">
+                <Link href="/auto-insurance/" className="group block">
+                  <p className="text-sm font-semibold text-white">DMV auto insurance guides</p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-200">
+                    Compare Maryland, Virginia, and Washington, D.C. requirements,
+                    coverage rules, and cost factors from official sources.
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-white group-hover:underline">
+                    Explore auto insurance
+                    <span aria-hidden="true">→</span>
+                  </span>
+                </Link>
+                <ul className="mt-6 grid gap-2 border-t border-white/15 pt-5 sm:grid-cols-3">
+                  {stateHubs.map((stateHub) => {
+                    const autoPage = getAutoClusterForState(publicPages, stateHub.stateSlug ?? "")[0];
+                    if (!autoPage) return null;
+                    return (
+                      <li key={autoPage.path}>
+                        <Link
+                          href={autoPage.path}
+                          className="block rounded-lg bg-white/10 px-3 py-3 text-sm font-medium text-white hover:bg-white/15"
+                        >
+                          {autoPage.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
-            )}
+            </div>
           </div>
         </Container>
       </section>
@@ -166,17 +185,10 @@ export default function HomePage() {
           <div className="mt-10 grid gap-5 lg:grid-cols-12">
             {states.map((state, index) => {
               const hub = getSeoPage(`/states/${state.slug}/`);
-              const guides = getPublishedStateGuides(state.slug, "primary")
-                .slice()
-                .sort(
-                  (a, b) =>
-                    primaryGuideOrder.indexOf(a.guideSlug ?? "") -
-                    primaryGuideOrder.indexOf(b.guideSlug ?? ""),
-                )
-                .slice(0, 4)
+              const guides = getAutoClusterForState(publicPages, state.slug)
                 .map((guide) => ({
                   href: guide.path,
-                  label: guide.navLabel ?? guide.title,
+                  label: guide.title,
                 }));
               const wide = index === 2;
               return (

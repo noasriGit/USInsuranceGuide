@@ -7,8 +7,8 @@ type: article
 category: home-insurance
 author: editorial-team
 reviewer: content-review-team
-publishedAt: "2025-03-01"
-updatedAt: "2025-06-19"
+publishedAt: "2026-06-19"
+updatedAt: "2026-06-19"
 toc: true
 faq:
   - question: "Does homeowners insurance cover flood damage?"

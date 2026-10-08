@@ -175,6 +175,8 @@ export const SeoPageClusterSchema = z.enum([
   "deprioritized",
 ]);
 
+export const CrawlPrioritySchema = z.enum(["core", "supporting", "low"]);
+
 export const SeoContentSourceSchema = z.object({
   type: z.enum(["state-guide", "article", "static", "hub"]),
   slug: z.string().optional(),
@@ -195,6 +197,7 @@ export const SeoPageSchema = z.object({
   kind: SeoPageKindSchema,
   phase: z.number().int().min(0).max(4),
   cluster: SeoPageClusterSchema.optional(),
+  crawlPriority: CrawlPrioritySchema,
   stateSlug: z.string().optional(),
   citySlug: z.string().optional(),
   categorySlug: z.string().optional(),
@@ -219,6 +222,7 @@ export type PageStatus = z.infer<typeof PageStatusSchema>;
 export type SeoPage = z.infer<typeof SeoPageSchema>;
 export type SeoPageKind = z.infer<typeof SeoPageKindSchema>;
 export type SeoPageCluster = z.infer<typeof SeoPageClusterSchema>;
+export type CrawlPriority = z.infer<typeof CrawlPrioritySchema>;
 export type City = z.infer<typeof CitySchema>;
 export type Author = z.infer<typeof AuthorSchema>;
 export type Reviewer = z.infer<typeof ReviewerSchema>;

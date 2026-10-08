@@ -13,8 +13,8 @@ const items = [
   },
   {
     icon: CalendarCheck,
-    title: "Reviewed guides",
-    body: "Visible review dates",
+    title: "Maintained guides",
+    body: "Visible update dates",
   },
   {
     icon: FileSearch,

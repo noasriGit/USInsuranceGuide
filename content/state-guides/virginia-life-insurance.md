@@ -3,7 +3,7 @@ stateSlug: virginia
 categorySlug: life-insurance
 metaTitle: "Virginia Life Insurance Guide"
 metaDescription: "Overview of life insurance in Virginia — common policy types and consumer resources from the Virginia Bureau of Insurance."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

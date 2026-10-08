@@ -9,7 +9,7 @@ states:
   - washington-dc
 author: editorial-team
 reviewer: content-review-team
-publishedAt: "2025-01-15"
+publishedAt: "2026-06-19"
 updatedAt: "2026-09-23"
 toc: true
 faq:

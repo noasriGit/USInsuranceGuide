@@ -7,8 +7,8 @@ type: article
 category: business-insurance
 author: editorial-team
 reviewer: content-review-team
-publishedAt: "2025-04-01"
-updatedAt: "2025-06-19"
+publishedAt: "2026-06-19"
+updatedAt: "2026-06-19"
 toc: true
 faq:
   - question: "What is the most important insurance for a small business?"

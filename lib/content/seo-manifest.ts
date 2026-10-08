@@ -1,6 +1,7 @@
 import type { SeoPage, SeoPageCluster } from "../schemas";
+import { getCrawlPriorityForPage } from "./crawl-priority";
 
-const CONTENT_DATE = "2025-06-19";
+const CONTENT_DATE = "2026-06-19";
 const STATIC_DATE = "2026-06-19";
 const WAVE_DATE = "2026-09-22";
 const AI_SEARCH_DATE = "2026-09-23";
@@ -28,16 +29,22 @@ const STATES: Record<
   },
 };
 
-type SeoPageInput = Omit<SeoPage, "relatedPaths" | "indexable"> & {
+type SeoPageInput = Omit<SeoPage, "relatedPaths" | "indexable" | "crawlPriority"> & {
   relatedPaths?: string[];
   indexable?: boolean;
+  crawlPriority?: SeoPage["crawlPriority"];
 };
 
 function page(entry: SeoPageInput): SeoPage {
-  return {
+  const resolved = {
     ...entry,
     relatedPaths: entry.relatedPaths ?? [],
     indexable: entry.indexable ?? entry.status === "published",
+  };
+
+  return {
+    ...resolved,
+    crawlPriority: entry.crawlPriority ?? getCrawlPriorityForPage(resolved),
   };
 }
 
@@ -629,7 +636,6 @@ function stateGuide(opts: {
     status: "published",
     indexable: true,
     lastModified: opts.lastModified ?? CONTENT_DATE,
-    lastReviewed: CONTENT_DATE,
     reviewer: "content-review-team",
     kind: "state-guide",
     phase: opts.phase,
@@ -675,7 +681,6 @@ function stateChild(opts: {
     status: "published",
     indexable: true,
     lastModified: opts.lastModified ?? CONTENT_DATE,
-    lastReviewed: opts.lastModified ?? CONTENT_DATE,
     reviewer: "content-review-team",
     kind: "state-child",
     phase: opts.phase,
@@ -754,7 +759,6 @@ function localGuide(opts: {
     status: "published",
     indexable: true,
     lastModified: WAVE_DATE,
-    lastReviewed: WAVE_DATE,
     reviewer: "content-review-team",
     kind: "local-guide",
     phase: 4,

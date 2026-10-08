@@ -5,13 +5,14 @@ import { SourcesList } from "@/components/content/SourcesList";
 import { GuideNetwork } from "@/components/content/GuideNetwork";
 import { PublicCaseStudySection } from "@/components/content/PublicCaseStudySection";
 import { ArticleDisclaimer } from "@/components/compliance/ArticleDisclaimer";
+import { AuthorByline } from "@/components/compliance/AuthorByline";
 import { LicensedProfessionalNotice } from "@/components/compliance/LicensedProfessionalNotice";
 import { ReviewMeta } from "@/components/ui/ReviewMeta";
 import { LeadCTA } from "@/components/leads/LeadCTA";
 import { StickyMobileLeadCTA } from "@/components/leads/StickyMobileLeadCTA";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { faqSchema } from "@/lib/seo/schema";
+import { sourcedArticleSchema } from "@/lib/seo/schema";
 import type { SeoPage, StateCategoryGuide } from "@/lib/schemas";
 import { resolvePlacements } from "@/lib/monetization/placements";
 import { inferLeadContextFromPage, shouldShowStickyLeadCta } from "@/lib/leads/context";
@@ -51,10 +52,22 @@ export function StateGuideView({ page, guide }: StateGuideViewProps) {
 
   return (
     <div className={sticky ? "has-sticky-cta mx-auto max-w-[46rem] space-y-8" : "mx-auto max-w-[46rem] space-y-8"}>
-      {guide.faq.length > 0 && <JsonLd data={faqSchema(guide.faq)} />}
+      <JsonLd
+        data={sourcedArticleSchema({
+          title: page.title,
+          description: page.metaDescription,
+          path: page.path,
+          dateModified: page.lastModified,
+        })}
+      />
+      <AuthorByline
+        authorSlug="editorial-team"
+        reviewerSlug={guide.reviewer ?? page.reviewer}
+      />
 
       <ReviewMeta
-        lastReviewed={page.lastReviewed ?? page.lastModified}
+        lastUpdated={page.lastModified}
+        lastReviewed={page.lastReviewed}
         jurisdiction={stateName}
         sources={[...new Set(guide.sources.map((source) => source.publisher))].slice(0, 4)}
       />

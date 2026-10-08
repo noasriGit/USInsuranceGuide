@@ -15,11 +15,109 @@ export interface GuideGraphGroup {
 }
 
 function descriptiveLabel(page: SeoPage): string {
+  if (page.crawlPriority === "core") return page.title;
   if (page.primaryKeyword) return page.primaryKeyword;
   return page.navLabel ?? page.title;
 }
 
+function linksFor(items: SeoPage[]) {
+  return items.map((item) => ({
+    href: item.path,
+    label: descriptiveLabel(item),
+  }));
+}
+
+function coreAutoGroups(page: SeoPage): GuideGraphGroup[] {
+  const publicPages = getPublicSeoPages();
+  const hub = getSeoPage("/auto-insurance/");
+  const stateHub = page.stateSlug
+    ? getSeoPage(`/states/${page.stateSlug}/`)
+    : undefined;
+  const parent = page.parentPath ? getSeoPage(page.parentPath) : undefined;
+  const siblings = page.parentPath ? getPublishedChildren(page.parentPath) : [];
+  const peers = publicPages.filter(
+    (item) =>
+      item.path !== page.path &&
+      item.categorySlug === "auto-insurance" &&
+      item.kind === page.kind &&
+      item.childSlug === page.childSlug &&
+      item.stateSlug !== page.stateSlug &&
+      item.crawlPriority === "core",
+  );
+
+  if (page.kind === "state-guide") {
+    const children = getPublishedChildren(page.path).filter(
+      (item) => item.crawlPriority === "core",
+    );
+    const groups: GuideGraphGroup[] = [
+      {
+        id: "related-questions",
+        title: "Requirements and cost",
+        links: linksFor(children),
+      },
+      {
+        id: "compare-jurisdictions",
+        title: "DMV auto insurance network",
+        links: linksFor(
+          [hub, stateHub, ...peers].filter((item): item is SeoPage => Boolean(item)),
+        ),
+      },
+    ];
+    return groups.filter((group) => group.links.length > 0);
+  }
+
+  const sibling = siblings.find(
+    (item) => item.path !== page.path && item.crawlPriority === "core",
+  );
+  const groups: GuideGraphGroup[] = [
+    {
+      id: "related-coverage",
+      title: "Continue this state guide",
+      links: linksFor(
+        [parent, sibling, stateHub, hub].filter((item): item is SeoPage => Boolean(item)),
+      ),
+    },
+    {
+      id: "compare-jurisdictions",
+      title: "Compare jurisdictions",
+      links: linksFor(peers),
+    },
+  ];
+  return groups.filter((group) => group.links.length > 0);
+}
+
+function capGroups(groups: GuideGraphGroup[], limit: number): GuideGraphGroup[] {
+  let remaining = limit;
+  return groups
+    .map((group) => {
+      const links = group.links.slice(0, remaining);
+      remaining -= links.length;
+      return { ...group, links };
+    })
+    .filter((group) => group.links.length > 0);
+}
+
 export function getGuideGraphGroups(page: SeoPage): GuideGraphGroup[] {
+  if (page.crawlPriority === "core" && page.categorySlug === "auto-insurance") {
+    return capGroups(coreAutoGroups(page), 6);
+  }
+
+  if (page.crawlPriority === "low") {
+    const upward = [
+      page.categorySlug ? getTopicHubForCategory(page.categorySlug) : undefined,
+      page.stateSlug ? getSeoPage(`/states/${page.stateSlug}/`) : undefined,
+    ].filter((item): item is SeoPage => Boolean(item && item.path !== page.path));
+    return upward.length > 0
+      ? [
+          {
+            id: "related-coverage",
+            title: "Explore broader guides",
+            links: linksFor(upward),
+          },
+        ]
+      : [];
+  }
+
   const network = getGuideNetwork(page);
   const children = getPublishedChildren(page.path);
   const relatedQuestions = children.filter((item) =>
@@ -110,5 +208,6 @@ export function getGuideGraphGroups(page: SeoPage): GuideGraphGroup[] {
     );
   }
 
-  return groups.filter((group) => group.links.length > 0);
+  const populated = groups.filter((group) => group.links.length > 0);
+  return page.crawlPriority === "core" ? capGroups(populated, 6) : populated;
 }

@@ -3,7 +3,7 @@ stateSlug: virginia
 categorySlug: umbrella-insurance
 metaTitle: "Virginia Umbrella Insurance"
 metaDescription: "Overview of personal umbrella insurance in Virginia — extra liability protection above auto and homeowners policy limits."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

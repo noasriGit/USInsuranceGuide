@@ -3,7 +3,7 @@ stateSlug: washington-dc
 categorySlug: landlord-insurance
 metaTitle: "D.C. Landlord Insurance Guide"
 metaDescription: "Overview of landlord insurance in D.C. — how it differs from homeowners coverage and what rental property owners may consider."
-updatedAt: "2025-06-19"
+updatedAt: "2026-06-19"
 reviewer: content-review-team
 sections:
   Overview: |

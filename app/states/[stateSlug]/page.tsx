@@ -18,6 +18,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import {
   getStates,
   getStateBySlug,
+  getAutoClusterForState,
   getSupportingArticlesByState,
   getSeoPage,
   getPublishedStateGuides,
@@ -63,8 +64,7 @@ function GuideDirectoryCard({
                 href={child.path}
                 className="inline-flex min-h-9 items-center rounded-lg bg-white/80 px-3 text-sm font-medium text-navy-800 hover:bg-white"
               >
-                {child.navLabel ??
-                  (child.title.replace(guide.navLabel ?? "", "").trim() || child.title)}
+                  {child.title}
               </Link>
             </li>
           ))}
@@ -106,11 +106,20 @@ export default async function StateHubPage({ params }: PageProps) {
   const page = getSeoPage(`/states/${stateSlug}/`);
   if (!state || !page || page.status !== "published") notFound();
 
+  const publicPages = getPublicSeoPages();
   const articles = getSupportingArticlesByState(stateSlug);
   const primaryGuides = getPublishedStateGuides(stateSlug, "primary");
-  const specialtyGuides = getPublishedStateGuides(stateSlug, "specialty");
-  const otherGuides = getPublishedStateGuides(stateSlug, "deprioritized");
-  const localGuides = getPublicSeoPages().filter(
+  const autoCluster = getAutoClusterForState(publicPages, stateSlug);
+  const autoGuide = autoCluster.find((item) => item.kind === "state-guide");
+  const otherKeyGuides = primaryGuides.filter(
+    (guide) => guide.guideSlug !== "auto-insurance",
+  );
+  const lowPriorityGuides = publicPages
+    .filter(
+      (item) => item.stateSlug === stateSlug && item.crawlPriority === "low",
+    )
+    .sort((a, b) => a.title.localeCompare(b.title));
+  const localGuides = publicPages.filter(
     (item) => item.kind === "local-guide" && item.stateSlug === stateSlug,
   );
   const partners = resolvePlacements({
@@ -123,7 +132,7 @@ export default async function StateHubPage({ params }: PageProps) {
   const heroTint =
     stateSlug === "virginia" ? "tint-virginia" : stateSlug === "washington-dc" ? "tint-dc" : "tint-maryland";
   const bannerSrc = getStateBannerPath(stateSlug);
-  const primaryChips = primaryGuides.slice(0, 4);
+  const primaryChips = autoCluster;
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "DMV Guides", href: "/states/" },
@@ -148,7 +157,7 @@ export default async function StateHubPage({ params }: PageProps) {
                 href={guide.path}
                 className="inline-flex min-h-10 items-center rounded-lg border border-white/25 bg-white/90 px-3.5 text-sm font-medium text-navy-800 hover:border-white hover:bg-white"
               >
-                {guide.navLabel ?? guide.title}
+                {guide.title}
               </Link>
             </li>
           ))}
@@ -195,7 +204,7 @@ export default async function StateHubPage({ params }: PageProps) {
                           href={guide.path}
                           className="inline-flex min-h-10 items-center rounded-lg border border-navy-200 bg-white/80 px-3.5 text-sm font-medium text-navy-800 hover:border-navy-600"
                         >
-                          {guide.navLabel ?? guide.title}
+                          {guide.title}
                         </Link>
                       </li>
                     ))}
@@ -213,7 +222,8 @@ export default async function StateHubPage({ params }: PageProps) {
 
       <ReviewMeta
         className="mt-6"
-        lastReviewed={page.lastReviewed ?? page.lastModified}
+        lastUpdated={page.lastModified}
+        lastReviewed={page.lastReviewed}
         jurisdiction={state.name}
         sources={sourceNames}
       />
@@ -229,17 +239,34 @@ export default async function StateHubPage({ params }: PageProps) {
 
           <LeadCTA context={context} variant="state" />
 
+          {autoGuide && (
+            <section>
+              <SectionHeading
+                title={`Start with ${state.name} auto insurance`}
+                description="Begin with the statewide guide, then review the legal requirements and cost factors."
+              />
+              <div className="mt-5">
+                <GuideDirectoryCard
+                  guide={autoGuide}
+                  childPages={autoCluster.filter((item) => item.path !== autoGuide.path)}
+                />
+              </div>
+            </section>
+          )}
+
           <section>
             <SectionHeading
-              title={`Key ${state.name} insurance guides`}
-              description="Start with auto, homeowners, renters, and business coverage."
+              title="Other key coverage"
+              description={`Homeowners, renters, and business insurance guidance for ${state.name}.`}
             />
             <div className="mt-5 grid gap-4">
-              {primaryGuides.map((guide) => (
+              {otherKeyGuides.map((guide) => (
                 <GuideDirectoryCard
                   key={guide.path}
                   guide={guide}
-                  childPages={getPublishedChildren(guide.path)}
+                  childPages={getPublishedChildren(guide.path).filter(
+                    (child) => child.crawlPriority !== "low",
+                  )}
                 />
               ))}
             </div>
@@ -299,24 +326,6 @@ export default async function StateHubPage({ params }: PageProps) {
             </section>
           )}
 
-          {specialtyGuides.length > 0 && (
-            <section>
-              <SectionHeading title="Specialty coverage" />
-              <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-                {specialtyGuides.map((guide) => (
-                  <li key={guide.path}>
-                    <Link
-                      href={guide.path}
-                      className="surface-card surface-card-interactive block px-4 py-3 text-sm font-medium text-navy-800"
-                    >
-                      {guide.navLabel ?? guide.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-
           <section>
             <SectionHeading title={`Regional risks in ${state.name}`} />
             <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-600">
@@ -337,14 +346,17 @@ export default async function StateHubPage({ params }: PageProps) {
             </section>
           )}
 
-          {otherGuides.length > 0 && (
+          {lowPriorityGuides.length > 0 && (
             <section>
-              <SectionHeading title="More guides" />
+              <SectionHeading
+                title="More coverage topics"
+                description="Additional state-specific overviews that are not part of the current priority collection."
+              />
               <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
-                {otherGuides.map((guide) => (
+                {lowPriorityGuides.map((guide) => (
                   <li key={guide.path}>
                     <Link href={guide.path} className="text-sm text-navy-800 hover:underline">
-                      {guide.navLabel ?? guide.title}
+                      {guide.title}
                     </Link>
                   </li>
                 ))}

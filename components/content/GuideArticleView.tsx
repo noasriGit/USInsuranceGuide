@@ -13,7 +13,7 @@ import { LeadCTA } from "@/components/leads/LeadCTA";
 import { StickyMobileLeadCTA } from "@/components/leads/StickyMobileLeadCTA";
 import { ContextualCTA } from "@/components/monetization/ContextualCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { articleSchema, faqSchema } from "@/lib/seo/schema";
+import { articleSchema } from "@/lib/seo/schema";
 import type { Article, SeoPage } from "@/lib/schemas";
 import { resolvePlacements } from "@/lib/monetization/placements";
 import { formatDate, extractMarkdownHeadings, splitMarkdownForInlineCta } from "@/lib/utils";
@@ -64,8 +64,7 @@ export function GuideArticleView({
 
   return (
     <article className={sticky ? "has-sticky-cta mx-auto max-w-[46rem]" : "mx-auto max-w-[46rem]"}>
-      <JsonLd data={articleSchema(article, authorName, page.path)} />
-      {article.faq && article.faq.length > 0 && <JsonLd data={faqSchema(article.faq)} />}
+      <JsonLd data={articleSchema(article, authorName, page.path, page.lastModified)} />
 
       <header className="border-b border-line pb-8">
         {categoryHref && categoryName && (
@@ -98,7 +97,8 @@ export function GuideArticleView({
 
       <ReviewMeta
         className="mt-6"
-        lastReviewed={page.lastReviewed ?? page.lastModified}
+        lastUpdated={page.lastModified}
+        lastReviewed={page.lastReviewed}
         jurisdiction={stateName}
         sources={uniqueSources}
       />
