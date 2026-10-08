@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";import { Container } from "@/components/layout/Container";
+import Link from "next/link";
+import { Container } from "@/components/layout/Container";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleCard } from "@/components/content/ArticleCard";
@@ -64,14 +65,14 @@ function GuideDirectoryCard({
                 href={child.path}
                 className="inline-flex min-h-9 items-center rounded-lg bg-white/80 px-3 text-sm font-medium text-navy-800 hover:bg-white"
               >
-                  {child.title}
+                {child.title}
               </Link>
             </li>
           ))}
         </ul>
       )}
       <Link href={guide.path} className="link-arrow mt-4">
-        Read guide
+        Explore {guide.title}
         <span data-arrow aria-hidden="true">
           →
         </span>
